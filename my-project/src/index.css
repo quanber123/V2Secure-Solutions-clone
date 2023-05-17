@@ -22,3 +22,14 @@ html {
     Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   scroll-behavior: smooth;
 }
+.square {
+  width: 8px;
+  height: 8px;
+  background-color: '#183861';
+  color: '#183861';
+}
+@layer components {
+  .link-active {
+    @apply border-b-2 border-b-white;
+  }
+}
