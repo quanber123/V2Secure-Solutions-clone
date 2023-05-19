@@ -2,11 +2,11 @@ import React from 'react';
 
 function System() {
   return (
-    <div className='rounded-xl bg-blue text-white p-8 my-4 mx-8'>
-      <h3 className='text-xl font-bold mb-2'>
-        7. SYSTEM ADMINISTRATION FUNCTION
+    <div className='ml-auto w-11/12 rounded-tl-2xl p-8 bg-blue'>
+      <h3 className='px-3 m-2 text-white text-xl font-bold text-center'>
+        3. SYSTEM ADMINISTRATION FUNCTION
       </h3>
-      <div className='flex justify-between text-lg'>
+      <div className='flex justify-between text-lg text-center text-white'>
         <div className='w-1/2 h-full'>
           <p className='m-4 p-4 border border-white rounded-xl'>
             DASHBOARD FUNCTION ALLOWS ADMINISTRATORS TO HAVE GENERAL INFORMATION
@@ -20,6 +20,9 @@ function System() {
             REPORT GENERATION FUNCTION ALLOWS ADMINISTRATORS TO CREATE
             CUSTOMIZED REPORTS ACCORDING TO SPECIFIC CONDITIONS IN DIFFERENT
             FORMATS.
+          </p>
+          <p className='m-4 p-4 border border-white rounded-xl'>
+            SYSTEM CONFIGURATION MANAGEMENT.
           </p>
         </div>
         <div className='w-1/2'>

@@ -28,6 +28,11 @@ html {
   background-color: '#183861';
   color: '#183861';
 }
+.rotate-text {
+  transform: rotate(-180deg);
+  writing-mode: vertical-lr;
+  word-spacing: 8px;
+}
 @layer components {
   .link-active {
     @apply border-b-2 border-b-white;

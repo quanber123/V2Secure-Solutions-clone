@@ -1,15 +1,15 @@
 import React from 'react';
 import LazyLoad from 'react-lazyload';
-import Security from './application/security';
-import Description from './application/description';
-import Plan from './application/plan';
-import Processing from './application/processing';
-import PreventAttacks from './application/prevent-attacks';
-import IncidentAnalysis from './application/incident-analysis';
+import Security from './WAF/security';
+import Description from './WAF/description';
+import Plan from './WAF/plan';
+import Processing from './WAF/processing';
+import PreventAttacks from './WAF/prevent-attacks';
+import IncidentAnalysis from './WAF/incident-analysis';
 import securityImg from '../../images/application/v2-waf-5.355b858ea7a8909167bf.png';
-import System from './application/system';
-import Minimum from './application/minimum';
-function Application() {
+import System from './WAF/system';
+import Minimum from './WAF/minimum';
+function WAF() {
   return (
     <section className='container m-auto bg-white text-darkBlue rounded-2xl'>
       <h1 className='underline text-center text-2xl font-bold pt-8 px-4 mb-3'>
@@ -40,4 +40,4 @@ function Application() {
   );
 }
 
-export default Application;
+export default WAF;

@@ -1,15 +1,15 @@
 import React from 'react';
-import Collections from './information/collections';
-import Network from './information/network';
-import Processing from './information/processing';
-import Threat from './information/threat';
-import Vulnerability from './information/vulnerability';
-import Security from './information/security';
-import Incident from './information/incident';
+import Collections from './SIEM/collections';
+import Network from './SIEM/network';
+import Processing from './SIEM/processing';
+import Threat from './SIEM/threat';
+import Vulnerability from './SIEM/vulnerability';
+import Security from './SIEM/security';
+import Incident from './SIEM/incident';
 import v2siem from '../../images/information/v2-siem-6.3dc16344590ad630264b.png';
 import LazyLoad from 'react-lazyload';
-import System from './information/system';
-function Information() {
+import System from './SIEM/system';
+function SIEM() {
   return (
     <section className='bg-white text-darkBlue container m-auto rounded-2xl my-12'>
       <h1 className='underline text-center text-2xl font-bold pt-8 px-4'>
@@ -38,4 +38,4 @@ function Information() {
   );
 }
 
-export default Information;
+export default SIEM;
