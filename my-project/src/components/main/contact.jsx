@@ -6,7 +6,10 @@ import location from '../../images/contact/download (2).png';
 import qr from '../../images/contact/scan-icon.9a8b224f402749907bca.png';
 function Contact() {
   return (
-    <section className='container m-auto bg-white text-darkBlue rounded-2xl my-12'>
+    <section
+      id='contact'
+      className='container m-auto bg-white text-darkBlue rounded-2xl my-12'
+    >
       <h1 className='underline text-center text-2xl font-bold pt-8 px-4'>
         ABOUT US
       </h1>

@@ -46,7 +46,7 @@ function System() {
       <h3 className='px-3 text-white text-xl font-bold'>
         8. SYSTEM ADMINISTRATION FUNCTION
       </h3>
-      <div className='flex flex-col md:flex-grow items-center'>
+      <div className='flex flex-col md:flex-row items-center'>
         <div className='md:w-2/3 text-white text-lg px-3 py-4'>
           {contentSystem}
         </div>

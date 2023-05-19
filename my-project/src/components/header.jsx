@@ -1,13 +1,20 @@
-import React, { useEffect, useState } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import LazyLoad from 'react-lazyload';
 import { NavLink } from 'react-router-dom';
 import logo from '../images/ecosystem/download.png';
+import logo2 from '../images/logo.0f88255eeb4cbd4b96da.png';
 import siem from '../images/ecosystem/siem.png';
 import waf from '../images/ecosystem/waf.png';
 import nips from '../images/ecosystem/nips.png';
 import edr from '../images/ecosystem/edr.png';
 import nac from '../images/ecosystem/nac.png';
 function Header() {
+  const [isSticky, setIsSticky] = useState(false);
+  const [showNav, setShowNav] = useState(false);
+  const [stateLink, setLinkState] = useState('');
+  function isShow() {
+    setShowNav((prevShow) => !prevShow);
+  }
   const dataEcosystem = [
     {
       url: siem,
@@ -34,58 +41,104 @@ function Header() {
   useEffect(() => {
     setEcosystems(dataEcosystem);
   }, []);
+  const handleLinkClick = useCallback((id) => {
+    setLinkState(id);
+    const element = document.getElementById(id);
+    element.scrollIntoView({ behavior: 'smooth' });
+    setShowNav(false);
+  });
+  const handleScroll = () => {
+    if (window.pageYOffset > 200) {
+      setIsSticky(true);
+    } else {
+      setIsSticky(false);
+    }
+  };
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
   return (
     <header className='h-screen'>
-      <nav className='h-16 flex'>
+      <nav
+        className={`relative nav-item ${isSticky ? 'sticky' : ''} h-16 flex`}
+      >
         <section className='h-full flex justify-between container m-auto'>
-          <LazyLoad className='w-full md:w-1/12 p-1' offset={100} once>
-            <img className='h-full' src={logo} alt='logo' />
+          <LazyLoad
+            className='w-full md:w-1/12 p-1 cursor-pointer'
+            offset={100}
+            once
+          >
+            <img className='h-full' src={isSticky ? logo2 : logo} alt='logo' />
           </LazyLoad>
-          <div className='hidden md:flex font-bold text-lg justify-between items-center'>
+          <div
+            className={`lg:flex font-bold text-lg lg:justify-between lg:items-center ${
+              showNav ? 'show' : 'hidden'
+            }`}
+          >
             <NavLink
-              className={`px-5 ${({ isActive }) =>
-                isActive ? 'link-active' : ''}`}
+              className={`mx-5 nav-link ${
+                stateLink === 'siem' ? 'link-active' : ''
+              } ${isSticky ? 'sticky' : ''}`}
               to='#'
+              onClick={() => handleLinkClick('siem')}
             >
               V2-SIEM
             </NavLink>
             <NavLink
-              className={`px-5 ${({ isActive }) =>
-                isActive ? 'link-active' : ''}`}
+              className={`mx-5 nav-link ${
+                stateLink === 'waf' ? 'link-active' : ''
+              } ${isSticky ? 'sticky' : ''}`}
               to='#'
+              onClick={() => handleLinkClick('waf')}
             >
               V2-WAF
             </NavLink>
             <NavLink
-              className={`px-5 ${({ isActive }) =>
-                isActive ? 'link-active' : ''}`}
+              className={`mx-5 nav-link ${
+                stateLink === 'nips' ? 'link-active' : ''
+              } ${isSticky ? 'sticky' : ''}`}
               to='#'
+              onClick={() => handleLinkClick('nips')}
             >
               V2-NIPS
             </NavLink>
             <NavLink
-              className={`px-5 ${({ isActive }) =>
-                isActive ? 'link-active' : ''}`}
+              className={`mx-5 nav-link ${
+                stateLink === 'edr' ? 'link-active' : ''
+              } ${isSticky ? 'sticky' : ''}`}
               to='#'
+              onClick={() => handleLinkClick('edr')}
             >
               V2-EDR
             </NavLink>
             <NavLink
-              className={`px-5 ${({ isActive }) =>
-                isActive ? 'link-active' : ''}`}
+              className={`mx-5 nav-link ${
+                stateLink === 'nac' ? 'link-active' : ''
+              } ${isSticky ? 'sticky' : ''}`}
               to='#'
+              onClick={() => handleLinkClick('nac')}
             >
               V2-NAC
             </NavLink>
             <NavLink
-              className={`px-5 ${({ isActive }) =>
-                isActive ? 'link-active' : ''}`}
+              className={`mx-5 nav-link ${
+                stateLink === 'contact' ? 'link-active' : ''
+              } ${isSticky ? 'sticky' : ''}`}
               to='#'
+              onClick={() => handleLinkClick('contact')}
             >
               CONTACT
             </NavLink>
-            <button className={`px-5`}>LANGUAGE</button>
+            <button className='mx-5 nav-link'>LANGUAGE</button>
           </div>
+          <i
+            className='fa fa-bars mx-5 lg:hidden flex justify-center items-center text-xl cursor-pointer'
+            onClick={isShow}
+          ></i>
         </section>
       </nav>
       <section className='md:h-full container m-auto py-8 flex flex-col justify-start'>

@@ -9,7 +9,7 @@ function Function2() {
         offset={100}
         once
       >
-        <img className='md:h-2/3' src={function2Img} alt={function2Img} />
+        <img className='md:h-1/2' src={function2Img} alt={function2Img} />
       </LazyLoad>
       <div className='md:w-1/2 mx-4'>
         <h3 className='text-xl font-bold mb-2 my-4 md:my-0'>2. FUNCTIONS</h3>

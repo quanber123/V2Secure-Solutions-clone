@@ -5,7 +5,10 @@ import Function1 from './NAC/function-1';
 import Function2 from './NAC/function-2';
 function NAC() {
   return (
-    <section className='container m-auto bg-white text-darkBlue rounded-2xl my-12'>
+    <section
+      id='nac'
+      className='container m-auto bg-white text-darkBlue rounded-2xl my-12'
+    >
       <h1 className='underline text-center text-2xl font-bold pt-8 px-4'>
         NETWORK ACCESS CONTROL SYSTEM V2-NAC
       </h1>

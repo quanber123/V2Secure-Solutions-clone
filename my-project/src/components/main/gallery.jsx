@@ -10,17 +10,17 @@ function Gallery() {
       <h1 className='underline text-center text-2xl font-bold pt-8 px-4'>
         GALLERY
       </h1>
-      <div className='gallery-hover md:flex flex-wrap items-center p-8'>
-        <LazyLoad className='md:w-1/2 p-8' offset={100} once>
+      <div className='md:flex flex-wrap items-center p-8'>
+        <LazyLoad className='gallery md:w-1/2 p-8' offset={100} once>
           <img src={img1} alt={img1} />
         </LazyLoad>
-        <LazyLoad className='md:w-1/2 p-8' offset={100} once>
+        <LazyLoad className='gallery md:w-1/2 p-8' offset={100} once>
           <img src={img2} alt={img2} />
         </LazyLoad>
-        <LazyLoad className='md:w-1/2 p-8' offset={100} once>
+        <LazyLoad className='gallery md:w-1/2 p-8' offset={100} once>
           <img src={img3} alt={img3} />
         </LazyLoad>
-        <LazyLoad className='md:w-1/2 p-8' offset={100} once>
+        <LazyLoad className='gallery md:w-1/2 p-8' offset={100} once>
           <img src={img4} alt={img4} />
         </LazyLoad>
       </div>

@@ -11,20 +11,23 @@ import LazyLoad from 'react-lazyload';
 import System from './SIEM/system';
 function SIEM() {
   return (
-    <section className='bg-white text-darkBlue container m-auto rounded-2xl my-12'>
+    <section
+      id='siem'
+      className='bg-white text-darkBlue container m-auto rounded-2xl my-12'
+    >
       <h1 className='underline text-center text-2xl font-bold pt-8 px-4'>
         CENTRALIZED INFORMATION SECURITY MONITORING MANAGEMENT SYSTEM V2 - SIEM
       </h1>
       <Collections />
       <Network />
-      <div className='bg-blue mt-12 rounded-2xl p-8 flex flex-col md:flex-grow'>
+      <div className='bg-blue mt-12 rounded-2xl p-8 lg:flex lg:flex-grow'>
         <Processing />
         <div className='flex flex-col lg:w-3/5 mt-6 lg:mt-0'>
           <Threat />
           <Vulnerability />
         </div>
       </div>
-      <div className='p-8 flex flex-col lg:flex-grow items-center'>
+      <div className='p-8 flex flex-col lg:flex-row items-center'>
         <div className='lg:w-3/5'>
           <Security />
           <Incident />

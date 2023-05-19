@@ -35,8 +35,8 @@ function Minimum() {
       <h3 className='text-xl font-bold p-8 mb-2 mx-8'>
         8. MINIMUM PROCESSING CAPACITY
       </h3>
-      <div className='flex flex-col lg:flex-grow'>
-        <div className='w-2/3 text-lg px-3 py-4'>{contentMinimum}</div>
+      <div className='flex flex-col lg:flex-row'>
+        <div className='lg:w-2/3 text-lg px-3 py-4'>{contentMinimum}</div>
         <LazyLoad className='lg:w-1/3 p-4 lg:m-4 m-auto' offset={100} once>
           <img className='lg:w-3/4' src={minimumImg} alt={minimumImg} />
         </LazyLoad>

@@ -58,7 +58,7 @@ function Collections() {
       <h3 className='text-center text-xl font-bold'>
         1. REAL-TIME LOG COLLECTION AND MANAGEMENT
       </h3>
-      <div className='p-8 flex flex-col justify-between md:flex-grow'>
+      <div className='p-8 lg:flex justify-between lg:flex-grow'>
         <div className='lg:w-2/3'>
           <h4 className='font-bold text-xl'>
             <i className='fa fa-stop -ml-2 mr-2'></i>1.1. Collecting logs from

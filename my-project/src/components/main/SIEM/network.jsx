@@ -35,7 +35,7 @@ function Network() {
       <h3 className='text-center text-white text-xl font-bold'>
         2. NETWORK ATTACK DETECTION
       </h3>
-      <div className='flex flex-col md:flex-grow'>
+      <div className='lg:flex lg:flex-grow'>
         <LazyLoad className='lg:w-1/3' offset={100} once>
           <img className='h-full' src={netImg} alt={netImg} />
         </LazyLoad>

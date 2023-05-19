@@ -11,11 +11,14 @@ import System from './WAF/system';
 import Minimum from './WAF/minimum';
 function WAF() {
   return (
-    <section className='container m-auto bg-white text-darkBlue rounded-2xl'>
+    <section
+      id='waf'
+      className='container m-auto bg-white text-darkBlue rounded-2xl'
+    >
       <h1 className='underline text-center text-2xl font-bold pt-8 px-4 mb-3'>
         WEB APPLICATION FIREWALL SYSTEM V2 - WAF
       </h1>
-      <div className='flex flex-col md:flex-grow'>
+      <div className='flex flex-col md:flex-row'>
         <div className='lg:w-2/5'>
           <Security />
         </div>
@@ -25,7 +28,7 @@ function WAF() {
           <Processing />
         </div>
       </div>
-      <div className='p-8 flex flex-col md:flex-grow items-center'>
+      <div className='p-8 flex flex-col md:flex-row items-center'>
         <div className='lg:w-2/3'>
           <PreventAttacks />
           <IncidentAnalysis />
