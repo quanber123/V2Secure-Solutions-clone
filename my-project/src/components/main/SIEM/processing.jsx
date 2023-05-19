@@ -27,7 +27,7 @@ function Processing() {
     );
   });
   return (
-    <div className='w-2/5'>
+    <div className='md:w-2/5'>
       <h3 className='text-center text-white text-xl font-bold'>
         3. PROCESSING CORRELATION ANALYSIS
       </h3>

@@ -6,9 +6,9 @@ function System() {
       <h3 className='text-xl font-bold mb-2'>
         7. SYSTEM ADMINISTRATION FUNCTION
       </h3>
-      <div className='flex justify-between text-lg text-center'>
-        <div className='w-1/2 h-full'>
-          <p className='m-4 p-4 border border-white rounded-xl'>
+      <div className='flex flex-col lg:flex-grow lg:justify-between text-lg text-center'>
+        <div className='lg:w-1/2 h-full'>
+          <p className='w-0full m-4 p-4 border border-white rounded-xl'>
             DASHBOARD FUNCTION ALLOWS ADMINISTRATORS TO HAVE GENERAL INFORMATION
             ABOUT THE SYSTEM.
           </p>
@@ -22,7 +22,7 @@ function System() {
             FORMATS.
           </p>
         </div>
-        <div className='w-1/2'>
+        <div className='lg:w-1/2'>
           <p className='m-4 p-4 border border-white rounded-xl'>
             MANAGING SYSTEM ADMINISTRATOR ACCOUNTS.
           </p>

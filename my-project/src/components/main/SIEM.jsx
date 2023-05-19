@@ -17,19 +17,19 @@ function SIEM() {
       </h1>
       <Collections />
       <Network />
-      <div className='bg-blue mt-12 rounded-2xl p-8 flex'>
+      <div className='bg-blue mt-12 rounded-2xl p-8 flex flex-col md:flex-grow'>
         <Processing />
-        <div className='flex flex-col w-3/5'>
+        <div className='flex flex-col lg:w-3/5 mt-6 lg:mt-0'>
           <Threat />
           <Vulnerability />
         </div>
       </div>
-      <div className='p-8 flex items-center'>
-        <div className='w-3/5'>
+      <div className='p-8 flex flex-col lg:flex-grow items-center'>
+        <div className='lg:w-3/5'>
           <Security />
           <Incident />
         </div>
-        <LazyLoad className='w-2/5  h-full' offset={100} once>
+        <LazyLoad className='lg:w-2/5  h-full' offset={100} once>
           <img className='w-full' src={v2siem} alt={v2siem} />
         </LazyLoad>
       </div>

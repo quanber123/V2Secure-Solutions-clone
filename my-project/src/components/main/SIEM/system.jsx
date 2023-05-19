@@ -46,11 +46,11 @@ function System() {
       <h3 className='px-3 text-white text-xl font-bold'>
         8. SYSTEM ADMINISTRATION FUNCTION
       </h3>
-      <div className='flex items-center'>
-        <div className='w-2/3 text-white text-lg px-3 py-4'>
+      <div className='flex flex-col md:flex-grow items-center'>
+        <div className='md:w-2/3 text-white text-lg px-3 py-4'>
           {contentSystem}
         </div>
-        <LazyLoad className='w-1/3 h-full' offset={100} once>
+        <LazyLoad className='md:w-1/3 h-full' offset={100} once>
           <img className='w-full' src={systemImg} alt={systemImg} />
         </LazyLoad>
       </div>

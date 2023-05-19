@@ -113,7 +113,7 @@ function MultiTask() {
   return (
     <div className='px-8 pt-8'>
       <div className='relative'>
-        <h3 className='text-xl font-bold mb-2 mx-12'>
+        <h3 className='text-xl font-bold mb-2 md:mx-12'>
           1. MULTI-TASKING MANAGEMENT FUNCTIONS
         </h3>
         <LazyLoad
@@ -121,28 +121,28 @@ function MultiTask() {
           offset={100}
           once
         >
-          <img className='h-full' src={solutionImg} alt={solutionImg} />
+          <img className='lg:h-full' src={solutionImg} alt={solutionImg} />
         </LazyLoad>
         <div className='flex flex-wrap justify-between items-stretch'>
-          <div className='w-2/5 text-lg border border-darkBlue rounded-xl p-4 mx-12 mb-8'>
+          <div className='w-1/3 md:w-2/5 text-lg border border-darkBlue rounded-xl p-4 md:mx-12 m-2 mb-8'>
             <h4 className='font-semibold text-center'>
               TERMINAL MANAGEMENT FUNCTION
             </h4>
             <div>{contentTerminal}</div>
           </div>
-          <div className='w-2/5 text-lg border border-darkBlue rounded-xl p-4 mx-12 mb-8'>
+          <div className='w-1/3 md:w-2/5 text-lg border border-darkBlue rounded-xl p-4 md:mx-12 m-2 mb-8'>
             <h4 className='font-semibold text-center'>
               BEHAVIORAL NETWORK ATTACK DETECTION
             </h4>
             <div>{contentBehavioral}</div>
           </div>
-          <div className='w-2/5 text-lg border border-darkBlue rounded-xl p-4 m-12'>
+          <div className='w-1/3 md:w-2/5 text-lg border border-darkBlue rounded-xl p-4 md:m-12 m-2'>
             <h4 className='font-semibold text-center'>
               MALWARE DETECTION FUNCTION ACCORDING TO IDENTIFICATION SIGNS
             </h4>
             <div>{contentMalware}</div>
           </div>
-          <div className='w-2/5 text-lg border border-darkBlue rounded-xl p-4 m-12'>
+          <div className='w-1/3 md:w-2/5 text-lg border border-darkBlue rounded-xl p-4 md:m-12 m-2'>
             <h4 className='font-semibold text-center'>
               INFORMATION SECURITY INCIDENT RESPONSE FUNCTION
             </h4>

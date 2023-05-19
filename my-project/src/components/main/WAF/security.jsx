@@ -50,15 +50,15 @@ function Security() {
   ];
   const contentSecurity = security.map((content, index) => {
     return (
-      <p className='my-8 mx-4 text-lg' key={index}>
+      <p className='my-8 lg:mx-4 text-lg' key={index}>
         <i className='fa fa-star mr-4 text-sm'></i>
         {content.content}
       </p>
     );
   });
   return (
-    <div className='h-full bg-blue text-white rounded-tr-2xl p-8'>
-      <h3 className='text-xl font-bold pl-3'>3. WEB APPLICATION SECURITY</h3>
+    <div className='h-full bg-blue text-white rounded-tr-2xl lg:p-8'>
+      <h3 className='text-xl font-bold lg:pl-3'>3. WEB APPLICATION SECURITY</h3>
       <div className='text-lg'>{contentSecurity}</div>
     </div>
   );

@@ -36,10 +36,12 @@ function Deployment() {
   return (
     <div className='py-8 px-16'>
       <h3 className='text-xl font-bold'>4. DEPLOYMENT SUPPORT</h3>
-      <div className='flex'>
-        <div className='w-2/3 text-lg px-8 py-4'>{contentDeployment}</div>
-        <LazyLoad className='w-1/3 p-4 m-4' offset={100} once>
-          <img className='w-3/4' src={deploymentImg} alt={deploymentImg} />
+      <div className='md:flex'>
+        <div className='md:w-2/3 text-lg md:px-8 md:py-4'>
+          {contentDeployment}
+        </div>
+        <LazyLoad className='md:w-1/3 p-4 m-4' offset={100} once>
+          <img className='md:w-3/4' src={deploymentImg} alt={deploymentImg} />
         </LazyLoad>
       </div>
     </div>

@@ -58,8 +58,8 @@ function Collections() {
       <h3 className='text-center text-xl font-bold'>
         1. REAL-TIME LOG COLLECTION AND MANAGEMENT
       </h3>
-      <div className='p-8 flex justify-between'>
-        <div className='w-2/3'>
+      <div className='p-8 flex flex-col justify-between md:flex-grow'>
+        <div className='lg:w-2/3'>
           <h4 className='font-bold text-xl'>
             <i className='fa fa-stop -ml-2 mr-2'></i>1.1. Collecting logs from
             different souces:
@@ -73,7 +73,7 @@ function Collections() {
           </h4>
           <div className='pl-4 text-lg'>{contentAutomatic}</div>
         </div>
-        <LazyLoad className='w-1/3' offset={100} once>
+        <LazyLoad className='lg:w-1/3' offset={100} once>
           <img className='w-full h-full' src={logImg} alt={logImg} />
         </LazyLoad>
       </div>
