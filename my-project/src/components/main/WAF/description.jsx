@@ -5,7 +5,7 @@ import { useTranslation } from 'react-i18next';
 function Description() {
   const { t } = useTranslation();
   return (
-    <div className='p-8'>
+    <div className='p-8 Left'>
       <h3 className='text-xl font-bold my-2'>{t('WAF.title1')}</h3>
       <p className='leading-7 text-lg'>{t('WAF.content1')}</p>
       <LazyLoad

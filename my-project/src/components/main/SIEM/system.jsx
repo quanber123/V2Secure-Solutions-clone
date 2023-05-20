@@ -41,7 +41,7 @@ function System() {
     );
   });
   return (
-    <div className='ml-auto w-11/12 rounded-tl-2xl p-8 bg-blue'>
+    <div className='ml-auto w-11/12 rounded-tl-2xl p-8 bg-blue Left'>
       <h3 className='px-3 text-white text-xl font-bold'>{t('SIEM.title8')}</h3>
       <div className='flex flex-col md:flex-row items-center'>
         <div className='md:w-2/3 text-white text-lg px-3 py-4'>

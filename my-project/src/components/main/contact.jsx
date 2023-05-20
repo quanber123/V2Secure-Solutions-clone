@@ -10,7 +10,7 @@ function Contact() {
   return (
     <section
       id='contact'
-      className='container m-auto bg-white text-darkBlue rounded-2xl my-12'
+      className='container m-auto bg-white text-darkBlue rounded-2xl my-12 Left'
     >
       <h1 className='underline text-center text-2xl font-bold pt-8 px-4'>
         {t('about.title')}

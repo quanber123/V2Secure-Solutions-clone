@@ -26,7 +26,7 @@ function Security() {
     );
   });
   return (
-    <div className='text-darkBlue'>
+    <div className='text-darkBlue Right'>
       <h3 className='text-xl font-bold px-3'>{t('SIEM.title6')}</h3>
       <div className='text-lg px-3 py-4'>{contentSecurity}</div>
     </div>

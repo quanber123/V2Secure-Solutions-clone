@@ -22,7 +22,7 @@ function PreventAttacks() {
     );
   });
   return (
-    <div className='text-darkBlue'>
+    <div className='text-darkBlue Left'>
       <h3 className='text-xl font-bold px-3 mx-4'>{t('WAF.title5')}</h3>
       <div className='text-lg px-3 py-4'>{contentPreventAttacks}</div>
     </div>

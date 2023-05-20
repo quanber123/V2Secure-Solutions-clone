@@ -86,7 +86,9 @@ function Header() {
   return (
     <header className='h-screen'>
       <nav
-        className={`relative nav-item ${isSticky ? 'sticky' : ''} h-16 flex`}
+        className={`relative nav-item ${
+          isSticky ? 'sticky' : ''
+        } h-16 flex Sticky`}
       >
         <section className='h-full flex justify-between container m-auto'>
           <LazyLoad
@@ -172,12 +174,16 @@ function Header() {
       <section className='md:h-full container m-auto py-8 flex flex-col justify-start'>
         <div className='h-full sm:h-1/2 flex flex-col sm:flex-row md:justify-between items-start'>
           <div className='w-full md:w-1/2 text-center'>
-            <h1 className='text-4xl font-bold my-4'>{t('ecosystem.title1')}</h1>
-            <h2 className='text-2xl font-bold my-4'>{t('ecosystem.title2')}</h2>
-            <h3 className='text-xl my-4'>{t('ecosystem.title2')}</h3>
+            <h1 className='text-4xl font-bold my-4 Scale'>
+              {t('ecosystem.title1')}
+            </h1>
+            <h2 className='text-2xl font-bold my-4 Scale'>
+              {t('ecosystem.title2')}
+            </h2>
+            <h3 className='text-xl my-4 Scale'>{t('ecosystem.title2')}</h3>
           </div>
           <LazyLoad
-            className='w-full h-1/4 md:w-1/2 md:h-3/4 py-8 flex justify-center items-center'
+            className='w-full h-1/4 md:w-1/2 md:h-3/4 py-8 flex justify-center items-center Scale'
             offset={100}
             once
           >
@@ -186,7 +192,7 @@ function Header() {
         </div>
         <div className='hidden sm:flex items-center'>
           {ecosystems.map((ecosystem, index) => (
-            <article key={index} className='h-1/2 w-1/2 flex flex-col'>
+            <article key={index} className='h-1/2 w-1/2 flex flex-col Scale'>
               <LazyLoad className='m-auto h-3/4' key={index} offset={100} once>
                 <img
                   className=' h-full'

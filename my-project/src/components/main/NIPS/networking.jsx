@@ -76,7 +76,7 @@ function Networking() {
     );
   });
   return (
-    <div className='mx-8 px-3 py-4 border-b-2 border-l-2 border-r-2 border-blue rounded-b-xl'>
+    <div className='mx-8 px-3 py-4 border-b-2 border-l-2 border-r-2 border-blue rounded-b-xl Up'>
       <h3 className='text-xl font-bold px-3'>{t('NIPS.title1')}</h3>
       <div>
         <h3 className='text-xl font-bold px-3 my-2'>{t('NIPS.idea1')}</h3>

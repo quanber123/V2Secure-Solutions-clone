@@ -51,7 +51,7 @@ function Collections() {
     );
   });
   return (
-    <div className='p-8'>
+    <div className='p-8 Right'>
       <h3 className='text-center text-xl font-bold'>{t('SIEM.title1')}</h3>
       <div className='p-8 lg:flex justify-between lg:flex-grow'>
         <div className='lg:w-2/3'>

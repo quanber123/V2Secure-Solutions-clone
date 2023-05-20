@@ -5,7 +5,7 @@ import { useTranslation } from 'react-i18next';
 function Function2() {
   const { t } = useTranslation();
   return (
-    <div className='rounded-xl md:flex justify-between'>
+    <div className='rounded-xl md:flex justify-between Right'>
       <LazyLoad
         className='md:w-1/2 md:p-40 p-20 bg-blue flex justify-center items-center'
         offset={100}

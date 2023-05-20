@@ -3,19 +3,21 @@ import LazyLoad from 'react-lazyload';
 import accessImg from '../../images/access/v2-nac-1.46f479e902710bf3fbb5.png';
 import Function1 from './NAC/function-1';
 import Function2 from './NAC/function-2';
+import { useTranslation } from 'react-i18next';
 function NAC() {
+  const { t } = useTranslation();
   return (
     <section
       id='nac'
       className='container m-auto bg-white text-darkBlue rounded-2xl my-12'
     >
       <LazyLoad offset={100} once>
-        <h1 className='underline text-center text-2xl font-bold pt-8 px-4'>
-          NETWORK ACCESS CONTROL SYSTEM V2-NAC
+        <h1 className='underline text-center text-2xl font-bold pt-8 px-4 Scale'>
+          {t('NAC.title')}
         </h1>
       </LazyLoad>
       <LazyLoad
-        className='flex justify-center items-center m-8'
+        className='flex justify-center items-center m-8 Up'
         offset={100}
         once
       >

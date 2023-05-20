@@ -22,7 +22,7 @@ function IncidentAnalysis() {
     );
   });
   return (
-    <div>
+    <div className='Left'>
       <h3 className='text-xl font-bold lg:px-3 lg:mx-4'>
         6. INCIDENT INVESTIGATION AND ANALYSIS
       </h3>

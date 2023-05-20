@@ -26,7 +26,7 @@ function Threat() {
     );
   });
   return (
-    <div>
+    <div className='Scale'>
       <h3 className='text-center text-white text-xl font-bold'>
         {t('SIEM.title4')}
       </h3>

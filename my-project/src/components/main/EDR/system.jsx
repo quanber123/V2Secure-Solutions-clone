@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 function System() {
   const { t } = useTranslation();
   return (
-    <div className='ml-auto w-11/12 rounded-tl-2xl p-8 bg-blue'>
+    <div className='ml-auto w-11/12 rounded-tl-2xl p-8 bg-blue Left'>
       <h3 className='px-3 md:m-2 text-white text-xl font-bold text-center'>
         {t('EDR.title3')}
       </h3>

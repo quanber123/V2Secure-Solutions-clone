@@ -30,7 +30,7 @@ function Network() {
     );
   });
   return (
-    <div className='ml-auto w-11/12 rounded-l-2xl p-8 bg-blue'>
+    <div className='ml-auto w-11/12 rounded-l-2xl p-8 bg-blue Left'>
       <h3 className='text-center text-white text-xl font-bold'>
         {t('SIEM.title2')}
       </h3>

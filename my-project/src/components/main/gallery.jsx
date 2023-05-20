@@ -13,16 +13,16 @@ function Gallery() {
         {t('gallery')}
       </h1>
       <div className='md:flex flex-wrap items-center p-8'>
-        <LazyLoad className='gallery md:w-1/2 p-8' offset={100} once>
+        <LazyLoad className='gallery md:w-1/2 p-8 Scale' offset={100} once>
           <img src={img1} alt={img1} />
         </LazyLoad>
-        <LazyLoad className='gallery md:w-1/2 p-8' offset={100} once>
+        <LazyLoad className='gallery md:w-1/2 p-8 Scale' offset={100} once>
           <img src={img2} alt={img2} />
         </LazyLoad>
-        <LazyLoad className='gallery md:w-1/2 p-8' offset={100} once>
+        <LazyLoad className='gallery md:w-1/2 p-8 Scale' offset={100} once>
           <img src={img3} alt={img3} />
         </LazyLoad>
-        <LazyLoad className='gallery md:w-1/2 p-8' offset={100} once>
+        <LazyLoad className='gallery md:w-1/2 p-8 Scale' offset={100} once>
           <img src={img4} alt={img4} />
         </LazyLoad>
       </div>

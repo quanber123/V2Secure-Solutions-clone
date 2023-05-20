@@ -56,7 +56,7 @@ function Function1() {
     );
   });
   return (
-    <div className='h-full text-darkBlue p-8'>
+    <div className='h-full text-darkBlue p-8 Left'>
       <h3 className='text-xl font-bold pl-3'>1. FUNCTIONS</h3>
       <div className='text-lg'>{contentFunction1}</div>
     </div>

@@ -34,7 +34,7 @@ function Deployment() {
     );
   });
   return (
-    <div className='py-8 px-16'>
+    <div className='py-8 px-16 Right'>
       <h3 className='text-xl font-bold'>4. DEPLOYMENT SUPPORT</h3>
       <div className='md:flex'>
         <div className='md:w-2/3 text-lg md:px-8 md:py-4'>

@@ -103,7 +103,9 @@ function MultiTask() {
   return (
     <div className='px-8 pt-8'>
       <div className='relative'>
-        <h3 className='text-xl font-bold mb-2 md:mx-12'>{t('EDR.title1')}</h3>
+        <h3 className='text-xl font-bold mb-2 md:mx-12 Scale'>
+          {t('EDR.title1')}
+        </h3>
         <LazyLoad
           className='absolute z-50 w-full h-full top-0 left-0 m-auto flex justify-center items-center'
           offset={100}
@@ -112,25 +114,25 @@ function MultiTask() {
           <img className='lg:h-full' src={solutionImg} alt={solutionImg} />
         </LazyLoad>
         <div className='flex flex-wrap justify-between items-stretch'>
-          <div className='w-1/3 md:w-2/5 text-lg border border-darkBlue rounded-xl p-4 md:mx-12 m-2 mb-8'>
+          <div className='w-1/3 md:w-2/5 text-lg border border-darkBlue rounded-xl p-4 md:mx-12 m-2 mb-8 Scale'>
             <h4 className='font-semibold text-center'>{t('EDR.idea1')}</h4>
             <div>{contentTerminal}</div>
           </div>
-          <div className='w-1/3 md:w-2/5 text-lg border border-darkBlue rounded-xl p-4 md:mx-12 m-2 mb-8'>
+          <div className='w-1/3 md:w-2/5 text-lg border border-darkBlue rounded-xl p-4 md:mx-12 m-2 mb-8 Scale'>
             <h4 className='font-semibold text-center'>{t('EDR.idea2')}</h4>
             <div>{contentBehavioral}</div>
           </div>
-          <div className='w-1/3 md:w-2/5 text-lg border border-darkBlue rounded-xl p-4 md:m-12 m-2'>
+          <div className='w-1/3 md:w-2/5 text-lg border border-darkBlue rounded-xl p-4 md:m-12 m-2 Scale'>
             <h4 className='font-semibold text-center'>{t('EDR.idea3')}</h4>
             <div>{contentMalware}</div>
           </div>
-          <div className='w-1/3 md:w-2/5 text-lg border border-darkBlue rounded-xl p-4 md:m-12 m-2'>
+          <div className='w-1/3 md:w-2/5 text-lg border border-darkBlue rounded-xl p-4 md:m-12 m-2 Scale'>
             <h4 className='font-semibold text-center'>{t('EDR.idea4')}</h4>
             <div>{contentInformation}</div>
           </div>
         </div>
       </div>
-      <div className='text-lg p-8 mx-4'>
+      <div className='text-lg p-8 mx-4 Scale'>
         <p>{t('EDR.content21')}</p>
       </div>
     </div>

@@ -59,7 +59,7 @@ function Security() {
     );
   });
   return (
-    <div className='h-full bg-blue text-white rounded-tr-2xl lg:p-8'>
+    <div className='h-full bg-blue text-white rounded-tr-2xl lg:p-8 Right'>
       <h3 className='text-xl font-bold lg:pl-3'>{t('WAF.title3')}</h3>
       <div className='text-lg'>{contentSecurity}</div>
     </div>

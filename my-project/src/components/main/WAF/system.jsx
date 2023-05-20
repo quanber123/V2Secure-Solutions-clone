@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 function System() {
   const { t } = useTranslation();
   return (
-    <div className='rounded-xl bg-blue text-white p-8 my-4 mx-8'>
+    <div className='rounded-xl bg-blue text-white p-8 my-4 mx-8 Right'>
       <h3 className='text-xl font-bold mb-2'>{t('WAF.title7')}</h3>
       <div className='flex flex-col lg:flex-row lg:justify-between text-lg text-center'>
         <div className='lg:w-1/2 h-full'>

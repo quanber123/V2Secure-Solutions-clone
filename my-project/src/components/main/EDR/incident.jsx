@@ -24,7 +24,7 @@ function Incident() {
     );
   });
   return (
-    <div className='px-8 pt-8'>
+    <div className='px-8 pt-8 Right'>
       <h3 className='text-xl font-bold px-3 mx-4'>{t('EDR.title2')}</h3>
       <div className='text-lg px-8 py-4'>{contentIncident}</div>
       <LazyLoad className='flex justify-center items-center' offset={100} once>
