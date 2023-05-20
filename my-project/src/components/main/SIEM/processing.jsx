@@ -1,21 +1,17 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 function Processing() {
+  const { t } = useTranslation();
   const processing = [
     {
-      content:
-        'Allowance of establishing rules to automatically conduct correlation analysis of various log sources to detect network attacks.',
+      content: t('SIEM.content12'),
     },
     {
-      content:
-        'Abnormal behavior detection to accurately detect the target and being attacked based on the ability to automatically analyze the alerts received from the system.',
+      content: t('SIEM.content13'),
     },
     {
-      content:
-        'Administrator permissions to generate a set of rules to detect anomalous user behavior and abnormal network connections on the system.',
-    },
-    {
-      content: 'Setting up available rules to detect the following behaviors:',
+      content: t('SIEM.content14'),
     },
   ];
   const contentProcessing = processing.map((content, index) => {
@@ -29,20 +25,15 @@ function Processing() {
   return (
     <div className='lg:w-2/5'>
       <h3 className='text-center text-white text-xl font-bold'>
-        3. PROCESSING CORRELATION ANALYSIS
+        {t('SIEM.title3')}
       </h3>
       <div className='text-white text-lg'>
         <div className='px-4'>{contentProcessing}</div>
         <ul>
-          <li className='px-12'>- Hacker's networking scanning behavior.</li>
-          <li className='px-12'>
-            - Attack behavior from a source address when conducting different
-            type of network attacks to the protected system.
-          </li>
-          <li className='px-12'>- Web application attack behavior.</li>
-          <li className='px-12'>
-            - Network attack by using malicious code, malware.
-          </li>
+          <li className='px-12'>{t('SIEM.content15')}</li>
+          <li className='px-12'>{t('SIEM.content16')}</li>
+          <li className='px-12'>{t('SIEM.content17')}</li>
+          <li className='px-12'>{t('SIEM.content18')}</li>
         </ul>
       </div>
     </div>

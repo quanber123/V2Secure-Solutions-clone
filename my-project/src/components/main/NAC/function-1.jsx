@@ -1,57 +1,50 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 function Function1() {
+  const { t } = useTranslation();
   const function1 = [
     {
-      content:
-        'SYSTEM POLICY OF INTERACTION MECHANISM WITH NETWORK DEVICES (ROUTER, SWITCH), SECURITY DEVICE (FIREWALL) AND OPERATING SYSTEM (WINDOWS, LINUX,...) TO MANAGE ACCESS.',
+      content: t('NAC.content11'),
     },
     {
-      content:
-        'THE FUNCTION OF AUTOMATICALLY LEARNING NETWORK DEVICE COMPONENTS IN THE SYSTEM.',
+      content: t('NAC.content12'),
     },
     {
-      content:
-        'THE FUNCTION OF AUTOMATICALLY PROVIDING NETWORK CONNECTION INFORMATION BASED ON SYSTEM POLICY.',
+      content: t('NAC.content13'),
     },
     {
-      content:
-        'AUTHENTICATION FUNCTION WHEN ACCESSING NETWORK AUTHENTICATION PROXY.',
+      content: t('NAC.content14'),
     },
     {
-      content:
-        'CONTROLLING ACCESS VIA ACCESS CONTROL LIST (ACLS), VLAN AND TCP RESET.',
+      content: t('NAC.content15'),
     },
     {
-      content: 'NETWORK ACCESS LOGS FOR INVESTIGATION.',
+      content: t('NAC.content16'),
     },
     {
-      content:
-        "MONITORING THE BEHAVIOR AND ENFORCEMENT OF THE DEVICE'S INFORMATION SECURITY POLICY.",
+      content: t('NAC.content17'),
     },
     {
-      content: 'DETECTING AND MANAGING DEVICES IN THE NETWORK.',
+      content: t('NAC.content18'),
     },
     {
-      content: 'DISPLAY OF NETWORK BLOCK NOTIFICATIONS TO USERS.',
+      content: t('NAC.content19'),
     },
     {
-      content:
-        'DEVICE CLASSIFICATION DUE TO IP RANGE OR SWITCH AND DECENTRALIZATION OF ADMIN RIGHTS BY DEVICE GROUP.',
+      content: t('NAC.content20'),
     },
     {
-      content:
-        'AUTOMATICALLY WHITELIST THE DEVICES BY MAC ADDRESS, DEVICE TYPE.',
+      content: t('NAC.content21'),
     },
     {
-      content: 'EXPORT POLICY VIOLATION REPORT.',
+      content: t('NAC.content22'),
     },
     {
-      content:
-        'SUPPORT CENTRALIZED SWITCH CONFIGURATION: CONTROLLING PORT, CHANGING VLAN, ...',
+      content: t('NAC.content23'),
     },
     {
-      content: 'INTEGRATED SIEM CENTRALIZED MONITORING SYSTEM.',
+      content: t('NAC.content24'),
     },
   ];
   const contentFunction1 = function1.map((content, index) => {

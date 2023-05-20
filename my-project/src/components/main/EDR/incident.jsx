@@ -1,18 +1,18 @@
 import React from 'react';
 import LazyLoad from 'react-lazyload';
 import incidentImg from '../../../images/solutions/v2-edr-2.ee17e416a2b05aad6ef4.png';
+import { useTranslation } from 'react-i18next';
 function Incident() {
+  const { t } = useTranslation();
   const incident = [
     {
-      content: 'Allowance of in-depth log analysis for each information field.',
+      content: t('EDR.content22'),
     },
     {
-      content:
-        'Allowance of creation correlation rules to detect and investigate attacks and incidents.',
+      content: t('EDR.content23'),
     },
     {
-      content:
-        'Allowance of incident analysis and investigation through an intuitive interface.',
+      content: t('EDR.content24'),
     },
   ];
   const contentIncident = incident.map((content, index) => {
@@ -25,9 +25,7 @@ function Incident() {
   });
   return (
     <div className='px-8 pt-8'>
-      <h3 className='text-xl font-bold px-3 mx-4'>
-        2. INCIDENT INVESTIGATION AND ANALYSIS
-      </h3>
+      <h3 className='text-xl font-bold px-3 mx-4'>{t('EDR.title2')}</h3>
       <div className='text-lg px-8 py-4'>{contentIncident}</div>
       <LazyLoad className='flex justify-center items-center' offset={100} once>
         <img className='h-4/5' src={incidentImg} alt={incidentImg} />

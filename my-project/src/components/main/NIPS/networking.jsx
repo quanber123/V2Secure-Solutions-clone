@@ -1,67 +1,62 @@
 import React from 'react';
 import LazyLoad from 'react-lazyload';
 import systemImg from '../../../images/generation/v2-nips-1-3.3a965cfbc9f043c3bedb.png';
+import { useTranslation } from 'react-i18next';
 function Networking() {
+  const { t } = useTranslation();
   const detectionSignatures = [
     {
-      content:
-        'The system has ability to analyze the network connection to detect network attacks without affecting the operation of the protected system.',
+      content: t('NIPS.content1'),
     },
     {
-      content:
-        'Detecting abnormal activities on the system based on the attack detection signature set.',
+      content: t('NIPS.content2'),
     },
     {
-      content: 'Types of network attack that target users inside the system.',
+      content: t('NIPS.content3'),
     },
     {
-      content: 'Denial of service attack (Dos/DDoS).',
+      content: t('NIPS.content4'),
     },
     {
-      content: 'Attack that violates system policy.',
+      content: t('NIPS.content5'),
     },
     {
-      content: 'Anomalous network connection detected on the system.',
+      content: t('NIPS.content6'),
     },
     {
-      content: 'Network attack using Shellcode.',
+      content: t('NIPS.content7'),
     },
     {
-      content:
-        'Detecting malicious software activities over the network environment.',
+      content: t('NIPS.content8'),
     },
     {
-      content: 'Network-scan attack.',
+      content: t('NIPS.content9'),
     },
     {
-      content: 'Attacks on operating systems (Linux, Windows,..).',
+      content: t('NIPS.content10'),
     },
     {
-      content: 'Attacks on Web server (IIS, Apache, Oracle,...)',
+      content: t('NIPS.content11'),
     },
     {
-      content: 'Attacks on the Database server (Mssql, Mysql, Oracle,...)',
+      content: t('NIPS.content12'),
     },
     {
-      content: 'Attacks on the Email server (POP3, IMAP, SMTP,...)',
+      content: t('NIPS.content13'),
     },
     {
-      content:
-        'Attacks on Web Application (SQL/XSS/Command Line Injection, HTTP detour attack, Inclusion Vulnerabili-ties, Brute Force,...)',
+      content: t('NIPS.content14'),
     },
   ];
   const anomalousActivity = [
     {
-      content:
-        'The Behavior Detection function allows detections of anomalous behavior to accurately detect attackers and attacked objects based on the ability to automatically analyze warnings received from the system.',
+      content: t('NIPS.content15'),
     },
     {
-      content:
-        'The Behavior Detection function allows administrators to establish a set of rules in order to detect anomalous user behavior and abnormal network connections on the system.',
+      content: t('NIPS.content16'),
     },
     {
-      content:
-        'The Behavior Detection function is set up with available rule sets to detect the following behaviors:',
+      content: t('NIPS.content17'),
     },
   ];
   const contentDetectionSignatures = detectionSignatures.map(
@@ -82,37 +77,25 @@ function Networking() {
   });
   return (
     <div className='mx-8 px-3 py-4 border-b-2 border-l-2 border-r-2 border-blue rounded-b-xl'>
-      <h3 className='text-xl font-bold px-3'>1. Networking attack detection</h3>
+      <h3 className='text-xl font-bold px-3'>{t('NIPS.title1')}</h3>
       <div>
-        <h3 className='text-xl font-bold px-3 my-2'>
-          1.1. Detecting network attacks based on a set of attack detection
-          signatures
-        </h3>
+        <h3 className='text-xl font-bold px-3 my-2'>{t('NIPS.idea1')}</h3>
         <div className='text-lg'>{contentDetectionSignatures}</div>
       </div>
       <div>
-        <h3 className='text-xl font-bold px-3 my-2'>
-          1.2. Detecting network attacks based on anomalous activity on the
-          system
-        </h3>
+        <h3 className='text-xl font-bold px-3 my-2'>{t('NIPS.idea2')}</h3>
         <div className='text-lg'>
           {contentAnomalousActivity}
           <ul className='px-6'>
-            <li>- Hacker's networking scanning behavior.</li>
-            <li>
-              - Attack behavior from a source address when conducting different
-              type of network attacks to the protected system.
-            </li>
-            <li>- Web application attack behavior.</li>
-            <li>- Network attack by using malicious code, malware.</li>
+            <li>{t('NIPS.content18')}</li>
+            <li>{t('NIPS.content19')}</li>
+            <li>{t('NIPS.content20')}</li>
+            <li>{t('NIPS.content21')}</li>
           </ul>
         </div>
       </div>
       <div>
-        <h3 className='text-xl font-bold px-3 my-2'>
-          1.3. Detecting malicious behavior based on system anomalous network
-          connection
-        </h3>
+        <h3 className='text-xl font-bold px-3 my-2'>{t('NIPS.idea3')}</h3>
         <LazyLoad className='flex justify-center my-4' offset={100} once>
           <img src={systemImg} alt={systemImg} />
         </LazyLoad>

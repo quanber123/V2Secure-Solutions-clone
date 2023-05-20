@@ -1,51 +1,53 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 function Security() {
+  const { t } = useTranslation();
   const security = [
     {
-      content: 'FILTERING PACKETS BY BLACKLIST.',
+      content: t('WAF.content9'),
     },
     {
-      content: 'IP ADDRESS FILTERING.',
+      content: t('WAF.content10'),
     },
     {
-      content: 'IP ADDRESS CLASSIFICATION BY GEOGRAPHIC COORDINATES.',
+      content: t('WAF.content11'),
     },
     {
-      content: "APPLY OWASP'S TOP 10.",
+      content: t('WAF.content12'),
     },
     {
-      content: 'CSS ATTACK PREVENTION.',
+      content: t('WAF.content13'),
     },
     {
-      content: 'CSRF ATTACK PREVENTION.',
+      content: t('WAF.content14'),
     },
     {
-      content: 'SESSION HIJACKING ATTACK PREVENTION.',
+      content: t('WAF.content15'),
     },
     {
-      content: 'BUILT-IN VULNERABILITY SCANNING FEATURE.',
+      content: t('WAF.content16'),
     },
     {
-      content: 'MALWARE DETECTION.',
+      content: t('WAF.content17'),
     },
     {
-      content: 'VIRTUAL PATCHING.',
+      content: t('WAF.content18'),
     },
     {
-      content: 'BRUTEFORCE ATTACK PREVENTION.',
+      content: t('WAF.content19'),
     },
     {
-      content: 'SQLI ATTACK DETECTION.',
+      content: t('WAF.content21'),
     },
     {
-      content: 'STATEFUL FIREWALL INTEGRATION AT LAYER 4.',
+      content: t('WAF.content22'),
     },
     {
-      content: 'DOS ATTACK PREVENTION.',
+      content: t('WAF.content23'),
     },
     {
-      content: 'DEFACE ATTACK PREVENTION.',
+      content: t('WAF.content24'),
     },
   ];
   const contentSecurity = security.map((content, index) => {
@@ -58,7 +60,7 @@ function Security() {
   });
   return (
     <div className='h-full bg-blue text-white rounded-tr-2xl lg:p-8'>
-      <h3 className='text-xl font-bold lg:pl-3'>3. WEB APPLICATION SECURITY</h3>
+      <h3 className='text-xl font-bold lg:pl-3'>{t('WAF.title3')}</h3>
       <div className='text-lg'>{contentSecurity}</div>
     </div>
   );

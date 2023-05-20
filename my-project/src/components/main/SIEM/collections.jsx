@@ -1,42 +1,39 @@
 import React from 'react';
 import LazyLoad from 'react-lazyload';
 import logImg from '../../../images/information/v2-siem-1.34657cc7dee593f2419b.png';
+import { useTranslation } from 'react-i18next';
 function Collections() {
+  const { t } = useTranslation();
   const collecting = [
     {
       id: 1,
-      content:
-        'Network devices, security devices: Router, Switch, Firewall/IPS/IDS, Sandbox WAF, Network APT.',
+      content: t('SIEM.content1'),
     },
     {
       id: 2,
-      content: 'System servers on different platforms: Windows, Linux, Unix.',
+      content: t('SIEM.content2'),
     },
     {
       id: 3,
-      content:
-        'Applications serving the operation of the system: DHCP, DNS, NTP, VPN, Proxy Server,...; Application service providers: Web, Mail, FPT, TFTP and database management systems Oracle, SQL, IP Camera.',
+      content: t('SIEM.content3'),
     },
     {
       id: 4,
-      content:
-        'Terminal devices: User computer, printer, fax machine, IP Phone, IP Camera.',
+      content: t('SIEM.content4'),
     },
     {
       id: 5,
-      content:
-        "Monitoring on the transmission line: Edge monitoring point at the edge router's connection interface to external networks; monitoring point creating each network area of the system.",
+      content: t('SIEM.content5'),
     },
   ];
   const automatic = [
     {
       id: 1,
-      content:
-        'Automatically normalize log data received from devices and applications.',
+      content: t('SIEM.content6'),
     },
     {
       id: 2,
-      content: ' Automatically update new log formats from Cloud',
+      content: t('SIEM.content7'),
     },
   ];
   const contentCollecting = collecting.map((content, index) => {
@@ -55,21 +52,19 @@ function Collections() {
   });
   return (
     <div className='p-8'>
-      <h3 className='text-center text-xl font-bold'>
-        1. REAL-TIME LOG COLLECTION AND MANAGEMENT
-      </h3>
+      <h3 className='text-center text-xl font-bold'>{t('SIEM.title1')}</h3>
       <div className='p-8 lg:flex justify-between lg:flex-grow'>
         <div className='lg:w-2/3'>
           <h4 className='font-bold text-xl'>
-            <i className='fa fa-stop -ml-2 mr-2'></i>1.1. Collecting logs from
-            different souces:
+            <i className='fa fa-stop -ml-2 mr-2'></i>
+            {t('SIEM.idea1')}
           </h4>
           <div className='border-l-2  pl-4 pb-4 text-lg'>
             {contentCollecting}
           </div>
           <h4 className='font-bold text-xl'>
-            <i className='fa fa-stop -ml-2 mr-2'></i>1.2. Automatic log
-            normalization:
+            <i className='fa fa-stop -ml-2 mr-2'></i>
+            {t('SIEM.idea2')}
           </h4>
           <div className='pl-4 text-lg'>{contentAutomatic}</div>
         </div>

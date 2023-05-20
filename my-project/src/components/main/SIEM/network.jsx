@@ -2,22 +2,21 @@ import React from 'react';
 import LazyLoad from 'react-lazyload';
 import netImg from '../../../images/information/v2-siem-2.582ebba760712039844a.jpg';
 import guard from '../../../images/information/guard.png';
+import { useTranslation } from 'react-i18next';
 function Network() {
+  const { t } = useTranslation();
   const network = [
     {
-      content:
-        'Detecting network attack based on Web application access log analysis.',
+      content: t('SIEM.content8'),
     },
     {
-      content: 'Detecting malicious domain queries based on DNS log analysis.',
+      content: t('SIEM.content9'),
     },
     {
-      content:
-        'Detecting connections to malicious IP addresses based on device and operating system connection log analysis.',
+      content: t('SIEM.content10'),
     },
     {
-      content:
-        'Automatic updates from the Cloud about web application attack detection, list of malicious domains and addresses.',
+      content: t('SIEM.content11'),
     },
   ];
   const contentNetwork = network.map((content, index) => {
@@ -33,7 +32,7 @@ function Network() {
   return (
     <div className='ml-auto w-11/12 rounded-l-2xl p-8 bg-blue'>
       <h3 className='text-center text-white text-xl font-bold'>
-        2. NETWORK ATTACK DETECTION
+        {t('SIEM.title2')}
       </h3>
       <div className='lg:flex lg:flex-grow'>
         <LazyLoad className='lg:w-1/3' offset={100} once>

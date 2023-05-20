@@ -1,37 +1,36 @@
 import React from 'react';
 import LazyLoad from 'react-lazyload';
 import systemImg from '../../../images/information/v2-siem-8.ba484ce56ada73f54a8b.png';
+import { useTranslation } from 'react-i18next';
 function System() {
+  const { t } = useTranslation();
   const system = [
     {
-      content:
-        'The Dashboard function allows administrators to have general information about the system.',
+      content: t('SIEM.content34'),
     },
     {
-      content:
-        'The Event Map function allows real-time visualization of network attacks.',
+      content: t('SIEM.content35'),
     },
     {
-      content:
-        'The report generation function allows administrators to create customized reports according to specific conditions in different formats.',
+      content: t('SIEM.content36'),
     },
     {
-      content: 'System configuration management.',
+      content: t('SIEM.content37'),
     },
     {
-      content: 'Managing system administrator accounts.',
+      content: t('SIEM.content38'),
     },
     {
-      content: 'Managing system software updates from the Cloud.',
+      content: t('SIEM.content39'),
     },
     {
-      content: 'System status information.',
+      content: t('SIEM.content40'),
     },
     {
-      content: 'Managing logs operating on the system.',
+      content: t('SIEM.content41'),
     },
     {
-      content: 'System management via Console và SSH',
+      content: t('SIEM.content42'),
     },
   ];
   const contentSystem = system.map((content, index) => {
@@ -43,9 +42,7 @@ function System() {
   });
   return (
     <div className='ml-auto w-11/12 rounded-tl-2xl p-8 bg-blue'>
-      <h3 className='px-3 text-white text-xl font-bold'>
-        8. SYSTEM ADMINISTRATION FUNCTION
-      </h3>
+      <h3 className='px-3 text-white text-xl font-bold'>{t('SIEM.title8')}</h3>
       <div className='flex flex-col md:flex-row items-center'>
         <div className='md:w-2/3 text-white text-lg px-3 py-4'>
           {contentSystem}

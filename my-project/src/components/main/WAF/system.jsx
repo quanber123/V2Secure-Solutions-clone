@@ -1,42 +1,38 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 function System() {
+  const { t } = useTranslation();
   return (
     <div className='rounded-xl bg-blue text-white p-8 my-4 mx-8'>
-      <h3 className='text-xl font-bold mb-2'>
-        7. SYSTEM ADMINISTRATION FUNCTION
-      </h3>
+      <h3 className='text-xl font-bold mb-2'>{t('WAF.title7')}</h3>
       <div className='flex flex-col lg:flex-row lg:justify-between text-lg text-center'>
         <div className='lg:w-1/2 h-full'>
-          <p className='w-0full m-4 p-4 border border-white rounded-xl'>
-            DASHBOARD FUNCTION ALLOWS ADMINISTRATORS TO HAVE GENERAL INFORMATION
-            ABOUT THE SYSTEM.
+          <p className='full m-4 p-4 border border-white rounded-xl'>
+            {t('WAF.content31')}
           </p>
           <p className='m-4 p-4 border border-white rounded-xl'>
-            BEHAVIOR BLOCKING FUNCTION ENABLES MANAGEMENT OF BEHAVIORAL ATTACK
-            DETECTION AND PREVENTION ALERTS.
+            {t('WAF.content32')}
           </p>
           <p className='m-4 p-4 border border-white rounded-xl'>
-            REPORT GENERATION FUNCTION ALLOWS ADMINISTRATORS TO CREATE
-            CUSTOMIZED REPORTS ACCORDING TO SPECIFIC CONDITIONS IN DIFFERENT
-            FORMATS.
+            {t('WAF.content33')}
           </p>
         </div>
         <div className='lg:w-1/2'>
           <p className='m-4 p-4 border border-white rounded-xl'>
-            MANAGING SYSTEM ADMINISTRATOR ACCOUNTS.
+            {t('WAF.content34')}
           </p>
           <p className='m-4 p-4 border border-white rounded-xl'>
-            MANAGING SYSTEM SOFTWARE UPDATES FROM THE CLOUD.
+            {t('WAF.content35')}
           </p>
           <p className='m-4 p-4 border border-white rounded-xl'>
-            SYSTEM STATUS INFORMATION.
+            {t('WAF.content36')}
           </p>
           <p className='m-4 p-4 border border-white rounded-xl'>
-            MANAGING LOGS OPERATING ON THE SYSTEM.
+            {t('WAF.content37')}
           </p>
           <p className='m-4 p-4 border border-white rounded-xl'>
-            SYSTEM MANAGEMENT VIA CONSOLE VÀ SSH.
+            {t('WAF.content38')}
           </p>
         </div>
       </div>

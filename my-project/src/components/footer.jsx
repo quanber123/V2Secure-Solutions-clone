@@ -1,9 +1,10 @@
 import React from 'react';
-
+import { useTranslation } from 'react-i18next';
 function Footer() {
+  const { t } = useTranslation();
   return (
     <footer className='container m-auto font-bold text-lg text-center p-4'>
-      Created by V2Secure Solutions. © 2022
+      {t('copyright')}
     </footer>
   );
 }

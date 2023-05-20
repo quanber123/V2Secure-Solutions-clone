@@ -1,25 +1,27 @@
 import React from 'react';
 import LazyLoad from 'react-lazyload';
 import minimumImg from '../../../images/application/download.png';
+import { useTranslation } from 'react-i18next';
 function Minimum() {
+  const { t } = useTranslation();
   const minimum = [
     {
-      content: 'Throughput: 200 Mbps',
+      content: t('WAF.content39'),
     },
     {
-      content: 'Backend Servers Supported: 10-25',
+      content: t('WAF.content40'),
     },
     {
-      content: 'HTTP Transactions Per Second: 30,000',
+      content: t('WAF.content41'),
     },
     {
-      content: 'HTTP Connections Per Second: 10,000',
+      content: t('WAF.content42'),
     },
     {
-      content: 'HTTPS Transactions Per Second: 12,000',
+      content: t('WAF.content43'),
     },
     {
-      content: 'Concurrent Connections: 500,000',
+      content: t('WAF.content44'),
     },
   ];
   const contentMinimum = minimum.map((content, index) => {
@@ -32,9 +34,7 @@ function Minimum() {
   });
   return (
     <div>
-      <h3 className='text-xl font-bold p-8 mb-2 mx-8'>
-        8. MINIMUM PROCESSING CAPACITY
-      </h3>
+      <h3 className='text-xl font-bold p-8 mb-2 mx-8'>{t('WAF.title8')}</h3>
       <div className='flex flex-col lg:flex-row'>
         <div className='lg:w-2/3 text-lg px-3 py-4'>{contentMinimum}</div>
         <LazyLoad className='lg:w-1/3 p-4 lg:m-4 m-auto' offset={100} once>

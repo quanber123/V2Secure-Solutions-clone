@@ -1,16 +1,16 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 function IncidentAnalysis() {
+  const { t } = useTranslation();
   const incidentAnalysis = [
     {
-      content: 'Allowance of in-depth log analysis for each information field.',
+      content: t('WAF.content25'),
     },
     {
-      content:
-        'Allowance of creation correlation rules to detect and investigate attacks and incidents.',
+      content: t('WAF.content26'),
     },
     {
-      content:
-        'Allowance of incident analysis and investigation through an intuitive interface.',
+      content: t('WAF.content27'),
     },
   ];
   const contentIncidentAnalysis = incidentAnalysis.map((content, index) => {

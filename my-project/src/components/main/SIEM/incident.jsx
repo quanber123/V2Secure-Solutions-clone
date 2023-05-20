@@ -1,21 +1,21 @@
 import React from 'react';
 import LazyLoad from 'react-lazyload';
 import guard from '../../../images/information/guardblack.png';
+import { useTranslation } from 'react-i18next';
 function Incident() {
+  const { t } = useTranslation();
   const incident = [
     {
-      content: 'ALLOWANCE OF CREATION CORRELATION RULES.',
+      content: t('SIEM.content30'),
     },
     {
-      content:
-        'ALLOWANCE OF DETECTION AND INVESTIGATION OF ATTACKS AND INCIDENTS.',
+      content: t('SIEM.content31'),
     },
     {
-      content: 'ALLOWANCE OF IN-DEPTH LOG ANALYSIS FOR EACH INFORMATION FIELD.',
+      content: t('SIEM.content32'),
     },
     {
-      content:
-        'ALLOWANCE OF INCIDENT ANALYSIS AND INVESTIGATION THROUGH AN INTUITIVE INTERFACE.',
+      content: t('SIEM.content33'),
     },
   ];
   const contentIncident = incident.map((content, index) => {
@@ -30,9 +30,7 @@ function Incident() {
   });
   return (
     <div className='text-darkBlue'>
-      <h3 className='text-xl font-bold px-3'>
-        7. INCIDENT INVESTIGATION AND ANALYSIS
-      </h3>
+      <h3 className='text-xl font-bold px-3'>{t('SIEM.title7')}</h3>
       <div className='text-lg px-3 py-4'>{contentIncident}</div>
     </div>
   );

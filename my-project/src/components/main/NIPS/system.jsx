@@ -1,50 +1,44 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 function System() {
+  const { t } = useTranslation();
   return (
     <div className='rounded-xl p-8 my-4 mx-8'>
-      <h3 className='text-xl font-bold mb-2'>
-        3. SYSTEM ADMINISTRATION FUNCTION
-      </h3>
+      <h3 className='text-xl font-bold mb-2'>{t('NIPS.title3')}</h3>
       <div className='block md:flex md:flex-grow md:justify-between text-lg text-center'>
         <div className='md:w-1/2 h-full'>
           <p className='m-4 p-4 border border-darkBlue rounded-xl'>
-            THE DASHBOARD FUNCTION ALLOWS ADMINISTRATORS TO HAVE GENERAL
-            INFORMATION ABOUT THE SYSTEM.
+            {t('NIPS.content24')}
           </p>
           <p className='m-4 p-4 border border-darkBlue rounded-xl'>
-            THE BEHAVIOR BLOCKING FUNCTION ENABLES MANAGEMENT OF BEHAVIORAL
-            ATTACK DETECTION AND PREVENTION ALERTS.
+            {t('NIPS.content25')}
           </p>
           <p className='m-4 p-4 border border-darkBlue rounded-xl'>
-            THE REPORT GENERATION FUNCTION ALLOWS ADMINISTRATORS TO CREATE
-            CUSTOMIZED REPORTS ACCORDING TO SPECIFIC CONDITIONS IN DIFFERENT
-            FORMATS.
+            {t('NIPS.content26')}
           </p>
           <p className='m-4 p-4 border border-darkBlue rounded-xl'>
-            SYSTEM CONFIGURATION MANAGEMENT
+            {t('NIPS.content27')}
           </p>
         </div>
         <div className='hidden md:flex justify-center items-center '>
-          <p className='rotate-text font-bold text-xl'>
-            ANALYSIS AND REPORTING
-          </p>
+          <p className='rotate-text font-bold text-xl'>{t('NIPS.content28')}</p>
         </div>
         <div className='md:w-1/2'>
           <p className='m-4 p-4 border border-darkBlue rounded-xl'>
-            MANAGING SYSTEM ADMINISTRATOR ACCOUNTS
+            {t('NIPS.content29')}
           </p>
           <p className='m-4 p-4 border border-darkBlue rounded-xl'>
-            MANAGING SYSTEM SOFTWARE UPDATES FROM THE CLOUD.
+            {t('NIPS.content30')}
           </p>
           <p className='m-4 p-4 border border-darkBlue rounded-xl'>
-            SYSTEM STATUS INFORMATION.
+            {t('NIPS.content31')}
           </p>
           <p className='m-4 p-4 border border-darkBlue rounded-xl'>
-            MANAGING LOGS OPERATING ON THE SYSTEM.
+            {t('NIPS.content32')}
           </p>
           <p className='m-4 p-4 border border-darkBlue rounded-xl'>
-            SYSTEM MANAGEMENT VIA CONSOLE VÀ SSH.
+            {t('NIPS.content33')}
           </p>
         </div>
       </div>

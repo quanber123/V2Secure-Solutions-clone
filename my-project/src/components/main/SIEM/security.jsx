@@ -1,18 +1,18 @@
 import React from 'react';
 import LazyLoad from 'react-lazyload';
 import guard from '../../../images/information/guardblack.png';
+import { useTranslation } from 'react-i18next';
 function Security() {
+  const { t } = useTranslation();
   const security = [
     {
-      content: 'Automatic warning of attacks via SMS, Email, ...',
+      content: t('SIEM.content27'),
     },
     {
-      content:
-        'The system provides interoperability with network devices (Router Cisco - Juniper, Firewall Cisco PIX - ASA, Firewall, Check-Point, Firewall Forgtinet,...), Security devices (Firewall, NAC, IDS, IPS) and operating systems (Windows Server, Linux, Centos, Fedora, Ubuntu, Debian, Linux, Transparent Firewall,...) to conduct network attack prevention.',
+      content: t('SIEM.content28'),
     },
     {
-      content:
-        'This ability allows the systems to prevent network attacks without affecting the operation and performance of the systems; and does not require the installation of Agents on devices or servers.',
+      content: t('SIEM.content29'),
     },
   ];
   const contentSecurity = security.map((content, index) => {
@@ -27,9 +27,7 @@ function Security() {
   });
   return (
     <div className='text-darkBlue'>
-      <h3 className='text-xl font-bold px-3'>
-        6. SECURITY ALERTS AND AUTOMATICALLY PREVENT ATTACKS
-      </h3>
+      <h3 className='text-xl font-bold px-3'>{t('SIEM.title6')}</h3>
       <div className='text-lg px-3 py-4'>{contentSecurity}</div>
     </div>
   );

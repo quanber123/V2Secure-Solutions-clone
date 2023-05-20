@@ -1,6 +1,8 @@
 import React, { useCallback, useEffect, useState } from 'react';
-import LazyLoad from 'react-lazyload';
 import { NavLink } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
+import i18n from '../i18n';
+import LazyLoad from 'react-lazyload';
 import logo from '../images/ecosystem/download.png';
 import logo2 from '../images/logo.0f88255eeb4cbd4b96da.png';
 import siem from '../images/ecosystem/siem.png';
@@ -8,59 +10,79 @@ import waf from '../images/ecosystem/waf.png';
 import nips from '../images/ecosystem/nips.png';
 import edr from '../images/ecosystem/edr.png';
 import nac from '../images/ecosystem/nac.png';
+
 function Header() {
+  const { t } = useTranslation();
   const [isSticky, setIsSticky] = useState(false);
   const [showNav, setShowNav] = useState(false);
   const [stateLink, setLinkState] = useState('');
-  function isShow() {
-    setShowNav((prevShow) => !prevShow);
-  }
+  const [currentLanguage, setCurrentLanguage] = useState('vi');
+
   const dataEcosystem = [
     {
       url: siem,
-      content: 'Security Information and Event Management V2-SIEM',
+      content: 'ecosystem.siem',
     },
     {
       url: waf,
-      content: 'Web Application Firewall V2-WAF',
+      content: 'ecosystem.waf',
     },
     {
       url: nips,
-      content: 'Network Intrusion Prevention System V2-NIPS',
+      content: 'ecosystem.nips',
     },
     {
       url: edr,
-      content: 'Endpoint Detection and Response V2-EDR',
+      content: 'ecosystem.edr',
     },
     {
       url: nac,
-      content: 'Network Access Control V2-NAC',
+      content: 'ecosystem.nac',
     },
   ];
+
   const [ecosystems, setEcosystems] = useState([]);
+
   useEffect(() => {
-    setEcosystems(dataEcosystem);
-  }, []);
+    const updatedEcosystems = dataEcosystem.map((item) => ({
+      url: item.url,
+      content: t(item.content),
+    }));
+    setEcosystems(updatedEcosystems);
+  }, [t]);
+
   const handleLinkClick = useCallback((id) => {
     setLinkState(id);
     const element = document.getElementById(id);
     element.scrollIntoView({ behavior: 'smooth' });
     setShowNav(false);
-  });
-  const handleScroll = () => {
+  }, []);
+
+  const handleScroll = useCallback(() => {
     if (window.pageYOffset > 200) {
       setIsSticky(true);
     } else {
       setIsSticky(false);
     }
-  };
+  }, []);
+
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
 
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, []);
+  }, [handleScroll]);
+
+  const handleChangeLanguage = useCallback(() => {
+    const lang = currentLanguage === 'en' ? 'vi' : 'en';
+    setCurrentLanguage(lang);
+  }, [currentLanguage]);
+
+  useEffect(() => {
+    i18n.changeLanguage(currentLanguage);
+  }, [currentLanguage]);
+
   return (
     <header className='h-screen'>
       <nav
@@ -133,20 +155,26 @@ function Header() {
             >
               CONTACT
             </NavLink>
-            <button className='mx-5 nav-link'>LANGUAGE</button>
+            <button
+              className='mx-5 nav-link uppercase'
+              onClick={handleChangeLanguage}
+            >
+              {`${currentLanguage === 'en' ? 'LANGUAGE' : 'NGÔN NGỮ'}`}:
+              {currentLanguage}
+            </button>
           </div>
           <i
             className='fa fa-bars mx-5 lg:hidden flex justify-center items-center text-xl cursor-pointer'
-            onClick={isShow}
+            onClick={() => setShowNav((prevShow) => !prevShow)}
           ></i>
         </section>
       </nav>
       <section className='md:h-full container m-auto py-8 flex flex-col justify-start'>
         <div className='h-full sm:h-1/2 flex flex-col sm:flex-row md:justify-between items-start'>
           <div className='w-full md:w-1/2 text-center'>
-            <h1 className='text-4xl font-bold my-4'>Cybersecurity Ecosystem</h1>
-            <h2 className='text-2xl font-bold my-4'>V2SECURE Solutions</h2>
-            <h3 className='text-xl my-4'>V2SECURE Solutions</h3>
+            <h1 className='text-4xl font-bold my-4'>{t('ecosystem.title1')}</h1>
+            <h2 className='text-2xl font-bold my-4'>{t('ecosystem.title2')}</h2>
+            <h3 className='text-xl my-4'>{t('ecosystem.title2')}</h3>
           </div>
           <LazyLoad
             className='w-full h-1/4 md:w-1/2 md:h-3/4 py-8 flex justify-center items-center'

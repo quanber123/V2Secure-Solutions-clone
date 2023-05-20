@@ -1,20 +1,20 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 function Threat() {
+  const { t } = useTranslation();
   const threat = [
     {
-      content: 'Integrated threat intelligence function.',
+      content: t('SIEM.content19'),
     },
     {
-      content: 'Update threat intelligence data from the Cloud.',
+      content: t('SIEM.content20'),
     },
     {
-      content:
-        'Automatically update blacklist (IP, DOMAIN, HASH) for SIEM from threat intelligence data.',
+      content: t('SIEM.content21'),
     },
     {
-      content:
-        'Allowance of sharing information with threat intelligence systems.',
+      content: t('SIEM.content22'),
     },
   ];
   const contentThreat = threat.map((content, index) => {
@@ -28,7 +28,7 @@ function Threat() {
   return (
     <div>
       <h3 className='text-center text-white text-xl font-bold'>
-        4. THREAT INTELLIGENCE INTEGRATION
+        {t('SIEM.title4')}
       </h3>
       <div className='text-white text-lg'>{contentThreat}</div>
     </div>
