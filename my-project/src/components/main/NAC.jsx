@@ -9,9 +9,11 @@ function NAC() {
       id='nac'
       className='container m-auto bg-white text-darkBlue rounded-2xl my-12'
     >
-      <h1 className='underline text-center text-2xl font-bold pt-8 px-4'>
-        NETWORK ACCESS CONTROL SYSTEM V2-NAC
-      </h1>
+      <LazyLoad offset={100} once>
+        <h1 className='underline text-center text-2xl font-bold pt-8 px-4'>
+          NETWORK ACCESS CONTROL SYSTEM V2-NAC
+        </h1>
+      </LazyLoad>
       <LazyLoad
         className='flex justify-center items-center m-8'
         offset={100}
@@ -19,8 +21,12 @@ function NAC() {
       >
         <img className='w-4/5 h-full' src={accessImg} alt={accessImg} />
       </LazyLoad>
-      <Function1 />
-      <Function2 />
+      <LazyLoad offset={100} once>
+        <Function1 />
+      </LazyLoad>
+      <LazyLoad offset={100} once>
+        <Function2 />
+      </LazyLoad>
     </section>
   );
 }

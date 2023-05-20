@@ -1,15 +1,20 @@
-import React, { Suspense, lazy } from 'react';
-const Header = lazy(() => import('./header'));
-const Main = lazy(() => import('./main'));
-const Footer = lazy(() => import('./footer'));
+import React from 'react';
+import Header from './header';
+import Main from './main';
+import Footer from './footer';
+import LazyLoad from 'react-lazyload';
 function Layout() {
   return (
     <>
-      <Suspense>
+      <LazyLoad offset={100} once>
         <Header />
+      </LazyLoad>
+      <LazyLoad offset={100} once>
         <Main />
+      </LazyLoad>
+      <LazyLoad offset={100} once>
         <Footer />
-      </Suspense>
+      </LazyLoad>
     </>
   );
 }

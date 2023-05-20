@@ -10,6 +10,10 @@ import securityImg from '../../images/application/v2-waf-5.355b858ea7a8909167bf.
 import System from './WAF/system';
 import Minimum from './WAF/minimum';
 function WAF() {
+  const lazyLoadOptions = {
+    offset: 100,
+    once: true,
+  };
   return (
     <section
       id='waf'
@@ -33,7 +37,7 @@ function WAF() {
           <PreventAttacks />
           <IncidentAnalysis />
         </div>
-        <LazyLoad className='md:w-1/3' offset={100} once>
+        <LazyLoad className='md:w-1/3' {...lazyLoadOptions}>
           <img src={securityImg} alt={securityImg} />
         </LazyLoad>
       </div>

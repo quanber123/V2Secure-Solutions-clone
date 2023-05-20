@@ -1,4 +1,6 @@
 import React from 'react';
+import LazyLoad from 'react-lazyload';
+
 import Collections from './SIEM/collections';
 import Network from './SIEM/network';
 import Processing from './SIEM/processing';
@@ -6,10 +8,16 @@ import Threat from './SIEM/threat';
 import Vulnerability from './SIEM/vulnerability';
 import Security from './SIEM/security';
 import Incident from './SIEM/incident';
-import v2siem from '../../images/information/v2-siem-6.3dc16344590ad630264b.png';
-import LazyLoad from 'react-lazyload';
 import System from './SIEM/system';
+
+import v2siem from '../../images/information/v2-siem-6.3dc16344590ad630264b.png';
+
 function SIEM() {
+  const lazyLoadOptions = {
+    offset: 100,
+    once: true,
+  };
+
   return (
     <section
       id='siem'
@@ -32,7 +40,7 @@ function SIEM() {
           <Security />
           <Incident />
         </div>
-        <LazyLoad className='lg:w-2/5  h-full' offset={100} once>
+        <LazyLoad {...lazyLoadOptions} className='lg:w-2/5 h-full'>
           <img className='w-full' src={v2siem} alt={v2siem} />
         </LazyLoad>
       </div>

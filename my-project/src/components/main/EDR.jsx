@@ -3,6 +3,7 @@ import MultiTask from './EDR/multi-task';
 import Incident from './EDR/incident';
 import System from './EDR/system';
 import Deployment from './EDR/deployment';
+import LazyLoad from 'react-lazyload';
 function EDR() {
   return (
     <section
