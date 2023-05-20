@@ -116,6 +116,7 @@ body {
   z-index: 800;
   animation: Scale 0.3s linear;
 }
+/* Animation */
 .Scale {
   animation: Scale 0.3s linear;
 }
