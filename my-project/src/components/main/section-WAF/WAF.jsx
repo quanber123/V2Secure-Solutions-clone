@@ -1,14 +1,14 @@
 import React from 'react';
 import LazyLoad from 'react-lazyload';
-import Security from './WAF/security';
-import Description from './WAF/description';
-import Plan from './WAF/plan';
-import Processing from './WAF/processing';
-import PreventAttacks from './WAF/prevent-attacks';
-import IncidentAnalysis from './WAF/incident-analysis';
-import securityImg from '../../images/application/v2-waf-5.355b858ea7a8909167bf.png';
-import System from './WAF/system';
-import Minimum from './WAF/minimum';
+import Security from './7-system';
+import Description from './1-function-description';
+import Plan from './2-plan';
+import Processing from './4-processing';
+import PreventAttacks from './5-system-automatically';
+import IncidentAnalysis from './6-incident-analysis';
+import securityImg from '../../../images/application/v2-waf-5.355b858ea7a8909167bf.png';
+import System from './7-system';
+import Minimum from './8-minimum';
 import { useTranslation } from 'react-i18next';
 function WAF() {
   const { t } = useTranslation();

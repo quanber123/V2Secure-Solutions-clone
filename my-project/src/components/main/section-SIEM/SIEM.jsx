@@ -1,16 +1,16 @@
 import React from 'react';
 import LazyLoad from 'react-lazyload';
 
-import Collections from './SIEM/collections';
-import Network from './SIEM/network';
-import Processing from './SIEM/processing';
-import Threat from './SIEM/threat';
-import Vulnerability from './SIEM/vulnerability';
-import Security from './SIEM/security';
-import Incident from './SIEM/incident';
-import System from './SIEM/system';
+import Collections from './1-collection-management';
+import Network from './2-network-attack';
+import Processing from './3-processing';
+import Threat from './4-threat';
+import Vulnerability from './5-vulnerability';
+import Security from './6-security-automatically';
+import Incident from './7-incident';
+import System from './8-system';
 
-import v2siem from '../../images/information/v2-siem-6.3dc16344590ad630264b.png';
+import v2siem from '../../../images/information/v2-siem-6.3dc16344590ad630264b.png';
 import { useTranslation } from 'react-i18next';
 
 function SIEM() {
@@ -57,7 +57,9 @@ function SIEM() {
           <img className='w-full' src={v2siem} alt={v2siem} />
         </LazyLoad>
       </div>
-      <System />
+      <LazyLoad {...lazyLoadOptions}>
+        <System />
+      </LazyLoad>
     </section>
   );
 }

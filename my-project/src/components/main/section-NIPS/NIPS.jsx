@@ -1,7 +1,7 @@
 import React from 'react';
-import Networking from './NIPS/networking';
-import Cyber from './NIPS/cyber';
-import System from './NIPS/system';
+import Networking from './1-networking';
+import Cyber from './2-cyber';
+import System from './3-system';
 import LazyLoad from 'react-lazyload';
 import { useTranslation } from 'react-i18next';
 function NIPS() {

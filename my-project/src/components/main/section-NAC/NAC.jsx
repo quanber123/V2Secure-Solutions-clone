@@ -1,8 +1,8 @@
 import React from 'react';
 import LazyLoad from 'react-lazyload';
-import accessImg from '../../images/access/v2-nac-1.46f479e902710bf3fbb5.png';
-import Function1 from './NAC/function-1';
-import Function2 from './NAC/function-2';
+import accessImg from '../../../images/access/v2-nac-1.46f479e902710bf3fbb5.png';
+import Function1 from './1-function-1';
+import Function2 from './2-function-2';
 import { useTranslation } from 'react-i18next';
 function NAC() {
   const { t } = useTranslation();

@@ -1,8 +1,8 @@
 import React from 'react';
-import MultiTask from './EDR/multi-task';
-import Incident from './EDR/incident';
-import System from './EDR/system';
-import Deployment from './EDR/deployment';
+import MultiTask from './1-multi-task';
+import Incident from './2-incident';
+import System from './3-system';
+import Deployment from './4-deployment';
 import LazyLoad from 'react-lazyload';
 import { useTranslation } from 'react-i18next';
 function EDR() {

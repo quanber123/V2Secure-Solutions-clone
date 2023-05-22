@@ -1,12 +1,12 @@
 import React from 'react';
 import LazyLoad from 'react-lazyload';
-import SIEM from './main/SIEM';
-import WAF from './main/WAF';
-import NIPS from './main/NIPS';
-import EDR from './main/EDR';
-import NAC from './main/NAC';
-import Gallery from './main/gallery';
-import Contact from './main/contact';
+import SIEM from './section-SIEM/SIEM';
+import WAF from './section-WAF/WAF';
+import NIPS from './section-NIPS/NIPS';
+import EDR from './section-EDR/EDR';
+import NAC from './section-NAC/NAC';
+import Gallery from './section-gallery/index';
+import Contact from './section-contact/index';
 
 function Main() {
   const lazyLoadOptions = {

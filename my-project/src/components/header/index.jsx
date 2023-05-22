@@ -1,18 +1,22 @@
 import React, { useCallback, useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import i18n from '../i18n';
+import i18n from '../../i18n';
 import LazyLoad from 'react-lazyload';
-import logo from '../images/ecosystem/download.png';
-import logo2 from '../images/logo.0f88255eeb4cbd4b96da.png';
-import siem from '../images/ecosystem/siem.png';
-import waf from '../images/ecosystem/waf.png';
-import nips from '../images/ecosystem/nips.png';
-import edr from '../images/ecosystem/edr.png';
-import nac from '../images/ecosystem/nac.png';
+import logo from '../../images/ecosystem/download.png';
+import logo2 from '../../images/logo.0f88255eeb4cbd4b96da.png';
+import siem from '../../images/ecosystem/siem.png';
+import waf from '../../images/ecosystem/waf.png';
+import nips from '../../images/ecosystem/nips.png';
+import edr from '../../images/ecosystem/edr.png';
+import nac from '../../images/ecosystem/nac.png';
 
 function Header() {
   const { t } = useTranslation();
+  const lazyLoadOptions = {
+    offset: 100,
+    once: true,
+  };
   const [isSticky, setIsSticky] = useState(false);
   const [showNav, setShowNav] = useState(false);
   const [stateLink, setLinkState] = useState('');
@@ -93,8 +97,7 @@ function Header() {
         <section className='h-full flex justify-between container m-auto'>
           <LazyLoad
             className='w-full md:w-1/12 p-1 cursor-pointer'
-            offset={100}
-            once
+            {...lazyLoadOptions}
           >
             <img className='h-full' src={isSticky ? logo2 : logo} alt='logo' />
           </LazyLoad>
@@ -184,8 +187,7 @@ function Header() {
           </div>
           <LazyLoad
             className='w-full h-1/4 md:w-1/2 md:h-3/4 py-8 flex justify-center items-center Scale'
-            offset={100}
-            once
+            {...lazyLoadOptions}
           >
             <img className='h-full' src={logo} alt={logo} />
           </LazyLoad>
@@ -193,7 +195,11 @@ function Header() {
         <div className='hidden sm:flex items-center'>
           {ecosystems.map((ecosystem, index) => (
             <article key={index} className='h-1/2 w-1/2 flex flex-col Scale'>
-              <LazyLoad className='m-auto h-3/4' key={index} offset={100} once>
+              <LazyLoad
+                className='m-auto h-3/4'
+                key={index}
+                {...lazyLoadOptions}
+              >
                 <img
                   className=' h-full'
                   src={ecosystem.url}
