@@ -4,6 +4,10 @@ import solutionImg from '../../../images/solutions/v2-edr-1.d84249ea80b417e86620
 import { useTranslation } from 'react-i18next';
 function MultiTask() {
   const { t } = useTranslation();
+  const lazyLoadOptions = {
+    offset: 0,
+    once: true,
+  };
   const terminal = [
     {
       content: t('EDR.content1'),
@@ -101,41 +105,48 @@ function MultiTask() {
     );
   });
   return (
-    <div className='md:px-8 pt-8'>
-      <div className='relative'>
-        <h3 className='px-4 md:px-0 text-xl md:text-2xl font-bold mb-2 md:mx-12 Scale'>
-          {t('EDR.title1')}
-        </h3>
-        <LazyLoad
-          className='absolute z-50 w-full h-full -top-40  md:-top-14 lg:top-0 left-0 m-auto flex justify-center items-center Scale'
-          offset={0}
-          once
-        >
-          <img className='lg:h-full' src={solutionImg} alt={solutionImg} />
-        </LazyLoad>
-        <div className='flex flex-wrap items-stretch'>
-          <div className='multi-task-content text-lg md:text-xl border border-darkBlue rounded-xl mb-8 Scale'>
-            <h4 className='font-semibold text-center'>{t('EDR.idea1')}</h4>
-            <div>{contentTerminal}</div>
-          </div>
-          <div className='multi-task-content text-lg md:text-xl border border-darkBlue rounded-xl p-4mb-8 Scale'>
-            <h4 className='font-semibold text-center'>{t('EDR.idea2')}</h4>
-            <div>{contentBehavioral}</div>
-          </div>
-          <div className='multi-task-content text-lg md:text-xl border border-darkBlue rounded-xl p-4 Scale'>
-            <h4 className='font-semibold text-center'>{t('EDR.idea3')}</h4>
-            <div>{contentMalware}</div>
-          </div>
-          <div className='multi-task-content  text-lg md:text-xl border border-darkBlue rounded-xl p-4 Scale'>
-            <h4 className='font-semibold text-center'>{t('EDR.idea4')}</h4>
-            <div>{contentInformation}</div>
-          </div>
+    <LazyLoad {...lazyLoadOptions}>
+      <div className='md:px-8 pt-8 Scale'>
+        <div className='relative'>
+          <LazyLoad {...lazyLoadOptions}>
+            <h3 className='px-4 md:px-0 text-xl md:text-2xl font-bold mb-2 md:mx-12 Scale'>
+              {t('EDR.title1')}
+            </h3>
+          </LazyLoad>
+          <LazyLoad
+            className='absolute z-50 w-full h-full -top-40  md:-top-14 lg:top-0 left-0 m-auto flex justify-center items-center Scale'
+            {...lazyLoadOptions}
+          >
+            <img className='lg:h-full' src={solutionImg} alt={solutionImg} />
+          </LazyLoad>
+          <LazyLoad {...lazyLoadOptions}>
+            <div className='flex flex-wrap items-stretch'>
+              <div className='multi-task-content text-lg md:text-xl border border-darkBlue rounded-xl mb-8 Scale'>
+                <h4 className='font-semibold text-center'>{t('EDR.idea1')}</h4>
+                <div>{contentTerminal}</div>
+              </div>
+              <div className='multi-task-content text-lg md:text-xl border border-darkBlue rounded-xl p-4mb-8 Scale'>
+                <h4 className='font-semibold text-center'>{t('EDR.idea2')}</h4>
+                <div>{contentBehavioral}</div>
+              </div>
+              <div className='multi-task-content text-lg md:text-xl border border-darkBlue rounded-xl p-4 Scale'>
+                <h4 className='font-semibold text-center'>{t('EDR.idea3')}</h4>
+                <div>{contentMalware}</div>
+              </div>
+              <div className='multi-task-content  text-lg md:text-xl border border-darkBlue rounded-xl p-4 Scale'>
+                <h4 className='font-semibold text-center'>{t('EDR.idea4')}</h4>
+                <div>{contentInformation}</div>
+              </div>
+            </div>
+          </LazyLoad>
         </div>
+        <LazyLoad {...lazyLoadOptions}>
+          <div className='text-lg md:text-xl p-8 mx-4 Scale'>
+            <p>{t('EDR.content21')}</p>
+          </div>
+        </LazyLoad>
       </div>
-      <div className='text-lg md:text-xl p-8 mx-4 Scale'>
-        <p>{t('EDR.content21')}</p>
-      </div>
-    </div>
+    </LazyLoad>
   );
 }
 

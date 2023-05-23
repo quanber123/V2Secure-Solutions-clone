@@ -1,5 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import LazyLoad from 'react-lazyload';
 
 function Function1() {
   const { t } = useTranslation();
@@ -56,10 +57,18 @@ function Function1() {
     );
   });
   return (
-    <div className='h-full text-darkBlue md:p-8 Left'>
-      <h3 className='text-lg md:text-2xl font-bold pl-3'>1. FUNCTIONS</h3>
-      <div className='text-base md:text-xl'>{contentFunction1}</div>
-    </div>
+    <LazyLoad offset={0} once>
+      <div className='h-full text-darkBlue md:p-8 Left'>
+        <LazyLoad offset={0} once>
+          <h3 className='text-lg md:text-2xl font-bold pl-3 Left'>
+            {t('NAC.title1')}
+          </h3>
+        </LazyLoad>
+        <LazyLoad offset={0} once>
+          <div className='text-base md:text-xl Left'>{contentFunction1}</div>
+        </LazyLoad>
+      </div>
+    </LazyLoad>
   );
 }
 

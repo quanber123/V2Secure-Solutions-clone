@@ -20,15 +20,9 @@ function NIPS() {
           {t('NIPS.title')}
         </h1>
       </LazyLoad>
-      <LazyLoad {...lazyLoadOptions}>
-        <Networking />
-      </LazyLoad>
-      <LazyLoad {...lazyLoadOptions}>
-        <Cyber />
-      </LazyLoad>
-      <LazyLoad className='bg-blue' {...lazyLoadOptions}>
-        <System />
-      </LazyLoad>
+      <Networking />
+      <Cyber />
+      <System />
     </section>
   );
 }

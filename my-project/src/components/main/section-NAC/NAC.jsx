@@ -15,26 +15,24 @@ function NAC() {
       id='nac'
       className='container m-auto bg-white text-darkBlue rounded-2xl my-12'
     >
-      <h1 className='underline text-center text-xl md:text-3xl font-bold pt-8 px-4 Scale'>
-        {t('NAC.title')}
-      </h1>
+      <LazyLoad {...lazyLoadOptions}>
+        <h1 className='underline text-center text-xl md:text-3xl font-bold pt-8 px-4 Scale'>
+          {t('NAC.title')}
+        </h1>
+      </LazyLoad>
       <LazyLoad
-        className='flex justify-center items-center m-8 Scale'
+        className='flex justify-center items-center m-8'
         {...lazyLoadOptions}
         once
       >
         <img
-          className='w-2/3 md:w-4/5 h-full'
+          className='w-2/3 md:w-4/5 h-full Scale'
           src={accessImg}
           alt={accessImg}
         />
       </LazyLoad>
-      <LazyLoad {...lazyLoadOptions}>
-        <Function1 />
-      </LazyLoad>
-      <LazyLoad {...lazyLoadOptions}>
-        <Function2 />
-      </LazyLoad>
+      <Function1 />
+      <Function2 />
     </section>
   );
 }

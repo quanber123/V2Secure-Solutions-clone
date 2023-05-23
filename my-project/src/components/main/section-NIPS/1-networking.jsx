@@ -5,6 +5,10 @@ import systemImg from '../../../images/generation/v2-nips-1-3.3a965cfbc9f043c3be
 import { useTranslation } from 'react-i18next';
 function Networking() {
   const { t } = useTranslation();
+  const lazyLoadOptions = {
+    offset: 0,
+    once: true,
+  };
   const detectionSignatures = [
     {
       content: t('NIPS.content1'),
@@ -77,40 +81,54 @@ function Networking() {
     );
   });
   return (
-    <div className='mx-8 px-3 py-4 border-b-2 border-l-2 border-r-2 border-blue rounded-b-xl Up'>
-      <h3 className='text-xl md:text-2xl font-bold px-3'>{t('NIPS.title1')}</h3>
-      <div>
-        <h3 className='text-lg md:text-2xl font-bold px-3 my-2'>
-          {t('NIPS.idea1')}
-        </h3>
-        <div className=' md:text-xl'>{contentDetectionSignatures}</div>
-        <LazyLoad className='flex justify-center my-4' offset={0} once>
-          <img src={nipsImg} alt={nipsImg} />
+    <LazyLoad {...lazyLoadOptions}>
+      <div className='mx-8 px-3 py-4 border-b-2 border-l-2 border-r-2 border-blue rounded-b-xl'>
+        <LazyLoad {...lazyLoadOptions}>
+          <h3 className='text-xl md:text-2xl font-bold px-3 Scale'>
+            {t('NIPS.title1')}
+          </h3>
+        </LazyLoad>
+        <LazyLoad {...lazyLoadOptions}>
+          <div>
+            <h3 className='text-lg md:text-2xl font-bold px-3 my-2 Scale'>
+              {t('NIPS.idea1')}
+            </h3>
+            <div className=' md:text-xl Scale'>
+              {contentDetectionSignatures}
+            </div>
+            <LazyLoad className='flex justify-center my-4' {...lazyLoadOptions}>
+              <img className='Up' src={nipsImg} alt={nipsImg} />
+            </LazyLoad>
+          </div>
+        </LazyLoad>
+        <LazyLoad {...lazyLoadOptions}>
+          <div>
+            <h3 className='text-lg md:text-2xl font-bold px-3 my-2 Scale'>
+              {t('NIPS.idea2')}
+            </h3>
+            <div className='md:text-xl Scale'>
+              {contentAnomalousActivity}
+              <ul className='px-6 Scale'>
+                <li>{t('NIPS.content18')}</li>
+                <li>{t('NIPS.content19')}</li>
+                <li>{t('NIPS.content20')}</li>
+                <li>{t('NIPS.content21')}</li>
+              </ul>
+            </div>
+          </div>
+        </LazyLoad>
+        <LazyLoad {...lazyLoadOptions}>
+          <div>
+            <h3 className='text-lg md:text-2xl font-bold px-3 my-2 Scale'>
+              {t('NIPS.idea3')}
+            </h3>
+            <LazyLoad className='flex justify-center my-4' {...lazyLoadOptions}>
+              <img className='Up' src={systemImg} alt={systemImg} />
+            </LazyLoad>
+          </div>
         </LazyLoad>
       </div>
-      <div>
-        <h3 className='text-lg md:text-2xl font-bold px-3 my-2'>
-          {t('NIPS.idea2')}
-        </h3>
-        <div className='md:text-xl'>
-          {contentAnomalousActivity}
-          <ul className='px-6'>
-            <li>{t('NIPS.content18')}</li>
-            <li>{t('NIPS.content19')}</li>
-            <li>{t('NIPS.content20')}</li>
-            <li>{t('NIPS.content21')}</li>
-          </ul>
-        </div>
-      </div>
-      <div>
-        <h3 className='text-lg md:text-2xl font-bold px-3 my-2'>
-          {t('NIPS.idea3')}
-        </h3>
-        <LazyLoad className='flex justify-center my-4' offset={0} once>
-          <img src={systemImg} alt={systemImg} />
-        </LazyLoad>
-      </div>
-    </div>
+    </LazyLoad>
   );
 }
 
