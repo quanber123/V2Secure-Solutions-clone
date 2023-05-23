@@ -55,7 +55,7 @@ function Collections() {
       <h3 className='m-4 text-center text-xl md:text-2xl font-bold'>
         {t('SIEM.title1')}
       </h3>
-      <div className='px-8  py-4 lg:flex lg:justify-between lg:flex-col'>
+      <div className='px-8 py-4 flex flex-col lg:flex-row lg:justify-between'>
         <div className='lg:w-2/3 w-full'>
           <h4 className='font-bold text-xl md:text-2xl'>
             <i className='fa fa-stop -ml-2 mr-2'></i>
@@ -70,7 +70,7 @@ function Collections() {
           </h4>
           <div className='pl-4 text-lg md:text-xl'>{contentAutomatic}</div>
         </div>
-        <LazyLoad className='lg:w-1/3 w-full' offset={100} once>
+        <LazyLoad className='lg:w-1/3 w-full m-auto' offset={100} once>
           <img className='m-auto' src={logImg} alt={logImg} />
         </LazyLoad>
       </div>

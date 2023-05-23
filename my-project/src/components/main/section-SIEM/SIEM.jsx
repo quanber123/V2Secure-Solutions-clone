@@ -48,13 +48,13 @@ function SIEM() {
           </LazyLoad>
         </div>
       </div>
-      <div className='p-8 flex flex-col md:flex-row items-center'>
+      <div className='p-8 flex flex-col md:flex-row just items-center'>
         <LazyLoad className='md:w-2/3 lg:w-3/5' {...lazyLoadOptions}>
           <Security />
           <Incident />
         </LazyLoad>
         <LazyLoad {...lazyLoadOptions} className='md:w-1/3 lg:w-2/5'>
-          <img src={v2siem} alt={v2siem} />
+          <img className='m-auto w-full' src={v2siem} alt={v2siem} />
         </LazyLoad>
       </div>
       <LazyLoad {...lazyLoadOptions}>

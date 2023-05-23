@@ -36,7 +36,7 @@ function Deployment() {
   return (
     <div className='py-8 px-4 md:px-16 Right'>
       <h3 className='text-xl md:text-2xl font-bold'>4. DEPLOYMENT SUPPORT</h3>
-      <div className='flex'>
+      <div className='flex justify-between'>
         <div className='w-2/3 md:w-2/3 lg:w-1/3 text-lg md:text-xl text-sm md:px-8 md:py-4'>
           {contentDeployment}
         </div>
@@ -46,7 +46,7 @@ function Deployment() {
           once
         >
           <img
-            className=' md:h-4/5 m-auto'
+            className='md:h-4/5 m-auto'
             src={deploymentImg}
             alt={deploymentImg}
           />
