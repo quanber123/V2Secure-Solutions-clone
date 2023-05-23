@@ -24,7 +24,7 @@ function Incident() {
         <LazyLoad className='w-4 mt-2 mr-4' offset={100} once>
           <img src={guard} alt={guard} />
         </LazyLoad>
-        <p className='w-full font-semibold'>{content.content}</p>
+        <p className='w-full font-medium'>{content.content}</p>
       </div>
     );
   });

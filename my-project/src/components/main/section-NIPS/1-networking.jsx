@@ -1,5 +1,6 @@
 import React from 'react';
 import LazyLoad from 'react-lazyload';
+import nipsImg from '../../../images/generation/v2-nips-1-1.d331557c7ae8676e6b7e.png';
 import systemImg from '../../../images/generation/v2-nips-1-3.3a965cfbc9f043c3bedb.png';
 import { useTranslation } from 'react-i18next';
 function Networking() {
@@ -83,6 +84,9 @@ function Networking() {
           {t('NIPS.idea1')}
         </h3>
         <div className=' md:text-xl'>{contentDetectionSignatures}</div>
+        <LazyLoad className='flex justify-center my-4' offset={100} once>
+          <img src={nipsImg} alt={nipsImg} />
+        </LazyLoad>
       </div>
       <div>
         <h3 className='text-lg md:text-2xl font-bold px-3 my-2'>

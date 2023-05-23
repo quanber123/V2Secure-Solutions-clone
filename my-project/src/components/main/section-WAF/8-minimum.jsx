@@ -28,7 +28,7 @@ function Minimum() {
     return (
       <div className='m-4 flex items-center' key={index}>
         <div className='w-16 h-4 bg-blue rounded-r-2xl text-blue mr-2'></div>
-        <h4 className='font-semibold'>{content.content}</h4>
+        <h4 className='font-medium'>{content.content}</h4>
       </div>
     );
   });
