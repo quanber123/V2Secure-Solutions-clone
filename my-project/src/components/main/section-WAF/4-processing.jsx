@@ -24,8 +24,8 @@ function Processing() {
   });
   return (
     <div className='text-darkBlue Up'>
-      <h3 className='text-xl font-bold px-3 mx-4'>{t('WAF.title4')}</h3>
-      <div className='text-lg px-3 py-4'>{contentProcessing}</div>
+      <h3 className='text-2xl font-bold px-3 mx-4'>{t('WAF.title4')}</h3>
+      <div className='text-xl px-3 py-4'>{contentProcessing}</div>
       <LazyLoad
         className='flex items-center justify-center w-full p-4'
         offset={100}

@@ -27,10 +27,10 @@ function Threat() {
   });
   return (
     <div className='Scale'>
-      <h3 className='text-center text-white text-xl font-bold'>
+      <h3 className='text-center text-white text-2xl font-bold'>
         {t('SIEM.title4')}
       </h3>
-      <div className='text-white text-lg'>{contentThreat}</div>
+      <div className='text-white text-xl'>{contentThreat}</div>
     </div>
   );
 }

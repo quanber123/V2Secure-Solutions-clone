@@ -23,10 +23,10 @@ function IncidentAnalysis() {
   });
   return (
     <div className='Left'>
-      <h3 className='text-xl font-bold lg:px-3 lg:mx-4'>
+      <h3 className='text-2xl font-bold lg:px-3 lg:mx-4'>
         6. INCIDENT INVESTIGATION AND ANALYSIS
       </h3>
-      <div className='text-lg lg:px-3 lg:py-4'>{contentIncidentAnalysis}</div>
+      <div className='text-xl lg:px-3 lg:py-4'>{contentIncidentAnalysis}</div>
     </div>
   );
 }

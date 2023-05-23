@@ -24,10 +24,10 @@ function Processing() {
   });
   return (
     <div className='Scale'>
-      <h3 className='text-center text-white text-xl font-bold'>
+      <h3 className='text-center text-white text-2xl font-bold'>
         {t('SIEM.title3')}
       </h3>
-      <div className='text-white text-lg'>
+      <div className='text-white text-xl'>
         <div className='px-4'>{contentProcessing}</div>
         <ul>
           <li className='px-12'>{t('SIEM.content15')}</li>

@@ -164,49 +164,49 @@ function Header() {
               className='mx-5 nav-link uppercase'
               onClick={handleChangeLanguage}
             >
-              {`${currentLanguage === 'en' ? 'LANGUAGE' : 'NGÔN NGỮ'}`}:
+              {`${currentLanguage === 'en' ? 'LANGUAGE' : 'NGÔN NGỮ'}`}
+              <span className='mx-1'>:</span>
               {currentLanguage}
             </button>
           </div>
           <i
-            className='fa fa-bars mx-5 lg:hidden flex justify-center items-center text-xl cursor-pointer'
+            className='fa fa-bars mx-12 lg:hidden flex justify-center items-center text-xl cursor-pointer'
             onClick={() => setShowNav((prevShow) => !prevShow)}
           ></i>
         </section>
       </nav>
-      <section className='md:h-full container m-auto py-8 flex flex-col justify-start'>
-        <div className='h-full sm:h-1/2 flex flex-col sm:flex-row md:justify-between items-start'>
-          <div className='w-full md:w-1/2 text-center'>
-            <h1 className='text-4xl font-bold my-4 Scale'>
+      <section className='md:h-full container mx-auto py-8 flex flex-col justify-start'>
+        <div className='h-full sm:h-1/2 flex flex-col justify-between sm:flex-row md:justify-between items-start'>
+          <div className='w-1/2 h-1/2 m-auto flex flex-col justify-center items text-center'>
+            <h1 className='text-4xl font-bold Scale'>
               {t('ecosystem.title1')}
             </h1>
-            <h2 className='text-2xl font-bold my-4 Scale'>
+            <h2 className='text-3xl font-bold Scale my-8'>
               {t('ecosystem.title2')}
             </h2>
-            <h3 className='text-xl my-4 Scale'>{t('ecosystem.title2')}</h3>
+            <h3 className='text-2xl Scale'>{t('ecosystem.title2')}</h3>
           </div>
           <LazyLoad
-            className='w-full h-1/4 md:w-1/2 md:h-3/4 py-8 flex justify-center items-center Scale'
+            className='w-1/2 mx-auto my-12 md:my-auto md:h-1/2 lg:h-3/4 py-8 flex justify-center items-center Scale'
             {...lazyLoadOptions}
           >
             <img className='h-full' src={logo} alt={logo} />
           </LazyLoad>
         </div>
-        <div className='hidden sm:flex items-center'>
+        <div className='hidden sm:flex flex-wrap justify-between items-center'>
           {ecosystems.map((ecosystem, index) => (
-            <article key={index} className='h-1/2 w-1/2 flex flex-col Scale'>
+            <article
+              key={index}
+              className='flex flex-col Scale gallery-title-header'
+            >
               <LazyLoad
-                className='m-auto h-3/4'
+                className='m-auto gallery-img-header'
                 key={index}
                 {...lazyLoadOptions}
               >
-                <img
-                  className=' h-full'
-                  src={ecosystem.url}
-                  alt={ecosystem.content}
-                />
+                <img src={ecosystem.url} alt={ecosystem.content} />
               </LazyLoad>
-              <h3 className='text-center p-4'>{ecosystem.content}</h3>
+              <h3 className='h-1/2 text-center'>{ecosystem.content}</h3>
             </article>
           ))}
         </div>

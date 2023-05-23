@@ -1,6 +1,6 @@
 import React from 'react';
 import LazyLoad from 'react-lazyload';
-import Security from './7-system';
+import Security from './3-security';
 import Description from './1-function-description';
 import Plan from './2-plan';
 import Processing from './4-processing';
@@ -22,17 +22,17 @@ function WAF() {
       className='container m-auto bg-white text-darkBlue rounded-2xl'
     >
       <LazyLoad {...lazyLoadOptions}>
-        <h1 className='underline text-center text-2xl font-bold pt-8 px-4 mb-3 Scale'>
+        <h1 className='underline text-center text-3xl font-bold pt-8 px-4 mb-3 Scale'>
           {t('WAF.title')}
         </h1>
       </LazyLoad>
-      <div className='flex flex-col md:flex-row'>
-        <div className='lg:w-2/5'>
+      <div className='flex flex-col-reverse md:flex-row'>
+        <div className='w-full md:w-1/3 lg:w-2/5'>
           <LazyLoad className='h-full' {...lazyLoadOptions}>
             <Security />
           </LazyLoad>
         </div>
-        <div className='lg:w-3/5'>
+        <div className='w-full md:w-2/3 lg:w-3/5'>
           <LazyLoad {...lazyLoadOptions}>
             <Description />
           </LazyLoad>
@@ -45,14 +45,18 @@ function WAF() {
         </div>
       </div>
       <div className='p-8 flex flex-col md:flex-row items-center'>
-        <div className='lg:w-2/3'>
+        <div className='md:w-3/4 lg:w-2/3'>
           <LazyLoad {...lazyLoadOptions}>
             <PreventAttacks />
             <IncidentAnalysis />
           </LazyLoad>
         </div>
-        <LazyLoad className='md:w-1/3' {...lazyLoadOptions}>
-          <img src={securityImg} alt={securityImg} />
+        <LazyLoad className='md:w-1/4 lg:w-1/3' {...lazyLoadOptions}>
+          <img
+            className='w-1/2 lg:w-full m-auto'
+            src={securityImg}
+            alt={securityImg}
+          />
         </LazyLoad>
       </div>
       <LazyLoad {...lazyLoadOptions}>

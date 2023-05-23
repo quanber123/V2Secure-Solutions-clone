@@ -34,14 +34,22 @@ function Deployment() {
     );
   });
   return (
-    <div className='py-8 px-16 Right'>
-      <h3 className='text-xl font-bold'>4. DEPLOYMENT SUPPORT</h3>
-      <div className='md:flex'>
-        <div className='md:w-2/3 text-lg md:px-8 md:py-4'>
+    <div className='py-8 px-4 md:px-16 Right'>
+      <h3 className='text-2xl font-bold'>4. DEPLOYMENT SUPPORT</h3>
+      <div className='flex'>
+        <div className='w-2/3 md:w-2/3 lg:w-1/3 md:text-xl text-sm md:px-8 md:py-4'>
           {contentDeployment}
         </div>
-        <LazyLoad className='md:w-1/3 p-4 m-4' offset={100} once>
-          <img className='md:w-3/4' src={deploymentImg} alt={deploymentImg} />
+        <LazyLoad
+          className='w-1/3 md:w-1/3 lg:w-1/2  lg:p-4 lg:m-4 m-auto'
+          offset={100}
+          once
+        >
+          <img
+            className=' md:h-4/5 m-auto'
+            src={deploymentImg}
+            alt={deploymentImg}
+          />
         </LazyLoad>
       </div>
     </div>

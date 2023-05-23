@@ -5,9 +5,9 @@ function System() {
   const { t } = useTranslation();
   return (
     <div className='rounded-xl bg-blue text-white p-8 my-4 mx-8 Right'>
-      <h3 className='text-xl font-bold mb-2'>{t('WAF.title7')}</h3>
-      <div className='flex flex-col lg:flex-row lg:justify-between text-lg text-center'>
-        <div className='lg:w-1/2 h-full'>
+      <h3 className='text-2xl font-bold mb-2'>{t('WAF.title7')}</h3>
+      <div className='flex flex-col md:flex-row lg:justify-between text-xl md:text-sm text-center'>
+        <div className='md:w-1/2 h-full'>
           <p className='full m-4 p-4 border border-white rounded-xl'>
             {t('WAF.content31')}
           </p>
@@ -18,7 +18,7 @@ function System() {
             {t('WAF.content33')}
           </p>
         </div>
-        <div className='lg:w-1/2'>
+        <div className='md:w-1/2'>
           <p className='m-4 p-4 border border-white rounded-xl'>
             {t('WAF.content34')}
           </p>

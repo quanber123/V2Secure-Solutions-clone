@@ -34,11 +34,13 @@ function Minimum() {
   });
   return (
     <div className='Right'>
-      <h3 className='text-xl font-bold p-8 mb-2 mx-8'>{t('WAF.title8')}</h3>
-      <div className='flex flex-col lg:flex-row'>
-        <div className='lg:w-2/3 text-lg px-3 py-4'>{contentMinimum}</div>
-        <LazyLoad className='lg:w-1/3 p-4 lg:m-4 m-auto' offset={100} once>
-          <img className='lg:w-3/4' src={minimumImg} alt={minimumImg} />
+      <h3 className='text-2xl font-bold p-8 mb-2 mx-8'>{t('WAF.title8')}</h3>
+      <div className='flex flex-col md:flex-row'>
+        <div className='w-full lg:w-2/3 h-full text-lg px-3 py-4'>
+          {contentMinimum}
+        </div>
+        <LazyLoad className='md:w-1/2 p-4 m-auto' offset={100} once>
+          <img className='md:w-3/4' src={minimumImg} alt={minimumImg} />
         </LazyLoad>
       </div>
     </div>

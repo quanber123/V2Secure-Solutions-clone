@@ -77,14 +77,14 @@ function Networking() {
   });
   return (
     <div className='mx-8 px-3 py-4 border-b-2 border-l-2 border-r-2 border-blue rounded-b-xl Up'>
-      <h3 className='text-xl font-bold px-3'>{t('NIPS.title1')}</h3>
+      <h3 className='text-2xl font-bold px-3'>{t('NIPS.title1')}</h3>
       <div>
-        <h3 className='text-xl font-bold px-3 my-2'>{t('NIPS.idea1')}</h3>
-        <div className='text-lg'>{contentDetectionSignatures}</div>
+        <h3 className='text-2xl font-bold px-3 my-2'>{t('NIPS.idea1')}</h3>
+        <div className='text-xl'>{contentDetectionSignatures}</div>
       </div>
       <div>
-        <h3 className='text-xl font-bold px-3 my-2'>{t('NIPS.idea2')}</h3>
-        <div className='text-lg'>
+        <h3 className='text-2xl font-bold px-3 my-2'>{t('NIPS.idea2')}</h3>
+        <div className='text-xl'>
           {contentAnomalousActivity}
           <ul className='px-6'>
             <li>{t('NIPS.content18')}</li>
@@ -95,7 +95,7 @@ function Networking() {
         </div>
       </div>
       <div>
-        <h3 className='text-xl font-bold px-3 my-2'>{t('NIPS.idea3')}</h3>
+        <h3 className='text-2xl font-bold px-3 my-2'>{t('NIPS.idea3')}</h3>
         <LazyLoad className='flex justify-center my-4' offset={100} once>
           <img src={systemImg} alt={systemImg} />
         </LazyLoad>

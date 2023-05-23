@@ -17,7 +17,7 @@ function EDR() {
       className='container m-auto bg-white text-darkBlue rounded-2xl'
     >
       <LazyLoad {...lazyLoadOptions}>
-        <h1 className='underline text-center text-2xl font-bold pt-8 px-4 Scale'>
+        <h1 className='lg:w-full w-11/12 m-auto underline text-center text-3xl font-bold pt-8 px-4 Scale'>
           {t('EDR.title')}
         </h1>
       </LazyLoad>

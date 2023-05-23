@@ -49,7 +49,7 @@ function Function1() {
   ];
   const contentFunction1 = function1.map((content, index) => {
     return (
-      <p className='my-4 mx-4 text-lg' key={index}>
+      <p className='my-4 mx-4' key={index}>
         <i className='fa fa-star mr-4 text-sm'></i>
         {content.content}
       </p>
@@ -57,8 +57,8 @@ function Function1() {
   });
   return (
     <div className='h-full text-darkBlue p-8 Left'>
-      <h3 className='text-xl font-bold pl-3'>1. FUNCTIONS</h3>
-      <div className='text-lg'>{contentFunction1}</div>
+      <h3 className='text-2xl font-bold pl-3'>1. FUNCTIONS</h3>
+      <div className='text-xl'>{contentFunction1}</div>
     </div>
   );
 }

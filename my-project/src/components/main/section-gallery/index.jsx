@@ -16,17 +16,29 @@ function Gallery() {
       <h1 className='underline text-center text-2xl font-bold pt-8 px-4 Scale'>
         {t('gallery')}
       </h1>
-      <div className='md:flex flex-wrap items-center p-8 Scale'>
-        <LazyLoad className='gallery md:w-1/2 p-8' {...lazyLoadOptions}>
+      <div className='flex-col lg:flex-row flex flex-wrap items-center p-8 Scale'>
+        <LazyLoad
+          className='gallery lg:w-1/2 px-4 py-8 lg:p-8'
+          {...lazyLoadOptions}
+        >
           <img src={img1} alt={img1} />
         </LazyLoad>
-        <LazyLoad className='gallery md:w-1/2 p-8 ' {...lazyLoadOptions}>
+        <LazyLoad
+          className='gallery lg:w-1/2 px-4 py-8 lg:p-8 '
+          {...lazyLoadOptions}
+        >
           <img src={img2} alt={img2} />
         </LazyLoad>
-        <LazyLoad className='gallery md:w-1/2 p-8' {...lazyLoadOptions}>
+        <LazyLoad
+          className='gallery lg:w-1/2 px-4 py-8 lg:p-8'
+          {...lazyLoadOptions}
+        >
           <img src={img3} alt={img3} />
         </LazyLoad>
-        <LazyLoad className='gallery md:w-1/2 p-8' {...lazyLoadOptions}>
+        <LazyLoad
+          className='gallery lg:w-1/2 px-4 py-8 lg:p-8'
+          {...lazyLoadOptions}
+        >
           <img src={img4} alt={img4} />
         </LazyLoad>
       </div>

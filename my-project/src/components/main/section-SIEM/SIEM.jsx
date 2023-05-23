@@ -25,7 +25,7 @@ function SIEM() {
       className='bg-white text-darkBlue container m-auto rounded-2xl my-12'
     >
       <LazyLoad {...lazyLoadOptions}>
-        <h1 className='underline text-center text-2xl font-bold pt-8 px-4 Scale'>
+        <h1 className='lg:w-full w-11/12 m-auto underline text-center text-3xl font-bold pt-8 px-4 Scale'>
           {t('SIEM.title')}
         </h1>
       </LazyLoad>
@@ -36,10 +36,10 @@ function SIEM() {
         <Network />
       </LazyLoad>
       <div className='bg-blue mt-12 rounded-2xl p-8 lg:flex lg:flex-grow Right'>
-        <LazyLoad className='lg:w-2/5' {...lazyLoadOptions}>
+        <LazyLoad className='w-full lg:w-2/5' {...lazyLoadOptions}>
           <Processing />
         </LazyLoad>
-        <div className='flex flex-col lg:w-3/5 mt-6 lg:mt-0'>
+        <div className='flex flex-col w-full lg:w-3/5 mt-6 lg:mt-0'>
           <LazyLoad {...lazyLoadOptions}>
             <Threat />
           </LazyLoad>
@@ -48,13 +48,13 @@ function SIEM() {
           </LazyLoad>
         </div>
       </div>
-      <div className='p-8 flex flex-col lg:flex-row items-center'>
-        <LazyLoad className='lg:w-3/5' {...lazyLoadOptions}>
+      <div className='p-8 flex flex-col md:flex-row items-center'>
+        <LazyLoad className='md:w-2/3 lg:w-3/5' {...lazyLoadOptions}>
           <Security />
           <Incident />
         </LazyLoad>
-        <LazyLoad {...lazyLoadOptions} className='lg:w-2/5 h-full'>
-          <img className='w-full' src={v2siem} alt={v2siem} />
+        <LazyLoad {...lazyLoadOptions} className='md:w-1/3 lg:w-2/5'>
+          <img src={v2siem} alt={v2siem} />
         </LazyLoad>
       </div>
       <LazyLoad {...lazyLoadOptions}>

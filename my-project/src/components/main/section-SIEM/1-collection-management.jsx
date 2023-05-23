@@ -52,24 +52,24 @@ function Collections() {
   });
   return (
     <div className='p-8 Right'>
-      <h3 className='text-center text-xl font-bold'>{t('SIEM.title1')}</h3>
-      <div className='p-8 lg:flex justify-between lg:flex-grow'>
-        <div className='lg:w-2/3'>
-          <h4 className='font-bold text-xl'>
+      <h3 className='text-center text-2xl font-bold'>{t('SIEM.title1')}</h3>
+      <div className='p-8 lg:flex lg:justify-between lg:flex-col'>
+        <div className='lg:w-2/3 w-full'>
+          <h4 className='font-bold text-2xl'>
             <i className='fa fa-stop -ml-2 mr-2'></i>
             {t('SIEM.idea1')}
           </h4>
-          <div className='border-l-2  pl-4 pb-4 text-lg'>
+          <div className='border-l-2  pl-4 pb-4 text-xl'>
             {contentCollecting}
           </div>
-          <h4 className='font-bold text-xl'>
+          <h4 className='font-bold text-2xl'>
             <i className='fa fa-stop -ml-2 mr-2'></i>
             {t('SIEM.idea2')}
           </h4>
-          <div className='pl-4 text-lg'>{contentAutomatic}</div>
+          <div className='pl-4 text-xl'>{contentAutomatic}</div>
         </div>
-        <LazyLoad className='lg:w-1/3' offset={100} once>
-          <img className='w-full h-full' src={logImg} alt={logImg} />
+        <LazyLoad className='lg:w-1/3 w-full' offset={100} once>
+          <img className='m-auto' src={logImg} alt={logImg} />
         </LazyLoad>
       </div>
     </div>
