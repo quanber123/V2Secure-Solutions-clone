@@ -8,8 +8,8 @@ function System() {
       <h3 className='px-3 md:m-2 text-white text-lg md:text-2xl font-bold text-center Left'>
         {t('EDR.title3')}
       </h3>
-      <div className='md:flex md:flex-grow justify-between text-base md:text-xl text-center text-white Left'>
-        <div className='md:w-1/2 h-full'>
+      <div className='md:flex md:flex-grow justify-between text-base md:text-xl text-center text-white'>
+        <div className='md:w-1/2 h-full Left'>
           <p className='m-4 p-4 border border-white rounded-xl'>
             {t('EDR.content25')}
           </p>
@@ -23,7 +23,7 @@ function System() {
             {t('EDR.content28')}
           </p>
         </div>
-        <div className='md:w-1/2'>
+        <div className='md:w-1/2 Left'>
           <p className='m-4 p-4 border border-white rounded-xl'>
             {t('EDR.content29')}
           </p>

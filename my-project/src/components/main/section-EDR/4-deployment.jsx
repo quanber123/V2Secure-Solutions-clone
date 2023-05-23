@@ -37,13 +37,13 @@ function Deployment() {
   });
   return (
     <div className='py-8 px-4 md:px-16'>
-      <h3 className='text-xl md:text-2xl font-bold'>{t('EDR.title4')}</h3>
+      <h3 className='text-xl md:text-2xl font-bold Right'>{t('EDR.title4')}</h3>
       <div className='flex justify-between'>
-        <div className='w-2/3 md:w-2/3 lg:w-1/3  md:text-xl text-sm md:px-8 md:py-4'>
+        <div className='w-2/3 md:w-2/3 lg:w-1/3  md:text-xl text-sm md:px-8 md:py-4 Right'>
           {contentDeployment}
         </div>
         <LazyLoad
-          className='w-1/3 md:w-1/3 lg:w-1/2  lg:p-4 lg:m-4 m-auto'
+          className='w-1/3 md:w-1/3 lg:w-1/2  lg:p-4 lg:m-4 m-auto Right'
           offset={0}
           once
         >

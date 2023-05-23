@@ -49,7 +49,7 @@ function System() {
         <div className='md:w-2/3 text-white text-lg md:text-xl px-3 py-4'>
           {contentSystem}
         </div>
-        <LazyLoad className='md:w-1/3' offset={100} once>
+        <LazyLoad className='md:w-1/3 Left' offset={100} once>
           <img className='w-4/5 m-auto' src={systemImg} alt={systemImg} />
         </LazyLoad>
       </div>

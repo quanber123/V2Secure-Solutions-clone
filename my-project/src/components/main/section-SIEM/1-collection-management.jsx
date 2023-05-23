@@ -70,7 +70,7 @@ function Collections() {
           </h4>
           <div className='pl-4 text-lg md:text-xl'>{contentAutomatic}</div>
         </div>
-        <LazyLoad className='lg:w-1/3 w-full m-auto' offset={100} once>
+        <LazyLoad className='lg:w-1/3 w-full m-auto Right' offset={100} once>
           <img className='m-auto' src={logImg} alt={logImg} />
         </LazyLoad>
       </div>

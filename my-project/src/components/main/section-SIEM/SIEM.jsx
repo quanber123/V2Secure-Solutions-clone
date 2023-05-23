@@ -47,15 +47,15 @@ function SIEM() {
         </div>
       </div>
       <div className='p-8 flex flex-col md:flex-row just items-center'>
-        <LazyLoad className='md:w-2/3 lg:w-3/5' {...lazyLoadOptions}>
+        <LazyLoad className='md:w-2/3 lg:w-3/5 Scale' {...lazyLoadOptions}>
           <Security />
           <Incident />
         </LazyLoad>
-        <LazyLoad {...lazyLoadOptions} className='md:w-1/3 lg:w-2/5'>
+        <LazyLoad {...lazyLoadOptions} className='md:w-1/3 lg:w-2/5 Right'>
           <img className='m-auto w-full' src={v2siem} alt={v2siem} />
         </LazyLoad>
       </div>
-      <LazyLoad {...lazyLoadOptions}>
+      <LazyLoad className='Left' {...lazyLoadOptions}>
         <System />
       </LazyLoad>
     </section>

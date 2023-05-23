@@ -6,7 +6,7 @@ function System() {
   return (
     <div className='rounded-xl bg-blue text-white p-8 my-4 mx-8 Left'>
       <h3 className='text-lg md:text-2xl font-bold mb-2'>{t('WAF.title7')}</h3>
-      <div className='flex flex-col md:flex-row lg:justify-between text-lg md:text-xl md:text-sm text-center'>
+      <div className='flex flex-col md:flex-row lg:justify-between md:text-xl text-sm text-center'>
         <div className='md:w-1/2 h-full'>
           <p className='full m-4 p-4 border border-white rounded-xl'>
             {t('WAF.content31')}

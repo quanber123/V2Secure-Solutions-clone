@@ -21,7 +21,7 @@ function Incident() {
   const contentIncident = incident.map((content, index) => {
     return (
       <div key={index} className='flex my-2'>
-        <LazyLoad className='w-4 mt-2 mr-4' offset={100} once>
+        <LazyLoad className='w-4 mt-2 mr-4 Right' offset={100} once>
           <img src={guard} alt={guard} />
         </LazyLoad>
         <p className='w-full font-medium'>{content.content}</p>
