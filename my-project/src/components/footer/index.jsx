@@ -4,11 +4,11 @@ import LazyLoad from 'react-lazyload';
 function Footer() {
   const { t } = useTranslation();
   return (
-    <LazyLoad offset={100} once>
-      <footer className='container m-auto font-bold text-lg text-center p-4 Scale'>
+    <footer className='container m-auto font-bold text-lg text-center p-4 Scale'>
+      <LazyLoad offset={0} once>
         {t('copyright')}
-      </footer>
-    </LazyLoad>
+      </LazyLoad>
+    </footer>
   );
 }
 

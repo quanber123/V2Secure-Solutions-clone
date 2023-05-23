@@ -107,8 +107,8 @@ function MultiTask() {
           {t('EDR.title1')}
         </h3>
         <LazyLoad
-          className='absolute z-50 w-full h-full -top-40  md:-top-14 lg:top-0 left-0 m-auto flex justify-center items-center'
-          offset={100}
+          className='absolute z-50 w-full h-full -top-40  md:-top-14 lg:top-0 left-0 m-auto flex justify-center items-center Scale'
+          offset={0}
           once
         >
           <img className='lg:h-full' src={solutionImg} alt={solutionImg} />

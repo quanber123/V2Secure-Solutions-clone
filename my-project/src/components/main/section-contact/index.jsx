@@ -7,10 +7,14 @@ import qr from '../../../images/contact/scan-icon.9a8b224f402749907bca.png';
 import { useTranslation } from 'react-i18next';
 function Contact() {
   const { t } = useTranslation();
+  const lazyLoadOptions = {
+    offset: 0,
+    once: true,
+  };
   return (
     <section
       id='contact'
-      className='container m-auto bg-white text-darkBlue rounded-2xl my-12 Left'
+      className='container m-auto bg-white text-darkBlue rounded-2xl my-12 Up'
     >
       <h1 className='underline text-center text-xl md:text-2xl font-bold pt-8 px-4'>
         {t('about.title')}
@@ -26,19 +30,19 @@ function Contact() {
         <div className='flex'>
           <div className='w-2/3 px-8 py-4 text-base md:text-lg'>
             <div className='flex items-center py-2'>
-              <LazyLoad className='h-8 mr-4' offset={100} once>
+              <LazyLoad className='h-8 mr-4' {...lazyLoadOptions}>
                 <img className='w-full h-full' src={phone} alt={phone} />
               </LazyLoad>
               <p>0869 061 186</p>
             </div>
             <div className='flex items-center py-2'>
-              <LazyLoad className='h-8 mr-4' offset={100} once>
+              <LazyLoad className='h-8 mr-4' {...lazyLoadOptions}>
                 <img className='w-full h-full' src={web} alt={web} />
               </LazyLoad>
               <p>v2secure.vn</p>
             </div>
             <div className='flex md:items-center py-2'>
-              <LazyLoad className='h-8 mr-4' offset={100} once>
+              <LazyLoad className='h-8 mr-4' {...lazyLoadOptions}>
                 <img className='w-full h-full' src={location} alt={location} />
               </LazyLoad>
               <p className='w-5/6'>{t('about.district')}</p>

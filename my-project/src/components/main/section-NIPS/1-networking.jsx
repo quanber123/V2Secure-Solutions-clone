@@ -84,7 +84,7 @@ function Networking() {
           {t('NIPS.idea1')}
         </h3>
         <div className=' md:text-xl'>{contentDetectionSignatures}</div>
-        <LazyLoad className='flex justify-center my-4' offset={100} once>
+        <LazyLoad className='flex justify-center my-4' offset={0} once>
           <img src={nipsImg} alt={nipsImg} />
         </LazyLoad>
       </div>
@@ -106,7 +106,7 @@ function Networking() {
         <h3 className='text-lg md:text-2xl font-bold px-3 my-2'>
           {t('NIPS.idea3')}
         </h3>
-        <LazyLoad className='flex justify-center my-4' offset={100} once>
+        <LazyLoad className='flex justify-center my-4' offset={0} once>
           <img src={systemImg} alt={systemImg} />
         </LazyLoad>
       </div>

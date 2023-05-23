@@ -5,10 +5,10 @@ import { useTranslation } from 'react-i18next';
 function Function2() {
   const { t } = useTranslation();
   return (
-    <div className='rounded-xl flex justify-between Right'>
+    <div className='rounded-xl flex justify-between'>
       <LazyLoad
-        className='w-2/5 md:w-1/2 lg:p-40 px-4 bg-blue flex justify-center items-center'
-        offset={100}
+        className='w-2/5 md:w-1/2 lg:p-40 px-4 bg-blue flex justify-center items-center Left'
+        offset={0}
         once
       >
         <img
@@ -21,7 +21,7 @@ function Function2() {
         <h3 className='text-lg md:text-2xl font-bold mb-2 my-4 md:my-0'>
           {t('NAC.title2')}
         </h3>
-        <div className='text-base md:text-xl text-center text-white'>
+        <div className='text-base md:text-xl text-center text-white Right'>
           <div className='h-full'>
             <p className='my-4 p-4 md:p-8 bg-blue rounded-xl'>
               {t('NAC.content1')}

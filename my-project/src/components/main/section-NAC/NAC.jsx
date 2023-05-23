@@ -6,19 +6,21 @@ import Function2 from './2-function-2';
 import { useTranslation } from 'react-i18next';
 function NAC() {
   const { t } = useTranslation();
+  const lazyLoadOptions = {
+    offset: 0,
+    once: true,
+  };
   return (
     <section
       id='nac'
       className='container m-auto bg-white text-darkBlue rounded-2xl my-12'
     >
-      <LazyLoad offset={100} once>
-        <h1 className='underline text-center text-xl md:text-3xl font-bold pt-8 px-4 Scale'>
-          {t('NAC.title')}
-        </h1>
-      </LazyLoad>
+      <h1 className='underline text-center text-xl md:text-3xl font-bold pt-8 px-4 Scale'>
+        {t('NAC.title')}
+      </h1>
       <LazyLoad
-        className='flex justify-center items-center m-8 Up'
-        offset={100}
+        className='flex justify-center items-center m-8 Scale'
+        {...lazyLoadOptions}
         once
       >
         <img
@@ -27,10 +29,10 @@ function NAC() {
           alt={accessImg}
         />
       </LazyLoad>
-      <LazyLoad offset={100} once>
+      <LazyLoad {...lazyLoadOptions}>
         <Function1 />
       </LazyLoad>
-      <LazyLoad offset={100} once>
+      <LazyLoad {...lazyLoadOptions}>
         <Function2 />
       </LazyLoad>
     </section>

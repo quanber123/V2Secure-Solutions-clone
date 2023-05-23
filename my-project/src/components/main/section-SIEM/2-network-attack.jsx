@@ -22,7 +22,7 @@ function Network() {
   const contentNetwork = network.map((content, index) => {
     return (
       <div key={index} className='flex my-2'>
-        <LazyLoad className='w-4 mt-2 mr-4' offset={100} once>
+        <LazyLoad className='w-4 mt-2 mr-4' offset={0} once>
           <img src={guard} alt={guard} />
         </LazyLoad>
         <p className='w-full'>{content.content}</p>
@@ -35,7 +35,7 @@ function Network() {
         {t('SIEM.title2')}
       </h3>
       <div className='lg:flex lg:flex-row'>
-        <LazyLoad className='w-3/4 lg:w-1/3 m-auto' offset={100} once>
+        <LazyLoad className='w-3/4 lg:w-1/3 m-auto' offset={0} once>
           <img className='m-auto' src={netImg} alt={netImg} />
         </LazyLoad>
         <div className='lg:w-2/3 text-white text-lg md:text-xl px-3 py-4'>

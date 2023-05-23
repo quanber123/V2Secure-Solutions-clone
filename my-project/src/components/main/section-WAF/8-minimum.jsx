@@ -41,7 +41,7 @@ function Minimum() {
         <div className='w-full lg:w-2/3 h-full text-lg px-3 py-4'>
           {contentMinimum}
         </div>
-        <LazyLoad className='md:w-1/2 p-4 m-auto' offset={100} once>
+        <LazyLoad className='md:w-1/2 p-4 m-auto' offset={0} once>
           <img className='md:w-3/4' src={minimumImg} alt={minimumImg} />
         </LazyLoad>
       </div>

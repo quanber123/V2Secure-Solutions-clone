@@ -30,7 +30,7 @@ function Processing() {
       <div className='text-lg md:text-xl px-3 py-4'>{contentProcessing}</div>
       <LazyLoad
         className='flex items-center justify-center w-full p-4'
-        offset={100}
+        offset={0}
         once
       >
         <img className='w-full' src={processingImg} alt={processingImg} />

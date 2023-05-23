@@ -22,7 +22,7 @@ function IncidentAnalysis() {
     );
   });
   return (
-    <div className='Left'>
+    <div className='Right'>
       <h3 className='text-xl md:text-2xl font-bold lg:px-3 lg:mx-4'>
         {t('WAF.title6')}
       </h3>

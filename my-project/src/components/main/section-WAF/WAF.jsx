@@ -13,7 +13,7 @@ import { useTranslation } from 'react-i18next';
 function WAF() {
   const { t } = useTranslation();
   const lazyLoadOptions = {
-    offset: 100,
+    offset: 0,
     once: true,
   };
   return (

@@ -27,7 +27,7 @@ function Plan() {
     );
   });
   return (
-    <div className='text-darkBlue Left'>
+    <div className='text-darkBlue Up'>
       <h3 className='text-xl md:text-2xl font-bold px-3 mx-4'>
         {t('WAF.title2')}
       </h3>

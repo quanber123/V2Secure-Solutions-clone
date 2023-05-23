@@ -8,29 +8,27 @@ import { useTranslation } from 'react-i18next';
 function EDR() {
   const { t } = useTranslation();
   const lazyLoadOptions = {
-    offset: 100,
+    offset: 0,
     once: true,
   };
   return (
     <section
       id='edr'
-      className='container m-auto bg-white text-darkBlue rounded-2xl Up'
+      className='container m-auto bg-white text-darkBlue rounded-2xl Scale'
     >
-      <LazyLoad {...lazyLoadOptions}>
-        <h1 className='lg:w-full w-11/12 m-auto underline text-center text-xl md:text-3xl font-bold pt-8 px-4 Scale'>
-          {t('EDR.title')}
-        </h1>
-      </LazyLoad>
-      <LazyLoad {...lazyLoadOptions}>
+      <h1 className='lg:w-full w-11/12 m-auto underline text-center text-xl md:text-3xl font-bold pt-8 px-4 Scale'>
+        {t('EDR.title')}
+      </h1>
+      <LazyLoad className='Scale' {...lazyLoadOptions}>
         <MultiTask />
       </LazyLoad>
-      <LazyLoad {...lazyLoadOptions}>
+      <LazyLoad className='Scale' {...lazyLoadOptions}>
         <Incident />
       </LazyLoad>
-      <LazyLoad {...lazyLoadOptions}>
+      <LazyLoad className='Left' {...lazyLoadOptions}>
         <System />
       </LazyLoad>
-      <LazyLoad {...lazyLoadOptions}>
+      <LazyLoad className='Right' {...lazyLoadOptions}>
         <Deployment />
       </LazyLoad>
     </section>

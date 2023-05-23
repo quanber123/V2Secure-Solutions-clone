@@ -7,13 +7,11 @@ import EDR from './section-EDR/EDR';
 import NAC from './section-NAC/NAC';
 import Gallery from './section-gallery/index';
 import Contact from './section-contact/index';
-
 function Main() {
   const lazyLoadOptions = {
     offset: 100,
     once: true,
   };
-
   return (
     <main>
       <LazyLoad {...lazyLoadOptions}>

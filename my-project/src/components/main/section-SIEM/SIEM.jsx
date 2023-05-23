@@ -1,6 +1,6 @@
 import React from 'react';
 import LazyLoad from 'react-lazyload';
-
+import { useTranslation } from 'react-i18next';
 import Collections from './1-collection-management';
 import Network from './2-network-attack';
 import Processing from './3-processing';
@@ -9,13 +9,11 @@ import Vulnerability from './5-vulnerability';
 import Security from './6-security-automatically';
 import Incident from './7-incident';
 import System from './8-system';
-
 import v2siem from '../../../images/information/v2-siem-6.3dc16344590ad630264b.png';
-import { useTranslation } from 'react-i18next';
 
 function SIEM() {
   const lazyLoadOptions = {
-    offset: 100,
+    offset: 0,
     once: true,
   };
   const { t } = useTranslation();
