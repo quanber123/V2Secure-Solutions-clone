@@ -14,7 +14,7 @@ function EDR() {
   return (
     <section
       id='edr'
-      className='container m-auto bg-white text-darkBlue rounded-2xl'
+      className='container m-auto bg-white text-darkBlue rounded-2xl Up'
     >
       <LazyLoad {...lazyLoadOptions}>
         <h1 className='lg:w-full w-11/12 m-auto underline text-center text-xl md:text-3xl font-bold pt-8 px-4 Scale'>

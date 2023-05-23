@@ -108,7 +108,7 @@ function Header() {
           </LazyLoad>
           <div
             className={`flex flex-col lg:flex-row font-bold lg:text-lg justify-between lg:items-center ${
-              showNav ? 'show' : 'hidden'
+              showNav ? 'show' : 'hidden lg:flex'
             }`}
           >
             <NavLink

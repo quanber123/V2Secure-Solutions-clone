@@ -161,6 +161,7 @@ html {
   right: 3%;
   z-index: 800;
   animation: Scale 0.5s linear;
+  opacity: 0.8;
 }
 /* Animation */
 .Scale {
