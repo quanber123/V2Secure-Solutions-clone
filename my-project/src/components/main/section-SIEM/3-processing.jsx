@@ -16,7 +16,7 @@ function Processing() {
   ];
   const contentProcessing = processing.map((content, index) => {
     return (
-      <p className='m-4' key={index}>
+      <p className='my-4 md:m-4' key={index}>
         <i className='fa fa-hand-o-right mr-4'></i>
         {content.content}
       </p>
@@ -24,16 +24,16 @@ function Processing() {
   });
   return (
     <div className='Scale'>
-      <h3 className='text-center text-white text-2xl font-bold'>
+      <h3 className='text-center text-white text-xl md:text-2xl font-bold'>
         {t('SIEM.title3')}
       </h3>
-      <div className='text-white text-xl'>
-        <div className='px-4'>{contentProcessing}</div>
+      <div className='text-white text-lg md:text-xl'>
+        <div className='md:px-4'>{contentProcessing}</div>
         <ul>
-          <li className='px-12'>{t('SIEM.content15')}</li>
-          <li className='px-12'>{t('SIEM.content16')}</li>
-          <li className='px-12'>{t('SIEM.content17')}</li>
-          <li className='px-12'>{t('SIEM.content18')}</li>
+          <li className='px-4 md:px-12'>{t('SIEM.content15')}</li>
+          <li className='px-4 md:px-12'>{t('SIEM.content16')}</li>
+          <li className='px-4 md:px-12'>{t('SIEM.content17')}</li>
+          <li className='px-4 md:px-12'>{t('SIEM.content18')}</li>
         </ul>
       </div>
     </div>

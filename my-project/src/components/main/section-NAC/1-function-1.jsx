@@ -56,9 +56,9 @@ function Function1() {
     );
   });
   return (
-    <div className='h-full text-darkBlue p-8 Left'>
-      <h3 className='text-2xl font-bold pl-3'>1. FUNCTIONS</h3>
-      <div className='text-xl'>{contentFunction1}</div>
+    <div className='h-full text-darkBlue md:p-8 Left'>
+      <h3 className='text-lg md:text-2xl font-bold pl-3'>1. FUNCTIONS</h3>
+      <div className='text-base md:text-xl'>{contentFunction1}</div>
     </div>
   );
 }

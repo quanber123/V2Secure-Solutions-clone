@@ -34,7 +34,9 @@ function Minimum() {
   });
   return (
     <div className='Right'>
-      <h3 className='text-2xl font-bold p-8 mb-2 mx-8'>{t('WAF.title8')}</h3>
+      <h3 className='text-xl md:text-2xl font-bold px-8 py-4 md:p-8 md:mb-2 md:mx-8'>
+        {t('WAF.title8')}
+      </h3>
       <div className='flex flex-col md:flex-row'>
         <div className='w-full lg:w-2/3 h-full text-lg px-3 py-4'>
           {contentMinimum}

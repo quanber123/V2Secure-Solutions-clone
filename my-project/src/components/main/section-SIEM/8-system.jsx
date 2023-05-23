@@ -42,9 +42,11 @@ function System() {
   });
   return (
     <div className='ml-auto w-11/12 rounded-tl-2xl p-8 bg-blue Left'>
-      <h3 className='px-3 text-white text-2xl font-bold'>{t('SIEM.title8')}</h3>
+      <h3 className='px-3 text-white text-xl md:text-2xl font-bold'>
+        {t('SIEM.title8')}
+      </h3>
       <div className='flex flex-col md:flex-row items-center'>
-        <div className='md:w-2/3 text-white text-xl px-3 py-4'>
+        <div className='md:w-2/3 text-white text-lg md:text-xl px-3 py-4'>
           {contentSystem}
         </div>
         <LazyLoad className='md:w-1/3' offset={100} once>

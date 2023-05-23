@@ -12,7 +12,7 @@ function NAC() {
       className='container m-auto bg-white text-darkBlue rounded-2xl my-12'
     >
       <LazyLoad offset={100} once>
-        <h1 className='underline text-center text-3xl font-bold pt-8 px-4 Scale'>
+        <h1 className='underline text-center text-xl md:text-3xl font-bold pt-8 px-4 Scale'>
           {t('NAC.title')}
         </h1>
       </LazyLoad>
@@ -22,7 +22,7 @@ function NAC() {
         once
       >
         <img
-          className='w-1/3 md:w-4/5 h-full'
+          className='w-2/3 md:w-4/5 h-full'
           src={accessImg}
           alt={accessImg}
         />

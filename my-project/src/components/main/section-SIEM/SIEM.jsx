@@ -25,7 +25,7 @@ function SIEM() {
       className='bg-white text-darkBlue container m-auto rounded-2xl my-12'
     >
       <LazyLoad {...lazyLoadOptions}>
-        <h1 className='lg:w-full w-11/12 m-auto underline text-center text-3xl font-bold pt-8 px-4 Scale'>
+        <h1 className='lg:w-full md:w-11/12 m-auto underline text-center text-xl md:text-3xl font-bold pt-8 px-4 Scale'>
           {t('SIEM.title')}
         </h1>
       </LazyLoad>
@@ -35,7 +35,7 @@ function SIEM() {
       <LazyLoad {...lazyLoadOptions}>
         <Network />
       </LazyLoad>
-      <div className='bg-blue mt-12 rounded-2xl p-8 lg:flex lg:flex-grow Right'>
+      <div className='bg-blue mt-12 rounded-2xl  p-8 lg:flex lg:flex-grow Right'>
         <LazyLoad className='w-full lg:w-2/5' {...lazyLoadOptions}>
           <Processing />
         </LazyLoad>

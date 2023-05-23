@@ -12,17 +12,19 @@ function Contact() {
       id='contact'
       className='container m-auto bg-white text-darkBlue rounded-2xl my-12 Left'
     >
-      <h1 className='underline text-center text-2xl font-bold pt-8 px-4'>
+      <h1 className='underline text-center text-xl md:text-2xl font-bold pt-8 px-4'>
         {t('about.title')}
       </h1>
-      <div className='p-8 text-center text-2xl font-semibold'>
+      <div className='p-8 text-center text-xl md:text-2xl font-semibold'>
         <h3 className='my-2'>{t('about.title1')}</h3>
         <h3 className='my-2'>{t('about.title2')}</h3>
       </div>
       <div className='p-8 bg-blue text-white rounded-b-2xl'>
-        <h3 className='font-bold text-xl px-8'>{t('about.contact')}</h3>
+        <h3 className='font-bold text-lg md:text-xl px-8'>
+          {t('about.contact')}
+        </h3>
         <div className='flex'>
-          <div className='w-2/3 px-8 py-4 md:text-lg'>
+          <div className='w-2/3 px-8 py-4 text-base md:text-lg'>
             <div className='flex items-center py-2'>
               <LazyLoad className='h-8 mr-4' offset={100} once>
                 <img className='w-full h-full' src={phone} alt={phone} />
@@ -46,7 +48,7 @@ function Contact() {
             <LazyLoad>
               <img src={qr} alt={qr} />
             </LazyLoad>
-            <div className='text-xl font-bold md:p-2 m-2'>
+            <div className='text-lg md:text-xl font-bold md:p-2 m-2'>
               <h3 className='text-yellow'>{t('about.qr')}</h3>
               <h3>{t('about.details')}</h3>
             </div>

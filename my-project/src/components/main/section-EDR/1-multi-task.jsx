@@ -101,38 +101,38 @@ function MultiTask() {
     );
   });
   return (
-    <div className='px-8 pt-8'>
+    <div className='md:px-8 pt-8'>
       <div className='relative'>
-        <h3 className='text-2xl font-bold mb-2 md:mx-12 Scale'>
+        <h3 className='px-4 md:px-0 text-xl md:text-2xl font-bold mb-2 md:mx-12 Scale'>
           {t('EDR.title1')}
         </h3>
         <LazyLoad
-          className='absolute z-50 w-full h-full top-0 left-0 m-auto flex justify-center items-center'
+          className='absolute z-50 w-full h-full -top-40  md:-top-14 lg:top-0 left-0 m-auto flex justify-center items-center'
           offset={100}
           once
         >
           <img className='lg:h-full' src={solutionImg} alt={solutionImg} />
         </LazyLoad>
         <div className='flex flex-wrap items-stretch'>
-          <div className='multi-task-content text-xl border border-darkBlue rounded-xl mb-8 Scale'>
+          <div className='multi-task-content text-lg md:text-xl border border-darkBlue rounded-xl mb-8 Scale'>
             <h4 className='font-semibold text-center'>{t('EDR.idea1')}</h4>
             <div>{contentTerminal}</div>
           </div>
-          <div className='multi-task-content text-xl border border-darkBlue rounded-xl p-4mb-8 Scale'>
+          <div className='multi-task-content text-lg md:text-xl border border-darkBlue rounded-xl p-4mb-8 Scale'>
             <h4 className='font-semibold text-center'>{t('EDR.idea2')}</h4>
             <div>{contentBehavioral}</div>
           </div>
-          <div className='multi-task-content text-xl border border-darkBlue rounded-xl p-4 Scale'>
+          <div className='multi-task-content text-lg md:text-xl border border-darkBlue rounded-xl p-4 Scale'>
             <h4 className='font-semibold text-center'>{t('EDR.idea3')}</h4>
             <div>{contentMalware}</div>
           </div>
-          <div className='multi-task-content text-xl border border-darkBlue rounded-xl p-4 Scale'>
+          <div className='multi-task-content  text-lg md:text-xl border border-darkBlue rounded-xl p-4 Scale'>
             <h4 className='font-semibold text-center'>{t('EDR.idea4')}</h4>
             <div>{contentInformation}</div>
           </div>
         </div>
       </div>
-      <div className='text-xl p-8 mx-4 Scale'>
+      <div className='text-lg md:text-xl p-8 mx-4 Scale'>
         <p>{t('EDR.content21')}</p>
       </div>
     </div>

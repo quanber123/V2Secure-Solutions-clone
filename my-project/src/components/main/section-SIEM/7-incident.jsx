@@ -30,8 +30,8 @@ function Incident() {
   });
   return (
     <div className='text-darkBlue Right'>
-      <h3 className='text-2xl font-bold px-3'>{t('SIEM.title7')}</h3>
-      <div className='text-xl px-3 py-4'>{contentIncident}</div>
+      <h3 className='text-xl md:text-2xl font-bold px-3'>{t('SIEM.title7')}</h3>
+      <div className='text-lg md:text-xl px-3 py-4'>{contentIncident}</div>
     </div>
   );
 }

@@ -31,14 +31,14 @@ function Network() {
   });
   return (
     <div className='ml-auto w-11/12 rounded-l-2xl p-8 bg-blue Left'>
-      <h3 className='text-center text-white text-2xl mb-4 font-bold'>
+      <h3 className='text-center text-white text-xl md:text-2xl mb-4 font-bold'>
         {t('SIEM.title2')}
       </h3>
       <div className='lg:flex lg:flex-row'>
         <LazyLoad className='w-3/4 lg:w-1/3 m-auto' offset={100} once>
           <img className='m-auto' src={netImg} alt={netImg} />
         </LazyLoad>
-        <div className='lg:w-2/3 text-white text-xl px-3 py-4'>
+        <div className='lg:w-2/3 text-white text-lg md:text-xl px-3 py-4'>
           {contentNetwork}
         </div>
       </div>

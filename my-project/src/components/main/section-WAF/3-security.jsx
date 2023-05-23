@@ -52,7 +52,7 @@ function Security() {
   ];
   const contentSecurity = security.map((content, index) => {
     return (
-      <p className='my-8 lg:mx-4 text-lg' key={index}>
+      <p className='my-8 lg:mx-4' key={index}>
         <i className='fa fa-star mr-4 text-sm'></i>
         {content.content}
       </p>
@@ -60,8 +60,10 @@ function Security() {
   });
   return (
     <div className='h-full bg-blue text-white rounded-tr-2xl p-4 lg:p-8 Right'>
-      <h3 className='text-2xl font-bold lg:pl-3'>{t('WAF.title3')}</h3>
-      <div className='text-xl'>{contentSecurity}</div>
+      <h3 className='text-xl md:text-2xl font-bold lg:pl-3'>
+        {t('WAF.title3')}
+      </h3>
+      <div className='text-lg md:text-xl'>{contentSecurity}</div>
     </div>
   );
 }

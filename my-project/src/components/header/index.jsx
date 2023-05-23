@@ -81,6 +81,7 @@ function Header() {
   const handleChangeLanguage = useCallback(() => {
     const lang = currentLanguage === 'en' ? 'vi' : 'en';
     setCurrentLanguage(lang);
+    setShowNav(false);
   }, [currentLanguage]);
 
   useEffect(() => {
@@ -96,18 +97,22 @@ function Header() {
       >
         <section className='h-full flex justify-between container m-auto'>
           <LazyLoad
-            className='w-full md:w-1/12 p-1 cursor-pointer'
+            className='md:w-1/12 py-2 cursor-pointer'
             {...lazyLoadOptions}
           >
-            <img className='h-full' src={isSticky ? logo2 : logo} alt='logo' />
+            <img
+              className='h-full mx-5 lg:mx-0'
+              src={isSticky ? logo2 : logo}
+              alt='logo'
+            />
           </LazyLoad>
           <div
-            className={`lg:flex font-bold text-lg lg:justify-between lg:items-center ${
+            className={`flex flex-col lg:flex-row font-bold lg:text-lg justify-between lg:items-center ${
               showNav ? 'show' : 'hidden'
             }`}
           >
             <NavLink
-              className={`mx-5 nav-link ${
+              className={`px-5 py-2 nav-link ${
                 stateLink === 'siem' ? 'link-active' : ''
               } ${isSticky ? 'sticky' : ''}`}
               to='#'
@@ -116,7 +121,7 @@ function Header() {
               V2-SIEM
             </NavLink>
             <NavLink
-              className={`mx-5 nav-link ${
+              className={`px-5 py-2 nav-link ${
                 stateLink === 'waf' ? 'link-active' : ''
               } ${isSticky ? 'sticky' : ''}`}
               to='#'
@@ -125,7 +130,7 @@ function Header() {
               V2-WAF
             </NavLink>
             <NavLink
-              className={`mx-5 nav-link ${
+              className={`px-5 py-2 nav-link ${
                 stateLink === 'nips' ? 'link-active' : ''
               } ${isSticky ? 'sticky' : ''}`}
               to='#'
@@ -134,7 +139,7 @@ function Header() {
               V2-NIPS
             </NavLink>
             <NavLink
-              className={`mx-5 nav-link ${
+              className={`px-5 py-2 nav-link ${
                 stateLink === 'edr' ? 'link-active' : ''
               } ${isSticky ? 'sticky' : ''}`}
               to='#'
@@ -143,7 +148,7 @@ function Header() {
               V2-EDR
             </NavLink>
             <NavLink
-              className={`mx-5 nav-link ${
+              className={`px-5 py-2 nav-link ${
                 stateLink === 'nac' ? 'link-active' : ''
               } ${isSticky ? 'sticky' : ''}`}
               to='#'
@@ -152,7 +157,7 @@ function Header() {
               V2-NAC
             </NavLink>
             <NavLink
-              className={`mx-5 nav-link ${
+              className={`px-5 py-2 nav-link ${
                 stateLink === 'contact' ? 'link-active' : ''
               } ${isSticky ? 'sticky' : ''}`}
               to='#'
@@ -160,14 +165,14 @@ function Header() {
             >
               CONTACT
             </NavLink>
-            <button
-              className='mx-5 nav-link uppercase'
+            <NavLink
+              className={`px-5 nav-link ${isSticky ? 'sticky' : ''} uppercase`}
               onClick={handleChangeLanguage}
             >
               {`${currentLanguage === 'en' ? 'LANGUAGE' : 'NGÔN NGỮ'}`}
               <span className='mx-1'>:</span>
               {currentLanguage}
-            </button>
+            </NavLink>
           </div>
           <i
             className='fa fa-bars mx-12 lg:hidden flex justify-center items-center text-xl cursor-pointer'
@@ -177,14 +182,16 @@ function Header() {
       </nav>
       <section className='md:h-full container mx-auto py-8 flex flex-col justify-start'>
         <div className='h-full sm:h-1/2 flex flex-col justify-between sm:flex-row md:justify-between items-start'>
-          <div className='w-1/2 h-1/2 m-auto flex flex-col justify-center items text-center'>
-            <h1 className='text-4xl font-bold Scale'>
+          <div className='w-full md:w-1/2 h-1/2 m-auto flex flex-col justify-center items-stretch text-center'>
+            <h1 className='text-2xl w-4/5 m-auto md:w-full md:text-4xl font-bold Scale'>
               {t('ecosystem.title1')}
             </h1>
-            <h2 className='text-3xl font-bold Scale my-8'>
+            <h2 className='text-xl md:text-3xl font-bold Scale my-4'>
               {t('ecosystem.title2')}
             </h2>
-            <h3 className='text-2xl Scale'>{t('ecosystem.title2')}</h3>
+            <h3 className='text-lg md:text-2xl Scale'>
+              {t('ecosystem.title3')}
+            </h3>
           </div>
           <LazyLoad
             className='w-1/2 mx-auto my-12 md:my-auto md:h-1/2 lg:h-3/4 py-8 flex justify-center items-center Scale'

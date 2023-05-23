@@ -22,7 +22,7 @@ function WAF() {
       className='container m-auto bg-white text-darkBlue rounded-2xl'
     >
       <LazyLoad {...lazyLoadOptions}>
-        <h1 className='underline text-center text-3xl font-bold pt-8 px-4 mb-3 Scale'>
+        <h1 className='underline text-center text-xl md:text-3xl font-bold pt-8 px-4 mb-3 Scale'>
           {t('WAF.title')}
         </h1>
       </LazyLoad>

@@ -6,8 +6,8 @@ function Description() {
   const { t } = useTranslation();
   return (
     <div className='p-8 Left'>
-      <h3 className='text-2xl font-bold my-2'>{t('WAF.title1')}</h3>
-      <p className='leading-7 text-xl'>{t('WAF.content1')}</p>
+      <h3 className='text-xl md:text-2xl font-bold my-2'>{t('WAF.title1')}</h3>
+      <p className='leading-7 text-lg md:text-xl'>{t('WAF.content1')}</p>
       <LazyLoad
         className='flex items-center justify-center p-4'
         offset={100}

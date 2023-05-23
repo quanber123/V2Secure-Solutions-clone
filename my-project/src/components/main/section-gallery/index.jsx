@@ -12,31 +12,31 @@ function Gallery() {
     once: true,
   };
   return (
-    <section className='container m-auto bg-white text-darkBlue rounded-2xl my-12'>
-      <h1 className='underline text-center text-2xl font-bold pt-8 px-4 Scale'>
+    <section className='container m-auto bg-white text-darkBlue rounded-2xl my-12 Scale'>
+      <h1 className='underline text-center text-xl md:text-2xl font-bold pt-8 px-4'>
         {t('gallery')}
       </h1>
-      <div className='flex-col lg:flex-row flex flex-wrap items-center p-8 Scale'>
+      <div className='flex-col lg:flex-row flex flex-wrap items-center p-8'>
         <LazyLoad
-          className='gallery lg:w-1/2 px-4 py-8 lg:p-8'
+          className='gallery w-4/5 m-auto lg:w-1/2 lg:m-0 px-4 py-8 lg:p-8'
           {...lazyLoadOptions}
         >
           <img src={img1} alt={img1} />
         </LazyLoad>
         <LazyLoad
-          className='gallery lg:w-1/2 px-4 py-8 lg:p-8 '
+          className='gallery  w-4/5 m-auto lg:w-1/2 lg:m-0 px-4 py-8 lg:p-8 '
           {...lazyLoadOptions}
         >
           <img src={img2} alt={img2} />
         </LazyLoad>
         <LazyLoad
-          className='gallery lg:w-1/2 px-4 py-8 lg:p-8'
+          className='gallery  w-4/5 m-auto lg:w-1/2 lg:m-0 px-4 py-8 lg:p-8'
           {...lazyLoadOptions}
         >
           <img src={img3} alt={img3} />
         </LazyLoad>
         <LazyLoad
-          className='gallery lg:w-1/2 px-4 py-8 lg:p-8'
+          className='gallery  w-4/5 m-auto lg:w-1/2 lg:m-0 px-4 py-8 lg:p-8'
           {...lazyLoadOptions}
         >
           <img src={img4} alt={img4} />

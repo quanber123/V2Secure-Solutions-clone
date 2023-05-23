@@ -16,7 +16,7 @@ function NIPS() {
       className='container m-auto bg-white text-darkBlue rounded-2xl my-12'
     >
       <LazyLoad {...lazyLoadOptions}>
-        <h1 className='w-5/6 m-auto lg:w-full underline text-center text-3xl font-bold pt-8 px-4 mb-3 Up'>
+        <h1 className='w-full md:w-5/6 m-auto lg:w-full underline text-center text-xl md:text-3xl font-bold pt-8 px-4 mb-3 Up'>
           {t('NIPS.title')}
         </h1>
       </LazyLoad>
@@ -26,7 +26,7 @@ function NIPS() {
       <LazyLoad {...lazyLoadOptions}>
         <Cyber />
       </LazyLoad>
-      <LazyLoad {...lazyLoadOptions}>
+      <LazyLoad className='bg-blue' {...lazyLoadOptions}>
         <System />
       </LazyLoad>
     </section>

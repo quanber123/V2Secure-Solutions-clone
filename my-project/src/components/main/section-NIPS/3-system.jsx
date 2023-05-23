@@ -4,9 +4,9 @@ import { useTranslation } from 'react-i18next';
 function System() {
   const { t } = useTranslation();
   return (
-    <div className='rounded-xl p-8 my-4 mx-8 Up'>
-      <h3 className='text-2xl font-bold mb-2'>{t('NIPS.title3')}</h3>
-      <div className='block md:flex md:flex-row md:justify-between text-xl text-center'>
+    <div className='bg-white w-5/6 rounded-bl-xl p-8 Up'>
+      <h3 className='text-xl md:text-2xl font-bold mb-2'>{t('NIPS.title3')}</h3>
+      <div className='block md:flex md:flex-row md:justify-between text-lg md:text-xl text-center'>
         <div className='md:w-1/2 h-full'>
           <p className='m-4 p-4 border border-darkBlue rounded-xl'>
             {t('NIPS.content24')}

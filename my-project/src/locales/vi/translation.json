@@ -1,7 +1,8 @@
 {
   "ecosystem": {
-    "title1": "Giải pháp an toàn thông tin mạng V2SECURE",
-    "title2": "Công ty cổ phần an toàn thông tin Việt Nam V2",
+    "title1": "Giải pháp an toàn thông tin mạng",
+    "title2": "V2SECURE",
+    "title3": "Công ty cổ phần an toàn thông tin Việt Nam V2",
     "siem": "Hệ thống quản lý giám sát an toàn thông tin tập trung V2-SIEM",
     "waf": "Hệ thống tường lửa ứng dụng web V2-WAF",
     "nips": "Hệ thống phòng - chống tấn công mạng thế hệ mới V2-NIPS",

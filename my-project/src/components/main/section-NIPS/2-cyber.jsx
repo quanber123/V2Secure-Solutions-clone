@@ -5,9 +5,9 @@ import { useTranslation } from 'react-i18next';
 function Cyber() {
   const { t } = useTranslation();
   return (
-    <div className='bg-blue text-white p-8 my-8 Up'>
-      <h3 className='text-2xl font-bold my-2'>{t('NIPS.title2')}</h3>
-      <ul className='text-xl px-8'>
+    <div className='bg-blue text-white p-8 mt-4 Up'>
+      <h3 className='text-xl md:text-2xl font-bold my-2'>{t('NIPS.title2')}</h3>
+      <ul className='text-lg md:text-xl px-8'>
         <li>{t('NIPS.content22')}</li>
         <li>{t('NIPS.content23')}</li>
       </ul>
