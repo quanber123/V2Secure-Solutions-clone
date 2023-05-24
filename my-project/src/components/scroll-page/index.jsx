@@ -23,7 +23,10 @@ export default function ScrollPage() {
   return (
     <section>
       {showAngleUp && (
-        <i className='text-4xl fa fa-angle-double-up' onClick={handleClick}></i>
+        <i
+          className='w-8 h-8 text-2xl md:w-12 md:h-12 md:text-3xl lg:text-4xl fa fa-angle-double-up'
+          onClick={handleClick}
+        ></i>
       )}
     </section>
   );

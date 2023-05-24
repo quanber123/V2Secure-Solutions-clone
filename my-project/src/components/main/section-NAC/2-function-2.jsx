@@ -16,7 +16,7 @@ function Function2() {
           {...lazyLoadOptions}
         >
           <img
-            className='w-full h-1/12 sm:h-1/3 lg:h-1/2 Left'
+            className='w-full h-1/12 sm:h-1/3 xl:h-1/2 Left'
             src={function2Img}
             alt={function2Img}
           />

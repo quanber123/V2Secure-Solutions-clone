@@ -114,10 +114,10 @@ function MultiTask() {
             </h3>
           </LazyLoad>
           <LazyLoad
-            className='absolute z-50 w-full h-full -top-40  md:-top-14 lg:top-0 left-0 m-auto flex justify-center items-center Scale'
+            className='absolute z-50 w-full h-full -top-40  md:-top-14 xl:top-0 left-0 m-auto flex justify-center items-center Scale'
             {...lazyLoadOptions}
           >
-            <img className='lg:h-full' src={solutionImg} alt={solutionImg} />
+            <img className='xl:h-full' src={solutionImg} alt={solutionImg} />
           </LazyLoad>
           <LazyLoad {...lazyLoadOptions}>
             <div className='flex flex-wrap items-stretch'>

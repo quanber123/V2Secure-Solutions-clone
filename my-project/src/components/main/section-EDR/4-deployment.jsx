@@ -49,15 +49,15 @@ function Deployment() {
         </LazyLoad>
         <LazyLoad {...lazyLoadOptions}>
           <div className='flex justify-between'>
-            <div className='w-2/3 md:w-2/3 lg:w-1/3  md:text-xl text-sm md:px-8 md:py-4 Right'>
+            <div className='w-2/3 md:w-2/3 xl:w-1/3  md:text-xl text-sm md:px-8 md:py-4 Right'>
               {contentDeployment}
             </div>
             <LazyLoad
-              className='w-1/3 md:w-1/3 lg:w-1/2  lg:p-4 lg:m-4 m-auto Right'
+              className='w-1/3 md:w-1/3 xl:w-1/2  lg:p-4 lg:m-4 m-auto Right'
               {...lazyLoadOptions}
             >
               <img
-                className='md:h-4/5 m-auto'
+                className='md:h-4/5 xl:h-full m-auto'
                 src={deploymentImg}
                 alt={deploymentImg}
               />
