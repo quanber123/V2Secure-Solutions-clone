@@ -10,7 +10,8 @@ import waf from '../../images/ecosystem/waf.png';
 import nips from '../../images/ecosystem/nips.png';
 import edr from '../../images/ecosystem/edr.png';
 import nac from '../../images/ecosystem/nac.png';
-
+import flagVn from '../../flags/vn.png';
+import flagUs from '../../flags/us.png';
 function Header() {
   const { t } = useTranslation();
   const lazyLoadOptions = {
@@ -20,7 +21,8 @@ function Header() {
   const [isSticky, setIsSticky] = useState(false);
   const [showNav, setShowNav] = useState(false);
   const [stateLink, setLinkState] = useState('');
-  const [currentLanguage, setCurrentLanguage] = useState('vi');
+  const [selectedLanguage, setSelectedLanguage] = useState('vi');
+  const [tabLanguage, setTabLanguage] = useState(false);
 
   const dataEcosystem = [
     {
@@ -77,17 +79,24 @@ function Header() {
       window.removeEventListener('scroll', handleScroll);
     };
   }, [handleScroll]);
-
-  const handleChangeLanguage = useCallback(() => {
-    const lang = currentLanguage === 'en' ? 'vi' : 'en';
-    setCurrentLanguage(lang);
-    setShowNav(false);
-  }, [currentLanguage]);
-
+  const handleSelectChangeLanguage = useCallback(
+    (language) => {
+      const lang = language === 'en' ? 'en' : 'vi';
+      setSelectedLanguage(lang);
+      setShowNav(false);
+    },
+    [selectedLanguage]
+  );
   useEffect(() => {
-    i18n.changeLanguage(currentLanguage);
-  }, [currentLanguage]);
-
+    i18n.changeLanguage(selectedLanguage);
+  }, [selectedLanguage]);
+  const handleShowNav = () => {
+    setShowNav((prevShow) => !prevShow);
+    setTabLanguage(false);
+  };
+  const handleShowTabLanguage = () => {
+    setTabLanguage((prevTab) => !prevTab);
+  };
   return (
     <header className='h-screen'>
       <nav
@@ -112,7 +121,7 @@ function Header() {
             }`}
           >
             <NavLink
-              className={`px-5 py-2 nav-link ${
+              className={`mx-5 my-2 nav-link ${
                 stateLink === 'siem' ? 'link-active' : ''
               } ${isSticky ? 'sticky' : ''}`}
               to='#'
@@ -121,7 +130,7 @@ function Header() {
               V2-SIEM
             </NavLink>
             <NavLink
-              className={`px-5 py-2 nav-link ${
+              className={`mx-5 my-2 nav-link ${
                 stateLink === 'waf' ? 'link-active' : ''
               } ${isSticky ? 'sticky' : ''}`}
               to='#'
@@ -130,7 +139,7 @@ function Header() {
               V2-WAF
             </NavLink>
             <NavLink
-              className={`px-5 py-2 nav-link ${
+              className={`mx-5 my-2 nav-link ${
                 stateLink === 'nips' ? 'link-active' : ''
               } ${isSticky ? 'sticky' : ''}`}
               to='#'
@@ -139,7 +148,7 @@ function Header() {
               V2-NIPS
             </NavLink>
             <NavLink
-              className={`px-5 py-2 nav-link ${
+              className={`mx-5 my-2 nav-link ${
                 stateLink === 'edr' ? 'link-active' : ''
               } ${isSticky ? 'sticky' : ''}`}
               to='#'
@@ -148,7 +157,7 @@ function Header() {
               V2-EDR
             </NavLink>
             <NavLink
-              className={`px-5 py-2 nav-link ${
+              className={`mx-5 my-2 nav-link ${
                 stateLink === 'nac' ? 'link-active' : ''
               } ${isSticky ? 'sticky' : ''}`}
               to='#'
@@ -157,7 +166,7 @@ function Header() {
               V2-NAC
             </NavLink>
             <NavLink
-              className={`px-5 py-2 nav-link ${
+              className={`mx-5 my-2 nav-link ${
                 stateLink === 'contact' ? 'link-active' : ''
               } ${isSticky ? 'sticky' : ''}`}
               to='#'
@@ -165,18 +174,55 @@ function Header() {
             >
               CONTACT
             </NavLink>
-            <NavLink
-              className={`px-5 nav-link ${isSticky ? 'sticky' : ''} uppercase`}
-              onClick={handleChangeLanguage}
+            <div
+              className='custom-select-language'
+              onClick={handleShowTabLanguage}
             >
-              {`${currentLanguage === 'en' ? 'LANGUAGE' : 'NGÔN NGỮ'}`}
-              <span className='mx-1'>:</span>
-              {currentLanguage}
-            </NavLink>
+              <LazyLoad
+                className='mx-5 my-2 h-full cursor-pointer'
+                {...lazyLoadOptions}
+              >
+                <img
+                  className='w-12 h-8 rounded'
+                  src={`${selectedLanguage === 'en' ? flagUs : flagVn}`}
+                  alt={`${selectedLanguage === '' ? 'flagVn' : 'flagUs'}`}
+                />
+              </LazyLoad>
+              {tabLanguage && (
+                <ul className='w-52 options-language border border-gray bg-white text-darkBlue shadow-sm shadow-gray px-6 py-2'>
+                  <li
+                    className='flex items-center py-2 border-b border-darkBlue cursor-pointer'
+                    onClick={() => handleSelectChangeLanguage('en')}
+                  >
+                    <h3 className='w-2/3'>{t('en')}</h3>
+                    <LazyLoad className='w-1/3' {...lazyLoadOptions}>
+                      <img
+                        className='w-12 h-8 rounded ml-auto'
+                        src={flagUs}
+                        alt='flagUs'
+                      />
+                    </LazyLoad>
+                  </li>
+                  <li
+                    className='flex  items-center py-2 cursor-pointer'
+                    onClick={() => handleSelectChangeLanguage('vn')}
+                  >
+                    <h3 className='w-2/3'>{t('vi')}</h3>
+                    <LazyLoad className='w-1/3' {...lazyLoadOptions}>
+                      <img
+                        className='w-12 h-8 rounded ml-auto'
+                        src={flagVn}
+                        alt='flagVn'
+                      />
+                    </LazyLoad>
+                  </li>
+                </ul>
+              )}
+            </div>
           </div>
           <i
             className='fa fa-bars mx-12 lg:hidden flex justify-center items-center text-xl cursor-pointer'
-            onClick={() => setShowNav((prevShow) => !prevShow)}
+            onClick={handleShowNav}
           ></i>
         </section>
       </nav>
