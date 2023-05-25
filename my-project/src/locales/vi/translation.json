@@ -1,6 +1,6 @@
 {
-  "en": "English",
-  "vi": "Tiếng Việt",
+  "errTitle": "KHÔNG TÌM THẤY TRANG",
+  "errContent": "Trang mà bạn đang tìm kiếm đã gỡ được đổi tên hoặc trang không khả dụng.",
   "ecosystem": {
     "title1": "Giải pháp an toàn thông tin mạng",
     "title2": "V2SECURE",
