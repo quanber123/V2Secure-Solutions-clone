@@ -1,4 +1,6 @@
 {
+  "errTitle": "PAGE NOT FOUND",
+  "errContent": "The page you are looking for might have been removed had its name changed or is temporarily unavailable.",
   "en": "English",
   "vi": "VietNam",
   "ecosystem": {
