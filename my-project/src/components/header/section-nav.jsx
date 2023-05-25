@@ -24,6 +24,7 @@ function SectionNav() {
     const element = document.getElementById(id);
     element.scrollIntoView({ behavior: 'smooth' });
     setShowNav(false);
+    setTabLanguage(false);
   }, []);
 
   const handleScroll = useCallback(() => {
@@ -85,6 +86,7 @@ function SectionNav() {
             className={`mx-5 my-2 nav-link ${
               stateLink === 'siem' ? 'link-active' : ''
             } ${isSticky ? 'sticky' : ''}`}
+            rel='nofollow'
             to='#'
             onClick={() => handleLinkClick('siem')}
           >
@@ -94,6 +96,7 @@ function SectionNav() {
             className={`mx-5 my-2 nav-link ${
               stateLink === 'waf' ? 'link-active' : ''
             } ${isSticky ? 'sticky' : ''}`}
+            rel='nofollow'
             to='#'
             onClick={() => handleLinkClick('waf')}
           >
@@ -103,6 +106,7 @@ function SectionNav() {
             className={`mx-5 my-2 nav-link ${
               stateLink === 'nips' ? 'link-active' : ''
             } ${isSticky ? 'sticky' : ''}`}
+            rel='nofollow'
             to='#'
             onClick={() => handleLinkClick('nips')}
           >
@@ -112,6 +116,7 @@ function SectionNav() {
             className={`mx-5 my-2 nav-link ${
               stateLink === 'edr' ? 'link-active' : ''
             } ${isSticky ? 'sticky' : ''}`}
+            rel='nofollow'
             to='#'
             onClick={() => handleLinkClick('edr')}
           >
@@ -121,6 +126,7 @@ function SectionNav() {
             className={`mx-5 my-2 nav-link ${
               stateLink === 'nac' ? 'link-active' : ''
             } ${isSticky ? 'sticky' : ''}`}
+            rel='nofollow'
             to='#'
             onClick={() => handleLinkClick('nac')}
           >
@@ -130,6 +136,7 @@ function SectionNav() {
             className={`mx-5 my-2 nav-link ${
               stateLink === 'contact' ? 'link-active' : ''
             } ${isSticky ? 'sticky' : ''}`}
+            rel='nofollow'
             to='#'
             onClick={() => handleLinkClick('contact')}
           >
