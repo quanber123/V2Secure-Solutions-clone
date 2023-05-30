@@ -1,10 +1,9 @@
 import React from 'react';
 import { lazy, Suspense } from 'react';
 import bgImg from '../images/backgroud.9fd313e8e07fb2ad255e.png';
-const Header = lazy(() => import('./header/index'));
-const Main = lazy(() => import('./main/index'));
-const Footer = lazy(() => import('./footer/index'));
-const ScrollPage = lazy(() => import('./scroll-page/index'));
+import { Outlet } from 'react-router-dom';
+const ScrollPage = lazy(() => import('../pages/scroll-page/index'));
+const Nav = lazy(() => import('./nav'));
 function Layout() {
   return (
     <div
@@ -24,9 +23,8 @@ function Layout() {
           </div>
         }
       >
-        <Header />
-        <Main />
-        <Footer />
+        <Nav />
+        <Outlet />
         <ScrollPage />
       </Suspense>
     </div>
