@@ -5,7 +5,7 @@ function Page404() {
   const { t } = useTranslation();
   return (
     <>
-      <section className='bg-white h-screen w-full text-darkBlue flex flex-col justify-center items-center'>
+      <section className='bg-white w-full text-darkBlue flex flex-col justify-center items-center'>
         <h1 className='text-4xl'>{t('errTitle')}!</h1>
         <h2 className='text-2xl lg:text-3xl my-16 text-center'>
           {t('errContent')}

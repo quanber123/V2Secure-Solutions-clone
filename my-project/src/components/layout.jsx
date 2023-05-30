@@ -4,6 +4,7 @@ import bgImg from '../images/backgroud.9fd313e8e07fb2ad255e.png';
 import { Outlet } from 'react-router-dom';
 const ScrollPage = lazy(() => import('../pages/scroll-page/index'));
 const Nav = lazy(() => import('./nav'));
+const Footer = lazy(() => import('../pages/Home/footer/index'));
 function Layout() {
   return (
     <div
@@ -25,6 +26,7 @@ function Layout() {
       >
         <Nav />
         <Outlet />
+        <Footer />
         <ScrollPage />
       </Suspense>
     </div>

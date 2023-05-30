@@ -1,11 +1,11 @@
 import React from 'react';
 import LazyLoad from 'react-lazyload';
-import phone from '../../../../images/contact/download.png';
-import web from '../../../../images/contact/download (1).png';
-import location from '../../../../images/contact/download (2).png';
-import qr from '../../../../images/contact/scan-icon.9a8b224f402749907bca.png';
+import phone from '../../images/contact/download.png';
+import web from '../../images/contact/download (1).png';
+import location from '../../images/contact/download (2).png';
+import qr from '../../images/contact/scan-icon.9a8b224f402749907bca.png';
 import { useTranslation } from 'react-i18next';
-function Contact() {
+function About() {
   const { t } = useTranslation();
   const lazyLoadOptions = {
     offset: 0,
@@ -73,4 +73,4 @@ function Contact() {
   );
 }
 
-export default Contact;
+export default About;

@@ -64,7 +64,7 @@ function Nav() {
     <nav
       className={`relative nav-item ${
         isSticky ? 'sticky' : ''
-      } h-16 flex Sticky`}
+      } h-24 flex Sticky`}
     >
       <section className='h-full flex justify-between container m-auto'>
         <LazyLoad
@@ -133,6 +133,16 @@ function Nav() {
             onClick={() => handleLinkClick('nac')}
           >
             V2-NAC
+          </NavLink>
+          <NavLink
+            className={`mx-5 my-2 nav-link ${
+              stateLink === 'service' ? 'link-active' : ''
+            } ${isSticky ? 'sticky' : ''}`}
+            rel='nofollow'
+            to='service'
+            onClick={() => handleLinkClick('service')}
+          >
+            SERVICE
           </NavLink>
           <NavLink
             className={`mx-5 my-2 nav-link ${
