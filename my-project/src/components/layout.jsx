@@ -10,7 +10,7 @@ function Layout() {
     <div
       style={{
         width: '100%',
-        height: '100%',
+        height: '100vh',
         backgroundImage: `url(${bgImg})`,
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
