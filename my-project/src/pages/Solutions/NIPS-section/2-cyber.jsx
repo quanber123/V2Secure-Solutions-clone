@@ -17,7 +17,7 @@ function Cyber() {
       <ul className='w-1/2'>
         <li className='py-4'>
           <i className='fa fa-check-circle text-yellow mr-4'></i>
-          {t('NIPS.content22')}
+          {t('NIPS.content23')}
         </li>
         <li className='py-4'>
           <i className='fa fa-check-circle text-yellow mr-4'></i>

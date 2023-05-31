@@ -1,6 +1,8 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 function SectionContact() {
+  const { t } = useTranslation();
   return (
     <section className='w-full h-1/2 mt-96'>
       <div
@@ -11,7 +13,7 @@ function SectionContact() {
         }}
       >
         <h1 className='w-1/3 h-full mx-auto mb-14 text-center text-5xl font-bold'>
-          Need help with your security program?
+          {t('contact.content')}
         </h1>
         <div className='w-1/3 m-auto relative'>
           <input

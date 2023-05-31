@@ -1,4 +1,17 @@
 {
+  "SOLUTIONS": "SOLUTIONS",
+  "SERVICES": "SERVICES",
+  "CONTACT": "CONTACT",
+  "started": "Get started",
+  "our-services1": "Our",
+  "our-services2": "Services",
+  "services": {
+    "test": "Penetration Testing",
+    "security": "Application Security",
+    "assessment": "Security Assessment",
+    "simulation": "Adversary Simulation",
+    "read-more": "Read More"
+  },
   "errTitle": "PAGE NOT FOUND",
   "errContent": "The page you are looking for might have been removed had its name changed or is temporarily unavailable.",
   "en": "English",
@@ -246,14 +259,29 @@
     "content24": "INTEGRATED SIEM CENTRALIZED MONITORING SYSTEM."
   },
   "gallery": "GALLERY",
+  "contact": {
+    "content": "Need help with your security program?"
+  },
   "about": {
     "title": "ABOUT US",
     "title1": "Cybersecurity Ecosystem",
     "title2": "V2SECURE Solutions",
     "contact": "Contact",
+    "contact-more": "CONTACT US - AVAILABLE 24X7",
     "district": "No. 3, lane 281/75/15 Truong Dinh, Tuong Mai, Hoang Mai District, Hanoi City, Vietnam",
     "qr": "SCAN FOR",
     "details": "MORE DETAILS"
   },
-  "copyright": "Created by V2Secure Solutions. © 2022"
+  "copyright": "Created by V2Secure Solutions. © 2022",
+  "form": {
+    "title1": "Let's Work",
+    "title2": "Together",
+    "idea": "Tell us about yourself and we’ll figure out the best solution for you and your organization’s needs.",
+    "content1": " One flexible tool for your entire company to share knowledge, ship projects, and collaborate.",
+    "content2": "Enterprise features to securely manage user access and security.",
+    "content3": "Dedicated support to work with you on your setup and help you build the best plan for your company."
+  },
+  "progress": "PROGRESS",
+  "progress2": "IS COMING SOON",
+  "progress-content": "It's almost ready...honest"
 }

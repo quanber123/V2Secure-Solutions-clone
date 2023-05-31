@@ -68,7 +68,7 @@ function Header() {
             }}
             onClick={handleScroll}
           >
-            Get started
+            {t('started')}
           </button>
         </div>
       </div>

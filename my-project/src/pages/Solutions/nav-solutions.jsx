@@ -2,7 +2,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 function NavSolutions() {
   return (
-    <nav className='text-lg font-bold'>
+    <nav className='nav-solutions container w-1/3 mx-auto my-8 text-lg font-bold flex justify-between items-center'>
       <NavLink className={`mx-5 my-2 nav-link`} rel='nofollow' to='siem'>
         V2-SIEM
       </NavLink>

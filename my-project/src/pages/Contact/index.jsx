@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 export default function Contact() {
+  const { t } = useTranslation();
   const [contactForm, setContactForm] = useState([
     {
       name: '',
@@ -19,32 +21,22 @@ export default function Contact() {
     <section className='contact-form container mx-auto my-16 px-16 py-14 flex flex-col md:flex-row justify-between'>
       <div className='md:w-1/2'>
         <h1 className='text-6xl font-bold'>
-          Let's Work <span className='text-yellow'>Together</span>
+          {t('form.title1')}{' '}
+          <span className='text-yellow'>{t('form.title2')}</span>
         </h1>
-        <h3 className='text-xl text-darkGray my-4'>
-          Tell us about yourself and we’ll figure out the best solution for you
-          and your organization’s needs.
-        </h3>
+        <h3 className='text-xl text-darkGray my-4'>{t('form.idea')}</h3>
         <ul className='font-medium my-8 p-4 w-3/4 '>
           <li className='flex my-4 border-blue border-b pb-4'>
             <i className='fa fa-check mr-2'></i>
-            <p>
-              One flexible tool for your entire company to share knowledge, ship
-              projects, and collaborate.
-            </p>
+            <p>{t('form.content1')}</p>
           </li>
           <li className='flex my-4 border-blue border-b pb-4'>
             <i className='fa fa-check mr-2'></i>
-            <p>
-              Enterprise features to securely manage user access and security.
-            </p>
+            <p>{t('form.content2')}</p>
           </li>
           <li className='flex my-4'>
             <i className='fa fa-check mr-2'></i>
-            <p>
-              Dedicated support to work with you on your setup and help you
-              build the best plan for your company.
-            </p>
+            <p>{t('form.content3')}</p>
           </li>
         </ul>
       </div>

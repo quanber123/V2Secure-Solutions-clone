@@ -1,7 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 :root {
   line-height: 1.5;
   font-weight: 400;
@@ -32,6 +31,7 @@ body {
 * {
   transition: all 0.3s linear;
 }
+
 input,
 textarea {
   background-color: rgba(38, 38, 38, 0.8);
@@ -76,10 +76,11 @@ textarea {
   position: relative;
 }
 .options-language {
+  background-color: rgba(91, 91, 91, 0.2);
   position: absolute;
   top: 100%;
   left: -150%;
-  border-radius: 2px;
+  border-radius: 12px;
   animation: Options 0.3s linear;
   z-index: 10;
 }
@@ -139,6 +140,11 @@ textarea {
   background-color: #e6f7ff;
   border: none;
 }
+.nav-solutions {
+  background-color: rgba(176, 176, 176, 0.2);
+  padding: 4px 8px;
+  border-radius: 16px;
+}
 /* Main */
 .services {
   cursor: pointer;
@@ -192,20 +198,10 @@ textarea {
 .gallery {
   cursor: pointer;
   transition: all 0.3s linear;
+  filter: grayscale(30%);
 }
-.gallery:hover:nth-child(odd) {
+.gallery:hover {
   scale: 1.2;
-  transform: translateX(10%);
-}
-.gallery:hover:nth-child(even) {
-  scale: 1.2;
-  transform: translateX(-10%);
-}
-@media only screen and (max-width: 976px) {
-  .gallery:hover {
-    scale: 1.2 !important;
-    transform: unset !important;
-  }
 }
 .fa.fa-angle-double-up {
   position: fixed;

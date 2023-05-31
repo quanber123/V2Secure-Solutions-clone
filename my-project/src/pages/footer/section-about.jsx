@@ -1,8 +1,10 @@
 import React from 'react';
-import logo from '../../../images/ecosystem/download.png';
-import qr from '../../../images/contact/scan-icon.9a8b224f402749907bca.png';
+import logo from '../../images/ecosystem/download.png';
+import qr from '../../images/contact/scan-icon.9a8b224f402749907bca.png';
 import LazyLoad from 'react-lazyload';
+import { useTranslation } from 'react-i18next';
 function SectionAbout() {
+  const { t } = useTranslation();
   return (
     <section
       className='w-full h-1/2 flex border-t border-t-boldBlue px-14 py-32'
@@ -20,14 +22,11 @@ function SectionAbout() {
         </div>
         <div className='text-lg'>
           <p className='w-1/3 my-4 py-3 px-4 text-center text-base border border-boldBlue text-blue rounded-2xl'>
-            CONTACT US - AVAILABLE 24X7
+            {t('about.contact-more')}
           </p>
           <p className='my-2'>0869 061 186</p>
           <p className='my-2'>v2secure.vn</p>
-          <p className='my-2'>
-            Số 3, ngách 281/75/15 Trương Định, Tương Mai, Hoàng Mai, Hà Nội,
-            Việt Nam
-          </p>
+          <p className='my-2'>{t('about.district')}</p>
         </div>
       </div>
       <div className='w-1/2 flex justify-center items-center'>
@@ -35,8 +34,8 @@ function SectionAbout() {
           <img className='h-full' src={qr} alt='qr' />
         </LazyLoad>
         <div className='text-lg md:text-xl font-bold md:p-2 m-2'>
-          <h3 className='text-blue'>SCAN FOR</h3>
-          <h3>MORE DETAILS</h3>
+          <h3 className='text-blue'>{t('about.qr')}</h3>
+          <h3>{t('about.details')}</h3>
         </div>
       </div>
     </section>

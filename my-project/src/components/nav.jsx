@@ -15,7 +15,6 @@ function Nav() {
   };
   const [isSticky, setIsSticky] = useState(false);
   const [showNav, setShowNav] = useState(false);
-  const [stateLink, setLinkState] = useState('');
   const [selectedLanguage, setSelectedLanguage] = useState('en');
   const [tabLanguage, setTabLanguage] = useState(false);
 
@@ -76,40 +75,32 @@ function Nav() {
           }`}
         >
           <NavLink
-            className={`mx-5 my-2 nav-link ${
-              stateLink === 'home' ? 'link-active' : ''
-            } ${isSticky ? 'sticky' : ''}`}
+            className={`mx-5 my-2 nav-link ${isSticky ? 'sticky' : ''}`}
             rel='nofollow'
             to='/'
           >
             HOME
           </NavLink>
           <NavLink
-            className={`mx-5 my-2 nav-link ${
-              stateLink === 'solutions' ? 'link-active' : ''
-            } ${isSticky ? 'sticky' : ''}`}
+            className={`mx-5 my-2 nav-link  ${isSticky ? 'sticky' : ''}`}
             rel='nofollow'
             to='solutions'
           >
-            SOLUTIONS
+            {t('SOLUTIONS')}
           </NavLink>
           <NavLink
-            className={`mx-5 my-2 nav-link ${
-              stateLink === 'service' ? 'link-active' : ''
-            } ${isSticky ? 'sticky' : ''}`}
+            className={`mx-5 my-2 nav-link  ${isSticky ? 'sticky' : ''}`}
             rel='nofollow'
             to='services'
           >
-            SERVICES
+            {t('SERVICES')}
           </NavLink>
           <NavLink
-            className={`mx-5 my-2 nav-link ${
-              stateLink === 'contact' ? 'link-active' : ''
-            } ${isSticky ? 'sticky' : ''}`}
+            className={`mx-5 my-2 nav-link  ${isSticky ? 'sticky' : ''}`}
             rel='nofollow'
             to='contact'
           >
-            CONTACT
+            {t('CONTACT')}
           </NavLink>
           <div
             className='custom-select-language'
@@ -126,9 +117,9 @@ function Nav() {
               />
             </LazyLoad>
             {tabLanguage && (
-              <ul className='w-52 options-language border border-gray bg-white text-darkBlue shadow-sm shadow-gray px-6 py-2'>
+              <ul className='w-52 options-language  px-6 py-2'>
                 <li
-                  className='flex items-center py-2 border-b border-darkBlue cursor-pointer'
+                  className='flex items-center py-2 border-b border-gray cursor-pointer'
                   onClick={() => handleSelectChangeLanguage('en')}
                 >
                   <h3 className='w-2/3'>{t('en')}</h3>
@@ -141,7 +132,7 @@ function Nav() {
                   </LazyLoad>
                 </li>
                 <li
-                  className='flex  items-center py-2 cursor-pointer'
+                  className='flex items-center py-2 cursor-pointer'
                   onClick={() => handleSelectChangeLanguage('vn')}
                 >
                   <h3 className='w-2/3'>{t('vi')}</h3>
