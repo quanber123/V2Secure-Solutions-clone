@@ -41,16 +41,20 @@ function Deployment() {
   });
   return (
     <div className='container m-auto'>
-      <h3 className='w-4/5 m-auto py-12 text-4xl text-center text-blue font-bold border-t border-t-gray'>
+      <h3 className='w-4/5 m-auto py-12 text-xl md:text-2xl lg:text-4xl text-center text-blue font-bold border-t border-t-gray'>
         {t('EDR.title4')}
       </h3>
-      <div className='flex py-12'>
-        <ul className='w-2/3 font-bold'>{contentDeployment}</ul>
+      <div className='flex flex-col lg:flex-row py-12'>
+        <ul className='lg:w-2/3 font-bold'>{contentDeployment}</ul>
         <LazyLoad
-          className='w-1/3 flex justify-center items-center'
+          className='w-1/3 mx-auto lg:mx-0 flex justify-center items-center'
           {...lazyLoadOptions}
         >
-          <img className='w-2/3' src={deploymentImg} alt='deploy-img' />
+          <img
+            className='w-2/3 mx-auto lg:mx-0'
+            src={deploymentImg}
+            alt='deploy-img'
+          />
         </LazyLoad>
       </div>
     </div>

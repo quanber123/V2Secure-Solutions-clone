@@ -6,32 +6,42 @@ import LazyLoad from 'react-lazyload';
 import flagVn from '../flags/vn.png';
 import flagUs from '../flags/us.png';
 import logo from '../images/ecosystem/download.png';
-import logo2 from '../images/logo.0f88255eeb4cbd4b96da.png';
 function Nav() {
   const { t } = useTranslation();
   const lazyLoadOptions = {
     offset: 100,
     once: true,
   };
-  const [isSticky, setIsSticky] = useState(false);
+  // const [isSticky, setIsSticky] = useState(false);
   const [showNav, setShowNav] = useState(false);
   const [selectedLanguage, setSelectedLanguage] = useState('en');
   const [tabLanguage, setTabLanguage] = useState(false);
 
-  const handleScroll = useCallback(() => {
-    if (window.pageYOffset > 200) {
-      setIsSticky(true);
-    } else {
-      setIsSticky(false);
-    }
-  }, []);
+  // const handleScroll = useCallback(() => {
+  //   if (window.pageYOffset > 200) {
+  //     setIsSticky(true);
+  //   } else {
+  //     setIsSticky(false);
+  //   }
+  // }, []);
+  // useEffect(() => {
+  //   window.addEventListener('scroll', handleScroll);
+
+  //   return () => {
+  //     window.removeEventListener('scroll', handleScroll);
+  //   };
+  // }, [handleScroll]);
   useEffect(() => {
+    const handleScroll = () => {
+      setShowNav(false);
+    };
+
     window.addEventListener('scroll', handleScroll);
 
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, [handleScroll]);
+  }, []);
   const handleSelectChangeLanguage = useCallback(
     (language) => {
       const lang = language === 'en' ? 'en' : 'vi';
@@ -51,54 +61,52 @@ function Nav() {
     setTabLanguage((prevTab) => !prevTab);
   };
   return (
-    <nav
-      className={`relative nav-item ${
-        isSticky ? 'sticky' : ''
-      } h-24 flex Sticky`}
-    >
+    <nav className={`relative nav-item h-24 flex `}>
       <section className='h-full flex justify-between container m-auto'>
-        <div className='md:w-1/6 h-full flex items-center'>
+        <div className='w-full md:w-1/6 h-full mx-8 lg:mx-0 flex items-center'>
           <LazyLoad className='py-2 cursor-pointer' {...lazyLoadOptions}>
-            <Link to='/'>
-              <img
-                className='w-full '
-                src={isSticky ? logo2 : logo}
-                alt='logo'
-              />
+            <Link className='h-full' to='/' onClick={() => setShowNav(false)}>
+              <img className='w-14 h-14' src={logo} alt='logo' />
             </Link>
           </LazyLoad>
-          <h1 className='mx-4 text-4xl font-bold'>V2Secure</h1>
+          <h1 className='w-1/2 mx-4 text-lg md:text-xl lg:text-2xl xl:text-4xl font-bold'>
+            V2Secure
+          </h1>
         </div>
         <div
           className={`flex flex-col lg:flex-row font-bold lg:text-lg justify-between lg:items-center ${
-            showNav ? 'show' : 'hidden lg:flex'
+            showNav ? 'show-nav' : 'hidden lg:flex'
           }`}
         >
           <NavLink
-            className={`mx-5 my-2 nav-link ${isSticky ? 'sticky' : ''}`}
+            className={`mx-5 my-4 lg:my-2 nav-link`}
             rel='nofollow'
             to='/'
+            onClick={() => setShowNav(false)}
           >
             HOME
           </NavLink>
           <NavLink
-            className={`mx-5 my-2 nav-link  ${isSticky ? 'sticky' : ''}`}
+            className={`mx-5 my-4 lg:my-2 nav-link `}
             rel='nofollow'
             to='solutions'
+            onClick={() => setShowNav(false)}
           >
             {t('SOLUTIONS')}
           </NavLink>
           <NavLink
-            className={`mx-5 my-2 nav-link  ${isSticky ? 'sticky' : ''}`}
+            className={`mx-5 my-4 lg:my-2 nav-link `}
             rel='nofollow'
             to='services'
+            onClick={() => setShowNav(false)}
           >
             {t('SERVICES')}
           </NavLink>
           <NavLink
-            className={`mx-5 my-2 nav-link  ${isSticky ? 'sticky' : ''}`}
+            className={`mx-5 my-4 lg:my-2 nav-link`}
             rel='nofollow'
             to='contact'
+            onClick={() => setShowNav(false)}
           >
             {t('CONTACT')}
           </NavLink>
@@ -107,7 +115,7 @@ function Nav() {
             onClick={handleShowTabLanguage}
           >
             <LazyLoad
-              className='mx-5 my-2 h-full cursor-pointer'
+              className='mx-5 my-4 lg:my-2 h-full cursor-pointer'
               {...lazyLoadOptions}
             >
               <img

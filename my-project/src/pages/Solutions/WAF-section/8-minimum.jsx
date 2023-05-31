@@ -33,21 +33,21 @@ function Minimum() {
     );
   });
   return (
-    <div className='container m-auto flex justify-between'>
-      <div className='w-1/2'>
-        <h3 className='text-4xl text-center text-blue font-bold mb-8'>
+    <div className='container m-auto flex flex-col xl:flex-row justify-between'>
+      <div className='xl:w-1/2'>
+        <h3 className='text-xl md:text-2xl lg:text-4xl text-center text-blue font-bold mb-8'>
           {t('WAF.title8')}
         </h3>
         <LazyLoad
-          className='h-full flex justify-center items-center'
+          className='h-full flex justify-center items-center my-8 xl:my-0'
           offset={100}
           once
         >
-          <img className='w-1/2' src={minimumImg} alt='minimum-img' />
+          <img className='w-1/3 xl:w-1/2' src={minimumImg} alt='minimum-img' />
         </LazyLoad>
       </div>
       <ul
-        className='w-1/2 p-12 rounded-2xl'
+        className='xl:w-1/2 p-12 rounded-2xl'
         style={{
           background:
             'linear-gradient(150deg,rgba(176, 176, 176, 0.2),rgba(103, 102, 102, 0.2))',

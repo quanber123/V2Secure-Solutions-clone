@@ -27,7 +27,7 @@ function Plan() {
     );
   });
   return (
-    <div className='container m-auto flex flex-row-reverse justify-between items-center'>
+    <div className='container m-auto flex flex-col lg:flex-row-reverse justify-between items-center'>
       <div
         className='p-12 rounded-2xl'
         style={{
@@ -39,7 +39,11 @@ function Plan() {
         <ul>{contentPlan}</ul>
       </div>
       <LazyLoad offset={100} once>
-        <img className='rounded-2xl' src={planImg} alt='plan-img' />
+        <img
+          className='my-8 lg:my-0 rounded-2xl'
+          src={planImg}
+          alt='plan-img'
+        />
       </LazyLoad>
     </div>
   );

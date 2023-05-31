@@ -29,16 +29,20 @@ function Network() {
     );
   });
   return (
-    <div className='container m-auto flex flex-row-reverse'>
-      <div className='w-1/2 flex flex-col justify-between items-center'>
-        <h3 className='text-center text-4xl text-blue font-bold'>
+    <div className='container m-auto flex flex-col lg:flex-row-reverse'>
+      <div className='lg:w-1/2 flex flex-col justify-between items-center'>
+        <h3 className='text-center text-xl md:text-2xl lg:text-4xl text-blue font-bold'>
           {t('SIEM.title2')}
         </h3>
         <LazyLoad offset={100} once>
-          <img className='w-1/2 m-auto rounded-2xl' src={netImg} alt={netImg} />
+          <img
+            className='w-1/3 lg:w-1/2 mx-auto my-8 xl:m-auto rounded-2xl'
+            src={netImg}
+            alt={netImg}
+          />
         </LazyLoad>
       </div>
-      <ul className='w-1/2  text-lg'>{contentNetwork}</ul>
+      <ul className='w-4/5 m-auto lg:w-1/2 text-lg'>{contentNetwork}</ul>
     </div>
   );
 }

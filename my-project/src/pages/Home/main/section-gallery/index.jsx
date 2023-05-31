@@ -13,7 +13,7 @@ function Gallery() {
   };
   return (
     <section className='container m-auto rounded-2xl '>
-      <h1 className='text-6xl text-center text-blue font-bold my-12'>
+      <h1 className='text-2xl md:text-4xl xl:text-6xl text-center text-blue font-bold my-12'>
         {t('gallery')}
       </h1>
       <div className='flex-col lg:flex-row flex flex-wrap items-center p-8'>

@@ -30,16 +30,16 @@ function Incident() {
     );
   });
   return (
-    <div className='container m-auto flex'>
-      <div className='w-1/2 flex flex-col justify-between items-center'>
-        <h3 className='w-4/5 m-auto text-center text-4xl text-blue font-bold'>
+    <div className='container m-auto flex flex-col xl:flex-row'>
+      <div className='xl:w-1/2 flex flex-col justify-between items-center'>
+        <h3 className='w-4/5 m-auto text-center text-xl md:text-2xl lg:text-4xl text-blue font-bold'>
           {t('EDR.title2')}
         </h3>
         <LazyLoad className='w-4/5 m-auto my-4' {...lazyLoadOptions}>
           <img className='rounded-2xl' src={incidentImg} alt={incidentImg} />
         </LazyLoad>
       </div>
-      <ul className='w-1/2 text-lg'>{contentIncident}</ul>
+      <ul className='xl:w-1/2 md:text-lg'>{contentIncident}</ul>
     </div>
   );
 }

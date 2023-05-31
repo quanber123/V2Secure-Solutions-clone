@@ -26,11 +26,13 @@ function Security() {
     );
   });
   return (
-    <div className='container m-auto flex justify-between'>
-      <h3 className='w-1/2 text-4xl text-center text-blue font-bold py-8'>
+    <div className='container m-auto flex flex-col xl:flex-row justify-between'>
+      <h3 className='xl:w-1/2 text-xl md:text-2xl lg:text-4xl text-center text-blue font-bold py-8'>
         {t('SIEM.title6')}
       </h3>
-      <ul className='w-1/2 font-bold text-lg'>{contentSecurity}</ul>
+      <ul className='xl:w-1/2 font-bold text-base lg:text-lg'>
+        {contentSecurity}
+      </ul>
     </div>
   );
 }

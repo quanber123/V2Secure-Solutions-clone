@@ -27,12 +27,12 @@ function Main() {
   };
   return (
     <main id='our-services' className='bg-black p-12'>
-      <section className='container m-auto h-4/5 text-center pb-64'>
-        <h1 className='text-6xl font-bold my-12'>
+      <section className='container m-auto h-4/5 text-center md:pb-32 lg:pb-64'>
+        <h1 className='text-2xl md:text-4xl xl:text-6xl font-bold my-12'>
           {t('our-services1')}{' '}
           <span className='text-blue'>{t('our-services2')}</span>
         </h1>
-        <div className='flex justify-center items-center'>
+        <div className='flex flex-col md:flex-row justify-center items-center'>
           {services.map((service, index) => {
             return (
               <article

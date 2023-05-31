@@ -23,8 +23,8 @@ function Processing() {
     );
   });
   return (
-    <div className='w-1/2 px-32'>
-      <h3 className='my-8 text-4xl text-center text-blue font-bold'>
+    <div className='lg:w-1/2 px-18 xl:px-32'>
+      <h3 className='my-8 text-xl md:text-2xl lg:text-4xl text-center text-blue font-bold'>
         {t('SIEM.title3')}
       </h3>
       <div>

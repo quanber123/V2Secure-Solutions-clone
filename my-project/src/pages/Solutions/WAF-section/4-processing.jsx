@@ -26,18 +26,20 @@ function Processing() {
     );
   });
   return (
-    <div className='container m-auto flex justify-between'>
-      <div className='w-1/2'>
-        <h3 className='text-4xl text-blue font-bold py-8'>{t('WAF.title4')}</h3>
+    <div className='container m-auto flex flex-col xl:flex-row justify-between'>
+      <div className='xl:w-1/2'>
+        <h3 className='text-xl md:text-2xl lg:text-4xl text-center xl:text-start text-blue font-bold py-8'>
+          {t('WAF.title4')}
+        </h3>
         <LazyLoad offset={0} once>
           <img
-            className='rounded-2xl'
+            className='w-1/2 m-auto xl:w-auto rounded-2xl'
             src={processingImg}
             alt={processingImg}
           />
         </LazyLoad>
       </div>
-      <ul className='w-1/2'>{contentProcessing}</ul>
+      <ul className='xl:w-1/2'>{contentProcessing}</ul>
     </div>
   );
 }

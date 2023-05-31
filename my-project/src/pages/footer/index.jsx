@@ -3,7 +3,7 @@ import SectionContact from './section-contact';
 import SectionAbout from './section-about';
 function Footer() {
   return (
-    <footer className='relative flex flex-col Scale bg-black'>
+    <footer className='relative flex flex-col bg-black'>
       <SectionContact />
       <SectionAbout />
     </footer>

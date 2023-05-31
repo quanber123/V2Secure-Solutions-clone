@@ -57,10 +57,14 @@ function Header() {
     <header>
       <div className='h-2/3 flex flex-col items-center justify-around my-44'>
         <div className='m-auto flex flex-col justify-center items-center text-center '>
-          <h1 className='text-7xl'>{t('ecosystem.title1')}</h1>
-          <h3 className='text-7xl my-14'>{t('ecosystem.title3')}</h3>
+          <h1 className='text-2xl md:text-4xl xl:text-6xl'>
+            {t('ecosystem.title1')}
+          </h1>
+          <h3 className='text-2xl md:text-4xl xl:text-6xl my-8 lg:my-14'>
+            {t('ecosystem.title3')}
+          </h3>
           <button
-            className='px-12 py-3 rounded-2xl text-lg font-bold border-2 border-darkGreen bg-black hover:bg-yellow hover:text-black'
+            className='px-4 py-1 md:px-12 md:py-3 rounded-2xl text-lg font-bold border-2 border-darkGreen bg-black hover:bg-yellow hover:text-black'
             style={{
               backgroundImage: `url(
                 'https://cyberciti.1onestrong.com/wp-content/uploads/2023/05/asset-06.png'

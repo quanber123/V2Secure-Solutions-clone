@@ -41,7 +41,7 @@ function System() {
   });
   return (
     <div className='container m-auto'>
-      <h3 className='text-4xl text-center text-blue font-bold mb-8'>
+      <h3 className='text-xl md:text-2xl lg:text-4xl text-center text-blue font-bold mb-8'>
         {t('WAF.title7')}
       </h3>
       <ul className='font-bold'>{contentSystems}</ul>

@@ -53,15 +53,17 @@ function Collections() {
     );
   });
   return (
-    <div className='container h-full mx-auto mt-64 flex items-stretch justify-between'>
-      <div className='w-1/2'>
-        <h3 className='text-4xl text-blue font-bold'>{t('SIEM.title1')}</h3>
+    <div className='container h-full mx-auto mt-32 md:mt-64 flex flex-col lg:flex-row items-stretch justify-between'>
+      <div className='lg:w-1/2'>
+        <h3 className='my-8 lg:my-0 text-lg md:text-2xl lg:text-4xl text-center lg:text-start text-blue font-bold'>
+          {t('SIEM.title1')}
+        </h3>
         <LazyLoad offset={100} once>
-          <img className='mt-32' src={logImg} alt={logImg} />
+          <img className='mt-32 mx-auto lg:mx-0' src={logImg} alt={logImg} />
         </LazyLoad>
       </div>
       <div
-        className='w-1/2 h-full p-12 rounded-2xl'
+        className='lg:w-1/2 h-full p-12 rounded-2xl'
         style={{
           background:
             'linear-gradient(150deg,rgba(176, 176, 176, 0.2),rgba(103, 102, 102, 0.2))',

@@ -57,8 +57,10 @@ function Function1() {
     );
   });
   return (
-    <div className='container h-full mx-auto mt-64 flex flex-col justify-center items-center'>
-      <h3 className='text-4xl text-blue font-bold'>{t('NAC.title1')}</h3>
+    <div className='container h-full mx-auto mt-32 md:mt-64 flex flex-col justify-center items-center'>
+      <h3 className='text-xl md:text-2xl lg:text-4xl text-blue font-bold'>
+        {t('NAC.title1')}
+      </h3>
       <ul
         className='p-12 my-12 rounded-2xl'
         style={{

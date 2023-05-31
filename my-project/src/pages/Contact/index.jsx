@@ -18,23 +18,25 @@ export default function Contact() {
     });
   }
   return (
-    <section className='contact-form container mx-auto my-16 px-16 py-14 flex flex-col md:flex-row justify-between'>
+    <section className='contact-form container mx-auto md:my-16 px-16 py-14 flex flex-col md:flex-row justify-between'>
       <div className='md:w-1/2'>
-        <h1 className='text-6xl font-bold'>
+        <h1 className='text-2xl md:text-4xl xl:text-6xl font-bold'>
           {t('form.title1')}{' '}
           <span className='text-yellow'>{t('form.title2')}</span>
         </h1>
-        <h3 className='text-xl text-darkGray my-4'>{t('form.idea')}</h3>
-        <ul className='font-medium my-8 p-4 w-3/4 '>
-          <li className='flex my-4 border-blue border-b pb-4'>
+        <h3 className='text-lg lg:text-xl text-darkGray py-4'>
+          {t('form.idea')}
+        </h3>
+        <ul className='font-medium my-8 p-4 lg:w-3/4 '>
+          <li className='flex py-4 border-blue border-b '>
             <i className='fa fa-check mr-2'></i>
             <p>{t('form.content1')}</p>
           </li>
-          <li className='flex my-4 border-blue border-b pb-4'>
+          <li className='flex py-4 border-blue border-b '>
             <i className='fa fa-check mr-2'></i>
             <p>{t('form.content2')}</p>
           </li>
-          <li className='flex my-4'>
+          <li className='flex py-4'>
             <i className='fa fa-check mr-2'></i>
             <p>{t('form.content3')}</p>
           </li>

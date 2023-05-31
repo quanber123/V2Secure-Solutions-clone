@@ -83,12 +83,12 @@ function Networking() {
     );
   });
   return (
-    <div className='bg-black mt-64 pb-32'>
-      <div className='container m-auto flex flex-row-reverse my-8 items-center'>
-        <h3 className='w-1/2 text-center text-4xl text-blue font-bold'>
+    <div className='bg-black mt-32 xl:mt-64 pb-32'>
+      <div className='container m-auto flex flex-col xl:flex-row-reverse my-8 items-center'>
+        <h3 className='xl:w-1/2 text-center text-xl md:text-2xl lg:text-4xl text-blue font-bold'>
           {t('NIPS.title1')}
         </h3>
-        <LazyLoad className='w-1/2' {...lazyLoadOptions}>
+        <LazyLoad className='xl:w-1/2 my-8 xl:my-0' {...lazyLoadOptions}>
           <img
             className='w-1/2 m-auto rounded-2xl'
             src={nipsImg}
@@ -96,9 +96,9 @@ function Networking() {
           />
         </LazyLoad>
       </div>
-      <div className='container m-auto flex pb-64'>
+      <div className='container m-auto flex flex-col xl:flex-row pb-32 lg:pb-64'>
         <div
-          className='w-1/2 p-12 mx-8 rounded-2xl'
+          className='xl:w-1/2 p-12 mx-8 rounded-2xl'
           style={{
             background:
               'linear-gradient(150deg,rgba(176, 176, 176, 0.2),rgba(103, 102, 102, 0.2))',
@@ -108,7 +108,7 @@ function Networking() {
           <ul>{contentDetectionSignatures}</ul>
         </div>
         <div
-          className='w-1/2 p-12 mx-8 rounded-2xl'
+          className='xl:w-1/2 p-12 mx-8 rounded-2xl my-8 xl:my-0'
           style={{
             background:
               'linear-gradient(150deg,rgba(176, 176, 176, 0.2),rgba(103, 102, 102, 0.2))',
@@ -148,11 +148,11 @@ function Networking() {
           </ul>
         </div>
       </div>
-      <div className='container m-auto flex items-center'>
-        <h3 className='w-1/2 text-xl text-center text-blue font-bold'>
+      <div className='container m-auto flex flex-col lg:flex-row items-center'>
+        <h3 className='lg:w-1/2 text-xl text-center text-blue font-bold'>
           {t('NIPS.idea3')}
         </h3>
-        <LazyLoad className='w-1/2' {...lazyLoadOptions}>
+        <LazyLoad className='w-1/2 my-8 lg:my-0' {...lazyLoadOptions}>
           <img className='rounded-2xl' src={systemImg} alt='system-img' />
         </LazyLoad>
       </div>

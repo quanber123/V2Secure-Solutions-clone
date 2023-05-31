@@ -43,17 +43,17 @@ function System() {
   });
   return (
     <div className='container m-auto'>
-      <h3 className='w-4/5 m-auto py-12 text-4xl text-center text-blue font-bold border-t border-t-gray'>
+      <h3 className='w-5/6 xl:w-4/5 m-auto py-12 text-xl md:text-2xl lg:text-4xl text-center text-blue font-bold border-t border-t-gray'>
         {t('SIEM.title8')}
       </h3>
-      <div className='flex py-12'>
-        <ul className='w-2/3 font-bold'>{contentSystem}</ul>
+      <div className='flex flex-col lg:flex-row py-12'>
+        <ul className='lg:w-2/3 font-bold'>{contentSystem}</ul>
         <LazyLoad
-          className='w-1/3 flex justify-center items-center'
+          className='lg:w-1/3 my-4 lg:my-0 flex justify-center items-center'
           offset={100}
           once
         >
-          <img className='w-2/3' src={systemImg} alt='system-img' />
+          <img className='w-1/4 lg:w-2/3' src={systemImg} alt='system-img' />
         </LazyLoad>
       </div>
     </div>
