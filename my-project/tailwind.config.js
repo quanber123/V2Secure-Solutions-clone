@@ -10,21 +10,16 @@ export default {
       xxl: '1440px',
     },
     colors: {
-      black: '#000000',
+      black: '#000913',
       blue: '#88fee7',
+      boldBlue: '#00afb6',
       darkBlue: '#183861',
-<<<<<<< HEAD
-      darkGreen: '#000913',
-      lightGreen: '#5a8488',
-      green: '#e2ff7e',
+      darkGreen: '#5a8488',
+      lightGray: '#abb8c3',
       gray: '#b6b6b6',
+      green: '#3CCF4E',
       white: '#f1f1f1',
-=======
-      darkGray: '#00000099',
-      gray: '#EEEEEE',
-      white: '#ffffff',
->>>>>>> 754f6ac478704b41a5c6fba11ca976c5ce3b848e
-      yellow: '#ffd22a',
+      yellow: '#e2ff7e',
     },
     extend: {},
   },

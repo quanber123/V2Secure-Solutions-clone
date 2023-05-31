@@ -19,14 +19,6 @@ function Nav() {
   const [selectedLanguage, setSelectedLanguage] = useState('en');
   const [tabLanguage, setTabLanguage] = useState(false);
 
-  const handleLinkClick = useCallback((id) => {
-    setLinkState(id);
-    const element = document.getElementById(id);
-    element.scrollIntoView({ behavior: 'smooth' });
-    setShowNav(false);
-    setTabLanguage(false);
-  }, []);
-
   const handleScroll = useCallback(() => {
     if (window.pageYOffset > 200) {
       setIsSticky(true);
@@ -34,7 +26,6 @@ function Nav() {
       setIsSticky(false);
     }
   }, []);
-
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
 
@@ -67,18 +58,18 @@ function Nav() {
       } h-24 flex Sticky`}
     >
       <section className='h-full flex justify-between container m-auto'>
-        <LazyLoad
-          className='md:w-1/12 py-2 cursor-pointer'
-          {...lazyLoadOptions}
-        >
-          <Link to='/'>
-            <img
-              className='h-full mx-5 lg:mx-0'
-              src={isSticky ? logo2 : logo}
-              alt='logo'
-            />
-          </Link>
-        </LazyLoad>
+        <div className='md:w-1/6 h-full flex items-center'>
+          <LazyLoad className='py-2 cursor-pointer' {...lazyLoadOptions}>
+            <Link to='/'>
+              <img
+                className='w-full '
+                src={isSticky ? logo2 : logo}
+                alt='logo'
+              />
+            </Link>
+          </LazyLoad>
+          <h1 className='mx-4 text-4xl font-bold'>V2Secure</h1>
+        </div>
         <div
           className={`flex flex-col lg:flex-row font-bold lg:text-lg justify-between lg:items-center ${
             showNav ? 'show' : 'hidden lg:flex'
@@ -86,63 +77,30 @@ function Nav() {
         >
           <NavLink
             className={`mx-5 my-2 nav-link ${
-              stateLink === 'siem' ? 'link-active' : ''
+              stateLink === 'home' ? 'link-active' : ''
             } ${isSticky ? 'sticky' : ''}`}
             rel='nofollow'
-            to='siem'
-            onClick={() => handleLinkClick('siem')}
+            to='/'
           >
-            V2-SIEM
+            HOME
           </NavLink>
           <NavLink
             className={`mx-5 my-2 nav-link ${
-              stateLink === 'waf' ? 'link-active' : ''
+              stateLink === 'solutions' ? 'link-active' : ''
             } ${isSticky ? 'sticky' : ''}`}
             rel='nofollow'
-            to='waf'
-            onClick={() => handleLinkClick('waf')}
+            to='solutions'
           >
-            V2-WAF
-          </NavLink>
-          <NavLink
-            className={`mx-5 my-2 nav-link ${
-              stateLink === 'nips' ? 'link-active' : ''
-            } ${isSticky ? 'sticky' : ''}`}
-            rel='nofollow'
-            to='nips'
-            onClick={() => handleLinkClick('nips')}
-          >
-            V2-NIPS
-          </NavLink>
-          <NavLink
-            className={`mx-5 my-2 nav-link ${
-              stateLink === 'edr' ? 'link-active' : ''
-            } ${isSticky ? 'sticky' : ''}`}
-            rel='nofollow'
-            to='edr'
-            onClick={() => handleLinkClick('edr')}
-          >
-            V2-EDR
-          </NavLink>
-          <NavLink
-            className={`mx-5 my-2 nav-link ${
-              stateLink === 'nac' ? 'link-active' : ''
-            } ${isSticky ? 'sticky' : ''}`}
-            rel='nofollow'
-            to='nac'
-            onClick={() => handleLinkClick('nac')}
-          >
-            V2-NAC
+            SOLUTIONS
           </NavLink>
           <NavLink
             className={`mx-5 my-2 nav-link ${
               stateLink === 'service' ? 'link-active' : ''
             } ${isSticky ? 'sticky' : ''}`}
             rel='nofollow'
-            to='service'
-            onClick={() => handleLinkClick('service')}
+            to='services'
           >
-            SERVICE
+            SERVICES
           </NavLink>
           <NavLink
             className={`mx-5 my-2 nav-link ${
@@ -150,7 +108,6 @@ function Nav() {
             } ${isSticky ? 'sticky' : ''}`}
             rel='nofollow'
             to='contact'
-            onClick={() => handleLinkClick('contact')}
           >
             CONTACT
           </NavLink>

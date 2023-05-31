@@ -14,7 +14,7 @@
     "nac": "Hệ thống kiểm soát truy cập mạng V2-NAC"
   },
   "SIEM": {
-    "title": "HỆ THỐNG QUẢN LÝ GIÁM SÁT AN TOÀN THÔNG TIN TẬP TRUNG V2 - SIEM",
+    "title": "HỆ THỐNG QUẢN LÝ GIÁM SÁT AN TOÀN THÔNG TIN TẬP TRUNG",
     "title1": "1. THU THẬP VÀ QUẢN LÝ LOG THEO THỜI GIAN THỰC",
     "title2": "2. PHÁT HIỆN TẤN CÔNG MẠNG",
     "title3": "3. XỬ LÝ PHÂN TÍCH TƯƠNG QUAN",

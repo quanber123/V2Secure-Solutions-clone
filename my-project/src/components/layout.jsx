@@ -11,7 +11,7 @@ function Layout() {
       style={{
         width: '100%',
         height: '100vh',
-        backgroundImage: `url(${bgImg})`,
+        // backgroundImage: `url(${bgImg})`,
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
         objectFit: 'cover',

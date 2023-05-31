@@ -1,15 +1,13 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import LazyLoad from 'react-lazyload';
-import About from '../../About';
+import SectionContact from './section-contact';
+import SectionAbout from './section-about';
 function Footer() {
   const { t } = useTranslation();
   return (
-    <footer className='container mx-auto my-16 p-4 Scale'>
-      <About />
-      <LazyLoad className='font-bold text-lg text-center ' offset={0} once>
-        {t('copyright')}
-      </LazyLoad>
+    <footer className='relative flex flex-col Scale bg-black'>
+      <SectionContact />
+      <SectionAbout />
     </footer>
   );
 }

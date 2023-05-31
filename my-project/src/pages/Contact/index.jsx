@@ -16,21 +16,24 @@ export default function Contact() {
     });
   }
   return (
-    <section className='container mx-auto my-16 px-16 py-14 bg-white text-darkBlue flex flex-col md:flex-row justify-between rounded-lg'>
+    <section className='contact-form container mx-auto my-16 px-16 py-14 flex flex-col md:flex-row justify-between'>
       <div className='md:w-1/2'>
-        <h1 className='text-6xl font-bold'>Contact Us</h1>
+        <h1 className='text-6xl font-bold'>
+          Let's Work <span className='text-yellow'>Together</span>
+        </h1>
         <h3 className='text-xl text-darkGray my-4'>
-          Let's explore how Notion can work for you
+          Tell us about yourself and we’ll figure out the best solution for you
+          and your organization’s needs.
         </h3>
-        <ul className='font-medium my-8 p-4 w-3/4 border-gray border rounded bg-gray'>
-          <li className='flex my-4 border-darkBlue border-b pb-4'>
+        <ul className='font-medium my-8 p-4 w-3/4 '>
+          <li className='flex my-4 border-blue border-b pb-4'>
             <i className='fa fa-check mr-2'></i>
             <p>
               One flexible tool for your entire company to share knowledge, ship
               projects, and collaborate.
             </p>
           </li>
-          <li className='flex my-4 border-darkBlue border-b pb-4'>
+          <li className='flex my-4 border-blue border-b pb-4'>
             <i className='fa fa-check mr-2'></i>
             <p>
               Enterprise features to securely manage user access and security.
@@ -45,12 +48,9 @@ export default function Contact() {
           </li>
         </ul>
       </div>
-      <form
-        className='md:w-1/2 contact-form p-8 bg-white border-darkBlue '
-        method='POST'
-      >
+      <form className='md:w-1/2 p-8 ' method='POST'>
         <input
-          className='w-3/4 rounded-lg px-4 py-2 border border-darkBlue my-2'
+          className='w-full rounded-lg px-4 py-2 border border-boldBlue my-2'
           type='text'
           name='name'
           value={contactForm.name}
@@ -60,7 +60,7 @@ export default function Contact() {
           placeholder='Name'
         />
         <input
-          className='w-3/4 rounded-lg  px-4 py-2 border border-darkBlue my-2'
+          className='w-full rounded-lg  px-4 py-2 border border-boldBlue my-2'
           type='email'
           name='email'
           value={contactForm.email}
@@ -70,7 +70,7 @@ export default function Contact() {
           placeholder='Email'
         />
         <input
-          className='w-3/4 rounded-lg px-4 py-2 border border-darkBlue my-2'
+          className='w-full rounded-lg px-4 py-2 border border-boldBlue my-2'
           type='text'
           name='phone'
           value={contactForm.phone}
@@ -80,7 +80,7 @@ export default function Contact() {
           placeholder='Phone'
         />
         <textarea
-          className='w-3/4 rounded-lg  px-4 py-2 border border-darkBlue  my-2 focus:outline-none'
+          className='w-full rounded-lg  px-4 py-2 border border-boldBlue  my-2 focus:outline-none'
           name='message'
           id='message'
           cols='25'
@@ -90,14 +90,12 @@ export default function Contact() {
           checked
           placeholder='Your Message'
         ></textarea>
-        <div className='w-3/4 px-16 mr-auto'>
-          <button
-            type='submit'
-            className='w-1/2 rounded-lg px-4 py-2 my-4 mx-2 bg-black hover:bg-darkBlue text-white transition-all'
-          >
-            Submit
-          </button>
-        </div>
+        <button
+          type='submit'
+          className='w-full rounded-xl py-5 my-4 bg-yellow hover:bg-boldBlue text-black font-bold transition-all'
+        >
+          Submit
+        </button>
       </form>
     </section>
   );
