@@ -80,16 +80,20 @@ function Header() {
         {ecosystems.map((ecosystem, index) => (
           <article
             key={index}
-            className='h-full flex flex-col gallery-title-header text-gray hover:text-white opacity-80 hover:opacity-100'
+            className='flex flex-col justify-between items-between gallery-title-header text-gray hover:text-white opacity-80 hover:opacity-100'
           >
             <LazyLoad
               className='m-auto gallery-img-header'
               key={index}
               {...lazyLoadOptions}
             >
-              <img className='Up' src={ecosystem.url} alt={ecosystem.content} />
+              <img
+                className='h-full Up'
+                src={ecosystem.url}
+                alt={ecosystem.content}
+              />
             </LazyLoad>
-            <h3 className='h-1/2 text-center'>{ecosystem.content}</h3>
+            <h3 className='h-20 text-center'>{ecosystem.content}</h3>
           </article>
         ))}
       </div>
