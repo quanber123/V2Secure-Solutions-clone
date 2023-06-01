@@ -11,12 +11,32 @@ export default function Contact() {
       message: '',
     },
   ]);
+  const [stateForm, setStateForm] = useState(false);
+  const [stateAnimation, setStateAnimation] = useState(true);
   function handleChangeContact(event) {
     const { name, value } = event.target;
     setContactForm((prevContact) => {
       return { ...prevContact, [name]: value, id: new Date().getTime() };
     });
   }
+  const handleSubmitForm = (e) => {
+    e.preventDefault();
+    setStateForm(true);
+    setTimeout(() => {
+      setStateForm(false);
+    }, 1500);
+    setTimeout(() => {
+      setStateAnimation(false);
+    }, 1000);
+    setContactForm(() => {
+      return {
+        name: '',
+        email: '',
+        phone: '',
+        message: '',
+      };
+    });
+  };
   return (
     <section className='contact-form container mx-auto md:my-16 px-16 py-14 flex flex-col md:flex-row justify-between Up'>
       <div className='md:w-1/2'>
@@ -42,7 +62,19 @@ export default function Contact() {
           </li>
         </ul>
       </div>
-      <form className='md:w-1/2 p-8 ' method='POST'>
+      <form className='md:w-1/2 p-8 ' method='POST' onSubmit={handleSubmitForm}>
+        {stateForm && (
+          <div
+            className={`bg-white m-auto text-black text-center font-bold flex flex-col justify-between ${
+              stateAnimation ? 'downAlter' : 'hideAlter'
+            }`}
+          >
+            <i className='h-1/2 fa fa-check text-2xl mt-2'></i>
+            <p className='h-1/2 text-lg my-2'>
+              Thank You! Form Submitted Successfully.
+            </p>
+          </div>
+        )}
         <input
           className='w-full rounded-lg px-4 py-2 border border-boldBlue my-2'
           type='text'

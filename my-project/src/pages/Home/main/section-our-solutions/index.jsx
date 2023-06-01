@@ -32,18 +32,18 @@ function OurSolutions() {
     window.scroll(0, 0);
   };
   return (
-    <section className='container m-auto h-4/5 text-center md:pb-32 lg:pb-64 Up'>
+    <section className='container m-auto text-center md:pb-32 lg:pb-64 Up'>
       <h1 className='text-2xl md:text-4xl xl:text-6xl font-bold my-12'>
         {t('our-solutions1')}{' '}
         <span className='text-blue'>{t('our-solutions2')}</span>
       </h1>
-      <div className='flex flex-col md:flex-row justify-center items-center'>
+      <div className='flex flex-col lg:flex-wrap lg:flex-row justify-center items-stretch'>
         {dataEcosystem.map((solution, index) => {
           return (
             <article
               key={index}
-              className={`services p-8 rounded-xl ${
-                hoverSolutions === index ? 'hoverServices' : ''
+              className={`solutions p-8 rounded-xl ${
+                hoverSolutions === index ? 'hoverSolutions' : ''
               }`}
               onMouseOver={() => setHoverSolutions(index)}
               onMouseOut={() => setHoverSolutions(null)}

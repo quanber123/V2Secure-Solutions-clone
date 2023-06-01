@@ -1,10 +1,8 @@
 import React from 'react';
 import { useCallback } from 'react';
 import { useState } from 'react';
-import { NavLink, location, useParams } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 function NavSolutions() {
-  const { solution } = useParams();
-  console.log(solution);
   const [selectedLink, setSelectedLink] = useState('V2-SIEM');
   const [showNav, setShowNav] = useState(false);
   const handleLinkClick = useCallback(

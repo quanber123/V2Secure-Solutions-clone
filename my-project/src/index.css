@@ -187,9 +187,32 @@ textarea {
   border: 2px solid #88fee7;
   transform: translateY(-15px);
 }
+.solutions {
+  cursor: pointer;
+  background: linear-gradient(
+    150deg,
+    rgba(176, 176, 176, 0.2),
+    rgba(103, 102, 102, 0.2)
+  );
+  width: calc(100% / 3 - 64px);
+  margin: 32px;
+}
+.solutions.hoverSolutions {
+  background-color: #000913;
+  background-image: url('https://cyberciti.1onestrong.com/wp-content/uploads/2023/05/asset-06.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 2px solid #88fee7;
+  transform: translateY(-15px);
+}
 @media only screen and (max-width: 480px) {
   .services {
     width: 100%;
+  }
+  .solutions {
+    width: 100%;
+    margin: 16px auto;
   }
 }
 .square {
@@ -361,4 +384,38 @@ textarea {
   /* box-shadow: 1px 1px 10px 10px #ddd; */
   border: 1px solid #5a8488;
   box-shadow: 1px 1px 20px -5px #88fee7;
+}
+.downAlter {
+  animation: downAlter 0.5s linear;
+}
+.hideAlter {
+  animation: hideAlter 0.5s linear;
+}
+@keyframes downAlter {
+  0% {
+    height: 0;
+    opacity: 0;
+  }
+  50% {
+    height: 43px;
+    opacity: 0.3;
+  }
+  100% {
+    height: 86px;
+    opacity: 1;
+  }
+}
+@keyframes hideAlter {
+  0% {
+    height: 86px;
+    opacity: 1;
+  }
+  50% {
+    height: 43px;
+    opacity: 0.3;
+  }
+  100% {
+    height: 0;
+    opacity: 0;
+  }
 }
