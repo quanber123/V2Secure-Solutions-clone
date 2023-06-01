@@ -12,7 +12,7 @@ export default function Contact() {
     },
   ]);
   const [stateForm, setStateForm] = useState(false);
-  const [stateAnimation, setStateAnimation] = useState(true);
+  const [stateAnimation, setStateAnimation] = useState(false);
   function handleChangeContact(event) {
     const { name, value } = event.target;
     setContactForm((prevContact) => {
@@ -25,8 +25,9 @@ export default function Contact() {
     setTimeout(() => {
       setStateForm(false);
     }, 1500);
+    setStateAnimation((prevState) => !prevState);
     setTimeout(() => {
-      setStateAnimation(false);
+      setStateAnimation((prevState) => !prevState);
     }, 1000);
     setContactForm(() => {
       return {

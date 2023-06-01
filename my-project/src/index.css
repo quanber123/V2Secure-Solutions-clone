@@ -385,6 +385,9 @@ textarea {
   border: 1px solid #5a8488;
   box-shadow: 1px 1px 20px -5px #88fee7;
 }
+.thanks-form {
+  height: 86px;
+}
 .downAlter {
   animation: downAlter 0.5s linear;
 }
