@@ -72,6 +72,9 @@ textarea {
 .nav-link:hover {
   color: #88fee7;
 }
+.nav-link.hight-light {
+  color: #88fee7;
+}
 .custom-select-language {
   position: relative;
 }

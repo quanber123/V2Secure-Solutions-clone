@@ -15,7 +15,7 @@ function NavSolutions() {
   return (
     <section className='Scale'>
       <nav
-        className={`nav-solutions container lg:w-1/2 mx-auto my-8 lg:text-lg text-2xl font-bold justify-between items-center ${
+        className={`nav-solutions container lg:w-1/2 mx-auto my-8 lg:text-lg text-2xl font-bold justify-between items-center Right ${
           showNav ? 'show-nav-solutions' : 'hidden lg:flex'
         }`}
       >
@@ -26,7 +26,11 @@ function NavSolutions() {
           X
         </button>
         <NavLink
-          className={`mx-5 my-4 lg:my-2 nav-link`}
+          className={
+            selectedLink === 'V2-SIEM'
+              ? 'mx-5 my-4 lg:my-2 nav-link hight-light'
+              : 'mx-5 my-4 lg:my-2 nav-link '
+          }
           rel='nofollow'
           to='siem'
           onClick={() => handleLinkClick('V2-SIEM')}
@@ -34,7 +38,11 @@ function NavSolutions() {
           V2-SIEM
         </NavLink>
         <NavLink
-          className={`mx-5 my-4 lg:my-2 nav-link `}
+          className={
+            selectedLink === 'V2-WAF'
+              ? 'mx-5 my-4 lg:my-2 nav-link hight-light'
+              : 'mx-5 my-4 lg:my-2 nav-link '
+          }
           rel='nofollow'
           to='waf'
           onClick={() => handleLinkClick('V2-WAF')}
@@ -42,7 +50,11 @@ function NavSolutions() {
           V2-WAF
         </NavLink>
         <NavLink
-          className={`mx-5 my-4 lg:my-2 nav-link`}
+          className={
+            selectedLink === 'V2-NIPS'
+              ? 'mx-5 my-4 lg:my-2 nav-link hight-light'
+              : 'mx-5 my-4 lg:my-2 nav-link '
+          }
           rel='nofollow'
           to='nips'
           onClick={() => handleLinkClick('V2-NIPS')}
@@ -50,7 +62,11 @@ function NavSolutions() {
           V2-NIPS
         </NavLink>
         <NavLink
-          className={`mx-5 my-4 lg:my-2 nav-link`}
+          className={
+            selectedLink === 'V2-EDR'
+              ? 'mx-5 my-4 lg:my-2 nav-link hight-light'
+              : 'mx-5 my-4 lg:my-2 nav-link '
+          }
           rel='nofollow'
           to='edr'
           onClick={() => handleLinkClick('V2-EDR')}
@@ -58,7 +74,11 @@ function NavSolutions() {
           V2-EDR
         </NavLink>
         <NavLink
-          className={`mx-5 my-4 lg:my-2 nav-link`}
+          className={
+            selectedLink === 'V2-NAC'
+              ? 'mx-5 my-4 lg:my-2 nav-link hight-light'
+              : 'mx-5 my-4 lg:my-2 nav-link '
+          }
           rel='nofollow'
           to='nac'
           onClick={() => handleLinkClick('V2-NAC')}
