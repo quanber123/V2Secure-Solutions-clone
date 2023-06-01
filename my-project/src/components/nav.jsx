@@ -15,7 +15,9 @@ function Nav() {
   // const [isSticky, setIsSticky] = useState(false);
   const [selectedLink, setSelectedLink] = useState('HOME');
   const [showNav, setShowNav] = useState(false);
-  const [selectedLanguage, setSelectedLanguage] = useState('en');
+  const [selectedLanguage, setSelectedLanguage] = useState(
+    localStorage.getItem('language') || 'en'
+  );
   const [tabLanguage, setTabLanguage] = useState(false);
 
   // const handleScroll = useCallback(() => {
@@ -53,6 +55,7 @@ function Nav() {
   );
   useEffect(() => {
     i18n.changeLanguage(selectedLanguage);
+    localStorage.setItem('language', selectedLanguage);
   }, [selectedLanguage]);
   const handleShowNav = () => {
     setShowNav((prevShow) => !prevShow);
