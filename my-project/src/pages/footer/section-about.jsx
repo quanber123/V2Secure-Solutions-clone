@@ -15,8 +15,8 @@ function SectionAbout() {
     >
       <div className='md:w-1/2'>
         <div className='flex items-center'>
-          <LazyLoad className='h-1/2' offset={100} once>
-            <img className='h-10' src={logo} alt='logoV2' />
+          <LazyLoad className='h-1/2' offset={0} once>
+            <img className='h-10 Scale' src={logo} alt='logoV2' />
           </LazyLoad>
           <h1 className='text-2xl md:text-4xl mx-4'>V2Secure</h1>
         </div>
@@ -30,8 +30,8 @@ function SectionAbout() {
         </div>
       </div>
       <div className='w-1/2 m-auto lg:m-0 flex justify-center items-center'>
-        <LazyLoad className='lg:h-full'>
-          <img className='h-full' src={qr} alt='qr' />
+        <LazyLoad className='lg:h-full' offset={0} once>
+          <img className='h-full Scale' src={qr} alt='qr' />
         </LazyLoad>
         <div className='md:text-lg lg:text-xl font-bold md:p-2 m-2'>
           <h3 className='text-blue'>{t('about.qr')}</h3>

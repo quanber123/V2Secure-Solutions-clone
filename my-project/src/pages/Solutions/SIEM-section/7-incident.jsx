@@ -1,6 +1,4 @@
 import React from 'react';
-import LazyLoad from 'react-lazyload';
-import guard from '../../../images/information/guardblack.png';
 import { useTranslation } from 'react-i18next';
 function Incident() {
   const { t } = useTranslation();

@@ -87,7 +87,7 @@ function Header() {
               key={index}
               {...lazyLoadOptions}
             >
-              <img src={ecosystem.url} alt={ecosystem.content} />
+              <img className='Up' src={ecosystem.url} alt={ecosystem.content} />
             </LazyLoad>
             <h3 className='h-1/2 text-center'>{ecosystem.content}</h3>
           </article>

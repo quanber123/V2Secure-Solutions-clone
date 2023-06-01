@@ -45,7 +45,7 @@ function Main() {
               >
                 <LazyLoad offset={0} once>
                   <img
-                    className='w-1/3 m-auto'
+                    className='w-1/3 m-auto Up'
                     src={serviceImg}
                     alt='secureImg'
                   />

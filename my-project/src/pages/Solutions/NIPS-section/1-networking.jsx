@@ -88,9 +88,9 @@ function Networking() {
         <h3 className='xl:w-1/2 text-center text-xl md:text-2xl lg:text-4xl text-blue font-bold'>
           {t('NIPS.title1')}
         </h3>
-        <LazyLoad className='xl:w-1/2 my-8 xl:my-0 Up' {...lazyLoadOptions}>
+        <LazyLoad className='xl:w-1/2 my-8 xl:my-0' {...lazyLoadOptions}>
           <img
-            className='w-1/2 m-auto rounded-2xl'
+            className='w-1/2 m-auto rounded-2xl Up'
             src={nipsImg}
             alt='nips-img'
           />
@@ -152,8 +152,8 @@ function Networking() {
         <h3 className='lg:w-1/2 text-xl text-center text-blue font-bold'>
           {t('NIPS.idea3')}
         </h3>
-        <LazyLoad className='w-1/2 my-8 lg:my-0 Up' {...lazyLoadOptions}>
-          <img className='rounded-2xl' src={systemImg} alt='system-img' />
+        <LazyLoad className='w-1/2 my-8 lg:my-0' {...lazyLoadOptions}>
+          <img className='rounded-2xl Up' src={systemImg} alt='system-img' />
         </LazyLoad>
       </div>
     </div>
