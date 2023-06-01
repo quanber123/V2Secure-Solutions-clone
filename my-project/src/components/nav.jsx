@@ -13,6 +13,7 @@ function Nav() {
     once: true,
   };
   // const [isSticky, setIsSticky] = useState(false);
+  const [selectedLink, setSelectedLink] = useState('HOME');
   const [showNav, setShowNav] = useState(false);
   const [selectedLanguage, setSelectedLanguage] = useState('en');
   const [tabLanguage, setTabLanguage] = useState(false);
@@ -57,6 +58,13 @@ function Nav() {
     setShowNav((prevShow) => !prevShow);
     setTabLanguage(false);
   };
+  const handleLinkClick = useCallback(
+    (link) => {
+      setSelectedLink(link);
+      setShowNav(false);
+    },
+    [selectedLink]
+  );
   const handleShowTabLanguage = () => {
     setTabLanguage((prevTab) => !prevTab);
   };
@@ -79,34 +87,42 @@ function Nav() {
           }`}
         >
           <NavLink
-            className={`mx-5 my-4 lg:my-2 nav-link`}
+            className={`mx-5 my-4 lg:my-2 nav-link ${
+              selectedLink === 'HOME' ? 'hight-light' : ''
+            }`}
             rel='nofollow'
             to='/'
-            onClick={() => setShowNav(false)}
+            onClick={() => handleLinkClick('HOME')}
           >
             HOME
           </NavLink>
           <NavLink
-            className={`mx-5 my-4 lg:my-2 nav-link `}
+            className={`mx-5 my-4 lg:my-2 nav-link ${
+              selectedLink === 'SOLUTIONS' ? 'hight-light' : ''
+            }`}
             rel='nofollow'
             to='solutions'
-            onClick={() => setShowNav(false)}
+            onClick={() => handleLinkClick('SOLUTIONS')}
           >
             {t('SOLUTIONS')}
           </NavLink>
           <NavLink
-            className={`mx-5 my-4 lg:my-2 nav-link `}
+            className={`mx-5 my-4 lg:my-2 nav-link ${
+              selectedLink === 'SERVICES' ? 'hight-light' : ''
+            }`}
             rel='nofollow'
             to='services'
-            onClick={() => setShowNav(false)}
+            onClick={() => handleLinkClick('SERVICES')}
           >
             {t('SERVICES')}
           </NavLink>
           <NavLink
-            className={`mx-5 my-4 lg:my-2 nav-link`}
+            className={`mx-5 my-4 lg:my-2 nav-link ${
+              selectedLink === 'CONTACT' ? 'hight-light' : ''
+            }`}
             rel='nofollow'
             to='contact'
-            onClick={() => setShowNav(false)}
+            onClick={() => handleLinkClick('CONTACT')}
           >
             {t('CONTACT')}
           </NavLink>
