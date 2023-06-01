@@ -27,7 +27,7 @@ function Main() {
   };
   return (
     <main id='our-services' className='bg-black p-12'>
-      <section className='container m-auto h-4/5 text-center md:pb-32 lg:pb-64'>
+      <section className='container m-auto h-4/5 text-center md:pb-32 lg:pb-64 Up'>
         <h1 className='text-2xl md:text-4xl xl:text-6xl font-bold my-12'>
           {t('our-services1')}{' '}
           <span className='text-blue'>{t('our-services2')}</span>
@@ -43,7 +43,7 @@ function Main() {
                 onMouseOver={() => setHoverServices(index)}
                 onMouseOut={() => setHoverServices(null)}
               >
-                <LazyLoad offset={100} once>
+                <LazyLoad offset={0} once>
                   <img
                     className='w-1/3 m-auto'
                     src={serviceImg}

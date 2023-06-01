@@ -5,7 +5,7 @@ function System() {
   const { t } = useTranslation();
   return (
     <div
-      className='container m-auto p-12 rounded-2xl'
+      className='container m-auto p-12 rounded-2xl Up'
       style={{
         background:
           'linear-gradient(150deg,rgba(176, 176, 176, 0.2),rgba(103, 102, 102, 0.2))',

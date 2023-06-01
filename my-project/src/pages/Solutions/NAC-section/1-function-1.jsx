@@ -57,7 +57,7 @@ function Function1() {
     );
   });
   return (
-    <div className='container h-full mx-auto mt-32 md:mt-64 flex flex-col justify-center items-center'>
+    <div className='container h-full mx-auto mt-32 md:mt-64 flex flex-col justify-center items-center Up'>
       <h3 className='text-xl md:text-2xl lg:text-4xl text-blue font-bold'>
         {t('NAC.title1')}
       </h3>
@@ -70,8 +70,8 @@ function Function1() {
       >
         {contentFunction1}
       </ul>
-      <LazyLoad className='w-1/2' offset={100} once>
-        <img className='rounded-2xl' src={accessImg} alt='access-img' />
+      <LazyLoad className='w-1/2' offset={0} once>
+        <img className='rounded-2xl Up' src={accessImg} alt='access-img' />
       </LazyLoad>
     </div>
   );

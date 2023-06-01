@@ -23,7 +23,7 @@ function IncidentAnalysis() {
   });
   return (
     <div
-      className='xl:w-1/2 mx-8 my-8 xl:my-0 p-12 rounded-2xl'
+      className='xl:w-1/2 mx-8 my-8 xl:my-0 p-12 rounded-2xl Right'
       style={{
         background:
           'linear-gradient(150deg,rgba(176, 176, 176, 0.2),rgba(103, 102, 102, 0.2))',

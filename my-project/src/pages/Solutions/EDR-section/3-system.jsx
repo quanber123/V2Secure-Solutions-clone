@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 function System() {
   const { t } = useTranslation();
   return (
-    <div className='container m-auto'>
+    <div className='container m-auto Right'>
       <h3 className='text-xl md:text-2xl lg:text-4xl text-center text-blue font-bold py-8'>
         {t('EDR.title3')}
       </h3>

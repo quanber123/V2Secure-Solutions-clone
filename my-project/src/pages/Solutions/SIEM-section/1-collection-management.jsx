@@ -53,7 +53,7 @@ function Collections() {
     );
   });
   return (
-    <div className='container h-full mx-auto mt-32 md:mt-64 flex flex-col lg:flex-row items-stretch justify-between'>
+    <div className='container h-full mx-auto mt-32 md:mt-64 flex flex-col lg:flex-row items-stretch justify-between Up'>
       <div className='lg:w-1/2'>
         <h3 className='my-8 lg:my-0 text-lg md:text-2xl lg:text-4xl text-center lg:text-start text-blue font-bold'>
           {t('SIEM.title1')}

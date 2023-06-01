@@ -1,19 +1,14 @@
 import React from 'react';
 import { lazy, Suspense } from 'react';
 import { Outlet } from 'react-router-dom';
+import Spinner from './spinner';
 const ScrollPage = lazy(() => import('../pages/scroll-page/index'));
 const Nav = lazy(() => import('./nav'));
 const Footer = lazy(() => import('../pages/footer/index'));
 function Layout() {
   return (
     <div>
-      <Suspense
-        fallback={
-          <div className='absolute text-4xl w-full h-full top-0 left-0 flex justify-center items-center'>
-            ...Loading
-          </div>
-        }
-      >
+      <Suspense fallback={<Spinner />}>
         <Nav />
         <Outlet />
         <Footer />

@@ -109,7 +109,7 @@ function MultiTask() {
     );
   });
   return (
-    <div className='container mx-auto mt-32 md:mt-64'>
+    <div className='container mx-auto mt-32 md:mt-64 Up'>
       <div className='relative'>
         <h3 className='text-xl md:text-2xl lg:text-4xl text-center lg:text-start text-blue font-bold mb-8'>
           {t('EDR.title1')}
@@ -118,7 +118,7 @@ function MultiTask() {
           className='hidden  absolute z-50 w-full h-full -top-42  md:-top-14 xl:-top-8 left-0 m-auto md:flex justify-center items-center'
           {...lazyLoadOptions}
         >
-          <img className='xl:h-5/6' src={solutionImg} alt={solutionImg} />
+          <img className='xl:h-5/6 Up' src={solutionImg} alt={solutionImg} />
         </LazyLoad>
         <div className='flex flex-col lg:flex-row flex-wrap items-stretch'>
           <div

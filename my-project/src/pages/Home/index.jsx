@@ -5,10 +5,10 @@ import Main from './main/index';
 export default function Home() {
   return (
     <>
-      <LazyLoad offset={100} once>
+      <LazyLoad offset={0} once>
         <Header />
       </LazyLoad>
-      <LazyLoad offset={100} once>
+      <LazyLoad offset={0} once>
         <Main />
       </LazyLoad>
     </>

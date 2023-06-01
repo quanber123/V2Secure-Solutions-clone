@@ -29,7 +29,7 @@ function Plan() {
   return (
     <div className='container m-auto flex flex-col lg:flex-row-reverse justify-between items-center'>
       <div
-        className='p-12 rounded-2xl'
+        className='p-12 rounded-2xl Right'
         style={{
           background:
             'linear-gradient(150deg,rgba(176, 176, 176, 0.2),rgba(103, 102, 102, 0.2))',
@@ -38,9 +38,9 @@ function Plan() {
         <h3 className='text-4xl text-blue font-bold mb-8'>{t('WAF.title2')}</h3>
         <ul>{contentPlan}</ul>
       </div>
-      <LazyLoad offset={100} once>
+      <LazyLoad offset={0} once>
         <img
-          className='my-8 lg:my-0 rounded-2xl'
+          className='my-8 lg:my-0 rounded-2xl Left'
           src={planImg}
           alt='plan-img'
         />

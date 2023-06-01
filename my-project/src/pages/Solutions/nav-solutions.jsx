@@ -13,14 +13,14 @@ function NavSolutions() {
     [selectedLink]
   );
   return (
-    <section>
+    <section className='Scale'>
       <nav
         className={`nav-solutions container lg:w-1/2 mx-auto my-8 lg:text-lg text-2xl font-bold justify-between items-center ${
           showNav ? 'show-nav-solutions' : 'hidden lg:flex'
         }`}
       >
         <button
-          className='btn-close-nav font-extrabold text-xl'
+          className='btn-close-nav font-extrabold lg:hidden text-xl'
           onClick={() => setShowNav(false)}
         >
           X

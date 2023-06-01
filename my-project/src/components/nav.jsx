@@ -61,7 +61,7 @@ function Nav() {
     setTabLanguage((prevTab) => !prevTab);
   };
   return (
-    <nav className={`relative nav-item h-24 flex `}>
+    <nav className={`relative nav-item h-24 flex`}>
       <section className='h-full flex justify-between container m-auto'>
         <div className='w-full md:w-1/6 h-full mx-8 lg:mx-0 flex items-center'>
           <LazyLoad className='py-2 cursor-pointer' {...lazyLoadOptions}>

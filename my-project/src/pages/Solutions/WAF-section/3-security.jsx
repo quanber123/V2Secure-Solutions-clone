@@ -59,7 +59,7 @@ function Security() {
     );
   });
   return (
-    <div className='container m-auto'>
+    <div className='container m-auto Up'>
       <h3 className='w-4/5 m-auto py-12 text-xl md:text-2xl lg:text-4xl text-center text-blue font-bold border-t border-t-gray'>
         {t('WAF.title3')}
       </h3>

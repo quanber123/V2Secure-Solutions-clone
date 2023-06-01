@@ -24,7 +24,7 @@ function PreventAttacks() {
   });
   return (
     <div
-      className='xl:w-1/2 mx-8 p-12 rounded-2xl'
+      className='xl:w-1/2 mx-8 p-12 rounded-2xl Left'
       style={{
         background:
           'linear-gradient(150deg,rgba(176, 176, 176, 0.2),rgba(103, 102, 102, 0.2))',

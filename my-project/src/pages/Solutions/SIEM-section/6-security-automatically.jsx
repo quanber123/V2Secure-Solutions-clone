@@ -26,7 +26,7 @@ function Security() {
     );
   });
   return (
-    <div className='container m-auto flex flex-col xl:flex-row justify-between'>
+    <div className='container m-auto flex flex-col xl:flex-row justify-between Up'>
       <h3 className='xl:w-1/2 text-xl md:text-2xl lg:text-4xl text-center text-blue font-bold py-8'>
         {t('SIEM.title6')}
       </h3>

@@ -29,7 +29,7 @@ function Network() {
     );
   });
   return (
-    <div className='container m-auto flex flex-col lg:flex-row-reverse'>
+    <div className='container m-auto flex flex-col lg:flex-row-reverse Left'>
       <div className='lg:w-1/2 flex flex-col justify-between items-center'>
         <h3 className='text-center text-xl md:text-2xl lg:text-4xl text-blue font-bold'>
           {t('SIEM.title2')}

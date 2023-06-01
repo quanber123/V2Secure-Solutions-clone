@@ -56,7 +56,7 @@ function Header() {
   return (
     <header>
       <div className='h-2/3 flex flex-col items-center justify-around my-44'>
-        <div className='m-auto flex flex-col justify-center items-center text-center '>
+        <div className='m-auto flex flex-col justify-center items-center text-center Scale'>
           <h1 className='text-2xl md:text-4xl xl:text-6xl'>
             {t('ecosystem.title1')}
           </h1>
@@ -76,7 +76,7 @@ function Header() {
           </button>
         </div>
       </div>
-      <div className='w-3/4 h-1/3 mx-auto mt-12 mb-4 hidden sm:flex flex-wrap justify-between items-center'>
+      <div className='w-3/4 h-1/3 mx-auto mt-12 mb-4 hidden sm:flex flex-wrap justify-between items-center Up'>
         {ecosystems.map((ecosystem, index) => (
           <article
             key={index}

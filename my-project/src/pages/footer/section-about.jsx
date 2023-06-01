@@ -7,7 +7,7 @@ function SectionAbout() {
   const { t } = useTranslation();
   return (
     <section
-      className='w-full h-1/2 flex flex-col md:flex-row border-t border-t-boldBlue px-14 py-32'
+      className='w-full h-1/2 flex flex-col md:flex-row border-t border-t-boldBlue px-14 py-32 Scale'
       style={{
         background:
           'linear-gradient(150deg,rgba(176, 176, 176, 0.2),rgba(103, 102, 102, 0.2))',

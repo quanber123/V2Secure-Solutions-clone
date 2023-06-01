@@ -29,7 +29,7 @@ function Incident() {
     );
   });
   return (
-    <div className='container m-auto flex flex-col justify-between xl:flex-row-reverse'>
+    <div className='container m-auto flex flex-col justify-between xl:flex-row-reverse Up'>
       <h3 className='xl:w-1/2 text-xl md:text-2xl lg:text-4xl text-center text-blue font-bold py-8'>
         {t('SIEM.title7')}
       </h3>

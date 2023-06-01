@@ -18,7 +18,7 @@ export default function Contact() {
     });
   }
   return (
-    <section className='contact-form container mx-auto md:my-16 px-16 py-14 flex flex-col md:flex-row justify-between'>
+    <section className='contact-form container mx-auto md:my-16 px-16 py-14 flex flex-col md:flex-row justify-between Up'>
       <div className='md:w-1/2'>
         <h1 className='text-2xl md:text-4xl xl:text-6xl font-bold'>
           {t('form.title1')}{' '}

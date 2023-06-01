@@ -3,6 +3,7 @@ import './i18n';
 import Layout from './components/layout';
 import Page404 from './pages/404/index';
 import { lazy, Suspense } from 'react';
+import Spinner from './components/spinner';
 const Home = lazy(() => import('./pages/Home/index'));
 const Solutions = lazy(() => import('./pages/Solutions/index'));
 const SIEM = lazy(() => import('./pages/Solutions/SIEM-section/SIEM'));
@@ -14,13 +15,7 @@ const Service = lazy(() => import('./pages/Service/index'));
 const Contact = lazy(() => import('./pages/Contact/index'));
 function App() {
   return (
-    <Suspense
-      fallback={
-        <div className='absolute text-4xl w-full h-full top-0 left-0 flex justify-center items-center'>
-          ...Loading
-        </div>
-      }
-    >
+    <Suspense fallback={<Spinner />}>
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<Layout />}>

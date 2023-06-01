@@ -10,7 +10,7 @@ function Function2() {
   };
   return (
     <div className='container m-auto'>
-      <div className='flex flex-col lg:flex-row justify-between pb-64'>
+      <div className='flex flex-col lg:flex-row justify-between pb-64 Right'>
         <div className='lg:w-1/2 flex flex-col'>
           <h3 className='text-xl md:text-2xl lg:text-4xl text-center lg:text-start text-blue font-bold'>
             {t('NAC.title2')}
@@ -20,7 +20,7 @@ function Function2() {
             {...lazyLoadOptions}
           >
             <img
-              className='mt-8 lg:mt-32'
+              className='mt-8 lg:mt-32 Right'
               src={function2Img}
               alt='function2-img'
             />
@@ -55,10 +55,10 @@ function Function2() {
           </ul>
         </div>
       </div>
-      <h3 className='text-xl md:text-2xl lg:text-4xl text-center text-blue font-bold py-8'>
+      <h3 className='text-xl md:text-2xl lg:text-4xl text-center text-blue font-bold py-8 Scale'>
         {t('NAC.content5')}
       </h3>
-      <ul className='font-bold md:text-lg'>
+      <ul className='font-bold md:text-lg Left'>
         <li className='py-4 border-b border-b-gray flex'>
           {t('NAC.content6')}
           <i className='fa fa-check text-green ml-auto'></i>

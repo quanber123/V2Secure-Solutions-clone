@@ -83,12 +83,12 @@ function Networking() {
     );
   });
   return (
-    <div className='bg-black mt-32 xl:mt-64 pb-32'>
+    <div className='bg-black mt-32 xl:mt-64 pb-32 Up'>
       <div className='container m-auto flex flex-col xl:flex-row-reverse my-8 items-center'>
         <h3 className='xl:w-1/2 text-center text-xl md:text-2xl lg:text-4xl text-blue font-bold'>
           {t('NIPS.title1')}
         </h3>
-        <LazyLoad className='xl:w-1/2 my-8 xl:my-0' {...lazyLoadOptions}>
+        <LazyLoad className='xl:w-1/2 my-8 xl:my-0 Up' {...lazyLoadOptions}>
           <img
             className='w-1/2 m-auto rounded-2xl'
             src={nipsImg}
@@ -152,7 +152,7 @@ function Networking() {
         <h3 className='lg:w-1/2 text-xl text-center text-blue font-bold'>
           {t('NIPS.idea3')}
         </h3>
-        <LazyLoad className='w-1/2 my-8 lg:my-0' {...lazyLoadOptions}>
+        <LazyLoad className='w-1/2 my-8 lg:my-0 Up' {...lazyLoadOptions}>
           <img className='rounded-2xl' src={systemImg} alt='system-img' />
         </LazyLoad>
       </div>

@@ -40,7 +40,7 @@ function Deployment() {
     );
   });
   return (
-    <div className='container m-auto'>
+    <div className='container m-auto Left'>
       <h3 className='w-4/5 m-auto py-12 text-xl md:text-2xl lg:text-4xl text-center text-blue font-bold border-t border-t-gray'>
         {t('EDR.title4')}
       </h3>
@@ -51,7 +51,7 @@ function Deployment() {
           {...lazyLoadOptions}
         >
           <img
-            className='w-2/3 mx-auto lg:mx-0'
+            className='w-2/3 mx-auto lg:mx-0 Left'
             src={deploymentImg}
             alt='deploy-img'
           />
