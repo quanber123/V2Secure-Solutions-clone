@@ -31,7 +31,7 @@ function SectionAbout() {
       </div>
       <div className='w-1/2 m-auto lg:m-0 flex justify-center items-center'>
         <LazyLoad className='lg:h-full' offset={0} once>
-          <img className='h-full Scale' src={qr} alt='qr' />
+          <img className='Scale' src={qr} alt='qr' />
         </LazyLoad>
         <div className='md:text-lg lg:text-xl font-bold md:p-2 m-2'>
           <h3 className='text-blue'>{t('about.qr')}</h3>
