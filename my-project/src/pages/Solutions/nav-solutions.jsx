@@ -3,7 +3,7 @@ import { useCallback } from 'react';
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 function NavSolutions() {
-  const [selectedLink, setSelectedLink] = useState('V2-SIEM');
+  const [selectedLink, setSelectedLink] = useState('FAGONET-SIEM');
   const [showNav, setShowNav] = useState(false);
   const handleLinkClick = useCallback(
     (link) => {
@@ -15,7 +15,7 @@ function NavSolutions() {
   return (
     <section className='Scale'>
       <nav
-        className={`nav-solutions container lg:w-1/2 mx-auto my-8 lg:text-lg text-2xl font-bold justify-between items-center Right ${
+        className={`nav-solutions container xl:w-1/2 mx-auto my-8 lg:text-lg text-2xl font-bold justify-between items-center Right ${
           showNav ? 'show-nav-solutions' : 'hidden lg:flex'
         }`}
       >
@@ -27,67 +27,67 @@ function NavSolutions() {
         </button>
         <NavLink
           className={
-            selectedLink === 'V2-SIEM'
+            selectedLink === 'FAGONET-SIEM'
               ? 'mx-5 my-4 lg:my-2 nav-link hight-light'
               : 'mx-5 my-4 lg:my-2 nav-link '
           }
           rel='nofollow'
           to='siem'
-          onClick={() => handleLinkClick('V2-SIEM')}
+          onClick={() => handleLinkClick('FAGONET-SIEM')}
         >
-          V2-SIEM
+          FAGONET-SIEM
         </NavLink>
         <NavLink
           className={
-            selectedLink === 'V2-WAF'
+            selectedLink === 'FAGONET-WAF'
               ? 'mx-5 my-4 lg:my-2 nav-link hight-light'
               : 'mx-5 my-4 lg:my-2 nav-link '
           }
           rel='nofollow'
           to='waf'
-          onClick={() => handleLinkClick('V2-WAF')}
+          onClick={() => handleLinkClick('FAGONET-WAF')}
         >
-          V2-WAF
+          FAGONET-WAF
         </NavLink>
         <NavLink
           className={
-            selectedLink === 'V2-NIPS'
+            selectedLink === 'FAGONET-NIPS'
               ? 'mx-5 my-4 lg:my-2 nav-link hight-light'
               : 'mx-5 my-4 lg:my-2 nav-link '
           }
           rel='nofollow'
           to='nips'
-          onClick={() => handleLinkClick('V2-NIPS')}
+          onClick={() => handleLinkClick('FAGONET-NIPS')}
         >
-          V2-NIPS
+          FAGONET-NIPS
         </NavLink>
         <NavLink
           className={
-            selectedLink === 'V2-EDR'
+            selectedLink === 'FAGONET-EDR'
               ? 'mx-5 my-4 lg:my-2 nav-link hight-light'
               : 'mx-5 my-4 lg:my-2 nav-link '
           }
           rel='nofollow'
           to='edr'
-          onClick={() => handleLinkClick('V2-EDR')}
+          onClick={() => handleLinkClick('FAGONET-EDR')}
         >
-          V2-EDR
+          FAGONET-EDR
         </NavLink>
         <NavLink
           className={
-            selectedLink === 'V2-NAC'
+            selectedLink === 'FAGONET-NAC'
               ? 'mx-5 my-4 lg:my-2 nav-link hight-light'
               : 'mx-5 my-4 lg:my-2 nav-link '
           }
           rel='nofollow'
           to='nac'
-          onClick={() => handleLinkClick('V2-NAC')}
+          onClick={() => handleLinkClick('FAGONET-NAC')}
         >
-          V2-NAC
+          FAGONET-NAC
         </NavLink>
       </nav>
       <button
-        className='btn-nav-solutions mx-auto my-14 w-1/4 flex justify-center items-center text-xl lg:hidden'
+        className='btn-nav-solutions mx-auto my-14 w-1/3 flex justify-center items-center text-xl lg:hidden'
         onClick={() => setShowNav((prevShow) => !prevShow)}
       >
         {selectedLink}

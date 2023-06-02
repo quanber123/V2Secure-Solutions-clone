@@ -86,7 +86,7 @@
     "content42": "Quản trị hệ thống qua giao diện Console và SSH"
   },
   "WAF": {
-    "title": "HỆ THỐNG TƯỜNG LỬA ỨNG DỤNG WEB FAGONET - WAF",
+    "title": "HỆ THỐNG TƯỜNG LỬA ỨNG DỤNG WEB",
     "title1": "MÔ TẢ CHỨC NĂNG",
     "title2": "PHƯƠNG ÁN TRIỂN KHAI",
     "title3": "BẢO MẬT ỨNG DỤNG WEB",
@@ -140,7 +140,7 @@
     "content44": "Giới hạn kết nối đồng thời: 500,000"
   },
   "NIPS": {
-    "title": "HỆ THỐNG PHÒNG - CHỐNG TẤN CÔNG MẠNG THẾ HỆ MỚI FAGONET - NIPS",
+    "title": "HỆ THỐNG PHÒNG - CHỐNG TẤN CÔNG MẠNG THẾ HỆ MỚI",
     "title1": "Phát hiện tấn công mạng",
     "title2": "Xử lý tấn công mạng",
     "title3": "CHỨC NĂNG QUẢN TRỊ HỆ THỐNG",
@@ -181,7 +181,7 @@
     "content33": "QUẢN TRỊ HỆ THỐNG THÔNG QUA GIAO DIỆN CONSOLE VÀ SSH"
   },
   "EDR": {
-    "title": "GIẢI PHÁP PHÁT HIỆN VÀ PHẢN ỨNG SỰ CỐ AN TOÀN THÔNG TIN TRÊN THIẾT BỊ ĐẦU CUỐI FAGONET-EDR",
+    "title": "GIẢI PHÁP PHÁT HIỆN VÀ PHẢN ỨNG SỰ CỐ AN TOÀN THÔNG TIN TRÊN THIẾT BỊ ĐẦU CUỐI",
     "title1": "CÁC CHỨC NĂNG QUẢN LÝ ĐA NHIỆM",
     "title2": "ĐIỀU TRA VÀ PHÂN TÍCH SỰ CỐ",
     "title3": "CHỨC NĂNG QUẢN TRỊ HỆ THỐNG",
@@ -232,7 +232,7 @@
     "content40": "Debian 10; Debian 11"
   },
   "NAC": {
-    "title": "HỆ THỐNG KIỂM SOÁT TRUY CẬP MẠNG FAGONET-NAC",
+    "title": "HỆ THỐNG KIỂM SOÁT TRUY CẬP MẠNG",
     "title1": "CHỨC NĂNG HỆ THỐNG",
     "title2": "CHỨC NĂNG HỆ THỐNG",
     "content1": "Chức năng dashboard cho phép người quản trị có thông tin tổng quan về hệ thống.",

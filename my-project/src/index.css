@@ -211,14 +211,24 @@ textarea {
   border: 2px solid #00c4e7;
   transform: translateY(-15px);
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480px) {
   .services {
-    width: 100% !important;
-    margin: auto;
+    width: 80% !important;
+    margin: unset;
   }
   .solutions {
-    width: 100% !important;
-    margin: auto;
+    width: 80% !important;
+    margin: unset;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .services {
+    width: calc(50% - 32px);
+    margin: 16px auto;
+  }
+  .solutions {
+    width: calc(50% - 32px);
+    margin: 16px auto;
   }
 }
 @media only screen and (max-width: 1368px) {
@@ -247,12 +257,13 @@ textarea {
   margin: 32px;
   padding: 14px;
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 786px) {
   .multi-task-content {
-    width: 100%;
-    margin: 32px 8px;
+    width: 80% !important;
+    margin: 32px auto;
   }
 }
+
 .contact-form-home {
   background: linear-gradient(160deg, #002a2a, #002a2a, #003252);
   transform: translate(-50%, -50%);

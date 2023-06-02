@@ -120,7 +120,7 @@ function MultiTask() {
         >
           <img className='xl:h-5/6 Up' src={solutionImg} alt={solutionImg} />
         </LazyLoad>
-        <div className='flex flex-col lg:flex-row flex-wrap items-stretch'>
+        <div className='flex flex-col md:flex-row md:flex-wrap items-stretch'>
           <div
             className='multi-task-content rounded-2xl'
             style={{

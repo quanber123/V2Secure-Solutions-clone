@@ -30,12 +30,12 @@ function OurServices() {
         {t('our-services1')}{' '}
         <span className='text-blue'>{t('our-services2')}</span>
       </h1>
-      <div className='flex flex-wrap flex-col md:flex-row justify-center items-center'>
+      <div className='flex sm:flex-wrap flex-col sm:flex-row justify-center items-stretch'>
         {services.map((service, index) => {
           return (
             <article
               key={index}
-              className={`services p-8 rounded-xl ${
+              className={`services p-4 sm:p-8 rounded-xl ${
                 hoverServices === index ? 'hoverServices' : ''
               }`}
               onMouseOver={() => setHoverServices(index)}

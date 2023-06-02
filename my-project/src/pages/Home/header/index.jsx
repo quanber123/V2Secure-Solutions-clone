@@ -55,7 +55,7 @@ function Header() {
   };
   return (
     <header>
-      <div className='h-2/3 flex flex-col items-center justify-around my-44'>
+      <div className='h-2/3 flex flex-col items-center justify-around my-14 md:my-44'>
         <div className='m-auto flex flex-col justify-center items-center text-center Scale'>
           <h1 className='text-2xl md:text-4xl xl:text-6xl'>
             {t('ecosystem.title1')}
