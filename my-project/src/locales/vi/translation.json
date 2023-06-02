@@ -22,13 +22,13 @@
   "vi": "Tiếng Việt",
   "ecosystem": {
     "title1": "Giải pháp an toàn thông tin mạng",
-    "title2": "V2SECURE",
-    "title3": "Công ty cổ phần an toàn thông tin Việt Nam V2",
-    "siem": "Hệ thống quản lý giám sát an toàn thông tin tập trung V2-SIEM",
-    "waf": "Hệ thống tường lửa ứng dụng web V2-WAF",
-    "nips": "Hệ thống phòng - chống tấn công mạng thế hệ mới V2-NIPS",
-    "edr": "Giải pháp phát hiện và phản ứng sự cố an toàn thông tin trên thiết bị đầu cuối V2-EDR",
-    "nac": "Hệ thống kiểm soát truy cập mạng V2-NAC"
+    "title2": "FAGONET",
+    "title3": "Công ty cổ phần an toàn thông tin Việt Nam FAGONET",
+    "siem": "Hệ thống quản lý giám sát an toàn thông tin tập trung FAGONET-SIEM",
+    "waf": "Hệ thống tường lửa ứng dụng web FAGONET-WAF",
+    "nips": "Hệ thống phòng - chống tấn công mạng thế hệ mới FAGONET-NIPS",
+    "edr": "Giải pháp phát hiện và phản ứng sự cố an toàn thông tin trên thiết bị đầu cuối FAGONET-EDR",
+    "nac": "Hệ thống kiểm soát truy cập mạng FAGONET-NAC"
   },
   "SIEM": {
     "title": "HỆ THỐNG QUẢN LÝ GIÁM SÁT AN TOÀN THÔNG TIN TẬP TRUNG",
@@ -86,7 +86,7 @@
     "content42": "Quản trị hệ thống qua giao diện Console và SSH"
   },
   "WAF": {
-    "title": "HỆ THỐNG TƯỜNG LỬA ỨNG DỤNG WEB V2 - WAF",
+    "title": "HỆ THỐNG TƯỜNG LỬA ỨNG DỤNG WEB FAGONET - WAF",
     "title1": "MÔ TẢ CHỨC NĂNG",
     "title2": "PHƯƠNG ÁN TRIỂN KHAI",
     "title3": "BẢO MẬT ỨNG DỤNG WEB",
@@ -140,7 +140,7 @@
     "content44": "Giới hạn kết nối đồng thời: 500,000"
   },
   "NIPS": {
-    "title": "HỆ THỐNG PHÒNG - CHỐNG TẤN CÔNG MẠNG THẾ HỆ MỚI V2 - NIPS",
+    "title": "HỆ THỐNG PHÒNG - CHỐNG TẤN CÔNG MẠNG THẾ HỆ MỚI FAGONET - NIPS",
     "title1": "Phát hiện tấn công mạng",
     "title2": "Xử lý tấn công mạng",
     "title3": "CHỨC NĂNG QUẢN TRỊ HỆ THỐNG",
@@ -181,7 +181,7 @@
     "content33": "QUẢN TRỊ HỆ THỐNG THÔNG QUA GIAO DIỆN CONSOLE VÀ SSH"
   },
   "EDR": {
-    "title": "GIẢI PHÁP PHÁT HIỆN VÀ PHẢN ỨNG SỰ CỐ AN TOÀN THÔNG TIN TRÊN THIẾT BỊ ĐẦU CUỐI V2-EDR",
+    "title": "GIẢI PHÁP PHÁT HIỆN VÀ PHẢN ỨNG SỰ CỐ AN TOÀN THÔNG TIN TRÊN THIẾT BỊ ĐẦU CUỐI FAGONET-EDR",
     "title1": "CÁC CHỨC NĂNG QUẢN LÝ ĐA NHIỆM",
     "title2": "ĐIỀU TRA VÀ PHÂN TÍCH SỰ CỐ",
     "title3": "CHỨC NĂNG QUẢN TRỊ HỆ THỐNG",
@@ -210,7 +210,7 @@
     "content18": "Quản lý thông tin đăng nhập hệ thống trên endpoint.",
     "content19": "Quản lý thông tin truy cập, tải dữ liệu trên endpoint.",
     "content20": "Tải tệp tin về máy chủ EDR, phân tích, quét mã độc, gửi thông tin lên Sandbox.",
-    "content21": "Giải phát phát hiện và phản ứng sự cố an toàn thông tin trên thiết bị đầu cuối V2-EDR cho phép quản lý, giám sát, phát hiện tấn công, mã độc và đưa ra các cơ chế phản ứng để bảo vệ máy chủ, máy trạm và các thiết bị đầu cuối. Việc phát hiện tấn công mạng, mã độc và các chức năng xử lý, phản ứng được thực hiện tập trung thông qua các Agent được cài trên máy chủ, máy trạm.",
+    "content21": "Giải phát phát hiện và phản ứng sự cố an toàn thông tin trên thiết bị đầu cuối FAGONET-EDR cho phép quản lý, giám sát, phát hiện tấn công, mã độc và đưa ra các cơ chế phản ứng để bảo vệ máy chủ, máy trạm và các thiết bị đầu cuối. Việc phát hiện tấn công mạng, mã độc và các chức năng xử lý, phản ứng được thực hiện tập trung thông qua các Agent được cài trên máy chủ, máy trạm.",
     "content22": "Cho phép phân tích log mức sâu theo từng trường thông tin.",
     "content23": "Cho phép viết luật tương quan cho phép phát hiện và điều tra tấn công, sự cố.",
     "content24": "Cho phép phân tích và điều tra sự cố thông qua giao diện trực quan.",
@@ -232,7 +232,7 @@
     "content40": "Debian 10; Debian 11"
   },
   "NAC": {
-    "title": "HỆ THỐNG KIỂM SOÁT TRUY CẬP MẠNG V2-NAC",
+    "title": "HỆ THỐNG KIỂM SOÁT TRUY CẬP MẠNG FAGONET-NAC",
     "title1": "CHỨC NĂNG HỆ THỐNG",
     "title2": "CHỨC NĂNG HỆ THỐNG",
     "content1": "Chức năng dashboard cho phép người quản trị có thông tin tổng quan về hệ thống.",
@@ -267,14 +267,14 @@
   "about": {
     "title": "VỀ CHÚNG TÔI",
     "title1": "Giải pháp an toàn thông tin mạng",
-    "title2": "V2SECURE",
+    "title2": "FAGONET",
     "contact": "Thông tin liên hệ",
     "contact-more": "LIÊN HỆ CHÚNG TÔI - CÓ MẶT 24/7",
     "district": "Số 3, ngách 281/75/15 Trương Định, Tương Mai, Hoàng Mai, Hà Nội, Việt Nam",
     "qr": "QUÉT ĐỂ",
     "details": "BIẾT THÊM CHI TIẾT"
   },
-  "copyright": "Bản quyền thuộc Công ty cổ phần an toàn thông tin Việt Nam V2. Bảo lưu mọi quyền",
+  "copyright": "Bản quyền thuộc Công ty cổ phần an toàn thông tin Việt Nam FAGONET. Bảo lưu mọi quyền",
   "form": {
     "title1": "Hãy làm việc",
     "title2": "Cùng Nhau",

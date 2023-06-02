@@ -22,13 +22,13 @@
   "vi": "VietNam",
   "ecosystem": {
     "title1": "Cybersecurity Ecosystem",
-    "title2": "V2SECURE Solutions",
-    "title3": "V2SECURE Solutions",
-    "siem": "Security Information and Event Management V2-SIEM",
-    "waf": "Web Application Firewall V2-WAF",
-    "nips": "Network Intrusion Prevention System V2-NIPS",
-    "edr": "Endpoint Detection and Response V2-EDR",
-    "nac": "Network Access Control V2-NAC"
+    "title2": "FAGONET",
+    "title3": "FAGONET",
+    "siem": "Security Information and Event Management FAGONET-SIEM",
+    "waf": "Web Application Firewall FAGONET-WAF",
+    "nips": "Network Intrusion Prevention System FAGONET-NIPS",
+    "edr": "Endpoint Detection and Response FAGONET-EDR",
+    "nac": "Network Access Control FAGONET-NAC"
   },
   "SIEM": {
     "title": "CENTRALIZED INFORMATION SECURITY MONITORING MANAGEMENT SYSTEM",
@@ -212,7 +212,7 @@
     "content18": "Managing system login information on endpoint.",
     "content19": "Managing access information, download data on endpoint.",
     "content20": "Download files to EDR server; Analyze, scan for malware, and upload information on Sandbox.",
-    "content21": "Information security incident detection and response solutions on V2-EDR terminals allow management, monitoring, detection of attacks, malware and response mechanisms to protect the server, workstations and terminals. The detection of network attacks, malicious code and processing and response functions are done centrally through Agents installed on servers and workstations.",
+    "content21": "Information security incident detection and response solutions on FAGONET-EDR terminals allow management, monitoring, detection of attacks, malware and response mechanisms to protect the server, workstations and terminals. The detection of network attacks, malicious code and processing and response functions are done centrally through Agents installed on servers and workstations.",
     "content22": "Allowance of in-depth log analysis for each information field.",
     "content23": "Allowance of creation correlation rules to detect and investigate attacks and incidents.",
     "content24": "Allowance of incident analysis and investigation through an intuitive interface.",
@@ -269,14 +269,14 @@
   "about": {
     "title": "ABOUT US",
     "title1": "Cybersecurity Ecosystem",
-    "title2": "V2SECURE Solutions",
+    "title2": "FAGONET",
     "contact": "Contact",
     "contact-more": "CONTACT US - AVAILABLE 24X7",
     "district": "No. 3, lane 281/75/15 Truong Dinh, Tuong Mai, Hoang Mai District, Hanoi City, Vietnam",
     "qr": "SCAN FOR",
     "details": "MORE DETAILS"
   },
-  "copyright": "Created by V2Secure Solutions. © 2022",
+  "copyright": "Created by FAGONET. © 2022",
   "form": {
     "title1": "Let's Work",
     "title2": "Together",
