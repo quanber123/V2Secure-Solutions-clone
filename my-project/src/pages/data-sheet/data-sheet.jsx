@@ -1,6 +1,7 @@
 import React from 'react';
-
+import { useTranslation } from 'react-i18next';
 function DownLoadDataSheet({ filePath, fileName }) {
+  const { t } = useTranslation();
   const handleDownLoad = async () => {
     try {
       const res = await fetch(filePath);
@@ -28,7 +29,7 @@ function DownLoadDataSheet({ filePath, fileName }) {
         }}
         onClick={handleDownLoad}
       >
-        DownLoad Report
+        {t('download')}
       </button>
     </section>
   );
