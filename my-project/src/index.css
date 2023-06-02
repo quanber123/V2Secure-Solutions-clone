@@ -438,3 +438,14 @@ textarea {
     opacity: 0;
   }
 }
+
+/* Gallery*/
+.solutions-report-gallery {
+  width: 90%;
+  height: 455px;
+  margin: auto;
+}
+.solutions-report-gallery > img {
+  background-position: center;
+  object-fit: contain;
+}

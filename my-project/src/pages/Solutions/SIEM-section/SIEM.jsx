@@ -10,6 +10,7 @@ import Security from './6-security-automatically';
 import Incident from './7-incident';
 import System from './8-system';
 import siemLogo from '../../../images/ecosystem/siem.png';
+import siemReport from '../../../images/gallery/header-1.e29951c6bf7cdf15c303.png';
 import DownLoadDataSheet from '../../data-sheet/data-sheet';
 function SIEM() {
   const filePath = '../../data-sheet/pdf/data-sheet/Document Cloud';
@@ -36,6 +37,13 @@ function SIEM() {
       </LazyLoad>
       <LazyLoad {...lazyLoadOptions}>
         <DownLoadDataSheet filePath={filePath} fileName={fileName} />
+      </LazyLoad>
+      <LazyLoad className='solutions-report-gallery' {...lazyLoadOptions}>
+        <img
+          className='w-full h-full m-auto'
+          src={siemReport}
+          alt='siem-report'
+        />
       </LazyLoad>
       <LazyLoad className='pb-32 lg:pb-64' {...lazyLoadOptions}>
         <Collections />

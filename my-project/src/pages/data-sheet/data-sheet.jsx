@@ -2,17 +2,22 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 function DownLoadDataSheet({ filePath, fileName }) {
   const { t } = useTranslation();
-  const handleDownLoad = async () => {
+  const handleDownload = async () => {
     try {
       const res = await fetch(filePath);
-      const data = await res.blob();
-      const blob = new Blob([data], { type: 'application/pdf' });
-      const url = URL.createObjectURL(blob);
-      const element = document.createElement('a');
-      element.href = url;
-      element.download = fileName;
-      element.click();
-      URL.revokeObjectURL(url);
+      if (res.ok) {
+        const blob = await res.blob();
+        const url = URL.createObjectURL(blob);
+        const link = document.createElement('a');
+        link.href = url;
+        link.setAttribute('download', fileName);
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+        URL.revokeObjectURL(url);
+      } else {
+        throw new Error('Failed to fetch the PDF file.');
+      }
     } catch (error) {
       console.log(error);
     }
@@ -27,7 +32,7 @@ function DownLoadDataSheet({ filePath, fileName }) {
                 'https://cyberciti.1onestrong.com/wp-content/uploads/2023/05/asset-06.png'
               )`,
         }}
-        onClick={handleDownLoad}
+        onClick={handleDownload}
       >
         {t('download')}
       </button>
