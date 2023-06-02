@@ -11,6 +11,7 @@ import Minimum from './8-minimum';
 import { useTranslation } from 'react-i18next';
 import wafLogo from '../../../images/ecosystem/waf.png';
 import DownLoadDataSheet from '../../data-sheet/data-sheet';
+import wafReport from '../../../images/gallery/header-2.15fda7c06337e76eaeb0.png';
 function WAF() {
   const { t } = useTranslation();
   const filePath = '../../data-sheet/pdf/data-sheet/Document Cloud';
@@ -36,6 +37,13 @@ function WAF() {
       </LazyLoad>
       <LazyLoad {...lazyLoadOptions}>
         <DownLoadDataSheet filePath={filePath} fileName={fileName} />
+      </LazyLoad>
+      <LazyLoad className='solutions-report-gallery' {...lazyLoadOptions}>
+        <img
+          className='w-full h-full m-auto Up'
+          src={wafReport}
+          alt='waf-report'
+        />
       </LazyLoad>
       <LazyLoad className='' {...lazyLoadOptions}>
         <Description />

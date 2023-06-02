@@ -40,7 +40,7 @@ function SIEM() {
       </LazyLoad>
       <LazyLoad className='solutions-report-gallery' {...lazyLoadOptions}>
         <img
-          className='w-full h-full m-auto'
+          className='w-full h-full m-auto Up'
           src={siemReport}
           alt='siem-report'
         />

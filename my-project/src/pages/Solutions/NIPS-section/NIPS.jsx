@@ -6,6 +6,7 @@ import LazyLoad from 'react-lazyload';
 import { useTranslation } from 'react-i18next';
 import nipsLogo from '../../../images/ecosystem/nips.png';
 import DownLoadDataSheet from '../../data-sheet/data-sheet';
+import nipsReport from '../../../images/gallery/header-6.987988888e628d2df2fd.png';
 function NIPS() {
   const { t } = useTranslation();
   const filePath = '../../data-sheet/pdf/data-sheet/Document Cloud';
@@ -31,6 +32,13 @@ function NIPS() {
       </LazyLoad>
       <LazyLoad {...lazyLoadOptions}>
         <DownLoadDataSheet filePath={filePath} fileName={fileName} />
+      </LazyLoad>
+      <LazyLoad className='solutions-report-gallery' {...lazyLoadOptions}>
+        <img
+          className='w-full h-full m-auto Up'
+          src={nipsReport}
+          alt='nips-report'
+        />
       </LazyLoad>
       <LazyLoad className='' {...lazyLoadOptions}>
         <Networking />

@@ -83,16 +83,18 @@ function Networking() {
     );
   });
   return (
-    <div className='mt-32 pb-32 Up'>
+    <div className='pb-32 Up'>
       <div className='container m-auto flex flex-col  my-8 items-center'>
         <h3 className='xl:w-1/2 text-center text-xl md:text-2xl lg:text-4xl text-blue font-bold'>
           {t('NIPS.title1')}
         </h3>
-        <img
-          className='w-1/3 my-8  m-auto rounded-2xl Up'
-          src={nipsImg}
-          alt='nips-img'
-        />
+        <LazyLoad className='w-1/3 m-auto' {...lazyLoadOptions}>
+          <img
+            className='my-8  m-auto rounded-2xl Up'
+            src={nipsImg}
+            alt='nips-img'
+          />
+        </LazyLoad>
       </div>
       <div className='container m-auto flex flex-col xl:flex-row pb-32 lg:pb-64'>
         <div

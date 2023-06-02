@@ -5,6 +5,7 @@ import Function2 from './2-function-2';
 import { useTranslation } from 'react-i18next';
 import nacLogo from '../../../images/ecosystem/nac.png';
 import DownLoadDataSheet from '../../data-sheet/data-sheet';
+import nacReport from '../../../images/gallery/header-2.15fda7c06337e76eaeb0.png';
 function NAC() {
   const { t } = useTranslation();
   const filePath = '../../data-sheet/pdf/data-sheet/Document Cloud';
@@ -30,6 +31,13 @@ function NAC() {
       </LazyLoad>
       <LazyLoad {...lazyLoadOptions}>
         <DownLoadDataSheet filePath={filePath} fileName={fileName} />
+      </LazyLoad>
+      <LazyLoad className='solutions-report-gallery' {...lazyLoadOptions}>
+        <img
+          className='w-full h-full m-auto Up'
+          src={nacReport}
+          alt='nac-report'
+        />
       </LazyLoad>
       <LazyLoad className=' pb-32 lg:pb-64' {...lazyLoadOptions}>
         <Function1 />

@@ -7,6 +7,7 @@ import { useTranslation } from 'react-i18next';
 import LazyLoad from 'react-lazyload';
 import edrLogo from '../../../images/ecosystem/edr.png';
 import DownLoadDataSheet from '../../data-sheet/data-sheet';
+import edrReport from '../../../images/gallery/header-7.c4c8a78b8f66aa9524dd.png';
 function EDR() {
   const { t } = useTranslation();
   const filePath = '../../data-sheet/pdf/data-sheet/Document Cloud';
@@ -32,6 +33,13 @@ function EDR() {
       </LazyLoad>
       <LazyLoad {...lazyLoadOptions}>
         <DownLoadDataSheet filePath={filePath} fileName={fileName} />
+      </LazyLoad>
+      <LazyLoad className='solutions-report-gallery Up' {...lazyLoadOptions}>
+        <img
+          className='w-full h-full m-auto'
+          src={edrReport}
+          alt='edr-report'
+        />
       </LazyLoad>
       <LazyLoad className='pb-32 lg:pb-64' {...lazyLoadOptions}>
         <MultiTask />
