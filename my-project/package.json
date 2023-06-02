@@ -12,6 +12,7 @@
   "dependencies": {
     "i18next-browser-languagedetector": "^7.0.1",
     "lazyload": "^2.0.0-rc.2",
+    "pdf-lib": "^1.17.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-flag-icon-css": "^1.0.25",

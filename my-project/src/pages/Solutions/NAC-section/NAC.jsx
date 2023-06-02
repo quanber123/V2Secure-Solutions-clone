@@ -4,8 +4,11 @@ import Function1 from './1-function-1';
 import Function2 from './2-function-2';
 import { useTranslation } from 'react-i18next';
 import nacLogo from '../../../images/ecosystem/nac.png';
+import DownLoadDataSheet from '../../data-sheet/data-sheet';
 function NAC() {
   const { t } = useTranslation();
+  const filePath = '../../data-sheet/pdf/data-sheet/Document Cloud';
+  const fileName = 'Fortinet_Product_Matrix-part-4.pdf';
   const lazyLoadOptions = {
     offset: 0,
     once: true,
@@ -25,6 +28,7 @@ function NAC() {
           alt='nac-logo'
         />
       </LazyLoad>
+      <DownLoadDataSheet filePath={filePath} fileName={fileName} />
       <LazyLoad className='bg-black pb-32 lg:pb-64' {...lazyLoadOptions}>
         <Function1 />
       </LazyLoad>

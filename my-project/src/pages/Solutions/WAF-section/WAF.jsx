@@ -10,8 +10,11 @@ import System from './7-system';
 import Minimum from './8-minimum';
 import { useTranslation } from 'react-i18next';
 import wafLogo from '../../../images/ecosystem/waf.png';
+import DownLoadDataSheet from '../../data-sheet/data-sheet';
 function WAF() {
   const { t } = useTranslation();
+  const filePath = '../../data-sheet/pdf/data-sheet/Document Cloud';
+  const fileName = 'Fortinet_Product_Matrix-part-2.pdf';
   const lazyLoadOptions = {
     offset: 0,
     once: true,
@@ -31,6 +34,7 @@ function WAF() {
           alt='waf-logo'
         />
       </LazyLoad>
+      <DownLoadDataSheet filePath={filePath} fileName={fileName} />
       <LazyLoad className='bg-black' {...lazyLoadOptions}>
         <Description />
       </LazyLoad>

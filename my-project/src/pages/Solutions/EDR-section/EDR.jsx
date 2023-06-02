@@ -6,8 +6,11 @@ import Deployment from './4-deployment';
 import { useTranslation } from 'react-i18next';
 import LazyLoad from 'react-lazyload';
 import edrLogo from '../../../images/ecosystem/edr.png';
+import DownLoadDataSheet from '../../data-sheet/data-sheet';
 function EDR() {
   const { t } = useTranslation();
+  const filePath = '../../data-sheet/pdf/data-sheet/Document Cloud';
+  const fileName = 'Fortinet_Product_Matrix-part-5.pdf';
   const lazyLoadOptions = {
     offset: 0,
     once: true,
@@ -26,6 +29,9 @@ function EDR() {
           src={edrLogo}
           alt='edr-logo'
         />
+      </LazyLoad>
+      <LazyLoad className='bg-black'>
+        <DownLoadDataSheet filePath={filePath} fileName={fileName} />
       </LazyLoad>
       <LazyLoad className='bg-black pb-32 lg:pb-64' {...lazyLoadOptions}>
         <MultiTask />

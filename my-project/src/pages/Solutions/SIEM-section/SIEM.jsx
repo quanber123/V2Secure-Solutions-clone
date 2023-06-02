@@ -11,7 +11,10 @@ import Incident from './7-incident';
 import System from './8-system';
 import v2siem from '../../../images/information/v2-siem-6.3dc16344590ad630264b.png';
 import siemLogo from '../../../images/ecosystem/siem.png';
+import DownLoadDataSheet from '../../data-sheet/data-sheet';
 function SIEM() {
+  const filePath = '../../data-sheet/pdf/data-sheet/Document Cloud';
+  const fileName = 'Fortinet_Product_Matrix-part-1.pdf';
   const lazyLoadOptions = {
     offset: 0,
     once: true,
@@ -32,6 +35,7 @@ function SIEM() {
           alt='siem-logo'
         />
       </LazyLoad>
+      <DownLoadDataSheet filePath={filePath} fileName={fileName} />
       <LazyLoad className='bg-black pb-32 lg:pb-64' {...lazyLoadOptions}>
         <Collections />
       </LazyLoad>

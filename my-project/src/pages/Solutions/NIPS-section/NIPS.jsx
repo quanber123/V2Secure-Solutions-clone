@@ -5,8 +5,11 @@ import System from './3-system';
 import LazyLoad from 'react-lazyload';
 import { useTranslation } from 'react-i18next';
 import nipsLogo from '../../../images/ecosystem/nips.png';
+import DownLoadDataSheet from '../../data-sheet/data-sheet';
 function NIPS() {
   const { t } = useTranslation();
+  const filePath = '../../data-sheet/pdf/data-sheet/Document Cloud';
+  const fileName = 'Fortinet_Product_Matrix-part-3.pdf';
   const lazyLoadOptions = {
     offset: 0,
     once: true,
@@ -26,6 +29,7 @@ function NIPS() {
           alt='nips-logo'
         />
       </LazyLoad>
+      <DownLoadDataSheet filePath={filePath} fileName={fileName} />
       <LazyLoad className='bg-black' {...lazyLoadOptions}>
         <Networking />
       </LazyLoad>

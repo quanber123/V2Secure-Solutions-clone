@@ -83,7 +83,7 @@ function Networking() {
     );
   });
   return (
-    <div className='bg-black mt-32 xl:mt-64 pb-32 Up'>
+    <div className='bg-black mt-32 pb-32 Up'>
       <div className='container m-auto flex flex-col xl:flex-row-reverse my-8 items-center'>
         <h3 className='xl:w-1/2 text-center text-xl md:text-2xl lg:text-4xl text-blue font-bold'>
           {t('NIPS.title1')}

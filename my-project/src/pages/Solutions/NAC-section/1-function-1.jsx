@@ -57,7 +57,7 @@ function Function1() {
     );
   });
   return (
-    <div className='container h-full mx-auto mt-32 md:mt-64 flex flex-col justify-center items-center Up'>
+    <div className='container h-full mx-auto mt-32 flex flex-col justify-center items-center Up'>
       <h3 className='text-xl md:text-2xl lg:text-4xl text-blue font-bold'>
         {t('NAC.title1')}
       </h3>

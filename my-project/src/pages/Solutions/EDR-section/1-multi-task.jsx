@@ -109,7 +109,7 @@ function MultiTask() {
     );
   });
   return (
-    <div className='container mx-auto mt-32 md:mt-64 Up'>
+    <div className='container mx-auto mt-32 Up'>
       <div className='relative'>
         <h3 className='text-xl md:text-2xl lg:text-4xl text-center lg:text-start text-blue font-bold mb-8'>
           {t('EDR.title1')}
