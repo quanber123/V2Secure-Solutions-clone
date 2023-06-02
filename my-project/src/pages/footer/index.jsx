@@ -4,7 +4,7 @@ import SectionAbout from './section-about';
 import LazyLoad from 'react-lazyload';
 function Footer() {
   return (
-    <footer className='relative flex flex-col bg-black'>
+    <footer className='relative flex flex-col'>
       <LazyLoad offset={0} once>
         <SectionContact />
       </LazyLoad>

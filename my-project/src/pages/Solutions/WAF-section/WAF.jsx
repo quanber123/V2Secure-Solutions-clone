@@ -34,29 +34,31 @@ function WAF() {
           alt='waf-logo'
         />
       </LazyLoad>
-      <DownLoadDataSheet filePath={filePath} fileName={fileName} />
-      <LazyLoad className='bg-black' {...lazyLoadOptions}>
+      <LazyLoad {...lazyLoadOptions}>
+        <DownLoadDataSheet filePath={filePath} fileName={fileName} />
+      </LazyLoad>
+      <LazyLoad className='' {...lazyLoadOptions}>
         <Description />
       </LazyLoad>
-      <LazyLoad className='bg-black pb-32 lg:pb-64' {...lazyLoadOptions}>
+      <LazyLoad className=' pb-32 lg:pb-64' {...lazyLoadOptions}>
         <Plan />
       </LazyLoad>
-      <LazyLoad className='bg-black pb-32 lg:pb-64' {...lazyLoadOptions}>
+      <LazyLoad className=' pb-32 lg:pb-64' {...lazyLoadOptions}>
         <Security />
       </LazyLoad>
-      <LazyLoad className='bg-black pb-32 lg:pb-64' {...lazyLoadOptions}>
+      <LazyLoad className=' pb-32 lg:pb-64' {...lazyLoadOptions}>
         <Processing />
       </LazyLoad>
-      <LazyLoad className='bg-black pb-32 lg:pb-64' {...lazyLoadOptions}>
+      <LazyLoad className=' pb-32 lg:pb-64' {...lazyLoadOptions}>
         <div className='container m-auto flex flex-col xl:flex-row justify-between'>
           <PreventAttacks />
           <IncidentAnalysis />
         </div>
       </LazyLoad>
-      <LazyLoad className='bg-black pb-32 lg:pb-64' {...lazyLoadOptions}>
+      <LazyLoad className='pb-32 lg:pb-64' {...lazyLoadOptions}>
         <System />
       </LazyLoad>
-      <LazyLoad className='bg-black' {...lazyLoadOptions}>
+      <LazyLoad className='' {...lazyLoadOptions}>
         <Minimum />
       </LazyLoad>
     </section>

@@ -30,7 +30,7 @@ function OurServices() {
         {t('our-services1')}{' '}
         <span className='text-blue'>{t('our-services2')}</span>
       </h1>
-      <div className='flex flex-col md:flex-row justify-center items-center'>
+      <div className='flex flex-wrap flex-col md:flex-row justify-center items-center'>
         {services.map((service, index) => {
           return (
             <article

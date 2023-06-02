@@ -59,7 +59,11 @@ function Collections() {
           {t('SIEM.title1')}
         </h3>
         <LazyLoad offset={0} once>
-          <img className='mt-32 mx-auto lg:mx-0 Up' src={logImg} alt={logImg} />
+          <img
+            className='lg:w-2/3 mt-32 mx-auto lg:mx-0 Up'
+            src={logImg}
+            alt={logImg}
+          />
         </LazyLoad>
       </div>
       <div

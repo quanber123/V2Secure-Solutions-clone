@@ -18,9 +18,9 @@ function DownLoadDataSheet({ filePath, fileName }) {
   };
 
   return (
-    <section className='flex justify-center items-center my-16'>
+    <section className='flex justify-center items-center my-16 Scale'>
       <button
-        className='px-4 py-1 md:px-12 md:py-3 rounded-2xl text-lg font-bold border-2 border-darkGreen bg-black hover:bg-yellow hover:text-black '
+        className='px-4 py-1 md:px-12 md:py-3 rounded-2xl text-lg font-bold border-2 border-darkBlue bg-boldBlue hover:bg-darkGreen hover:text-blue'
         style={{
           backgroundImage: `url(
                 'https://cyberciti.1onestrong.com/wp-content/uploads/2023/05/asset-06.png'
@@ -28,7 +28,7 @@ function DownLoadDataSheet({ filePath, fileName }) {
         }}
         onClick={handleDownLoad}
       >
-        DownLoad
+        DownLoad Report
       </button>
     </section>
   );

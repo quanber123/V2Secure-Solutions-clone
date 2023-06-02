@@ -1,7 +1,7 @@
 import React from 'react';
 import LazyLoad from 'react-lazyload';
-import guard from '../../../images/information/guardblack.png';
 import { useTranslation } from 'react-i18next';
+import secureImg from '../../../images/information/Update-Datto-Ransomware-Detection-Sell-Sheet-1200x800-1-768x512.png';
 function Security() {
   const { t } = useTranslation();
   const security = [
@@ -26,10 +26,19 @@ function Security() {
     );
   });
   return (
-    <div className='container m-auto flex flex-col xl:flex-row justify-between Up'>
-      <h3 className='xl:w-1/2 text-xl md:text-2xl lg:text-4xl text-center text-blue font-bold py-8'>
-        {t('SIEM.title6')}
-      </h3>
+    <div className='container m-auto flex flex-col xl:flex-row-reverse justify-between Up'>
+      <div className='xl:w-1/2 h-full flex flex-col justify-between items-center'>
+        <h3 className='h-1/2 text-xl md:text-2xl lg:text-4xl text-center text-blue font-bold py-8'>
+          {t('SIEM.title6')}
+        </h3>
+        <LazyLoad className='h-1/2' offset={100} once>
+          <img
+            className='w-1/2 xl:w-2/3 m-auto'
+            src={secureImg}
+            alt='secure-img'
+          />
+        </LazyLoad>
+      </div>
       <ul className='xl:w-1/2 font-bold text-base lg:text-lg'>
         {contentSecurity}
       </ul>

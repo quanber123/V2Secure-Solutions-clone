@@ -29,14 +29,16 @@ function NIPS() {
           alt='nips-logo'
         />
       </LazyLoad>
-      <DownLoadDataSheet filePath={filePath} fileName={fileName} />
-      <LazyLoad className='bg-black' {...lazyLoadOptions}>
+      <LazyLoad {...lazyLoadOptions}>
+        <DownLoadDataSheet filePath={filePath} fileName={fileName} />
+      </LazyLoad>
+      <LazyLoad className='' {...lazyLoadOptions}>
         <Networking />
       </LazyLoad>
-      <LazyLoad className='bg-black pb-32 lg:pb-64' {...lazyLoadOptions}>
+      <LazyLoad className=' pb-32 lg:pb-64' {...lazyLoadOptions}>
         <Cyber />
       </LazyLoad>
-      <LazyLoad className='bg-black' {...lazyLoadOptions}>
+      <LazyLoad className='' {...lazyLoadOptions}>
         <System />
       </LazyLoad>
     </section>

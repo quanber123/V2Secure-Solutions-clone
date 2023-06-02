@@ -28,11 +28,13 @@ function NAC() {
           alt='nac-logo'
         />
       </LazyLoad>
-      <DownLoadDataSheet filePath={filePath} fileName={fileName} />
-      <LazyLoad className='bg-black pb-32 lg:pb-64' {...lazyLoadOptions}>
+      <LazyLoad {...lazyLoadOptions}>
+        <DownLoadDataSheet filePath={filePath} fileName={fileName} />
+      </LazyLoad>
+      <LazyLoad className=' pb-32 lg:pb-64' {...lazyLoadOptions}>
         <Function1 />
       </LazyLoad>
-      <LazyLoad className='bg-black' {...lazyLoadOptions}>
+      <LazyLoad className='' {...lazyLoadOptions}>
         <Function2 />
       </LazyLoad>
     </section>

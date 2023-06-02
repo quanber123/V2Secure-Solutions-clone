@@ -33,11 +33,11 @@ function OurSolutions() {
   };
   return (
     <section className='container m-auto text-center md:pb-32 lg:pb-64 Up'>
-      <h1 className='text-2xl md:text-4xl xl:text-6xl font-bold my-12'>
+      <h1 className='text-center text-2xl md:text-4xl xl:text-6xl font-bold my-12'>
         {t('our-solutions1')}{' '}
         <span className='text-blue'>{t('our-solutions2')}</span>
       </h1>
-      <div className='flex flex-col lg:flex-wrap lg:flex-row justify-center items-stretch'>
+      <div className='flex flex-col flex-wrap md:flex-row justify-center items-stretch'>
         {dataEcosystem.map((solution, index) => {
           return (
             <article

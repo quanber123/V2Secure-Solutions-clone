@@ -9,7 +9,6 @@ import Vulnerability from './5-vulnerability';
 import Security from './6-security-automatically';
 import Incident from './7-incident';
 import System from './8-system';
-import v2siem from '../../../images/information/v2-siem-6.3dc16344590ad630264b.png';
 import siemLogo from '../../../images/ecosystem/siem.png';
 import DownLoadDataSheet from '../../data-sheet/data-sheet';
 function SIEM() {
@@ -35,33 +34,32 @@ function SIEM() {
           alt='siem-logo'
         />
       </LazyLoad>
-      <DownLoadDataSheet filePath={filePath} fileName={fileName} />
-      <LazyLoad className='bg-black pb-32 lg:pb-64' {...lazyLoadOptions}>
+      <LazyLoad {...lazyLoadOptions}>
+        <DownLoadDataSheet filePath={filePath} fileName={fileName} />
+      </LazyLoad>
+      <LazyLoad className='pb-32 lg:pb-64' {...lazyLoadOptions}>
         <Collections />
       </LazyLoad>
-      <LazyLoad className='bg-black pb-32 lg:pb-64' {...lazyLoadOptions}>
+      <LazyLoad className='pb-32 lg:pb-64' {...lazyLoadOptions}>
         <Network />
       </LazyLoad>
       <LazyLoad
-        className='bg-black flex flex-col lg:flex-row justify-around pb-32 lg:pb-64'
+        className='flex flex-col lg:flex-row justify-around pb-32 lg:pb-64'
         {...lazyLoadOptions}
       >
         <Processing />
         <Threat />
       </LazyLoad>
-      <LazyLoad className='bg-black pb-32 lg:pb-64' {...lazyLoadOptions}>
+      <LazyLoad className='pb-32 lg:pb-64' {...lazyLoadOptions}>
         <Vulnerability />
       </LazyLoad>
-      <LazyLoad className='bg-black pb-32 lg:pb-64' {...lazyLoadOptions}>
+      <LazyLoad className='pb-32 lg:pb-64' {...lazyLoadOptions}>
         <Security />
       </LazyLoad>
-      <LazyLoad className='bg-black pb-32 lg:pb-64' {...lazyLoadOptions}>
+      <LazyLoad className='pb-32 lg:pb-64' {...lazyLoadOptions}>
         <Incident />
       </LazyLoad>
-      <LazyLoad className='bg-black pb-32 lg:pb-64' {...lazyLoadOptions}>
-        <img className='m-auto w-1/4 Up' src={v2siem} alt={v2siem} />
-      </LazyLoad>
-      <LazyLoad className='bg-black' {...lazyLoadOptions}>
+      <LazyLoad className='' {...lazyLoadOptions}>
         <System />
       </LazyLoad>
     </section>

@@ -1,5 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import v2siem from '../../../images/information/v2-siem-6.3dc16344590ad630264b.png';
+import LazyLoad from 'react-lazyload';
 function Incident() {
   const { t } = useTranslation();
   const incident = [
@@ -27,10 +29,19 @@ function Incident() {
     );
   });
   return (
-    <div className='container m-auto flex flex-col justify-between xl:flex-row-reverse Up'>
-      <h3 className='xl:w-1/2 text-xl md:text-2xl lg:text-4xl text-center text-blue font-bold py-8'>
-        {t('SIEM.title7')}
-      </h3>
+    <div className='container m-auto flex flex-col justify-between xl:flex-row Up'>
+      <div className='xl:w-1/2 flex flex-col justify-between items-center'>
+        <h3 className='lg:w-4/5 m-auto h-1/2 text-xl md:text-2xl lg:text-4xl text-center text-blue font-bold py-8'>
+          {t('SIEM.title7')}
+        </h3>
+        <LazyLoad
+          className='h-1/2 flex justify-center items-center'
+          offset={100}
+          once
+        >
+          <img className='w-full h-full m-auto Up' src={v2siem} alt={v2siem} />
+        </LazyLoad>
+      </div>
       <ul className='xl:w-1/2 font-bold'>{contentIncident}</ul>
     </div>
   );

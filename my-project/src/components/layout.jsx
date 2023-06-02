@@ -7,7 +7,7 @@ const Nav = lazy(() => import('./nav'));
 const Footer = lazy(() => import('../pages/footer/index'));
 function Layout() {
   return (
-    <div>
+    <div className='web'>
       <Suspense fallback={<Spinner />}>
         <Nav />
         <Outlet />

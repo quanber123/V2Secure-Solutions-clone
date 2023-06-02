@@ -30,19 +30,19 @@ function EDR() {
           alt='edr-logo'
         />
       </LazyLoad>
-      <LazyLoad className='bg-black'>
+      <LazyLoad {...lazyLoadOptions}>
         <DownLoadDataSheet filePath={filePath} fileName={fileName} />
       </LazyLoad>
-      <LazyLoad className='bg-black pb-32 lg:pb-64' {...lazyLoadOptions}>
+      <LazyLoad className='pb-32 lg:pb-64' {...lazyLoadOptions}>
         <MultiTask />
       </LazyLoad>
-      <LazyLoad className='bg-black pb-32 lg:pb-64' {...lazyLoadOptions}>
+      <LazyLoad className='pb-32 lg:pb-64' {...lazyLoadOptions}>
         <Incident />
       </LazyLoad>
-      <LazyLoad className='bg-black pb-32 lg:pb-64' {...lazyLoadOptions}>
+      <LazyLoad className='pb-32 lg:pb-64' {...lazyLoadOptions}>
         <System />
       </LazyLoad>
-      <LazyLoad className='bg-black' {...lazyLoadOptions}>
+      <LazyLoad {...lazyLoadOptions}>
         <Deployment />
       </LazyLoad>
     </section>

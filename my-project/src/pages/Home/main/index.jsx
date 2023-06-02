@@ -5,7 +5,7 @@ import OurSolutions from './section-our-solutions/index';
 import Gallery from './section-gallery';
 function Main() {
   return (
-    <main id='our-services' className='bg-black p-12'>
+    <main id='our-services' className=' p-12'>
       <LazyLoad offset={0} once>
         <OurServices />
       </LazyLoad>

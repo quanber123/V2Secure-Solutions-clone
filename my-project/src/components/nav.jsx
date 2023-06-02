@@ -5,11 +5,11 @@ import { useTranslation } from 'react-i18next';
 import LazyLoad from 'react-lazyload';
 import flagVn from '../flags/vn.png';
 import flagUs from '../flags/us.png';
-import logo from '../images/ecosystem/download.png';
+import logo from '../images/new-logo.png';
 function Nav() {
   const { t } = useTranslation();
   const lazyLoadOptions = {
-    offset: 100,
+    offset: 0,
     once: true,
   };
   // const [isSticky, setIsSticky] = useState(false);
@@ -74,16 +74,18 @@ function Nav() {
   return (
     <nav className={`relative nav-item h-24 flex`}>
       <section className='h-full flex justify-between container m-auto'>
-        <div className='w-full md:w-1/6 h-full mx-8 lg:mx-0 flex items-center'>
-          <LazyLoad className='py-2 cursor-pointer' {...lazyLoadOptions}>
-            <Link className='h-full' to='/' onClick={() => setShowNav(false)}>
-              <img className='w-14 h-14' src={logo} alt='logo' />
-            </Link>
+        <Link
+          className='mx-8 lg:mx-0 flex justify-between items-center cursor-pointer'
+          to='.'
+          onClick={() => setShowNav(false)}
+        >
+          <LazyLoad className='w-1/2 py-2' {...lazyLoadOptions}>
+            <img className='w-20 h-20' src={logo} alt='logo' />
           </LazyLoad>
-          <h1 className='w-1/2 mx-4 text-lg md:text-xl lg:text-2xl xl:text-4xl font-bold'>
-            V2Secure
+          <h1 className='w-1/2 mx-4 text-lg md:text-xl lg:text-2xl xl:text-4xl font-bold text-blue'>
+            FAGONET
           </h1>
-        </div>
+        </Link>
         <div
           className={`flex flex-col lg:flex-row font-bold lg:text-lg justify-between lg:items-center ${
             showNav ? 'show-nav' : 'hidden lg:flex'
