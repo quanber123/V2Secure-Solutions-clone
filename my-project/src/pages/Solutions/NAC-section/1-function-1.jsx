@@ -70,7 +70,7 @@ function Function1() {
       >
         {contentFunction1}
       </ul>
-      <LazyLoad className='w-1/2' offset={0} once>
+      <LazyLoad className='w-1/2' offset={100} once>
         <img className='rounded-2xl Up' src={accessImg} alt='access-img' />
       </LazyLoad>
     </div>

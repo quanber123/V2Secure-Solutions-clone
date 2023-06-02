@@ -31,7 +31,7 @@ function Processing() {
         <h3 className='text-xl md:text-2xl lg:text-4xl text-center xl:text-start text-blue font-bold py-8'>
           {t('WAF.title4')}
         </h3>
-        <LazyLoad offset={0} once>
+        <LazyLoad offset={100} once>
           <img
             className='w-1/2 m-auto xl:w-auto rounded-2xl Scale'
             src={processingImg}

@@ -181,6 +181,7 @@ textarea {
     rgba(103, 102, 102, 0.2)
   );
   border: 2px solid #2d2b2b04;
+  margin: 32px;
 }
 .services.hoverServices {
   background-color: #000913;

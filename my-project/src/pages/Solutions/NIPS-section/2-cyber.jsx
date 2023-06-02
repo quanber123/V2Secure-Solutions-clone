@@ -10,7 +10,7 @@ function Cyber() {
         <h3 className='text-lg md:text-xl text-center text-blue font-bold'>
           {t('NIPS.title2')}
         </h3>
-        <LazyLoad offset={0} once>
+        <LazyLoad offset={100} once>
           <img className='m-auto my-8 Right' src={cyberImg} alt='cyber-img' />
         </LazyLoad>
       </div>

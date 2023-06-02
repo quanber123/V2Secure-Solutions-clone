@@ -5,7 +5,7 @@ import { useTranslation } from 'react-i18next';
 function Function2() {
   const { t } = useTranslation();
   const lazyLoadOptions = {
-    offset: 0,
+    offset: 100,
     once: true,
   };
   return (

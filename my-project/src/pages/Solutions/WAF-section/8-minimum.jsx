@@ -40,7 +40,7 @@ function Minimum() {
         </h3>
         <LazyLoad
           className='h-full flex justify-center items-center my-8 xl:my-0'
-          offset={0}
+          offset={100}
           once
         >
           <img

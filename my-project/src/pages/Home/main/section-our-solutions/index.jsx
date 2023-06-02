@@ -48,7 +48,7 @@ function OurSolutions() {
               onMouseOver={() => setHoverSolutions(index)}
               onMouseOut={() => setHoverSolutions(null)}
             >
-              <LazyLoad offset={0} once>
+              <LazyLoad offset={100} once>
                 <img
                   className='w-1/3 m-auto Up'
                   src={serviceImg}

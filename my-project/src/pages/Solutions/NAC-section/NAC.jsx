@@ -21,7 +21,7 @@ function NAC() {
       <h2 className='md:w-1/2 mx-auto md:py-8 text-lg md:text-2xl lg:text-4xl text-center font-bold Scale'>
         {t('NAC.title')}
       </h2>
-      <LazyLoad {...lazyLoadOptions} once>
+      <LazyLoad {...lazyLoadOptions}>
         <img
           className='mx-auto my-2 md:m-auto Scale'
           src={nacLogo}

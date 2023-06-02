@@ -38,7 +38,7 @@ function Plan() {
         <h3 className='text-4xl text-blue font-bold mb-8'>{t('WAF.title2')}</h3>
         <ul>{contentPlan}</ul>
       </div>
-      <LazyLoad offset={0} once>
+      <LazyLoad offset={100} once>
         <img
           className='my-8 lg:my-0 rounded-2xl Left'
           src={planImg}

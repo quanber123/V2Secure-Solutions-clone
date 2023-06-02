@@ -50,7 +50,7 @@ function System() {
         <ul className='lg:w-2/3 font-bold'>{contentSystem}</ul>
         <LazyLoad
           className='lg:w-1/3 my-4 lg:my-0 flex justify-center items-center'
-          offset={0}
+          offset={100}
           once
         >
           <img

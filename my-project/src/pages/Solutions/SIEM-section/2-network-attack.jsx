@@ -34,7 +34,7 @@ function Network() {
         <h3 className='text-center text-xl md:text-2xl lg:text-4xl text-blue font-bold'>
           {t('SIEM.title2')}
         </h3>
-        <LazyLoad offset={0} once>
+        <LazyLoad offset={100} once>
           <img
             className='w-1/3 lg:w-1/2 mx-auto my-8 xl:m-auto rounded-2xl Left'
             src={netImg}

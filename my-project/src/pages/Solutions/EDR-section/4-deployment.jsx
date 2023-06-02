@@ -5,7 +5,7 @@ import { useTranslation } from 'react-i18next';
 function Deployment() {
   const { t } = useTranslation();
   const lazyLoadOptions = {
-    offset: 0,
+    offset: 100,
     once: true,
   };
   const deployment = [
