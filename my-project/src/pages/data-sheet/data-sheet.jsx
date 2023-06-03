@@ -7,14 +7,12 @@ function DownLoadDataSheet({ filePath, fileName }) {
       const res = await fetch(filePath);
       if (res.ok) {
         const blob = await res.blob();
-        const url = URL.createObjectURL(blob);
+        const url = window.URL.createObjectURL(blob);
         const link = document.createElement('a');
         link.href = url;
         link.setAttribute('download', fileName);
         document.body.appendChild(link);
         link.click();
-        document.body.removeChild(link);
-        URL.revokeObjectURL(url);
       } else {
         throw new Error('Failed to fetch the PDF file.');
       }

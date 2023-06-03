@@ -3,28 +3,38 @@ import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import LazyLoad from 'react-lazyload';
 import serviceImg from '../../../../images/secure.png';
+import siemLogo from '../../../../images/ecosystem/siem.png';
+import wafLogo from '../../../../images/ecosystem/waf.png';
+import nipsLogo from '../../../../images/ecosystem/nips.png';
+import edrLogo from '../../../../images/ecosystem/edr.png';
+import nacLogo from '../../../../images/ecosystem/nac.png';
 function OurSolutions() {
   const { t } = useTranslation();
   const [hoverSolutions, setHoverSolutions] = useState(null);
   const dataEcosystem = [
     {
       url: 'siem',
+      urlImg: siemLogo,
       content: t('ecosystem.siem'),
     },
     {
       url: 'waf',
+      urlImg: wafLogo,
       content: t('ecosystem.waf'),
     },
     {
       url: 'nips',
+      urlImg: nipsLogo,
       content: t('ecosystem.nips'),
     },
     {
       url: 'edr',
+      urlImg: edrLogo,
       content: t('ecosystem.edr'),
     },
     {
       url: 'nac',
+      urlImg: nacLogo,
       content: t('ecosystem.nac'),
     },
   ];
@@ -32,7 +42,7 @@ function OurSolutions() {
     window.scroll(0, 0);
   };
   return (
-    <section className='container m-auto text-center md:pb-32 lg:pb-64 Up'>
+    <section className='container m-auto text-center md:pb-32 Up'>
       <h1 className='text-center text-2xl md:text-4xl xl:text-6xl font-bold my-12'>
         {t('our-solutions1')}{' '}
         <span className='text-blue'>{t('our-solutions2')}</span>
@@ -51,8 +61,8 @@ function OurSolutions() {
               <LazyLoad offset={100} once>
                 <img
                   className='w-1/3 m-auto Up'
-                  src={serviceImg}
-                  alt='secureImg'
+                  src={solution.urlImg}
+                  alt={solution.url}
                 />
               </LazyLoad>
               <h3 className='text-xl font-bold my-8'>{solution.content}</h3>

@@ -10,10 +10,11 @@ import Security from './6-security-automatically';
 import Incident from './7-incident';
 import System from './8-system';
 import siemLogo from '../../../images/ecosystem/siem.png';
-import siemReport from '../../../images/gallery/header-1.e29951c6bf7cdf15c303.png';
+// import siemReport from '../../../images/gallery/header-1.e29951c6bf7cdf15c303.png';
 import DownLoadDataSheet from '../../data-sheet/data-sheet';
+import Gallery from '../gallery-section/index';
+import filePath from '../../data-sheet/pdf/data-sheet/Document Cloud/Fortinet_Product_Matrix-part-1.pdf';
 function SIEM() {
-  const filePath = '../../data-sheet/pdf/data-sheet/Document Cloud';
   const fileName = 'Fortinet_Product_Matrix-part-1.pdf';
   const lazyLoadOptions = {
     offset: 0,
@@ -22,9 +23,9 @@ function SIEM() {
   const { t } = useTranslation();
   return (
     <section>
-      <h1 className='hidden lg:block w-44 m-auto my-4 md:my-0 py-2 px-4 text-blue text-center rounded-xl border border-lightGray Scale'>
+      {/* <h1 className='hidden lg:block w-44 m-auto my-4 md:my-0 py-2 px-4 text-blue text-center rounded-xl border border-lightGray Scale'>
         FAGONET-SIEM
-      </h1>
+      </h1> */}
       <h2 className='md:w-1/2 mx-auto md:py-8 text-lg md:text-2xl lg:text-4xl text-center font-bold Scale'>
         {t('SIEM.title')}
       </h2>
@@ -38,13 +39,13 @@ function SIEM() {
       <LazyLoad {...lazyLoadOptions}>
         <DownLoadDataSheet filePath={filePath} fileName={fileName} />
       </LazyLoad>
-      <LazyLoad className='solutions-report-gallery' {...lazyLoadOptions}>
+      {/* <LazyLoad className='solutions-report-gallery' {...lazyLoadOptions}>
         <img
           className='w-full h-full m-auto Up'
           src={siemReport}
           alt='siem-report'
         />
-      </LazyLoad>
+      </LazyLoad> */}
       <LazyLoad className='pb-32 lg:pb-64' {...lazyLoadOptions}>
         <Collections />
       </LazyLoad>
@@ -67,8 +68,11 @@ function SIEM() {
       <LazyLoad className='pb-32 lg:pb-64' {...lazyLoadOptions}>
         <Incident />
       </LazyLoad>
-      <LazyLoad className='' {...lazyLoadOptions}>
+      <LazyLoad className='pb-32' {...lazyLoadOptions}>
         <System />
+      </LazyLoad>
+      <LazyLoad {...lazyLoadOptions}>
+        <Gallery />
       </LazyLoad>
     </section>
   );
