@@ -72,7 +72,7 @@ function Nav() {
     setTabLanguage((prevTab) => !prevTab);
   };
   return (
-    <nav className={`relative nav-item h-24 flex`}>
+    <nav className={`relative nav-item h-24 flex Scale`}>
       <section className='h-full flex justify-between container m-auto'>
         <Link
           className='mx-8 lg:mx-0 flex justify-between items-center cursor-pointer'
