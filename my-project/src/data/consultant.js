@@ -1,8 +1,12 @@
+import img1 from './images/consultant/img1.jpg';
 export default {
   title: 'Dịch vụ tư vấn chiến lược an toàn thông tin',
   articles: [
     {
+      id: 1,
       title: 'Dịch vụ tư vấn chiến lược an toàn thông tin',
+      imgUrl: img1,
+      date: '03/03/2023',
       prevDesc:
         'Bộ phận TƯ VẤN CHIẾN LƯỢC AN TOÀN THÔNG TIN, trực thuộc Công ty CP Phát triển Phần mềm và Hỗ trợ Công nghệ (FAGONET), được thành lập từ những ngày đầu công ty đi vào hoạt động trong lĩnh vực An toàn thông tin từ năm 2001.',
       details: {

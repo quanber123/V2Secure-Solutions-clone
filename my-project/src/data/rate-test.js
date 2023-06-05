@@ -1,7 +1,15 @@
+import img6 from './images/rate-test/img6.png';
+import img2 from './images/rate-test/img2.png';
+import img3 from './images/rate-test/img3.png';
+import img4 from './images/rate-test/img4.png';
+import img5 from './images/rate-test/img5.png';
 export default {
   title: 'Đánh giá điểm yếu và Thử nghiệm xâm nhập (Pentest)',
   articles: [
     {
+      id: 1,
+      imgUrl: img6,
+      date: '12/12/2022',
       title:
         'Dịch vụ đánh giá điểm yếu ATTT và Thử nghiệm xâm nhập cho ứng dụng di động (iOS, Android)',
       prevDesc:
@@ -81,6 +89,9 @@ export default {
       },
     },
     {
+      id: 2,
+      imgUrl: img2,
+      date: '09/10/2022',
       title:
         'Dịch vụ đánh giá điểm yếu ATTT và Thử nghiệm xâm nhập cho hệ thống mạng (Firewall, Router, Switch layer 3)Dịch vụ đánh giá điểm yếu ATTT và Thử nghiệm xâm nhập cho hệ thống mạng (Firewall, Router, Switch layer 3)',
       prevDesc:
@@ -159,6 +170,9 @@ export default {
       },
     },
     {
+      id: 3,
+      imgUrl: img3,
+      date: '05/04/2022',
       title:
         'Dịch vụ đánh giá điểm yếu ATTT và Thử nghiệm xâm nhập cho hệ thống Cơ sở dữ liệu (Oracle, MSSQL, MySQL,...)',
       prevDesc:
@@ -248,6 +262,9 @@ export default {
       },
     },
     {
+      id: 4,
+      imgUrl: img4,
+      date: '10/11/2021',
       title:
         'Dịch vụ đánh giá điểm yếu ATTT và Thử nghiệm xâm nhập cho hệ thống máy chủ (Windows, Linux, OS400, DB2,...)',
       prevDesc:
@@ -308,10 +325,13 @@ export default {
       },
     },
     {
+      id: 5,
+      imgUrl: img5,
+      date: '20/10/2021',
       title:
         'Dịch vụ đánh giá điểm yếu ATTT và Thử nghiệm xâm nhập cho hệ thống Website/Cổng thông tin điện tử',
       prevDesc:
-        'Dịch vụ đánh giá điểm yếu ATTT và Thử nghiệm xâm nhập cho hệ thống Website/Cổng thông tin điện tử: FAGONET cung cấp dịch vụ kiểm tra, đánh giá điểm yếu/lỗ hổng ATTT cho hệ thống Website/Cổng thông tin điện tử theo cách chuyê<n></n>',
+        'Dịch vụ đánh giá điểm yếu ATTT và Thử nghiệm xâm nhập cho hệ thống Website/Cổng thông tin điện tử: FAGONET cung cấp dịch vụ kiểm tra, đánh giá điểm yếu/lỗ hổng ATTT cho hệ thống Website/Cổng thông tin điện tử theo cách chuyên nghiệp.',
       details: {
         intro:
           'Dịch vụ đánh giá điểm yếu ATTT và Thử nghiệm xâm nhập cho hệ thống Website/Cổng thông tin điện tử:',

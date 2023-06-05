@@ -1,8 +1,12 @@
+import img1 from './images/scanning/img1.jpg';
 export default {
   title: 'Dò quét phát hiện mã độc',
   articles: [
     {
+      id: 1,
       title: 'Dịch vụ Dò quét phát hiện mã độc',
+      imgUrl: img1,
+      date: '05/01/2023',
       prevDesc:
         'Dịch vụ Dò quét phát hiện mã độc là dịch vụ tìm kiếm các dấu hiệu sự tồn tại của mã độc và tiến hành đưa ra các biện pháp ngăn chặn, loại bỏ mã độc để đảm bảo an toàn cho hệ thống của khách hàng. Các chuyên gia Misoft sẽ sử dụng các',
       details: {

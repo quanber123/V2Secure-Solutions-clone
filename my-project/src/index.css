@@ -461,3 +461,7 @@ textarea {
   background-position: center;
   object-fit: contain;
 }
+
+.article {
+  width: 100%;
+}

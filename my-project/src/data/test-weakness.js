@@ -1,8 +1,12 @@
+import img1 from './images/test-weakness/img1.jpg';
 export default {
   title: 'Kiểm tra, đánh giá điểm yếu trong mã nguồn',
   articles: [
     {
+      id: 1,
       title: 'Kiểm tra, đánh giá an toàn thông tin mã nguồn của ứng dụng',
+      imgUrl: img1,
+      date: '12/12/2022',
       prevDesc:
         'Dịch vụ Kiểm tra, đánh giá an toàn thông tin mã nguồn của ứng dụng, các chuyên gia sẽ thực hiện dịch ngược mã nguồn của ứng dụng và thực hiện điều tra luồng dữ liệu, xác định các chức năng, cách thức ứng dụng xử lý dữ liệu, các hàm, các',
       details: {
@@ -14,7 +18,7 @@ export default {
             {
               list: 'Phân tích thủ công',
               list: 'Phân tích tự động',
-              list: 'Kết hợp thủ công và tự độngPhân tích thủ công',
+              list: 'Kết hợp thủ công và tự động',
             },
           ],
         },
