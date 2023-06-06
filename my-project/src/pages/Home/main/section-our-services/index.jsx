@@ -1,37 +1,25 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import serviceImg from '../../../../images/secure.png';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import LazyLoad from 'react-lazyload';
+import { ServicesContext } from '../../../Services/hooks/services-context';
 function OurServices() {
   const { t } = useTranslation();
   const [hoverServices, setHoverServices] = useState(null);
-  const services = [
-    {
-      service: t('services.test'),
-    },
-    {
-      service: t('services.security'),
-    },
-    {
-      service: t('services.assessment'),
-    },
-    {
-      service: t('services.simulation'),
-    },
-  ];
+  const { data } = useContext(ServicesContext);
   const handleClick = () => {
     window.scroll(0, 0);
   };
   return (
-    <section className='container m-auto h-4/5 text-center md:pb-32 lg:pb-64 Up'>
+    <section className='container m-auto h-4/5 text-center pb-32 Up'>
       <h1 className='text-2xl md:text-4xl xl:text-6xl font-bold my-12'>
         {t('our-services1')}{' '}
         <span className='text-blue'>{t('our-services2')}</span>
       </h1>
       <div className='flex sm:flex-wrap flex-col sm:flex-row justify-center items-stretch'>
-        {services.map((service, index) => {
+        {data.map((service, index) => {
           return (
             <article
               key={index}
@@ -48,10 +36,10 @@ function OurServices() {
                   alt='secureImg'
                 />
               </LazyLoad>
-              <h3 className='text-xl font-bold my-8'>{service.service}</h3>
+              <h3 className='text-xl font-bold my-8'>{service.intro}</h3>
               <Link
                 className='flex justify-center items-center text-yellow'
-                to='/services'
+                to={`/services/${service.link}`}
                 onClick={handleClick}
               >
                 <h4>{t('services.read-more')}</h4>

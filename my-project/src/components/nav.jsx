@@ -92,9 +92,11 @@ function Nav() {
           }`}
         >
           <NavLink
-            className={`mx-5 my-4 lg:my-2 nav-link ${
-              selectedLink === 'HOME' ? 'hight-light' : ''
-            }`}
+            className={({ isActive }) =>
+              isActive
+                ? 'mx-5 my-4 lg:my-2 nav-link hight-light'
+                : 'mx-5 my-4 lg:my-2 nav-link'
+            }
             rel='nofollow'
             to='/'
             onClick={() => handleLinkClick('HOME')}
@@ -102,9 +104,11 @@ function Nav() {
             HOME
           </NavLink>
           <NavLink
-            className={`mx-5 my-4 lg:my-2 nav-link ${
-              selectedLink === 'SOLUTIONS' ? 'hight-light' : ''
-            }`}
+            className={({ isActive }) =>
+              isActive
+                ? 'mx-5 my-4 lg:my-2 nav-link hight-light'
+                : 'mx-5 my-4 lg:my-2 nav-link'
+            }
             rel='nofollow'
             to='solutions'
             onClick={() => handleLinkClick('SOLUTIONS')}
@@ -112,9 +116,11 @@ function Nav() {
             {t('SOLUTIONS')}
           </NavLink>
           <NavLink
-            className={`mx-5 my-4 lg:my-2 nav-link ${
-              selectedLink === 'SERVICES' ? 'hight-light' : ''
-            }`}
+            className={({ isActive }) =>
+              isActive
+                ? 'mx-5 my-4 lg:my-2 nav-link hight-light'
+                : 'mx-5 my-4 lg:my-2 nav-link'
+            }
             rel='nofollow'
             to='services'
             onClick={() => handleLinkClick('SERVICES')}
@@ -122,9 +128,11 @@ function Nav() {
             {t('SERVICES')}
           </NavLink>
           <NavLink
-            className={`mx-5 my-4 lg:my-2 nav-link ${
-              selectedLink === 'CONTACT' ? 'hight-light' : ''
-            }`}
+            className={({ isActive }) =>
+              isActive
+                ? 'mx-5 my-4 lg:my-2 nav-link hight-light'
+                : 'mx-5 my-4 lg:my-2 nav-link'
+            }
             rel='nofollow'
             to='contact'
             onClick={() => handleLinkClick('CONTACT')}
@@ -146,7 +154,7 @@ function Nav() {
               />
             </LazyLoad>
             {tabLanguage && (
-              <ul className='w-52 options-language  px-6 py-2'>
+              <ul className='w-52 options-language px-6 py-2'>
                 <li
                   className='flex items-center py-2 border-b border-gray cursor-pointer'
                   onClick={() => handleSelectChangeLanguage('en')}
