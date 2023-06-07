@@ -127,16 +127,11 @@ function Nav() {
             className='custom-select-language'
             onClick={handleShowTabLanguage}
           >
-            <LazyLoad
-              className='mx-5 my-4 lg:my-2 h-full cursor-pointer'
-              {...lazyLoadOptions}
-            >
-              <img
-                className='w-12 h-8 rounded'
-                src={`${selectedLanguage === 'en' ? flagUs : flagVn}`}
-                alt={`${selectedLanguage === '' ? 'flagVn' : 'flagUs'}`}
-              />
-            </LazyLoad>
+            <img
+              className='w-12 h-8 rounded mx-5 my-4 lg:my-2 cursor-pointer'
+              src={`${selectedLanguage === 'en' ? flagUs : flagVn}`}
+              alt={`${selectedLanguage === '' ? 'flagVn' : 'flagUs'}`}
+            />
             {tabLanguage && (
               <ul className='w-52 options-language px-6 py-2'>
                 <li
@@ -144,13 +139,11 @@ function Nav() {
                   onClick={() => handleSelectChangeLanguage('en')}
                 >
                   <h3 className='w-2/3'>{t('en')}</h3>
-                  <LazyLoad className='w-1/3' {...lazyLoadOptions}>
-                    <img
-                      className='w-12 h-8 rounded ml-auto'
-                      src={flagUs}
-                      alt='flagUs'
-                    />
-                  </LazyLoad>
+                  <img
+                    className='w-12 h-8 rounded ml-auto'
+                    src={flagUs}
+                    alt='flagUs'
+                  />
                 </li>
                 <li
                   className='flex items-center py-2 cursor-pointer'

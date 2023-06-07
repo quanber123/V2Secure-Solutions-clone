@@ -30,7 +30,7 @@ export default function Services() {
               </h2>
               <p className='font-bold my-6'>{service.firstWord}</p>
               <Link
-                className='px-4 py-1 md:px-12 md:py-3 rounded-2xl text-lg font-bold border-2 border-darkBlue bg-boldBlue hover:bg-darkGreen hover:text-blue'
+                className='px-2 py-2 md:px-4 rounded-3xl text-lg font-bold border text-black border-blue bg-boldBlue hover:bg-blue '
                 to={`${service.link}`}
                 onClick={handleClick}
               >

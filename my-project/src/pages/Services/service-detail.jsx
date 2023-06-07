@@ -1,6 +1,6 @@
 import { Link, useParams } from 'react-router-dom';
 import { useContext, useEffect, useState, useRef } from 'react';
-import secureImg from '../../data/images/secure1.png';
+import secureImg from './data/images/secure1.png';
 import { ServicesContext } from './hooks/services-context';
 import LazyLoad from 'react-lazyload';
 import NavServices from './nav-services';
@@ -27,24 +27,24 @@ function ServiceDetail() {
   const [step, setStep] = useState(1);
   const stepContent = [
     {
-      title: t('step1'),
-      content: t('step-content1'),
+      title: t('services-page.step1'),
+      content: t('services-page.step-content1'),
     },
     {
-      title: t('step2'),
-      content: t('step-content2'),
+      title: t('services-page.step2'),
+      content: t('services-page.step-content2'),
     },
     {
-      title: t('step3'),
-      content: t('step-content3'),
+      title: t('services-page.step3'),
+      content: t('services-page.step-content3'),
     },
     {
-      title: t('step4'),
-      content: t('step-content4'),
+      title: t('services-page.step4'),
+      content: t('services-page.step-content4'),
     },
     {
-      title: t('step5'),
-      content: t('step-content5'),
+      title: t('services-page.step5'),
+      content: t('services-page.step-content5'),
     },
   ];
   function handleNext() {
@@ -75,7 +75,7 @@ function ServiceDetail() {
           <p className='w-4/5 mx-auto my-8 text-lg md:text-xl'>
             {serviceDetail.firstWord}
           </p>
-          <button className='px-4 py-1 md:px-12 md:py-3 rounded-2xl text-lg font-bold border-2 border-darkBlue bg-boldBlue hover:bg-darkGreen hover:text-blue'>
+          <button className='px-4 py-3 md:px-12 md:py-3 rounded-3xl text-lg font-bold border-2 border-darkBlue bg-boldBlue hover:bg-darkGreen hover:text-blue'>
             {t('view-more')}
           </button>
         </div>

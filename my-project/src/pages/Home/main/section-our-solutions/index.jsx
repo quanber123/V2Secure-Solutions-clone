@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
-import LazyLoad from 'react-lazyload';
-import serviceImg from '../../../../images/secure.png';
+// import LazyLoad from 'react-lazyload';
+// import serviceImg from '../../../../images/secure.png';
 import siemLogo from '../../../../images/ecosystem/siem.png';
 import wafLogo from '../../../../images/ecosystem/waf.png';
 import nipsLogo from '../../../../images/ecosystem/nips.png';
 import edrLogo from '../../../../images/ecosystem/edr.png';
 import nacLogo from '../../../../images/ecosystem/nac.png';
+import LazyLoad from 'react-lazyload';
 function OurSolutions() {
   const { t } = useTranslation();
   const [hoverSolutions, setHoverSolutions] = useState(null);

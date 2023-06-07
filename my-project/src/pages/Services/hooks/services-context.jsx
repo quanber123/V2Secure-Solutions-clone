@@ -1,10 +1,10 @@
 import { createContext, useEffect, useState } from 'react';
-import Data from '../../../data/data-services';
+import Data from '../data/data-services';
 export const ServicesContext = createContext();
 export const ServicesProvider = ({ children }) => {
   const { data } = Data();
   const [dataServices, setDataServices] = useState([]);
-  const lang = window.localStorage.getItem('language') || 'en';
+  const lang = window.localStorage.getItem('language') || 'vi';
   useEffect(() => {
     setDataServices(data);
   }, [lang]);

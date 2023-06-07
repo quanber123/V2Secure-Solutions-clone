@@ -15,7 +15,7 @@ function OurServices() {
   return (
     <section className='container m-auto h-4/5 text-center pb-32 Up'>
       <h1 className='text-2xl md:text-4xl xl:text-6xl font-bold my-12'>
-        {t('our-services1')}{' '}
+        {t('our-services1')}
         <span className='text-blue'>{t('our-services2')}</span>
       </h1>
       <div className='flex sm:flex-wrap flex-col sm:flex-row justify-center items-stretch'>
@@ -31,7 +31,7 @@ function OurServices() {
             >
               <LazyLoad offset={100} once>
                 <img
-                  className='w-1/3 m-auto Up'
+                  className='w-1/3 m-auto Scale'
                   src={serviceImg}
                   alt='secureImg'
                 />

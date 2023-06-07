@@ -175,7 +175,7 @@ textarea {
 /* Main */
 .services {
   cursor: pointer;
-  width: calc(100% / 3 - 64px);
+  width: calc(100% / 4 - 64px);
   background: linear-gradient(
     150deg,
     rgba(176, 176, 176, 0.2),
