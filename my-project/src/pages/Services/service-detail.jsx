@@ -4,9 +4,11 @@ import secureImg from '../../data/images/secure1.png';
 import { ServicesContext } from './hooks/services-context';
 import LazyLoad from 'react-lazyload';
 import NavServices from './nav-services';
+import { useTranslation } from 'react-i18next';
 function ServiceDetail() {
+  const { t } = useTranslation();
   const { link } = useParams();
-  const { data } = useContext(ServicesContext);
+  const { dataServices } = useContext(ServicesContext);
   const serviceDetailRef = useRef(null);
   const prevLinkRef = useRef(link);
 
@@ -61,12 +63,28 @@ function ServiceDetail() {
       setStep((prevStep) => prevStep - 1);
     }
   }
-  const handleClick = () => {
-    window.scroll(0, 0);
-  };
-  const serviceDetail = data.find((service) => service.link === link);
+  // const handleClick = () => {
+  //   window.scroll(0, 0);
+  // };
+  const serviceDetail = dataServices.find((service) => service.link === link);
   return (
     <section className={`${link}`} ref={serviceDetailRef}>
+      {/* <div className='container m-auto mt-12 text-xl border-b border-gray flex Scale'>
+        <Link
+          className='flex items-center text-blue'
+          to='../..'
+          onClick={handleClick}
+        >
+          <i className='fa fa-home mr-2'></i>
+          <h4>Back Home</h4>
+        </Link>
+        <span className='text-blue mx-2'>/</span>
+        <Link className='text-blue' to='..' onClick={handleClick}>
+          Services
+        </Link>
+        <span className='text-blue mx-2'>/</span>
+        <h4>{serviceDetail.intro}</h4>
+      </div> */}
       <NavServices />
       <main className='container m-auto bg-lightGray p-8'>
         <div className='text-center py-8'>
@@ -77,7 +95,7 @@ function ServiceDetail() {
             {serviceDetail.firstWord}
           </p>
           <button className='px-4 py-1 md:px-12 md:py-3 rounded-2xl text-lg font-bold border-2 border-darkBlue bg-boldBlue hover:bg-darkGreen hover:text-blue'>
-            View more
+            {t('view-more')}
           </button>
         </div>
         <div>
@@ -108,16 +126,16 @@ function ServiceDetail() {
           </div>
         </div>
       </main>
-      <footer className='bg-boldBlue text-white'>
+      <footer className=' text-white'>
         <div className='text-center py-8'>
-          <h3 className='text-2xl md:text-4xl font-bold'>
+          <h3 className='text-2xl md:text-4xl font-bold text-blue'>
             {serviceDetail.endTitle}
           </h3>
           <p className='w-4/5 mx-auto my-4 text-center text-lg md:text-2xl'>
             {serviceDetail.endWord}
           </p>
         </div>
-        <div className='container m-auto w-4/5 text-xl xl:text-3xl py-8 text-black bg-darkGray'>
+        <div className='container m-auto w-4/5 text-xl xl:text-3xl py-8 text-black bg-lightGray'>
           <div className='flex justify-around p-8'>
             <i
               className={`${
@@ -160,7 +178,7 @@ function ServiceDetail() {
                       stepState ? 'Right' : 'Left'
                     }`}
                   >
-                    <h4>{content.title}</h4>
+                    <h4 className='text-blue font-bold'>{content.title}</h4>
                     <p>{content.content}</p>
                   </div>
                 ) : (
@@ -175,22 +193,6 @@ function ServiceDetail() {
           <i className='fa fa-angle-right' onClick={handleNext}></i>
         </div>
       </footer>
-      <div className='container m-auto border-b border-gray flex'>
-        <Link
-          className='flex items-center text-blue'
-          to='../..'
-          onClick={handleClick}
-        >
-          <i className='fa fa-home mr-2'></i>
-          <h4>Back Home</h4>
-        </Link>
-        <span className='text-blue mx-2'>/</span>
-        <Link className='text-blue' to='..' onClick={handleClick}>
-          Services
-        </Link>
-        <span className='text-blue mx-2'>/</span>
-        <h4>{serviceDetail.intro}</h4>
-      </div>
     </section>
   );
 }

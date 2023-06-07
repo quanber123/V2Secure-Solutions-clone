@@ -12,28 +12,12 @@ function Nav() {
     offset: 0,
     once: true,
   };
-  // const [isSticky, setIsSticky] = useState(false);
   const [selectedLink, setSelectedLink] = useState('HOME');
   const [showNav, setShowNav] = useState(false);
   const [selectedLanguage, setSelectedLanguage] = useState(
     localStorage.getItem('language') || 'en'
   );
   const [tabLanguage, setTabLanguage] = useState(false);
-
-  // const handleScroll = useCallback(() => {
-  //   if (window.pageYOffset > 200) {
-  //     setIsSticky(true);
-  //   } else {
-  //     setIsSticky(false);
-  //   }
-  // }, []);
-  // useEffect(() => {
-  //   window.addEventListener('scroll', handleScroll);
-
-  //   return () => {
-  //     window.removeEventListener('scroll', handleScroll);
-  //   };
-  // }, [handleScroll]);
   useEffect(() => {
     const handleScroll = () => {
       setShowNav(false);

@@ -1,20 +1,19 @@
 import React, { useContext } from 'react';
 import { useTranslation } from 'react-i18next';
-import NavServices from './nav-services';
-import { Link, Outlet } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { ServicesContext } from './hooks/services-context';
 export default function Services() {
-  // const { t } = useTranslation();
-  const { data } = useContext(ServicesContext);
+  const { t } = useTranslation();
+  const { dataServices } = useContext(ServicesContext);
   const handleClick = () => {
     window.scroll(0, 0);
   };
   return (
     <section className='container m-auto py-8 Up'>
       <h1 className='text-center text-2xl md:text-4xl text-blue font-bold'>
-        Our Services
+        {t('our-services')}
       </h1>
-      {data.map((service, index) => {
+      {dataServices.map((service, index) => {
         return (
           <article
             className='prev-services my-8 py-8 border-b border-b-gray'
@@ -35,7 +34,7 @@ export default function Services() {
                 to={`${service.link}`}
                 onClick={handleClick}
               >
-                View more
+                {t('view-more')}
               </Link>
             </div>
           </article>

@@ -1,23 +1,25 @@
 import { NavLink } from 'react-router-dom';
 import { useContext, useState } from 'react';
 import { ServicesContext } from './hooks/services-context';
+import { useTranslation } from 'react-i18next';
 function NavServices() {
-  const { data } = useContext(ServicesContext);
+  const { t } = useTranslation();
+  const { dataServices } = useContext(ServicesContext);
   const [show, setShow] = useState(false);
   const handleClickTab = () => {
     setShow((prevShow) => !prevShow);
   };
   return (
-    <nav className='container mx-auto mt-32 Up'>
+    <nav className='container mx-auto my-8 Up'>
       <button
         className='px-4 py-3 text-xl text-boldBlue border border-blue rounded-md mb-4 '
         onClick={handleClickTab}
       >
-        Services
+        {t('SERVICES')}
       </button>
       {show && (
         <div className='nav-services w-full md:w-1/4 bg-lightGray my-8 rounded-xl p-4 flex flex-col justify-between'>
-          {data.map((service, index) => {
+          {dataServices.map((service, index) => {
             return (
               <NavLink
                 className={({ isActive }) =>

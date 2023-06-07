@@ -8,7 +8,7 @@ import { ServicesContext } from '../../../Services/hooks/services-context';
 function OurServices() {
   const { t } = useTranslation();
   const [hoverServices, setHoverServices] = useState(null);
-  const { data } = useContext(ServicesContext);
+  const { dataServices } = useContext(ServicesContext);
   const handleClick = () => {
     window.scroll(0, 0);
   };
@@ -19,7 +19,7 @@ function OurServices() {
         <span className='text-blue'>{t('our-services2')}</span>
       </h1>
       <div className='flex sm:flex-wrap flex-col sm:flex-row justify-center items-stretch'>
-        {data.map((service, index) => {
+        {dataServices.map((service, index) => {
           return (
             <article
               key={index}

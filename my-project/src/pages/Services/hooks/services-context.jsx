@@ -1,13 +1,15 @@
 import { createContext, useEffect, useState } from 'react';
-import servicesData from '../../../data/data-services';
+import Data from '../../../data/data-services';
 export const ServicesContext = createContext();
 export const ServicesProvider = ({ children }) => {
-  const [data, setData] = useState([]);
+  const { data } = Data();
+  const [dataServices, setDataServices] = useState([]);
+  const lang = window.localStorage.getItem('language') || 'en';
   useEffect(() => {
-    setData(servicesData);
-  }, [servicesData]);
+    setDataServices(data);
+  }, [lang]);
   return (
-    <ServicesContext.Provider value={{ data }}>
+    <ServicesContext.Provider value={{ dataServices }}>
       {children}
     </ServicesContext.Provider>
   );
