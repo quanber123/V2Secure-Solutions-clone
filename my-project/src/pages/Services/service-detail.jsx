@@ -27,24 +27,24 @@ function ServiceDetail() {
   const [step, setStep] = useState(1);
   const stepContent = [
     {
-      title: 'Step 1',
-      content: 'DevSecOps implementation consulting',
+      title: t('step1'),
+      content: t('step-content1'),
     },
     {
-      title: 'Step 2',
-      content: 'Source code information security assessment',
+      title: t('step2'),
+      content: t('step-content2'),
     },
     {
-      title: 'Step 3',
-      content: 'Safe programming training',
+      title: t('step3'),
+      content: t('step-content3'),
     },
     {
-      title: 'Step 4',
-      content: 'Information security risk assessment (Threat Modeling)',
+      title: t('step4'),
+      content: t('step-content4'),
     },
     {
-      title: 'Step 5',
-      content: 'Information security advisor',
+      title: t('step5'),
+      content: t('step-content5'),
     },
   ];
   function handleNext() {
@@ -63,28 +63,9 @@ function ServiceDetail() {
       setStep((prevStep) => prevStep - 1);
     }
   }
-  // const handleClick = () => {
-  //   window.scroll(0, 0);
-  // };
   const serviceDetail = dataServices.find((service) => service.link === link);
   return (
     <section className={`${link}`} ref={serviceDetailRef}>
-      {/* <div className='container m-auto mt-12 text-xl border-b border-gray flex Scale'>
-        <Link
-          className='flex items-center text-blue'
-          to='../..'
-          onClick={handleClick}
-        >
-          <i className='fa fa-home mr-2'></i>
-          <h4>Back Home</h4>
-        </Link>
-        <span className='text-blue mx-2'>/</span>
-        <Link className='text-blue' to='..' onClick={handleClick}>
-          Services
-        </Link>
-        <span className='text-blue mx-2'>/</span>
-        <h4>{serviceDetail.intro}</h4>
-      </div> */}
       <NavServices />
       <main className='container m-auto bg-lightGray p-8'>
         <div className='text-center py-8'>
