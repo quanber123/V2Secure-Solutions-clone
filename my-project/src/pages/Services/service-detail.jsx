@@ -1,10 +1,22 @@
-import { Link, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import { useContext, useEffect, useState, useRef } from 'react';
 import secureImg from './data/images/secure1.png';
 import { ServicesContext } from './hooks/services-context';
 import LazyLoad from 'react-lazyload';
 import NavServices from './nav-services';
 import { useTranslation } from 'react-i18next';
+import carriedImg from '../../images/desktop.png';
+import carriedWhiteImg from '../../images/desktopWhite.png';
+import receivedImg from '../../images/received.png';
+import receivedWhiteImg from '../../images/receivedWhite.png';
+import processImg from '../../images/process.png';
+import processWhiteImg from '../../images/processWhite.png';
+import analysisImg from '../../images/data-analysis.png';
+import analysisWhiteImg from '../../images/data-analysisWhite.png';
+import threatImg from '../../images/threat.png';
+import threatWhiteImg from '../../images/threatWhite.png';
+import managementImg from '../../images/management.png';
+import managementWhiteImg from '../../images/managementWhite.png';
 function ServiceDetail() {
   const { t } = useTranslation();
   const { link } = useParams();
@@ -45,6 +57,10 @@ function ServiceDetail() {
     {
       title: t('services-page.step5'),
       content: t('services-page.step-content5'),
+    },
+    {
+      title: t('services-page.step6'),
+      content: t('services-page.step-content6'),
     },
   ];
   function handleNext() {
@@ -118,37 +134,57 @@ function ServiceDetail() {
         </div>
         <div className='container m-auto w-4/5 text-xl xl:text-3xl py-8 text-black bg-lightGray'>
           <div className='flex justify-around p-8'>
-            <i
-              className={`${
-                step === 1 ? 'active' : ''
-              } fa fa-handshake-o process-ic bg-white  xl:w-16 xl:h-16 w-8 h-8`}
-              onClick={() => setStep(1)}
-            ></i>
-            <i
-              className={`${
-                step === 2 ? 'active' : ''
-              } fa fa-info-circle process-ic bg-white  xl:w-16 xl:h-16 w-8 h-8`}
-              onClick={() => setStep(2)}
-            ></i>
-            <i
-              className={`${
-                step === 3 ? 'active' : ''
-              } fa fa-gears process-ic bg-white xl:w-16 xl:h-16 w-8 h-8`}
-              onClick={() => setStep(3)}
-            ></i>
-            <i
-              className={`${
-                step === 4 ? 'active' : ''
-              } fa fa-assistive-listening-systems process-ic   
-            bg-white  xl:w-16 xl:h-16 w-8 h-8`}
-              onClick={() => setStep(4)}
-            ></i>
-            <i
-              className={`${
-                step === 5 ? 'active' : ''
-              } fa fa-gavel process-ic bg-white  xl:w-16 xl:h-16 w-8 h-8`}
-              onClick={() => setStep(5)}
-            ></i>
+            <LazyLoad className='xl:w-16 xl:h-16 w-8 h-8'>
+              <img
+                className={`${step === 1 ? 'active' : ''} process-ic bg-white`}
+                onClick={() => setStep(1)}
+                src={step === 1 ? carriedWhiteImg : carriedImg}
+                alt='carried-img'
+              />
+            </LazyLoad>
+            <LazyLoad className='xl:w-16 xl:h-16 w-8 h-8'>
+              <img
+                className={`${
+                  step === 2 ? 'active' : ''
+                }  process-ic bg-white `}
+                onClick={() => setStep(2)}
+                src={step === 2 ? receivedWhiteImg : receivedImg}
+                alt='received-img'
+              />
+            </LazyLoad>
+            <LazyLoad className='xl:w-16 xl:h-16 w-8 h-8'>
+              <img
+                className={`${step === 3 ? 'active' : ''}  process-ic bg-white`}
+                onClick={() => setStep(3)}
+                src={step === 3 ? processWhiteImg : processImg}
+                alt='process-img'
+              />
+            </LazyLoad>
+            <LazyLoad className='xl:w-16 xl:h-16 w-8 h-8'>
+              <img
+                className={`${step === 4 ? 'active' : ''} process-ic   
+            bg-white`}
+                onClick={() => setStep(4)}
+                src={step === 4 ? analysisWhiteImg : analysisImg}
+                alt=''
+              />
+            </LazyLoad>
+            <LazyLoad className='xl:w-16 xl:h-16 w-8 h-8'>
+              <img
+                className={`${step === 5 ? 'active' : ''} process-ic bg-white`}
+                onClick={() => setStep(5)}
+                src={step === 5 ? threatWhiteImg : threatImg}
+                alt='threat-img'
+              />
+            </LazyLoad>
+            <LazyLoad className='xl:w-16 xl:h-16 w-8 h-8'>
+              <img
+                className={`${step === 6 ? 'active' : ''} process-ic bg-white`}
+                onClick={() => setStep(6)}
+                src={step === 6 ? managementWhiteImg : managementImg}
+                alt='management-img'
+              />
+            </LazyLoad>
           </div>
           {stepContent.map((content, index) => {
             return (

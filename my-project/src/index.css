@@ -473,6 +473,11 @@ textarea {
   align-items: center;
   border-radius: 50%;
 }
+.process-ic > img {
+  border-radius: 50%;
+  object-fit: contain;
+  background-size: contain;
+}
 .process-ic:hover {
   background-color: #00c4e7;
   color: #fff;
