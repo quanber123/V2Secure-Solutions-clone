@@ -9,7 +9,7 @@ function SectionAbout() {
     <section className='w-full h-1/2 flex flex-col md:flex-row border-t border-t-boldBlue px-14 py-32 Scale'>
       <div className='md:w-1/2'>
         <div className='flex items-center'>
-          <LazyLoad className='h-1/2' offset={0} once>
+          <LazyLoad className='h-1/2' offset={100} once>
             <img className='h-16 Scale' src={logo} alt='logoV2' />
           </LazyLoad>
           <h1 className='text-2xl md:text-4xl mx-4 text-blue'>FAGONET</h1>
@@ -30,7 +30,7 @@ function SectionAbout() {
         </div>
       </div>
       <div className='w-1/2 m-auto lg:m-0 flex justify-center items-center'>
-        <LazyLoad className='w-1/2 md:w-1/4 m-auto' offset={0} once>
+        <LazyLoad className='w-1/2 md:w-1/4 m-auto' offset={100} once>
           <img className='Scale' src={qr} alt='qr' />
         </LazyLoad>
         <div className='w-1/2 md:text-lg lg:text-xl font-bold md:p-2 m-2'>

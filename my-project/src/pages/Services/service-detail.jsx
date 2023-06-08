@@ -75,9 +75,9 @@ function ServiceDetail() {
           <p className='w-4/5 mx-auto my-8 text-lg md:text-xl'>
             {serviceDetail.firstWord}
           </p>
-          <button className='px-4 py-3 md:px-12 md:py-3 rounded-3xl text-lg font-bold border-2 border-darkBlue bg-boldBlue hover:bg-darkGreen hover:text-blue'>
+          {/* <button className='px-4 py-3 md:px-12 md:py-3 rounded-3xl text-lg font-bold border-2 border-darkBlue bg-boldBlue hover:bg-darkGreen hover:text-blue'>
             {t('view-more')}
-          </button>
+          </button> */}
         </div>
         <div>
           <h3 className='text-2xl md:text-4xl text-blue font-bold text-center'>
@@ -86,7 +86,7 @@ function ServiceDetail() {
           <p className='w-4/5 mx-auto my-4 text-center text-lg md:text-2xl'>
             {serviceDetail.desc}
           </p>
-          <div className='flex flex-col md:flex-row'>
+          <div className='my-8 flex flex-col md:flex-row'>
             <ul className='md:w-1/2'>
               {serviceDetail.content.map((content, index) => {
                 return (
