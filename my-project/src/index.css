@@ -521,6 +521,9 @@ textarea {
 .prev-services:nth-child(odd) {
   flex-direction: row;
 }
+.prev-services:nth-child(odd) > div {
+  padding: 0 32px;
+}
 .prev-services:nth-child(even) {
   flex-direction: row-reverse;
 }

@@ -24,7 +24,7 @@ export default function Services() {
               src={service.imgUrl}
               alt={service.intro}
             />
-            <div className='w-full md:w-2/3 lg:w-3/4 px-8 my-4 md:my-0 text-center md:text-start'>
+            <div className='w-full md:w-2/3 lg:w-3/4 my-4 md:my-0 text-center md:text-start'>
               <h2 className='text-lg md:text-2xl text-blue font-bold'>
                 {service.intro}
               </h2>

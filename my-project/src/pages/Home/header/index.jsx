@@ -64,7 +64,7 @@ function Header() {
             {t('ecosystem.title3')}
           </h3>
           <button
-            className='px-4 py-3 md:px-12 md:py-3 rounded-3xl text-lg font-bold border-2 border-darkBlue bg-boldBlue hover:bg-darkGreen hover:text-blue'
+            className='px-2 py-2 md:px-4 rounded-3xl text-lg font-bold border-2 border-darkBlue bg-boldBlue hover:bg-darkGreen hover:text-blue'
             style={{
               backgroundImage: `url(
                 'https://cyberciti.1onestrong.com/wp-content/uploads/2023/05/asset-06.png'
