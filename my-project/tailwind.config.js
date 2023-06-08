@@ -15,6 +15,8 @@ export default {
       boldBlue: '#00afb6',
       darkBlue: '#00678D',
       darkGreen: '#002A2A',
+      darkGray: 'rgba(176, 176, 176, 0.6)',
+      lightGray: 'rgba(176, 176, 176, 0.2)',
       gray: '#b6b6b6',
       green: '#3CCF4E',
       white: '#f1f1f1',

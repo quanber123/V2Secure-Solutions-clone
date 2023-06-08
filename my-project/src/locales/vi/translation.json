@@ -5,6 +5,8 @@
   "SERVICES": "DỊCH VỤ",
   "CONTACT": "LIÊN LẠC",
   "started": "Bắt đầu",
+  "view-more": "Xem thêm",
+  "our-services": "Dịch vụ của chúng tôi",
   "our-services1": "Dịch vụ",
   "our-services2": "của Chúng tôi",
   "our-solutions1": "Giải pháp",
@@ -270,7 +272,7 @@
     "title2": "FAGONET",
     "contact": "Thông tin liên hệ",
     "contact-more": "LIÊN HỆ CHÚNG TÔI - CÓ MẶT 24/7",
-    "district": "Số 3, ngách 281/75/15 Trương Định, Tương Mai, Hoàng Mai, Hà Nội, Việt Nam",
+    "district": "Tòa IMC Tower, Số 176 Trường Chinh, P. Khương Thượng, Q. Đống Đa, Tp. Hà Nội, Việt Nam",
     "qr": "QUÉT ĐỂ",
     "details": "BIẾT THÊM CHI TIẾT"
   },
@@ -285,5 +287,55 @@
   },
   "progress": "TIẾN TRIỂN",
   "progress2": "SẼ SỚM RA MẮT",
-  "progress-content": "Nó gần như đã sẵn sàng...chân thật"
+  "progress-content": "Nó gần như đã sẵn sàng...chân thật",
+  "services-page": {
+    "step1": "Bước 1",
+    "step2": "Bước 2",
+    "step3": "Bước 3",
+    "step4": "Bước 4",
+    "step5": "Bước 5",
+    "step-content1": "Tư vấn triển khai DevSecOps",
+    "step-content2": "Đánh giá an ninh thông tin mã nguồn",
+    "step-content3": "Đào tạo lập trình an toàn",
+    "step-content4": "Đánh giá rủi ro an ninh thông tin (Threat Modeling)",
+    "step-content5": "Cố vấn an ninh thông tin",
+    "title": "Lợi thế cạnh tranh",
+    "endWord": "Chúng tôi cam kết cung cấp dịch vụ với quy trình triển khai toàn diện, đảm bảo tuân thủ các chính sách và quy trình bảo mật thông tin của khách hàng.",
+    "endTitle": "Quy trình triển khai",
+    "intro1": "Dịch vụ Quản lý Bảo mật",
+    "firstWord1": "Hỗ trợ giám sát và phản ứng với các sự cố bảo mật mạng 24/7 cho tổ chức và doanh nghiệp",
+    "desc1": "Chúng tôi cung cấp dịch vụ bảo mật thông tin với các tùy chọn linh hoạt phù hợp với nhu cầu và tình hình hiện tại của khách hàng.",
+    "content1": {
+      "list1": "Giám sát trực tuyến 24/7 về tất cả các vấn đề bảo mật thông tin trên hệ thống IT của khách hàng",
+      "list2": "Phát hiện sự cố bảo mật thông tin và tiến hành phản ứng khẩn cấp và khắc phục theo quy trình đóng",
+      "list3": "Phát hiện các cuộc tấn công vào hệ thống và hỗ trợ hoạt động phối hợp phản ứng sự cố",
+      "list4": "Hỗ trợ xử lý các vấn đề phức tạp, cuộc tấn công APT, cuộc tấn công DDoS"
+    },
+    "intro2": "Săn lùng mối đe dọa",
+    "firstWord2": "Đảm bảo hệ thống doanh nghiệp được bảo mật và ngăn chặn khỏi mọi cuộc tấn công mạng. Threat Hunting có thể tìm kiếm, phát hiện và loại bỏ phần mềm độc hại cũng như các mối đe dọa bảo mật mạng tiềm ẩn trong mạng doanh nghiệp.",
+    "desc2": "Chúng tôi cung cấp dịch vụ với chất lượng xuất sắc.",
+    "content2": {
+      "list1": "Công cụ phát triển trong nhà.",
+      "list2": "Các chuyên gia hàng đầu (trong bảng xếp hạng Nhà nghiên cứu Bảo mật của Microsoft, Google, Facebook)",
+      "list3": "Linh hoạt với quy trình, quy định, tiêu chuẩn của khách hàng"
+    },
+    "intro3": "Kiểm tra và kiểm toán",
+    "firstWord3": "Thực hiện kiểm tra xâm nhập và kiểm toán cho toàn bộ hệ thống mạng và ứng dụng một cách toàn diện. Dịch vụ được thực hiện từ các giai đoạn thiết kế, triển khai, kiểm thử và vận hành của hệ thống tổ chức. Các phương pháp sử dụng được lựa chọn bởi khách hàng.",
+    "desc3": "Chúng tôi cung cấp dịch vụ bảo mật thông tin với các tùy chọn linh hoạt phù hợp với nhu cầu và tình hình hiện tại của khách hàng.",
+    "content3": {
+      "list1": "Giám sát trực tuyến 24/7 về tất cả các vấn đề bảo mật thông tin trên hệ thống IT của khách hàng",
+      "list2": "Phát hiện sự cố bảo mật thông tin và tiến hành phản ứng khẩn cấp và khắc phục theo quy trình đóng",
+      "list3": "Phát hiện các cuộc tấn công vào hệ thống và hỗ trợ hoạt động phối hợp phản ứng sự cố",
+      "list4": "Hỗ trợ xử lý các vấn đề phức tạp, cuộc tấn công APT, cuộc tấn công DDoS"
+    },
+    "intro4": "Bảo mật Ứng dụng",
+    "firstWord4": "Dịch vụ Bảo mật Ứng dụng nhằm hoàn thiện chu kỳ phát triển phần mềm của một tổ chức về mô hình, công cụ, phương pháp triển khai và nhận thức về bảo mật thông tin của các lập trình viên.",
+    "desc4": "Dịch vụ Bảo mật Ứng dụng với các tùy chọn linh hoạt phù hợp với nhu cầu và tình trạng của khách hàng.",
+    "content4": {
+      "list1": "Dịch vụ bảo mật ứng dụng toàn diện: Tư vấn triển khai DevSecOps, đánh giá bảo mật mã nguồn, đánh giá nguy cơ bảo mật thông tin (Threat Modeling), ...",
+      "list2": "Cố vấn Bảo mật Thông tin: Hỗ trợ và khắc phục lỗi bảo mật thông tin trong quá trình phát triển sản phẩm, cung cấp các tiêu chuẩn bảo mật thông tin áp dụng cho ứng dụng và hệ thống.",
+      "list3": "Kết hợp kiến thức bảo mật toàn cầu và kiến thức chuyên môn đã tích lũy bởi Viettel trong quá trình nghiên cứu bảo mật và cung cấp dịch vụ bảo mật mạng cho Viettel nội bộ (trên 11 quốc gia) và khách hàng.",
+      "list4": "Đánh giá Giao thức: Kiểm tra các điểm yếu của giao thức truyền thông radio IoT, giao thức tầng ứng dụng MQTT, CoAPP, Socket, v.v."
+    }
+  }
 }

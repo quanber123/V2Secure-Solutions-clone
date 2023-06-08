@@ -11,7 +11,8 @@ const WAF = lazy(() => import('./pages/Solutions/WAF-section/WAF'));
 const NIPS = lazy(() => import('./pages/Solutions/NIPS-section/NIPS'));
 const EDR = lazy(() => import('./pages/Solutions/EDR-section/EDR'));
 const NAC = lazy(() => import('./pages/Solutions/NAC-section/NAC'));
-const Service = lazy(() => import('./pages/Service/index'));
+const Services = lazy(() => import('./pages/Services/index'));
+const ServiceDetail = lazy(() => import('./pages/Services/service-detail'));
 const Contact = lazy(() => import('./pages/Contact/index'));
 function App() {
   return (
@@ -28,7 +29,10 @@ function App() {
               <Route path='edr' element={<EDR />} />
               <Route path='nac' element={<NAC />} />
             </Route>
-            <Route path='services' element={<Service />} />
+            <Route path='services'>
+              <Route index element={<Services />} />
+              <Route path=':link' element={<ServiceDetail />} />
+            </Route>
             <Route path='contact' element={<Contact />} />
             <Route path='*' element={<Page404 />} />
           </Route>

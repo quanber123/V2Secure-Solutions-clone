@@ -12,28 +12,12 @@ function Nav() {
     offset: 0,
     once: true,
   };
-  // const [isSticky, setIsSticky] = useState(false);
   const [selectedLink, setSelectedLink] = useState('HOME');
   const [showNav, setShowNav] = useState(false);
   const [selectedLanguage, setSelectedLanguage] = useState(
     localStorage.getItem('language') || 'en'
   );
   const [tabLanguage, setTabLanguage] = useState(false);
-
-  // const handleScroll = useCallback(() => {
-  //   if (window.pageYOffset > 200) {
-  //     setIsSticky(true);
-  //   } else {
-  //     setIsSticky(false);
-  //   }
-  // }, []);
-  // useEffect(() => {
-  //   window.addEventListener('scroll', handleScroll);
-
-  //   return () => {
-  //     window.removeEventListener('scroll', handleScroll);
-  //   };
-  // }, [handleScroll]);
   useEffect(() => {
     const handleScroll = () => {
       setShowNav(false);
@@ -92,9 +76,11 @@ function Nav() {
           }`}
         >
           <NavLink
-            className={`mx-5 my-4 lg:my-2 nav-link ${
-              selectedLink === 'HOME' ? 'hight-light' : ''
-            }`}
+            className={({ isActive }) =>
+              isActive
+                ? 'mx-5 my-4 lg:my-2 nav-link hight-light'
+                : 'mx-5 my-4 lg:my-2 nav-link'
+            }
             rel='nofollow'
             to='/'
             onClick={() => handleLinkClick('HOME')}
@@ -102,9 +88,11 @@ function Nav() {
             HOME
           </NavLink>
           <NavLink
-            className={`mx-5 my-4 lg:my-2 nav-link ${
-              selectedLink === 'SOLUTIONS' ? 'hight-light' : ''
-            }`}
+            className={({ isActive }) =>
+              isActive
+                ? 'mx-5 my-4 lg:my-2 nav-link hight-light'
+                : 'mx-5 my-4 lg:my-2 nav-link'
+            }
             rel='nofollow'
             to='solutions'
             onClick={() => handleLinkClick('SOLUTIONS')}
@@ -112,9 +100,11 @@ function Nav() {
             {t('SOLUTIONS')}
           </NavLink>
           <NavLink
-            className={`mx-5 my-4 lg:my-2 nav-link ${
-              selectedLink === 'SERVICES' ? 'hight-light' : ''
-            }`}
+            className={({ isActive }) =>
+              isActive
+                ? 'mx-5 my-4 lg:my-2 nav-link hight-light'
+                : 'mx-5 my-4 lg:my-2 nav-link'
+            }
             rel='nofollow'
             to='services'
             onClick={() => handleLinkClick('SERVICES')}
@@ -122,9 +112,11 @@ function Nav() {
             {t('SERVICES')}
           </NavLink>
           <NavLink
-            className={`mx-5 my-4 lg:my-2 nav-link ${
-              selectedLink === 'CONTACT' ? 'hight-light' : ''
-            }`}
+            className={({ isActive }) =>
+              isActive
+                ? 'mx-5 my-4 lg:my-2 nav-link hight-light'
+                : 'mx-5 my-4 lg:my-2 nav-link'
+            }
             rel='nofollow'
             to='contact'
             onClick={() => handleLinkClick('CONTACT')}
@@ -135,30 +127,23 @@ function Nav() {
             className='custom-select-language'
             onClick={handleShowTabLanguage}
           >
-            <LazyLoad
-              className='mx-5 my-4 lg:my-2 h-full cursor-pointer'
-              {...lazyLoadOptions}
-            >
-              <img
-                className='w-12 h-8 rounded'
-                src={`${selectedLanguage === 'en' ? flagUs : flagVn}`}
-                alt={`${selectedLanguage === '' ? 'flagVn' : 'flagUs'}`}
-              />
-            </LazyLoad>
+            <img
+              className='w-12 h-8 rounded mx-5 my-4 lg:my-2 cursor-pointer'
+              src={`${selectedLanguage === 'en' ? flagUs : flagVn}`}
+              alt={`${selectedLanguage === '' ? 'flagVn' : 'flagUs'}`}
+            />
             {tabLanguage && (
-              <ul className='w-52 options-language  px-6 py-2'>
+              <ul className='w-52 options-language px-6 py-2'>
                 <li
                   className='flex items-center py-2 border-b border-gray cursor-pointer'
                   onClick={() => handleSelectChangeLanguage('en')}
                 >
                   <h3 className='w-2/3'>{t('en')}</h3>
-                  <LazyLoad className='w-1/3' {...lazyLoadOptions}>
-                    <img
-                      className='w-12 h-8 rounded ml-auto'
-                      src={flagUs}
-                      alt='flagUs'
-                    />
-                  </LazyLoad>
+                  <img
+                    className='w-12 h-8 rounded ml-auto'
+                    src={flagUs}
+                    alt='flagUs'
+                  />
                 </li>
                 <li
                   className='flex items-center py-2 cursor-pointer'

@@ -18,8 +18,14 @@ function SectionAbout() {
           <p className='sm:w-1/2 xl:w-1/3 my-4 py-3 px-4 text-center text-base border border-boldBlue text-blue rounded-2xl'>
             {t('about.contact-more')}
           </p>
-          <p className='my-2'>0869 061 186</p>
-          <p className='my-2'>v2secure.vn</p>
+          <p className='my-2'>0982720920 - Mr. Dũng</p>
+          <a
+            href='https://imc.org.vn/'
+            target='_blank'
+            className='my-2 hover:text-boldBlue'
+          >
+            imc.org.vn
+          </a>
           <p className='my-2'>{t('about.district')}</p>
         </div>
       </div>

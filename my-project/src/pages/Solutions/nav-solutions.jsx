@@ -26,8 +26,8 @@ function NavSolutions() {
           X
         </button>
         <NavLink
-          className={
-            selectedLink === 'FAGONET-SIEM'
+          className={({ isActive }) =>
+            isActive
               ? 'mx-5 my-4 lg:my-2 nav-link hight-light'
               : 'mx-5 my-4 lg:my-2 nav-link '
           }
@@ -38,8 +38,8 @@ function NavSolutions() {
           FAGONET-SIEM
         </NavLink>
         <NavLink
-          className={
-            selectedLink === 'FAGONET-WAF'
+          className={({ isActive }) =>
+            isActive
               ? 'mx-5 my-4 lg:my-2 nav-link hight-light'
               : 'mx-5 my-4 lg:my-2 nav-link '
           }
@@ -50,8 +50,8 @@ function NavSolutions() {
           FAGONET-WAF
         </NavLink>
         <NavLink
-          className={
-            selectedLink === 'FAGONET-NIPS'
+          className={({ isActive }) =>
+            isActive
               ? 'mx-5 my-4 lg:my-2 nav-link hight-light'
               : 'mx-5 my-4 lg:my-2 nav-link '
           }
@@ -62,8 +62,8 @@ function NavSolutions() {
           FAGONET-NIPS
         </NavLink>
         <NavLink
-          className={
-            selectedLink === 'FAGONET-EDR'
+          className={({ isActive }) =>
+            isActive
               ? 'mx-5 my-4 lg:my-2 nav-link hight-light'
               : 'mx-5 my-4 lg:my-2 nav-link '
           }
@@ -74,8 +74,8 @@ function NavSolutions() {
           FAGONET-EDR
         </NavLink>
         <NavLink
-          className={
-            selectedLink === 'FAGONET-NAC'
+          className={({ isActive }) =>
+            isActive
               ? 'mx-5 my-4 lg:my-2 nav-link hight-light'
               : 'mx-5 my-4 lg:my-2 nav-link '
           }

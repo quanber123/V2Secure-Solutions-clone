@@ -12,9 +12,6 @@ function Main() {
       <LazyLoad offset={0} once>
         <OurSolutions />
       </LazyLoad>
-      {/* <LazyLoad offset={0} once>
-        <Gallery />
-      </LazyLoad> */}
     </main>
   );
 }

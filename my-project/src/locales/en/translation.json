@@ -5,6 +5,8 @@
   "SERVICES": "SERVICES",
   "CONTACT": "CONTACT",
   "started": "Get started",
+  "view-more": "view more",
+  "our-services": "Our Services",
   "our-services1": "Our",
   "our-services2": "Services",
   "our-solutions1": "Our",
@@ -272,7 +274,7 @@
     "title2": "FAGONET",
     "contact": "Contact",
     "contact-more": "CONTACT US - AVAILABLE 24X7",
-    "district": "No. 3, lane 281/75/15 Truong Dinh, Tuong Mai, Hoang Mai District, Hanoi City, Vietnam",
+    "district": "IMC Tower, No. 176 Truong Chinh, Khuong Thuong Ward, Dong Da District, City. Hanoi Vietnam",
     "qr": "SCAN FOR",
     "details": "MORE DETAILS"
   },
@@ -287,5 +289,55 @@
   },
   "progress": "PROGRESS",
   "progress2": "IS COMING SOON",
-  "progress-content": "It's almost ready...honest"
+  "progress-content": "It's almost ready...honest",
+  "services-page": {
+    "step1": "Step 1",
+    "step2": "Step 2",
+    "step3": "Step 3",
+    "step4": "Step 4",
+    "step5": "Step 5",
+    "step-content1": "DevSecOps implementation consulting",
+    "step-content2": "Source code information security assessment",
+    "step-content3": "Safe programming training",
+    "step-content4": "DInformation security risk assessment (Threat Modeling)",
+    "step-content5": "Information security advisor",
+    "title": "Competitive advantages",
+    "endWord": "We are committed to providing services with a comprehensive implementation process, ensuring compliance with clients’ information security policies and procedures.",
+    "endTitle": "Implementation process",
+    "intro1": "Managed Security Service",
+    "firstWord1": "Support monitoring and responding to cyber security incidents 24/7 for organizations and enterprises",
+    "desc1": "We provide information security service with flexible options according to customer’s needs and current situations",
+    "content1": {
+      "list1": "24/7 online monitoring of all information security issues on clients’ IT systems",
+      "list2": "Detect information security incidents and conduct emergency response and troubleshooting according to a closed process",
+      "list3": "Detecting attacks on the system and supporting incident response coordination activities",
+      "list4": "Support to handle complex problems, APT attacks, DDoS attacks"
+    },
+    "intro2": "Threat Hunting",
+    "firstWord2": "Ensure that the enterprise system is secured and prevented from all cyber attacks. Threat hunting can search, detect and remove malicious software as well as network security threats latent in the corporate network",
+    "desc2": "We provide service with outstanding quality",
+    "content2": {
+      "list1": "In-house development tools.",
+      "list2": "Top ranking experts (in Microsoft, Google, Facebook Security Researcher Ranking)",
+      "list3": "Flexible with Customers’ procedures, regulations, standards"
+    },
+    "intro3": "Pentest and Audit",
+    "firstWord3": "Implement penetration testing and audit for the entire network system and applications comprehensively. The service is executed from all phases of design, implementation, testing and operation of the organization system. The used methods are chosen by the clients.",
+    "desc3": "We provide information security service with flexible options according to customer’s needs and current situations",
+    "content3": {
+      "list1": "24/7 online monitoring of all information security issues on clients’ IT systems",
+      "list2": "Detect information security incidents and conduct emergency response and troubleshooting according to a closed process",
+      "list3": "Detecting attacks on the system and supporting incident response coordination activities",
+      "list4": "Support to handle complex problems, APT attacks, DDoS attacks"
+    },
+    "intro4": "Application Security",
+    "firstWord4": "Application Security service aims to complete the software development cycle of an organization in terms of models, tools, implementation methods and awareness of information security of programmers.",
+    "desc4": "Application Security service with flexible options according to customer needs and status.",
+    "content4": {
+      "list1": "Comprehensive application security services: DevSecOps implementation consulting, source code security assessment, information security risk assessment (Threat Modeling),…",
+      "list2": "Information Security Advisor: Support and fix information security errors during product development, provide information security standards to be applied to applications and systems.",
+      "list3": "Combining global security knowledge and specialized knowledge accumulated by Viettel in the process of security research and providing network security services for Viettel internal (over 11 countries) and customers.",
+      "list4": "Assessment of Protocols: Check IoT radio communication protocol weaknesses, application-layer protocol weaknesses MQTT, CoAPP, Socket, etc."
+    }
+  }
 }
