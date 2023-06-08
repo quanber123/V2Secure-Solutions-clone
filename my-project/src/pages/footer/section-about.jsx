@@ -1,6 +1,6 @@
 import React from 'react';
 import logo from '../../images/new-logo.png';
-import qr from '../../images/contact/scan-icon.9a8b224f402749907bca.png';
+import qr from '../../images/IMC.png';
 import LazyLoad from 'react-lazyload';
 import { useTranslation } from 'react-i18next';
 function SectionAbout() {
@@ -24,10 +24,10 @@ function SectionAbout() {
         </div>
       </div>
       <div className='w-1/2 m-auto lg:m-0 flex justify-center items-center'>
-        <LazyLoad className='lg:h-full' offset={0} once>
+        <LazyLoad className='w-1/2 md:w-1/4 m-auto' offset={0} once>
           <img className='Scale' src={qr} alt='qr' />
         </LazyLoad>
-        <div className='md:text-lg lg:text-xl font-bold md:p-2 m-2'>
+        <div className='w-1/2 md:text-lg lg:text-xl font-bold md:p-2 m-2'>
           <h3 className='text-blue'>{t('about.qr')}</h3>
           <h3>{t('about.details')}</h3>
         </div>
