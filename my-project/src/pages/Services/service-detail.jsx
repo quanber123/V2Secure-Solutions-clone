@@ -1,22 +1,22 @@
 import { useParams } from 'react-router-dom';
 import { useContext, useEffect, useState, useRef } from 'react';
-import secureImg from './data/images/secure1.png';
+import { useTranslation } from 'react-i18next';
 import { ServicesContext } from './hooks/services-context';
+import secureImg from './data/images/secure1.png';
 import LazyLoad from 'react-lazyload';
 import NavServices from './nav-services';
-import { useTranslation } from 'react-i18next';
 import carriedImg from '../../images/desktop.png';
-import carriedWhiteImg from '../../images/desktopWhite.png';
+import carriedColor from '../../images/desktopColor.png';
 import receivedImg from '../../images/received.png';
-import receivedWhiteImg from '../../images/receivedWhite.png';
+import receivedColorImg from '../../images/receivedColor.png';
 import processImg from '../../images/process.png';
-import processWhiteImg from '../../images/processWhite.png';
-import analysisImg from '../../images/data-analysis.png';
-import analysisWhiteImg from '../../images/data-analysisWhite.png';
-import threatImg from '../../images/threat.png';
-import threatWhiteImg from '../../images/threatWhite.png';
+import processColorImg from '../../images/processColor.png';
+import improveImg from '../../images/improvement.png';
+import improveColorImg from '../../images/improvementColor.png';
+import reviewImg from '../../images/review.png';
+import reviewColorImg from '../../images/reviewColor.png';
 import managementImg from '../../images/management.png';
-import managementWhiteImg from '../../images/managementWhite.png';
+import managementColor from '../../images/managementColor.png';
 function ServiceDetail() {
   const { t } = useTranslation();
   const { link } = useParams();
@@ -138,7 +138,7 @@ function ServiceDetail() {
               <img
                 className={`${step === 1 ? 'active' : ''} process-ic bg-white`}
                 onClick={() => setStep(1)}
-                src={step === 1 ? carriedWhiteImg : carriedImg}
+                src={step === 1 ? carriedColor : carriedImg}
                 alt='carried-img'
               />
             </LazyLoad>
@@ -148,7 +148,7 @@ function ServiceDetail() {
                   step === 2 ? 'active' : ''
                 }  process-ic bg-white `}
                 onClick={() => setStep(2)}
-                src={step === 2 ? receivedWhiteImg : receivedImg}
+                src={step === 2 ? receivedColorImg : receivedImg}
                 alt='received-img'
               />
             </LazyLoad>
@@ -156,7 +156,7 @@ function ServiceDetail() {
               <img
                 className={`${step === 3 ? 'active' : ''}  process-ic bg-white`}
                 onClick={() => setStep(3)}
-                src={step === 3 ? processWhiteImg : processImg}
+                src={step === 3 ? processColorImg : processImg}
                 alt='process-img'
               />
             </LazyLoad>
@@ -165,7 +165,7 @@ function ServiceDetail() {
                 className={`${step === 4 ? 'active' : ''} process-ic   
             bg-white`}
                 onClick={() => setStep(4)}
-                src={step === 4 ? analysisWhiteImg : analysisImg}
+                src={step === 4 ? improveColorImg : improveImg}
                 alt=''
               />
             </LazyLoad>
@@ -173,7 +173,7 @@ function ServiceDetail() {
               <img
                 className={`${step === 5 ? 'active' : ''} process-ic bg-white`}
                 onClick={() => setStep(5)}
-                src={step === 5 ? threatWhiteImg : threatImg}
+                src={step === 5 ? reviewColorImg : reviewImg}
                 alt='threat-img'
               />
             </LazyLoad>
@@ -181,7 +181,7 @@ function ServiceDetail() {
               <img
                 className={`${step === 6 ? 'active' : ''} process-ic bg-white`}
                 onClick={() => setStep(6)}
-                src={step === 6 ? managementWhiteImg : managementImg}
+                src={step === 6 ? managementColor : managementImg}
                 alt='management-img'
               />
             </LazyLoad>

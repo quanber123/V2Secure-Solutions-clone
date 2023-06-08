@@ -468,13 +468,14 @@ textarea {
 
 .process-ic {
   cursor: pointer;
+  padding: 8px;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
 }
 .process-ic > img {
-  border-radius: 50%;
+  /* border-radius: 50%; */
   object-fit: contain;
   background-size: contain;
 }
