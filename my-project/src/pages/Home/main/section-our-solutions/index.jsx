@@ -43,32 +43,34 @@ function OurSolutions() {
     window.scroll(0, 0);
   };
   return (
-    <section className='container m-auto text-center md:pb-32 Up'>
+    <section className='text-center md:pb-32 Up'>
       <h1 className='text-center text-2xl md:text-4xl xl:text-6xl font-bold my-12'>
         {t('our-solutions1')}{' '}
         <span className='text-blue'>{t('our-solutions2')}</span>
       </h1>
-      <div className='flex sm:flex-wrap flex-col sm:flex-row justify-center items-stretch'>
+      <div className='flex sm:flex-wrap flex-col sm:flex-row justify-between items-stretch'>
         {dataEcosystem.map((solution, index) => {
           return (
             <article
               key={index}
-              className={`solutions p-4 sm:p-8 rounded-xl ${
+              className={`solutions p-4 xl:p-8 rounded-xl ${
                 hoverSolutions === index ? 'hoverSolutions' : ''
               }`}
               onMouseOver={() => setHoverSolutions(index)}
               onMouseOut={() => setHoverSolutions(null)}
             >
-              <LazyLoad offset={100} once>
+              <LazyLoad className='h-1/3' offset={100} once>
                 <img
-                  className='w-1/3 m-auto Up'
+                  className='w-1/2 m-auto md:w-full h-full Up'
                   src={solution.urlImg}
                   alt={solution.url}
                 />
               </LazyLoad>
-              <h3 className='text-xl font-bold my-8'>{solution.content}</h3>
+              <h3 className='h-1/3 text-xl font-bold my-8'>
+                {solution.content}
+              </h3>
               <Link
-                className='flex justify-center items-center text-yellow'
+                className='h-1/3 flex justify-center items-center text-yellow'
                 to={{
                   pathname: `/solutions/${solution.url}`,
                 }}

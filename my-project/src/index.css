@@ -183,6 +183,10 @@ textarea {
   );
   margin: 32px;
   border: 2px solid #2d2b2b04;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 .services.hoverServices {
   background-color: #000913;
@@ -200,8 +204,16 @@ textarea {
     rgba(176, 176, 176, 0.2),
     rgba(103, 102, 102, 0.2)
   );
-  width: calc(100% / 3 - 64px);
-  margin: 32px;
+  width: calc(100% / 5 - 64px);
+  /* margin: 64px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.solutions > a > img {
+  background-size: contain;
+  object-fit: contain;
 }
 .solutions.hoverSolutions {
   background-color: #000913;
@@ -229,7 +241,7 @@ textarea {
   }
   .solutions {
     width: calc(50% - 32px);
-    margin: 16px auto;
+    margin: 16px;
   }
 }
 @media only screen and (max-width: 1368px) {
@@ -238,20 +250,9 @@ textarea {
     margin: 32px auto;
   }
   .solutions {
-    width: calc(50% - 64px);
-    margin: 32px auto;
+    width: calc(50% - 128px);
+    margin: 64px;
   }
-}
-.square {
-  width: 8px;
-  height: 8px;
-  background-color: '#183861';
-  color: '#183861';
-}
-.rotate-text {
-  transform: rotate(-180deg);
-  writing-mode: vertical-lr;
-  word-spacing: 8px;
 }
 .multi-task-content {
   width: calc(100% / 2 - 64px);
