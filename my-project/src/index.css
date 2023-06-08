@@ -205,7 +205,7 @@ textarea {
     rgba(103, 102, 102, 0.2)
   );
   width: calc(100% / 5 - 64px);
-  /* margin: 64px; */
+  margin: 32px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -237,17 +237,23 @@ textarea {
 @media only screen and (max-width: 768px) {
   .services {
     width: calc(50% - 32px);
-    margin: 16px auto;
+    margin: 16px;
   }
   .solutions {
     width: calc(50% - 32px);
     margin: 16px;
   }
 }
+@media only screen and (max-width: 976px) {
+  .solutions {
+    width: calc(50% - 64px);
+    margin: 32px;
+  }
+}
 @media only screen and (max-width: 1368px) {
   .services {
     width: calc(50% - 64px);
-    margin: 32px auto;
+    margin: 32px;
   }
   .solutions {
     width: calc(50% - 128px);
