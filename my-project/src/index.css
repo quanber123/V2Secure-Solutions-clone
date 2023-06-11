@@ -85,7 +85,7 @@ textarea {
   position: relative;
 }
 .options-language {
-  background-color: rgba(91, 91, 91, 0.2);
+  background-color: rgba(23, 23, 23, 0.8);
   position: absolute;
   top: 100%;
   left: -150%;
@@ -118,7 +118,7 @@ textarea {
 }
 .show-nav {
   position: fixed;
-  background-color: rgba(91, 91, 91, 0.2);
+  background-color: rgba(23, 23, 23, 0.8);
   color: #fff;
   top: 10%;
   right: 30px;
