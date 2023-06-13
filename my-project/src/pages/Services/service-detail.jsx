@@ -81,7 +81,7 @@ function ServiceDetail() {
   }
   const serviceDetail = dataServices.find((service) => service.link === link);
   return (
-    <section className={`${link}`} ref={serviceDetailRef}>
+    <section className={`${link} px-8 xl:px-0`} ref={serviceDetailRef}>
       <NavServices />
       <main className='container m-auto bg-lightGray p-8'>
         <div className='text-center py-8'>

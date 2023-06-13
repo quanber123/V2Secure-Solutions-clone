@@ -4,7 +4,7 @@ import NavSolutions from './nav-solutions';
 import LazyLoad from 'react-lazyload';
 function Solutions() {
   return (
-    <section>
+    <section className='px-8 xl:px-0'>
       <LazyLoad offset={0} once>
         <NavSolutions />
       </LazyLoad>

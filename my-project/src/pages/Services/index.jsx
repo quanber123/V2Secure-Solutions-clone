@@ -9,7 +9,7 @@ export default function Services() {
     window.scroll(0, 0);
   };
   return (
-    <section className='container m-auto py-8 Up'>
+    <section className='container m-auto px-8 xl:px-0 py-8 Up'>
       <h1 className='text-center text-2xl md:text-4xl text-blue font-bold'>
         {t('our-services')}
       </h1>
