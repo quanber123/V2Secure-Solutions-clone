@@ -48,7 +48,7 @@ function OurSolutions() {
         {t('our-solutions1')}{' '}
         <span className='text-blue'>{t('our-solutions2')}</span>
       </h1>
-      <div className='flex sm:flex-wrap flex-col sm:flex-row justify-between items-stretch'>
+      <div className='flex sm:flex-wrap flex-col sm:flex-row justify-between items-center md:items-stretch'>
         {dataEcosystem.map((solution, index) => {
           return (
             <article

@@ -1,8 +1,10 @@
 import React from 'react';
 import { useCallback } from 'react';
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { NavLink } from 'react-router-dom';
 function NavSolutions() {
+  const { t } = useTranslation();
   const [selectedLink, setSelectedLink] = useState('FAGONET-SIEM');
   const [showNav, setShowNav] = useState(false);
   const handleLinkClick = useCallback(
@@ -90,7 +92,7 @@ function NavSolutions() {
         className='btn-nav-solutions mx-auto my-14 w-1/3 flex justify-center items-center text-xl lg:hidden'
         onClick={() => setShowNav((prevShow) => !prevShow)}
       >
-        {selectedLink}
+        {t('SOLUTIONS')}
       </button>
     </section>
   );

@@ -36,6 +36,7 @@ footer {
 }
 * {
   transition: all 0.3s linear;
+  box-sizing: border-box;
 }
 
 input,
@@ -210,6 +211,7 @@ textarea {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  overflow: hidden;
 }
 .solutions > a > img {
   background-size: contain;
