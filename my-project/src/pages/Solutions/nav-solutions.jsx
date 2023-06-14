@@ -17,7 +17,7 @@ function NavSolutions() {
   return (
     <section className='Scale'>
       <nav
-        className={`nav-solutions container xl:w-1/2 mx-auto my-8 lg:text-lg text-2xl font-bold justify-between items-center Right ${
+        className={`nav-solutions container xl:w-1/3 mx-auto my-8 lg:text-lg text-2xl font-bold justify-between items-center Right ${
           showNav ? 'show-nav-solutions' : 'hidden lg:flex'
         }`}
       >
@@ -37,7 +37,7 @@ function NavSolutions() {
           to='siem'
           onClick={() => handleLinkClick('FAGONET-SIEM')}
         >
-          FAGONET-SIEM
+          SIEM
         </NavLink>
         <NavLink
           className={({ isActive }) =>
@@ -49,7 +49,7 @@ function NavSolutions() {
           to='waf'
           onClick={() => handleLinkClick('FAGONET-WAF')}
         >
-          FAGONET-WAF
+          WAF
         </NavLink>
         <NavLink
           className={({ isActive }) =>
@@ -61,7 +61,7 @@ function NavSolutions() {
           to='nips'
           onClick={() => handleLinkClick('FAGONET-NIPS')}
         >
-          FAGONET-NIPS
+          NIPS
         </NavLink>
         <NavLink
           className={({ isActive }) =>
@@ -73,7 +73,7 @@ function NavSolutions() {
           to='edr'
           onClick={() => handleLinkClick('FAGONET-EDR')}
         >
-          FAGONET-EDR
+          EDR
         </NavLink>
         <NavLink
           className={({ isActive }) =>
@@ -85,11 +85,35 @@ function NavSolutions() {
           to='nac'
           onClick={() => handleLinkClick('FAGONET-NAC')}
         >
-          FAGONET-NAC
+          NAC
+        </NavLink>
+        <NavLink
+          className={({ isActive }) =>
+            isActive
+              ? 'mx-5 my-4 lg:my-2 nav-link hight-light'
+              : 'mx-5 my-4 lg:my-2 nav-link '
+          }
+          rel='nofollow'
+          to='nids'
+          onClick={() => handleLinkClick('FAGONET-NIDS')}
+        >
+          NIDS
+        </NavLink>
+        <NavLink
+          className={({ isActive }) =>
+            isActive
+              ? 'mx-5 my-4 lg:my-2 nav-link hight-light'
+              : 'mx-5 my-4 lg:my-2 nav-link '
+          }
+          rel='nofollow'
+          to='dips'
+          onClick={() => handleLinkClick('FAGONET-DIPS')}
+        >
+          DIPS
         </NavLink>
       </nav>
       <button
-        className='btn-nav-solutions mx-auto my-14 w-1/3 flex justify-center items-center text-xl lg:hidden'
+        className='btn-nav-solutions mx-auto my-14 w-1/3 flex justify-center items-center text-xl text-blue font-bold lg:hidden'
         onClick={() => setShowNav((prevShow) => !prevShow)}
       >
         {t('SOLUTIONS')}
