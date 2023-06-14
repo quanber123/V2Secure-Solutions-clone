@@ -38,6 +38,16 @@ function OurSolutions() {
       urlImg: nacLogo,
       content: t('ecosystem.nac'),
     },
+    {
+      url: 'nids',
+      urlImg: nacLogo,
+      content: t('ecosystem.nids'),
+    },
+    {
+      url: 'dips',
+      urlImg: nacLogo,
+      content: t('ecosystem.dips'),
+    },
   ];
   const handleClick = () => {
     window.scroll(0, 0);

@@ -205,7 +205,7 @@ textarea {
     rgba(176, 176, 176, 0.2),
     rgba(103, 102, 102, 0.2)
   );
-  width: calc(100% / 5 - 64px);
+  width: calc(100% / 4 - 64px);
   margin: 32px;
   display: flex;
   flex-direction: column;

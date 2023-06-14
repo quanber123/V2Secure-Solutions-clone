@@ -30,7 +30,9 @@
     "waf": "Hệ thống tường lửa ứng dụng web FAGONET-WAF",
     "nips": "Hệ thống phòng - chống tấn công mạng thế hệ mới FAGONET-NIPS",
     "edr": "Giải pháp phát hiện và phản ứng sự cố an toàn thông tin trên thiết bị đầu cuối FAGONET-EDR",
-    "nac": "Hệ thống kiểm soát truy cập mạng FAGONET-NAC"
+    "nac": "Hệ thống kiểm soát truy cập mạng FAGONET-NAC",
+    "nids": "Hệ thống phát hiện xâm nhập mạng",
+    "dips": "Phân tích chi tiết các gói tin dữ liệu đi qua mạng"
   },
   "SIEM": {
     "title": "HỆ THỐNG QUẢN LÝ GIÁM SÁT AN TOÀN THÔNG TIN TẬP TRUNG",

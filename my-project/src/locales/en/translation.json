@@ -30,7 +30,9 @@
     "waf": "Web Application Firewall FAGONET-WAF",
     "nips": "Network Intrusion Prevention System FAGONET-NIPS",
     "edr": "Endpoint Detection and Response FAGONET-EDR",
-    "nac": "Network Access Control FAGONET-NAC"
+    "nac": "Network Access Control FAGONET-NAC",
+    "nids": "Network Intrusion Detection System",
+    "dips": "Detailed Analysis Of Data Packets Passing Through The Network"
   },
   "SIEM": {
     "title": "CENTRALIZED INFORMATION SECURITY MONITORING MANAGEMENT SYSTEM",
@@ -265,7 +267,7 @@
     "content24": "INTEGRATED SIEM CENTRALIZED MONITORING SYSTEM."
   },
   "NIDS": {
-    "title": "DETAILED ANALYSIS OF DATA PACKETS PASSING THROUGH THE NETWORK",
+    "title": "NETWORK INTRUSION DETECTION SYSTEM",
     "title1": "INTRUSION DETECTION",
     "title2": "ALERTS AND NOTIFICATIONS",
     "title3": "DETAILED LOGGING",
