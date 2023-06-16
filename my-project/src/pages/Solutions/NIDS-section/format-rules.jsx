@@ -1,4 +1,3 @@
-import React from 'react';
 import { useTranslation } from 'react-i18next';
 
 function FormatRules() {
@@ -27,7 +26,7 @@ function FormatRules() {
   });
   return (
     <div className='px-18 xl:px-32 Right'>
-      <h3 className='my-8 text-4xl text-center text-blue font-bold'>
+      <h3 className='my-8 text-center text-blue font-bold'>
         {t('NIDS.title5')}
       </h3>
       <ul>{contentFormatRules}</ul>

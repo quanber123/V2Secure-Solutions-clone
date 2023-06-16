@@ -1,4 +1,3 @@
-import React from 'react';
 import { useCallback } from 'react';
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
@@ -17,7 +16,7 @@ function NavSolutions() {
   return (
     <section className='Scale'>
       <nav
-        className={`nav-solutions container xl:w-1/3 mx-auto my-8 lg:text-lg text-2xl font-bold justify-between items-center Right ${
+        className={`nav-solutions container xl:w-1/3 mx-auto my-8 font-bold justify-between items-center Right ${
           showNav ? 'show-nav-solutions' : 'hidden lg:flex'
         }`}
       >
@@ -106,14 +105,14 @@ function NavSolutions() {
               : 'mx-5 my-4 lg:my-2 nav-link '
           }
           rel='nofollow'
-          to='dips'
-          onClick={() => handleLinkClick('FAGONET-DIPS')}
+          to='dip'
+          onClick={() => handleLinkClick('FAGONET-DIP')}
         >
-          DIPS
+          DIP
         </NavLink>
       </nav>
       <button
-        className='btn-nav-solutions mx-auto my-14 w-1/3 flex justify-center items-center text-xl text-blue font-bold lg:hidden'
+        className='btn-nav-solutions mx-auto my-14 w-1/3 flex justify-center items-center text-blue font-bold lg:hidden'
         onClick={() => setShowNav((prevShow) => !prevShow)}
       >
         {t('SOLUTIONS')}

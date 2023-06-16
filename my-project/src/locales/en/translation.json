@@ -6,11 +6,8 @@
   "CONTACT": "CONTACT",
   "started": "Get started",
   "view-more": "view more",
-  "our-services": "Our Services",
-  "our-services1": "Our",
-  "our-services2": "Services",
-  "our-solutions1": "Our",
-  "our-solutions2": "Solutions",
+  "our-services": "Services",
+  "our-solutions": "Solutions",
   "services": {
     "test": "Penetration Testing",
     "security": "Application Security",
@@ -22,7 +19,7 @@
   "errContent": "The page you are looking for might have been removed had its name changed or is temporarily unavailable.",
   "en": "English",
   "vi": "VietNam",
-  "ecosystem": {
+  "intro": {
     "title1": "Cybersecurity Ecosystem",
     "title2": "FAGONET",
     "title3": "FAGONET",
@@ -32,7 +29,7 @@
     "edr": "Endpoint Detection and Response FAGONET-EDR",
     "nac": "Network Access Control FAGONET-NAC",
     "nids": "Network Intrusion Detection System",
-    "dips": "Detailed Analysis Of Data Packets Passing Through The Network"
+    "dip": "Detailed Analysis Of Data Packets Passing Through The Network"
   },
   "SIEM": {
     "title": "CENTRALIZED INFORMATION SECURITY MONITORING MANAGEMENT SYSTEM",
@@ -302,7 +299,7 @@
     "content26": "Continuous monitoring: NIDS provides continuous monitoring of network traffic, ensuring that intrusion attempts or attacks are promptly detected. It operates in real-time, monitoring and analyzing network packets as they pass through the network.",
     "content27": "Alerting on suspicious activities: NIDS raises alerts when suspicious activities are detected, indicating a potential intrusion or attack. These alerts help in proactive response and mitigation of security incidents."
   },
-  "DIPS": {
+  "DIP": {
     "title": "DETAILED ANALYSIS OF DATA PACKETS PASSING THROUGH THE NETWORK",
     "title1": "RECEIVING PACKETS",
     "title2": "INPUT ANALYSIS",

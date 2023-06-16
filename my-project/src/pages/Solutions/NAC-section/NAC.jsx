@@ -1,4 +1,3 @@
-import React from 'react';
 import LazyLoad from 'react-lazyload';
 import Function1 from './1-function-1';
 import Function2 from './2-function-2';
@@ -20,7 +19,7 @@ function NAC() {
       {/* <h1 className='hidden lg:block w-44 m-auto my-4 md:my-0 py-2 px-4 text-blue text-center rounded-xl border border-lightGray Scale'>
         FAGONET-NAC
       </h1> */}
-      <h2 className='md:w-1/2 mx-auto md:py-8 text-lg md:text-2xl lg:text-4xl text-center font-bold Scale'>
+      <h2 className='md:w-1/2 mx-auto md:py-8 text-center font-bold Scale'>
         {t('NAC.title')}
       </h2>
       <LazyLoad {...lazyLoadOptions}>

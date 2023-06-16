@@ -1,4 +1,3 @@
-import React from 'react';
 import { useTranslation } from 'react-i18next';
 import LazyLoad from 'react-lazyload';
 import edrLogo from '../../../images/ecosystem/edr.png';
@@ -20,7 +19,7 @@ function NIDS() {
   };
   return (
     <section>
-      <h2 className='md:w-1/2 mx-auto md:py-8 text-lg md:text-2xl lg:text-4xl text-center font-bold Scale'>
+      <h2 className='md:w-1/2 mx-auto md:py-8 text-center font-bold Scale'>
         {t('NIDS.title')}
       </h2>
       <LazyLoad {...lazyLoadOptions}>

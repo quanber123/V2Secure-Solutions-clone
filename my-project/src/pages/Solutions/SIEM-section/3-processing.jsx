@@ -1,4 +1,3 @@
-import React from 'react';
 import { useTranslation } from 'react-i18next';
 
 function Processing() {
@@ -24,7 +23,7 @@ function Processing() {
   });
   return (
     <div className='lg:w-1/2 px-18 xl:px-32 Right'>
-      <h3 className='my-8 text-xl md:text-2xl lg:text-4xl text-center text-blue font-bold'>
+      <h3 className='my-8 text-center text-blue font-bold'>
         {t('SIEM.title3')}
       </h3>
       <div>

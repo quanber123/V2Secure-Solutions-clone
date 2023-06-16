@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import  { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
 function SectionContact() {
@@ -35,7 +35,7 @@ function SectionContact() {
   return (
     <section className='w-full h-1/2 pt-32 md:pt-48 lg:pt-96'>
       <div className='contact-form-home absolute lg:top-1/3 left-1/2 container m-auto py-12 flex flex-col justify-center border-2 border-darkGreen rounded-xl'>
-        <h1 className='xl:w-1/3 h-full mx-auto pb-8 lg:mb-14 text-center text-lg md:text-2xl lg:text-5xl font-bold'>
+        <h1 className='xl:w-1/3 h-full mx-auto pb-8 lg:mb-14 text-center font-bold'>
           {t('contact.content')}
         </h1>
         {stateForm && (

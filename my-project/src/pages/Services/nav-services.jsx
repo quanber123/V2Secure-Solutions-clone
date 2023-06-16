@@ -12,7 +12,7 @@ function NavServices() {
   return (
     <nav className='container mx-auto my-8 Up'>
       <button
-        className='px-4 py-3 text-xl text-boldBlue border border-blue rounded-md mb-4 '
+        className='px-4 py-3 text-boldBlue border border-blue rounded-md mb-4 '
         onClick={handleClickTab}
       >
         {t('SERVICES')}

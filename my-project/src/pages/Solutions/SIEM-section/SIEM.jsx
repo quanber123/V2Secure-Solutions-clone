@@ -1,4 +1,3 @@
-import React from 'react';
 import LazyLoad from 'react-lazyload';
 import { useTranslation } from 'react-i18next';
 import Collections from './1-collection-management';
@@ -22,7 +21,7 @@ function SIEM() {
   const { t } = useTranslation();
   return (
     <section>
-      <h2 className='md:w-1/2 mx-auto md:py-8 text-lg md:text-2xl lg:text-4xl text-center font-bold Scale'>
+      <h2 className='md:w-1/2 mx-auto md:py-8 text-center font-bold Scale'>
         {t('SIEM.title')}
       </h2>
       <LazyLoad {...lazyLoadOptions}>

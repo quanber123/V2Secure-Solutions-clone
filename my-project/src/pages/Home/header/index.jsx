@@ -1,6 +1,7 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import LazyLoad from 'react-lazyload';
+import thumbsupImg from '../../../assets/images/home/Thumbsup.png';
 import siem from '../../../images/ecosystem/siem.png';
 import waf from '../../../images/ecosystem/waf.png';
 import nips from '../../../images/ecosystem/nips.png';
@@ -12,37 +13,37 @@ function Header() {
     offset: 100,
     once: true,
   };
-  const dataEcosystem = [
+  const dataIntro = [
     {
       url: siem,
-      content: 'ecosystem.siem',
+      content: 'intro.siem',
     },
     {
       url: waf,
-      content: 'ecosystem.waf',
+      content: 'intro.waf',
     },
     {
       url: nips,
-      content: 'ecosystem.nips',
+      content: 'intro.nips',
     },
     {
       url: edr,
-      content: 'ecosystem.edr',
+      content: 'intro.edr',
     },
     {
       url: nac,
-      content: 'ecosystem.nac',
+      content: 'intro.nac',
     },
   ];
 
-  const [ecosystems, setEcosystems] = useState([]);
+  const [intros, setIntros] = useState([]);
 
   useEffect(() => {
-    const updatedEcosystems = dataEcosystem.map((item) => ({
+    const updatedIntros = dataIntro.map((item) => ({
       url: item.url,
       content: t(item.content),
     }));
-    setEcosystems(updatedEcosystems);
+    setIntros(updatedIntros);
   }, [t]);
   const handleScroll = () => {
     const element = document.getElementById('our-services');
@@ -54,30 +55,38 @@ function Header() {
     }
   };
   return (
-    <header>
-      <div className='h-2/3 flex flex-col items-center justify-around my-14 md:my-44'>
-        <div className='m-auto flex flex-col justify-center items-center text-center Scale'>
-          <h1 className='text-2xl md:text-4xl xl:text-6xl'>
-            {t('ecosystem.title1')}
+    <header className='container m-auto Scale'>
+      <div className='flex justify-between items-center'>
+        <div className='w-1/2'>
+          <h1 className='text-[80px] text-[#F5F5F5] font-bold leading-[93px]'>
+            {t('intro.title1')}
           </h1>
-          <h3 className='text-2xl md:text-4xl xl:text-6xl my-8 lg:my-14'>
-            {t('ecosystem.title3')}
+          <h3 className='my-4 text-[80px] text-[#F5F5F5] font-bold leading-[93px]'>
+            {t('intro.title3')}
           </h3>
+          <p className='my-8 w-4/5 text-gray leading-[19px]'>
+            Fagonet is a cybersecurity company that provides cyber risk
+            management and services on behalf of our valued technology and
+            distribution partners.
+          </p>
           <button
-            className='px-2 py-2 md:px-4 rounded-3xl text-lg font-bold border-2 border-darkBlue bg-boldBlue hover:bg-darkGreen hover:text-blue'
-            style={{
-              backgroundImage: `url(
-                'https://cyberciti.1onestrong.com/wp-content/uploads/2023/05/asset-06.png'
-              )`,
-            }}
+            className='mt-12 w-[241px] h-[61px] bg-[#80CED7] text-boldBlue font-bold rounded-[30px]'
+            style={{ boxShadow: '0px 8px 24px rgba(204, 219, 220, 0.28)' }}
             onClick={handleScroll}
           >
             {t('started')}
           </button>
         </div>
+        <div className='w-1/2'>
+          <img
+            className='m-auto w-4/5'
+            src={thumbsupImg}
+            alt='intro-img-home'
+          />
+        </div>
       </div>
-      <div className='w-3/4 h-1/3 mx-auto mt-12 mb-4 hidden sm:flex flex-wrap justify-between items-center Up'>
-        {ecosystems.map((ecosystem, index) => (
+      {/* <div className='w-3/4 h-1/3 mx-auto mt-12 mb-4 hidden sm:flex flex-wrap justify-between items-center Up'>
+        {intros.map((intro, index) => (
           <article
             key={index}
             className='flex flex-col justify-between items-between gallery-title-header text-gray hover:text-white opacity-80 hover:opacity-100'
@@ -87,16 +96,12 @@ function Header() {
               key={index}
               {...lazyLoadOptions}
             >
-              <img
-                className='h-full Up'
-                src={ecosystem.url}
-                alt={ecosystem.content}
-              />
+              <img className='h-full Up' src={intro.url} alt={intro.content} />
             </LazyLoad>
-            <h3 className='h-20 text-center'>{ecosystem.content}</h3>
+            <h3 className='h-20 text-center'>{intro.content}</h3>
           </article>
         ))}
-      </div>
+      </div> */}
     </header>
   );
 }

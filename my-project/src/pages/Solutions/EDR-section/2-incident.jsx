@@ -1,4 +1,3 @@
-import React from 'react';
 import LazyLoad from 'react-lazyload';
 import incidentImg from '../../../images/solutions/v2-edr-2.ee17e416a2b05aad6ef4.png';
 import { useTranslation } from 'react-i18next';
@@ -32,7 +31,7 @@ function Incident() {
   return (
     <div className='container m-auto flex flex-col xl:flex-row Left'>
       <div className='xl:w-1/2 flex flex-col justify-between items-center'>
-        <h3 className='w-4/5 m-auto text-center text-xl md:text-2xl lg:text-4xl text-blue font-bold'>
+        <h3 className='w-4/5 m-auto text-center md:text-2xl lg:text-4xl text-blue font-bold'>
           {t('EDR.title2')}
         </h3>
         <LazyLoad className='w-4/5 m-auto my-4' {...lazyLoadOptions}>
@@ -43,7 +42,7 @@ function Incident() {
           />
         </LazyLoad>
       </div>
-      <ul className='xl:w-1/2 md:text-lg'>{contentIncident}</ul>
+      <ul className='xl:w-1/2'>{contentIncident}</ul>
     </div>
   );
 }

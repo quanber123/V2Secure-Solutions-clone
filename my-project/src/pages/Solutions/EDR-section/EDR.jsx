@@ -1,4 +1,3 @@
-import React from 'react';
 import MultiTask from './1-multi-task';
 import Incident from './2-incident';
 import System from './3-system';
@@ -22,7 +21,7 @@ function EDR() {
       {/* <h1 className='hidden lg:block w-44 m-auto my-4 md:my-0 py-2 px-4 text-blue text-center rounded-xl border border-lightGray Scale'>
         FAGONET-NIPS
       </h1> */}
-      <h2 className='md:w-1/2 mx-auto md:py-8 text-lg md:text-2xl lg:text-4xl text-center font-bold Scale'>
+      <h2 className='md:w-1/2 mx-auto md:py-8 text-center font-bold Scale'>
         {t('EDR.title')}
       </h2>
       <LazyLoad {...lazyLoadOptions}>

@@ -1,4 +1,3 @@
-import React from 'react';
 import { useTranslation } from 'react-i18next';
 function IncidentAnalysis() {
   const { t } = useTranslation();
@@ -29,7 +28,7 @@ function IncidentAnalysis() {
           'linear-gradient(150deg,rgba(176, 176, 176, 0.2),rgba(103, 102, 102, 0.2))',
       }}
     >
-      <h3 className='text-xl md:text-2xl lg:text-4xl text-center text-blue font-bold mb-8'>
+      <h3 className='text-center text-blue font-bold mb-8'>
         {t('WAF.title6')}
       </h3>
       <ul>{contentIncidentAnalysis}</ul>

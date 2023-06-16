@@ -1,4 +1,3 @@
-import React from 'react';
 import LazyLoad from 'react-lazyload';
 import img1 from '../../../images/gallery/header-1.e29951c6bf7cdf15c303.png';
 import img2 from '../../../images/gallery/header-2.15fda7c06337e76eaeb0.png';
@@ -13,7 +12,7 @@ function Gallery() {
   };
   return (
     <section className='container m-auto rounded-2xl Up'>
-      <h1 className='text-2xl md:text-4xl xl:text-6xl text-center text-blue font-bold my-12'>
+      <h1 className='text-center text-blue font-bold my-12'>
         {t('gallery')}
       </h1>
       <div className='flex-col lg:flex-row flex flex-wrap items-center p-8'>

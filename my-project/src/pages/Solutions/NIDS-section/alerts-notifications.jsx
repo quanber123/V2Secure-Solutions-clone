@@ -1,4 +1,3 @@
-import React from 'react';
 import LazyLoad from 'react-lazyload';
 import logImg from '../../../images/information/v2-siem-1.34657cc7dee593f2419b.png';
 import { useTranslation } from 'react-i18next';
@@ -35,7 +34,7 @@ function AlertsNotifications() {
   return (
     <section className='container h-full mx-auto mt-32 flex flex-col lg:flex-row-reverse items-stretch justify-between Up'>
       <div className='lg:w-1/2'>
-        <h3 className='my-8 lg:my-0 text-lg md:text-2xl lg:text-4xl text-center lg:text-end text-blue font-bold'>
+        <h3 className='my-8 lg:my-0 text-center lg:text-end text-blue font-bold'>
           {t('NIDS.title2')}
         </h3>
         <LazyLoad offset={100} once>
