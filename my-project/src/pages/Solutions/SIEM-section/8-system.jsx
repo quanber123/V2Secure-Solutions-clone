@@ -1,4 +1,3 @@
-import React from 'react';
 import LazyLoad from 'react-lazyload';
 import systemImg from '../../../images/information/v2-siem-8.ba484ce56ada73f54a8b.png';
 import { useTranslation } from 'react-i18next';
@@ -43,7 +42,7 @@ function System() {
   });
   return (
     <div className='container m-auto Right'>
-      <h3 className='w-5/6 xl:w-4/5 m-auto py-12 text-xl md:text-2xl lg:text-4xl text-center text-blue font-bold border-t border-t-gray'>
+      <h3 className='w-5/6 xl:w-4/5 m-auto py-12 text-center text-blue font-bold border-t border-t-gray'>
         {t('SIEM.title8')}
       </h3>
       <div className='flex flex-col lg:flex-row py-12'>

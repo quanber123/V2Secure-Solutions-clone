@@ -25,16 +25,11 @@ html {
 body {
   background-color: transparent;
 }
-/* .web {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(250deg, #003252, #002a2a);
-} */
 footer {
   background-color: transparent;
 }
 * {
+  font-size: 16px;
   transition: all 0.3s linear;
   box-sizing: border-box;
 }
@@ -97,15 +92,12 @@ textarea {
 @keyframes Options {
   0% {
     height: 0;
-    opacity: 0;
   }
   50% {
     height: 55.25;
-    opacity: 0.1;
   }
   100% {
     height: 115px;
-    opacity: 1;
   }
 }
 @media only screen and (max-width: 976px) {
@@ -174,106 +166,6 @@ textarea {
   border-radius: 4px;
 }
 /* Main */
-.services {
-  cursor: pointer;
-  width: calc(100% / 4 - 64px);
-  background: linear-gradient(
-    150deg,
-    rgba(176, 176, 176, 0.2),
-    rgba(103, 102, 102, 0.2)
-  );
-  margin: 32px;
-  border: 2px solid #2d2b2b04;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-}
-.services.hoverServices {
-  background-color: #000913;
-  background-image: url('https://cyberciti.1onestrong.com/wp-content/uploads/2023/05/asset-06.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  border: 2px solid #00c4e7;
-  transform: translateY(-15px);
-}
-.solutions {
-  cursor: pointer;
-  background: linear-gradient(
-    150deg,
-    rgba(176, 176, 176, 0.2),
-    rgba(103, 102, 102, 0.2)
-  );
-  width: calc(100% / 4 - 64px);
-  margin: 32px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  overflow: hidden;
-}
-.solutions > a > img {
-  background-size: contain;
-  object-fit: contain;
-}
-.solutions.hoverSolutions {
-  background-color: #000913;
-  background-image: url('https://cyberciti.1onestrong.com/wp-content/uploads/2023/05/asset-06.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  border: 2px solid #00c4e7;
-  transform: translateY(-15px);
-}
-@media only screen and (max-width: 480px) {
-  .services {
-    width: 80% !important;
-    margin: unset;
-  }
-  .solutions {
-    width: 80% !important;
-    margin: unset;
-  }
-}
-@media only screen and (max-width: 768px) {
-  .services {
-    width: calc(50% - 32px);
-    margin: 16px;
-  }
-  .solutions {
-    width: calc(50% - 32px);
-    margin: 16px;
-  }
-}
-@media only screen and (max-width: 976px) {
-  .solutions {
-    width: calc(50% - 64px);
-    margin: 32px;
-  }
-}
-@media only screen and (max-width: 1368px) {
-  .services {
-    width: calc(50% - 64px);
-    margin: 32px;
-  }
-  .solutions {
-    width: calc(50% - 128px);
-    margin: 64px;
-  }
-}
-.multi-task-content {
-  width: calc(100% / 2 - 64px);
-  margin: 32px;
-  padding: 14px;
-}
-@media only screen and (max-width: 786px) {
-  .multi-task-content {
-    width: 80% !important;
-    margin: 32px auto;
-  }
-}
-
 .contact-form-home {
   background: linear-gradient(160deg, #002a2a, #002a2a, #003252);
   transform: translate(-50%, -50%);
@@ -310,15 +202,12 @@ textarea {
 @keyframes Scale {
   0% {
     scale: 0;
-    opacity: 0;
   }
   50% {
     scale: 0.5;
-    opacity: 0.2;
   }
   100% {
     scale: 1;
-    opacity: 1;
   }
 }
 .Sticky {
@@ -327,38 +216,30 @@ textarea {
 @keyframes Sticky {
   0% {
     transform: translateY(-50%);
-    opacity: 0;
   }
   50% {
     transform: translateY(-25%);
-    opacity: 0.5;
   }
   100% {
     transform: translateY(0);
-    opacity: 1;
   }
 }
 
 @keyframes Show {
   0% {
     height: 0;
-    opacity: 0;
   }
   25% {
     height: 32.25px;
-    opacity: 0;
   }
   50% {
     height: 64.5;
-    opacity: 0.1;
   }
   75% {
     height: 129px;
-    opacity: 0.3;
   }
   100% {
     height: 258px;
-    opacity: 1;
   }
 }
 .Right {
@@ -367,15 +248,12 @@ textarea {
 @keyframes Right {
   0% {
     transform: translateX(-50%);
-    opacity: 0;
   }
   50% {
     transform: translateX(-25%);
-    opacity: 0.4;
   }
   100% {
     transform: translateX(0%);
-    opacity: 1;
   }
 }
 .Left {
@@ -384,15 +262,12 @@ textarea {
 @keyframes Left {
   0% {
     transform: translateX(50%);
-    opacity: 0;
   }
   50% {
     transform: translateX(25%);
-    opacity: 0.4;
   }
   100% {
     transform: translateX(0%);
-    opacity: 1;
   }
 }
 .Up {
@@ -401,15 +276,12 @@ textarea {
 @keyframes Up {
   0% {
     transform: translateY(50%);
-    opacity: 0;
   }
   50% {
     transform: translateY(25%);
-    opacity: 0.4;
   }
   100% {
     transform: translateY(0%);
-    opacity: 1;
   }
 }
 .contact-form {
@@ -434,29 +306,23 @@ textarea {
 @keyframes downAlter {
   0% {
     height: 0;
-    opacity: 0;
   }
   50% {
     height: 43px;
-    opacity: 0.3;
   }
   100% {
     height: 86px;
-    opacity: 1;
   }
 }
 @keyframes hideAlter {
   0% {
     height: 86px;
-    opacity: 1;
   }
   50% {
     height: 43px;
-    opacity: 0.3;
   }
   100% {
     height: 0;
-    opacity: 0;
   }
 }
 
@@ -556,16 +422,13 @@ textarea {
 @keyframes show-nav-services {
   0% {
     height: 0;
-    opacity: 0;
   }
 
   50% {
     height: 87px;
-    opacity: 0.8;
   }
 
   100% {
     height: 174px;
-    opacity: 1;
   }
 }

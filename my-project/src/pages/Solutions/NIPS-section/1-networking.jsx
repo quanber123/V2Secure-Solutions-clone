@@ -1,4 +1,3 @@
-import React from 'react';
 import LazyLoad from 'react-lazyload';
 import nipsImg from '../../../images/generation/v2-nips-1-1.d331557c7ae8676e6b7e.png';
 import systemImg from '../../../images/generation/v2-nips-1-3.3a965cfbc9f043c3bedb.png';
@@ -85,12 +84,12 @@ function Networking() {
   return (
     <div className='pb-32 Up'>
       <div className='container m-auto flex flex-col  my-8 items-center'>
-        <h3 className='xl:w-1/2 text-center text-xl md:text-2xl lg:text-4xl text-blue font-bold'>
+        <h3 className='xl:w-1/2 text-center text-blue font-bold'>
           {t('NIPS.title1')}
         </h3>
         <LazyLoad className='w-1/3 m-auto' {...lazyLoadOptions}>
           <img
-            className='my-8  m-auto rounded-2xl Up'
+            className='my-8 m-auto rounded-2xl Up'
             src={nipsImg}
             alt='nips-img'
           />
@@ -104,7 +103,7 @@ function Networking() {
               'linear-gradient(150deg,rgba(176, 176, 176, 0.2),rgba(103, 102, 102, 0.2))',
           }}
         >
-          <h3 className='text-lg text-blue font-bold'>{t('NIPS.idea1')}</h3>
+          <h3 className='text-blue font-bold'>{t('NIPS.idea1')}</h3>
           <ul>{contentDetectionSignatures}</ul>
         </div>
         <div
@@ -114,7 +113,7 @@ function Networking() {
               'linear-gradient(150deg,rgba(176, 176, 176, 0.2),rgba(103, 102, 102, 0.2))',
           }}
         >
-          <h3 className='text-lg text-blue font-bold'>{t('NIPS.idea2')}</h3>
+          <h3 className='text-blue font-bold'>{t('NIPS.idea2')}</h3>
           <ul>{contentAnomalousActivity}</ul>
           <ul className='px-6 Scale'>
             <li className='py-2 border-b border-b-gray'>
@@ -149,7 +148,7 @@ function Networking() {
         </div>
       </div>
       <div className='container m-auto flex flex-col lg:flex-row items-center'>
-        <h3 className='lg:w-1/2 text-xl text-center text-blue font-bold'>
+        <h3 className='lg:w-1/2 text-center text-blue font-bold'>
           {t('NIPS.idea3')}
         </h3>
         <LazyLoad className='w-1/2 my-8 lg:my-0' {...lazyLoadOptions}>

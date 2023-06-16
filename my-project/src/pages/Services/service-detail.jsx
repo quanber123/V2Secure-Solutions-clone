@@ -85,10 +85,10 @@ function ServiceDetail() {
       <NavServices />
       <main className='container m-auto bg-lightGray p-8'>
         <div className='text-center py-8'>
-          <h3 className='text-2xl md:text-4xl text-blue font-bold'>
+          <h3 className='text-blue font-bold'>
             {serviceDetail.intro}
           </h3>
-          <p className='w-4/5 mx-auto my-8 text-lg md:text-xl'>
+          <p className='w-4/5 mx-auto my-8'>
             {serviceDetail.firstWord}
           </p>
           {/* <button className='px-4 py-3 md:px-12 md:py-3 rounded-3xl text-lg font-bold border-2 border-darkBlue bg-boldBlue hover:bg-darkGreen hover:text-blue'>
@@ -96,10 +96,10 @@ function ServiceDetail() {
           </button> */}
         </div>
         <div>
-          <h3 className='text-2xl md:text-4xl text-blue font-bold text-center'>
+          <h3 className='text-blue font-bold text-center'>
             {serviceDetail.title}
           </h3>
-          <p className='w-4/5 mx-auto my-4 text-center text-lg md:text-2xl'>
+          <p className='w-4/5 mx-auto my-4 text-center'>
             {serviceDetail.desc}
           </p>
           <div className='my-8 flex flex-col md:flex-row'>
@@ -123,16 +123,16 @@ function ServiceDetail() {
           </div>
         </div>
       </main>
-      <footer className=' text-white'>
+      <footer className='text-white'>
         <div className='text-center py-8'>
-          <h3 className='text-2xl md:text-4xl font-bold text-blue'>
+          <h3 className='font-bold text-blue'>
             {serviceDetail.endTitle}
           </h3>
-          <p className='w-4/5 mx-auto my-4 text-center text-lg md:text-2xl'>
+          <p className='w-4/5 mx-auto my-4 text-center'>
             {serviceDetail.endWord}
           </p>
         </div>
-        <div className='container m-auto w-4/5 text-xl xl:text-3xl py-8 text-black bg-lightGray'>
+        <div className='container m-auto w-4/5   py-8 text-black bg-lightGray'>
           <div className='flex justify-around p-8'>
             <LazyLoad className='xl:w-16 xl:h-16 w-8 h-8'>
               <img

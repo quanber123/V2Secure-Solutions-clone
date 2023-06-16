@@ -1,4 +1,3 @@
-import React from 'react';
 import LazyLoad from 'react-lazyload';
 import logImg from '../../../images/information/v2-siem-1.34657cc7dee593f2419b.png';
 import { useTranslation } from 'react-i18next';
@@ -55,7 +54,7 @@ function Collections() {
   return (
     <div className='container h-full mx-auto mt-32  flex flex-col lg:flex-row items-stretch justify-between Up'>
       <div className='lg:w-1/2'>
-        <h3 className='my-8 lg:my-0 text-lg md:text-2xl lg:text-4xl text-center lg:text-start text-blue font-bold'>
+        <h3 className='my-8 lg:my-0 text-center lg:text-start text-blue font-bold'>
           {t('SIEM.title1')}
         </h3>
         <LazyLoad offset={100} once>
@@ -73,9 +72,9 @@ function Collections() {
             'linear-gradient(150deg,rgba(176, 176, 176, 0.2),rgba(103, 102, 102, 0.2))',
         }}
       >
-        <h4 className='font-bold text-lg text-blue'>{t('SIEM.idea1')}</h4>
+        <h4 className='font-bold text-blue'>{t('SIEM.idea1')}</h4>
         <ul>{contentCollecting}</ul>
-        <h4 className='font-bold text-lg mt-4 text-blue'>{t('SIEM.idea2')}</h4>
+        <h4 className='font-bold mt-4 text-blue'>{t('SIEM.idea2')}</h4>
         <ul>{contentAutomatic}</ul>
       </div>
     </div>

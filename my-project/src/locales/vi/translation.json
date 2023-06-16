@@ -6,11 +6,8 @@
   "CONTACT": "LIÊN LẠC",
   "started": "Bắt đầu",
   "view-more": "Xem thêm",
-  "our-services": "Dịch vụ của chúng tôi",
-  "our-services1": "Dịch vụ",
-  "our-services2": "của Chúng tôi",
-  "our-solutions1": "Giải pháp",
-  "our-solutions2": "của Chúng tôi",
+  "our-services": "Dịch vụ",
+  "our-solutions": "Giải pháp",
   "services": {
     "test": "Kiểm tra thâm nhập",
     "security": "Bảo mật ứng dụng",
@@ -22,7 +19,7 @@
   "errContent": "Trang mà bạn đang tìm kiếm đã gỡ được đổi tên hoặc trang không khả dụng.",
   "en": "English",
   "vi": "Tiếng Việt",
-  "ecosystem": {
+  "intro": {
     "title1": "Giải pháp an toàn thông tin mạng",
     "title2": "FAGONET",
     "title3": "Công ty cổ phần an toàn thông tin Việt Nam FAGONET",
@@ -32,7 +29,7 @@
     "edr": "Giải pháp phát hiện và phản ứng sự cố an toàn thông tin trên thiết bị đầu cuối FAGONET-EDR",
     "nac": "Hệ thống kiểm soát truy cập mạng FAGONET-NAC",
     "nids": "Hệ thống phát hiện xâm nhập mạng",
-    "dips": "Phân tích chi tiết các gói tin dữ liệu đi qua mạng"
+    "dip": "Phân tích chi tiết các gói tin dữ liệu đi qua mạng"
   },
   "SIEM": {
     "title": "HỆ THỐNG QUẢN LÝ GIÁM SÁT AN TOÀN THÔNG TIN TẬP TRUNG",
@@ -300,7 +297,7 @@
     "content26": "Mã hóa dữ liệu quan trọng.",
     "content27": "Đảm bảo an toàn trong quản lý thiết bị mạng và hệ thống."
   },
-  "DIPS": {
+  "DIP": {
     "title": "PHÂN TÍCH CHI TIẾT CÁC GÓI TIN DỮ LIỆU ĐI QUA MẠNG",
     "title1": "NHẬN GÓI TIN",
     "title2": "PHÂN TÍCH ĐẦU VÀO",

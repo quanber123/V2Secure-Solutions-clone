@@ -1,4 +1,3 @@
-import React from 'react';
 import { useTranslation } from 'react-i18next';
 import LazyLoad from 'react-lazyload';
 import edrLogo from '../../../images/ecosystem/edr.png';
@@ -10,7 +9,7 @@ import InputAnalysis from './input-analysis';
 import DecodeAssemble from './decode-assemble';
 import ContentAnalysis from './content-analysis';
 import Response from './response';
-function DIPS() {
+function DIP() {
   const { t } = useTranslation();
   const fileName = 'Fortinet_Product_Matrix-part-5.pdf';
   const lazyLoadOptions = {
@@ -19,8 +18,8 @@ function DIPS() {
   };
   return (
     <section>
-      <h2 className='md:w-1/2 mx-auto md:py-8 text-lg md:text-2xl lg:text-4xl text-center font-bold Scale'>
-        {t('DIPS.title')}
+      <h2 className='md:w-1/2 mx-auto md:py-8 text-center font-bold Scale'>
+        {t('DIP.title')}
       </h2>
       <LazyLoad {...lazyLoadOptions}>
         <img
@@ -54,4 +53,4 @@ function DIPS() {
   );
 }
 
-export default DIPS;
+export default DIP;

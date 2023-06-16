@@ -1,4 +1,3 @@
-import React from 'react';
 import { useTranslation } from 'react-i18next';
 
 function System() {
@@ -33,7 +32,7 @@ function System() {
     return (
       <li key={index} className='flex border-b py-8 border-b-gray'>
         <p className='w-11/12'>{content.content}</p>
-        <div className='bg-yellow text-black text-xl text-center w-14 h-14 p-2 ml-auto rounded-md flex justify-center items-center'>
+        <div className='bg-yellow text-black text-center w-14 h-14 p-2 ml-auto rounded-md flex justify-center items-center'>
           0{index + 1}
         </div>
       </li>
@@ -41,7 +40,7 @@ function System() {
   });
   return (
     <div className='container m-auto Up'>
-      <h3 className='text-xl md:text-2xl lg:text-4xl text-center text-blue font-bold mb-8'>
+      <h3 className='text-center text-blue font-bold mb-8'>
         {t('WAF.title7')}
       </h3>
       <ul className='font-bold'>{contentSystems}</ul>

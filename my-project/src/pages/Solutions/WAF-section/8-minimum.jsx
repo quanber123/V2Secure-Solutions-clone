@@ -1,4 +1,3 @@
-import React from 'react';
 import LazyLoad from 'react-lazyload';
 import minimumImg from '../../../images/application/download.png';
 import { useTranslation } from 'react-i18next';
@@ -35,7 +34,7 @@ function Minimum() {
   return (
     <div className='container m-auto flex flex-col xl:flex-row justify-between Scale'>
       <div className='xl:w-1/2'>
-        <h3 className='text-xl md:text-2xl lg:text-4xl text-center text-blue font-bold mb-8'>
+        <h3 className='text-center text-blue font-bold mb-8'>
           {t('WAF.title8')}
         </h3>
         <LazyLoad

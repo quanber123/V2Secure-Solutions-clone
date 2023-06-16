@@ -1,4 +1,3 @@
-import React from 'react';
 import LazyLoad from 'react-lazyload';
 import Security from './3-security';
 import Description from './1-function-description';
@@ -26,7 +25,7 @@ function WAF() {
       {/* <h1 className='hidden lg:block w-44 m-auto my-4 md:my-0 py-2 px-4 text-blue text-center rounded-xl border border-lightGray Scale'>
         FAGONET-WAF
       </h1> */}
-      <h2 className='md:w-1/2 mx-auto md:py-8 text-lg md:text-2xl lg:text-4xl text-center font-bold Scale'>
+      <h2 className='md:w-1/2 mx-auto md:py-8 text-center font-bold Scale'>
         {t('WAF.title')}
       </h2>
       <LazyLoad {...lazyLoadOptions}>
@@ -39,13 +38,6 @@ function WAF() {
       <LazyLoad {...lazyLoadOptions}>
         <DownLoadDataSheet filePath={filePath} fileName={fileName} />
       </LazyLoad>
-      {/* <LazyLoad className='solutions-report-gallery' {...lazyLoadOptions}>
-        <img
-          className='w-full h-full m-auto Up'
-          src={wafReport}
-          alt='waf-report'
-        />
-      </LazyLoad> */}
       <LazyLoad className='' {...lazyLoadOptions}>
         <Description />
       </LazyLoad>

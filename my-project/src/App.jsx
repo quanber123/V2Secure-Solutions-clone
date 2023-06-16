@@ -12,7 +12,7 @@ const NIPS = lazy(() => import('./pages/Solutions/NIPS-section/NIPS'));
 const EDR = lazy(() => import('./pages/Solutions/EDR-section/EDR'));
 const NAC = lazy(() => import('./pages/Solutions/NAC-section/NAC'));
 const NIDS = lazy(() => import('./pages/Solutions/NIDS-section/NIDS'));
-const DIPS = lazy(() => import('./pages/Solutions/DIPS-section/DIPS'));
+const DIP = lazy(() => import('./pages/Solutions/DIP-section/DIP'));
 const Services = lazy(() => import('./pages/Services/index'));
 const ServiceDetail = lazy(() => import('./pages/Services/service-detail'));
 const Contact = lazy(() => import('./pages/Contact/index'));
@@ -31,7 +31,7 @@ function App() {
               <Route path='edr' element={<EDR />} />
               <Route path='nac' element={<NAC />} />
               <Route path='nids' element={<NIDS />} />
-              <Route path='dips' element={<DIPS />} />
+              <Route path='dip' element={<DIP />} />
             </Route>
             <Route path='services'>
               <Route index element={<Services />} />

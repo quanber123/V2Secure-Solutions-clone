@@ -1,4 +1,3 @@
-import React from 'react';
 import { useTranslation } from 'react-i18next';
 
 function System() {
@@ -11,7 +10,7 @@ function System() {
           'linear-gradient(150deg,rgba(176, 176, 176, 0.2),rgba(103, 102, 102, 0.2))',
       }}
     >
-      <h3 className='hidden lg:block text-xl md:text-2xl lg:text-4xl text-center text-blue font-bold mb-8'>
+      <h3 className='hidden lg:block text-center text-blue font-bold mb-8'>
         {t('NIPS.title3')}
       </h3>
       <div>
@@ -33,7 +32,7 @@ function System() {
             {t('NIPS.content27')}
           </li>
         </ul>
-        <p className='text-xl text-center text-blue font-bold my-8'>
+        <p className='text-center text-blue font-bold my-8'>
           {t('NIPS.content28')}
         </p>
         <ul>

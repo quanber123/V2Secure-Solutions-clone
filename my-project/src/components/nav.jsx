@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import i18n from '../i18n';
 import { useTranslation } from 'react-i18next';
@@ -71,7 +71,7 @@ function Nav() {
           </h1>
         </Link>
         <div
-          className={`flex flex-col lg:flex-row font-bold lg:text-lg justify-between lg:items-center ${
+          className={`flex flex-col lg:flex-row font-bold justify-between lg:items-center ${
             showNav ? 'show-nav' : 'hidden lg:flex'
           }`}
         >

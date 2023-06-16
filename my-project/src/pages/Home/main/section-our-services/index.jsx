@@ -1,5 +1,4 @@
-import React, { useContext } from 'react';
-import serviceImg from '../../../../images/secure.png';
+import { useContext } from 'react';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
@@ -13,37 +12,39 @@ function OurServices() {
     window.scroll(0, 0);
   };
   return (
-    <section className='container m-auto h-4/5 text-center pb-32 Up'>
-      <h1 className='text-2xl md:text-4xl xl:text-6xl font-bold my-12'>
-        {t('our-services1')}
-        <span className='text-blue'>{t('our-services2')}</span>
-      </h1>
-      <div className='flex sm:flex-wrap flex-col sm:flex-row justify-center items-stretch'>
+    <section className='container m-auto text-center Up'>
+      <h3 className='text-[64px] text-blue tracking-[0.2em] font-bold'>
+        {t('SERVICES')}
+      </h3>
+      <p className='my-4 text-[24px] text-white font-bold'>
+        With Quality services for you
+      </p>
+      <div className='home-services mt-12'>
         {dataServices.map((service, index) => {
           return (
             <article
               key={index}
-              className={`services p-4 sm:p-8 rounded-xl ${
+              className={`bg-boldBlue ${
                 hoverServices === index ? 'hoverServices' : ''
               }`}
               onMouseOver={() => setHoverServices(index)}
               onMouseOut={() => setHoverServices(null)}
             >
-              <LazyLoad offset={100} once>
-                <img
-                  className='w-1/3 m-auto Scale'
-                  src={serviceImg}
-                  alt='secureImg'
-                />
+              <LazyLoad className='w-[60px] h-[60px]' offset={100} once>
+                <img src={service.introImg} alt='secureImg' />
               </LazyLoad>
-              <h3 className='text-xl font-bold my-8'>{service.intro}</h3>
+              <h4 className='my-2 text-start text-[20px] font-bold'>
+                {service.intro}
+              </h4>
+              <p className='text-start'>
+                {t(`services-page.firstWord${index + 1}`)}
+              </p>
               <Link
-                className='flex justify-center items-center text-yellow'
+                className='py-2 text-end font-bold'
                 to={`/services/${service.link}`}
                 onClick={handleClick}
               >
-                <h4>{t('services.read-more')}</h4>
-                <i className='fa fa-long-arrow-up rotate-45 mx-2'></i>
+                {t('services.read-more')}
               </Link>
             </article>
           );

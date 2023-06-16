@@ -1,4 +1,3 @@
-import React from 'react';
 import LazyLoad from 'react-lazyload';
 import solutionImg from '../../../images/solutions/v2-edr-1.d84249ea80b417e86620.png';
 import { useTranslation } from 'react-i18next';
@@ -111,11 +110,11 @@ function MultiTask() {
   return (
     <div className='container mx-auto mt-32 Up'>
       <div className='relative'>
-        <h3 className='text-xl md:text-2xl lg:text-4xl text-center lg:text-start text-blue font-bold mb-8'>
+        <h3 className='text-center lg:text-start text-blue font-bold mb-8'>
           {t('EDR.title1')}
         </h3>
         <LazyLoad
-          className='hidden  absolute z-50 w-full h-full -top-42  md:-top-14 xl:-top-8 left-0 m-auto md:flex justify-center items-center'
+          className='hidden absolute z-50 w-full h-full -top-42  md:-top-14 xl:-top-8 left-0 m-auto md:flex justify-center items-center'
           {...lazyLoadOptions}
         >
           <img className='xl:h-5/6 Up' src={solutionImg} alt={solutionImg} />
@@ -128,7 +127,7 @@ function MultiTask() {
                 'linear-gradient(150deg,rgba(176, 176, 176, 0.2),rgba(103, 102, 102, 0.2))',
             }}
           >
-            <h4 className='w-5/6 m-auto text-xl text-center text-blue font-bold mb-8'>
+            <h4 className='w-5/6 m-auto text-center text-blue font-bold mb-8'>
               {t('EDR.idea1')}
             </h4>
             <ul>{contentTerminal}</ul>
@@ -140,7 +139,7 @@ function MultiTask() {
                 'linear-gradient(150deg,rgba(176, 176, 176, 0.2),rgba(103, 102, 102, 0.2))',
             }}
           >
-            <h4 className='w-5/6 m-auto text-xl text-center text-blue font-bold mb-8'>
+            <h4 className='w-5/6 m-auto text-center text-blue font-bold mb-8'>
               {t('EDR.idea2')}
             </h4>
             <ul>{contentBehavioral}</ul>
@@ -152,7 +151,7 @@ function MultiTask() {
                 'linear-gradient(150deg,rgba(176, 176, 176, 0.2),rgba(103, 102, 102, 0.2))',
             }}
           >
-            <h4 className='w-5/6 m-auto text-xl text-center text-blue font-bold mb-8'>
+            <h4 className='w-5/6 m-auto text-center text-blue font-bold mb-8'>
               {t('EDR.idea3')}
             </h4>
             <ul>{contentMalware}</ul>
@@ -164,14 +163,14 @@ function MultiTask() {
                 'linear-gradient(150deg,rgba(176, 176, 176, 0.2),rgba(103, 102, 102, 0.2))',
             }}
           >
-            <h4 className='w-5/6 m-auto text-xl text-center text-blue font-bold mb-8'>
+            <h4 className='w-5/6 m-auto text-center text-blue font-bold mb-8'>
               {t('EDR.idea4')}
             </h4>
             <ul>{contentInformation}</ul>
           </div>
         </div>
       </div>
-      <div className='text-lg'>
+      <div>
         <p>{t('EDR.content21')}</p>
       </div>
     </div>

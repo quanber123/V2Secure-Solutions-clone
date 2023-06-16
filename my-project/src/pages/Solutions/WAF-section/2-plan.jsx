@@ -1,4 +1,3 @@
-import React from 'react';
 import LazyLoad from 'react-lazyload';
 import planImg from '../../../images/application/v2-waf-2.9e1733d2be88b2a28b46.png';
 import { useTranslation } from 'react-i18next';
@@ -35,7 +34,7 @@ function Plan() {
             'linear-gradient(150deg,rgba(176, 176, 176, 0.2),rgba(103, 102, 102, 0.2))',
         }}
       >
-        <h3 className='text-4xl text-blue font-bold mb-8'>{t('WAF.title2')}</h3>
+        <h3 className='text-blue font-bold mb-8'>{t('WAF.title2')}</h3>
         <ul>{contentPlan}</ul>
       </div>
       <LazyLoad offset={100} once>

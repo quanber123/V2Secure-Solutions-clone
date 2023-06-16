@@ -1,4 +1,3 @@
-import React from 'react';
 import { useTranslation } from 'react-i18next';
 import LazyLoad from 'react-lazyload';
 import accessImg from '../../../images/access/v2-nac-1.46f479e902710bf3fbb5.png';
@@ -58,7 +57,7 @@ function Function1() {
   });
   return (
     <div className='container h-full mx-auto mt-32 flex flex-col justify-center items-center Up'>
-      <h3 className='text-xl md:text-2xl lg:text-4xl text-blue font-bold'>
+      <h3 className='text-blue font-bold'>
         {t('NAC.title1')}
       </h3>
       <ul

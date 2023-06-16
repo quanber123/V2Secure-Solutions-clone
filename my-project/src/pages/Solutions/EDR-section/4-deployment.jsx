@@ -1,4 +1,3 @@
-import React from 'react';
 import deploymentImg from '../../../images/solutions/v2-edr-4.ba484ce56ada73f54a8b.png';
 import LazyLoad from 'react-lazyload';
 import { useTranslation } from 'react-i18next';
@@ -41,7 +40,7 @@ function Deployment() {
   });
   return (
     <div className='container m-auto Left'>
-      <h3 className='w-4/5 m-auto py-12 text-xl md:text-2xl lg:text-4xl text-center text-blue font-bold border-t border-t-gray'>
+      <h3 className='w-4/5 m-auto py-12 text-center text-blue font-bold border-t border-t-gray'>
         {t('EDR.title4')}
       </h3>
       <div className='flex flex-col lg:flex-row py-12'>
