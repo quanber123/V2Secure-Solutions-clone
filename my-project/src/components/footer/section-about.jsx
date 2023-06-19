@@ -1,0 +1,103 @@
+import { useState } from 'react';
+import LazyLoad from 'react-lazyload';
+import logo from '../../assets/images/home/logo.png';
+import fbLogo from '../../assets/images/home/facebook.png';
+import insLogo from '../../assets/images/home/ins.png';
+import twLogo from '../../assets/images/home/tw.png';
+import { useTranslation } from 'react-i18next';
+function SectionAbout() {
+  const { t } = useTranslation();
+  const lazyLoadOptions = {
+    offset: 0,
+    once: true,
+  };
+  const [form, setForm] = useState([
+    {
+      email: '',
+    },
+  ]);
+  function handleForm(event) {
+    const { value } = event.target;
+    setForm((prevForm) => {
+      return { ...prevForm, email: value, id: new Date().getTime() };
+    });
+  }
+  return (
+    <section className='container m-auto py-[60px] flex justify-between items-stretch'>
+      <div className='w-1/4'>
+        <div className='flex items-center'>
+          <LazyLoad className='mr-2' {...lazyLoadOptions}>
+            <img className='w-full' src={logo} alt='fagonet-logo' />
+          </LazyLoad>
+          <h4 className='text-[26px] text-blue font-bold'>FAGONET</h4>
+        </div>
+        <p className='my-2'>
+          Fagonet is a cybersecurity company that provides cyber risk management
+          and services on behalf of our valued technology and distribution
+          partners.
+        </p>
+      </div>
+      <div className='w-1/5 flex flex-col justify-center items-center'>
+        <h5 className='h-1/4 text-[18px] font-bold'>Useful Links</h5>
+        <ul className='h-3/4'>
+          <li className='my-[4px]'>Home</li>
+          <li className='my-[4px]'>Services</li>
+          <li className='my-[4px]'>Solutions</li>
+          <li className='my-[4px]'>Contact us</li>
+        </ul>
+      </div>
+      <div className='w-1/4 flex flex-col justify-center home-contact-us'>
+        <h5 className='h-1/4 text-start text-[18px] font-bold'>Contact us</h5>
+        <ul className='h-3/4'>
+          <li>
+            <span className='font-bold'>Address: </span>
+            {t('about.district')}
+          </li>
+          <li>
+            <span className='font-bold'>Email: </span>
+            info@imc.org.vn
+          </li>
+          <li>
+            <span className='font-bold'>Phone: </span>(098) 272 0920
+          </li>
+        </ul>
+      </div>
+      <div>
+        <div className='2/5'>
+          <h4 className='mb-4 text-[20px] font-bold'>
+            Let&#39;s work together!
+          </h4>
+        </div>
+        <form className='relative' onSubmit={handleForm}>
+          <input
+            className='w-[307px] h-[48px] bg-white text-darkBlue px-[24px] py-[17px] rounded-[25px]'
+            type='email'
+            value={form.setForm}
+            onChange={handleForm}
+            placeholder='Email'
+            checked
+          />
+          <button
+            className='absolute w-[103px] h-[40px] bg-darkBlue right-1 top-1 rounded-[25px]'
+            type='submit'
+          >
+            Submit
+          </button>
+        </form>
+        <div className='flex mt-4'>
+          <LazyLoad className='' {...lazyLoadOptions}>
+            <img src={fbLogo} alt='fb-logo' />
+          </LazyLoad>
+          <LazyLoad className='mx-4 ' {...lazyLoadOptions}>
+            <img src={insLogo} alt='ins-logo' />
+          </LazyLoad>
+          <LazyLoad className='' {...lazyLoadOptions}>
+            <img src={twLogo} alt='tw-logo' />
+          </LazyLoad>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+export default SectionAbout;
