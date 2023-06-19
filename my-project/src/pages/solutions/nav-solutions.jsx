@@ -16,7 +16,7 @@ function NavSolutions() {
   return (
     <section className='Scale'>
       <nav
-        className={`nav-solutions container xl:w-1/3 mx-auto my-8 font-bold justify-between items-center Right ${
+        className={`nav-solutions container xl:w-1/2 mx-auto my-8 font-bold justify-between items-center Right ${
           showNav ? 'show-nav-solutions' : 'hidden lg:flex'
         }`}
       >

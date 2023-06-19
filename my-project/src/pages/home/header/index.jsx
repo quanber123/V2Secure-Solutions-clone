@@ -34,6 +34,14 @@ function Header() {
       url: nac,
       content: 'intro.nac',
     },
+    {
+      url: nac,
+      content: 'intro.nids',
+    },
+    {
+      url: nac,
+      content: 'intro.dip',
+    },
   ];
 
   const [intros, setIntros] = useState([]);
@@ -70,7 +78,7 @@ function Header() {
             distribution partners.
           </p>
           <button
-            className='mt-12 w-[241px] h-[61px] bg-[#80CED7] text-boldBlue font-bold rounded-[30px]'
+            className='get-start-btn mt-12 w-[241px] h-[61px] font-bold rounded-[30px]'
             style={{ boxShadow: '0px 8px 24px rgba(204, 219, 220, 0.28)' }}
             onClick={handleScroll}
           >
@@ -85,23 +93,48 @@ function Header() {
           />
         </div>
       </div>
-      {/* <div className='w-3/4 h-1/3 mx-auto mt-12 mb-4 hidden sm:flex flex-wrap justify-between items-center Up'>
-        {intros.map((intro, index) => (
-          <article
-            key={index}
-            className='flex flex-col justify-between items-between gallery-title-header text-gray hover:text-white opacity-80 hover:opacity-100'
-          >
-            <LazyLoad
-              className='m-auto gallery-img-header'
+      <div className='container mx-auto my-32 carousel'>
+        <div className='autoplay-carousel'>
+          {intros.map((intro, index) => (
+            <article
               key={index}
-              {...lazyLoadOptions}
+              className='text-gray hover:text-white opacity-80 hover:opacity-100'
             >
-              <img className='h-full Up' src={intro.url} alt={intro.content} />
-            </LazyLoad>
-            <h3 className='h-20 text-center'>{intro.content}</h3>
-          </article>
-        ))}
-      </div> */}
+              <LazyLoad
+                className='w-[50px] m-auto'
+                key={index}
+                {...lazyLoadOptions}
+              >
+                <img
+                  className='w-full h-full Up'
+                  src={intro.url}
+                  alt={intro.content}
+                />
+              </LazyLoad>
+              <h5 className='h-20 text-center'>{intro.content}</h5>
+            </article>
+          ))}
+          {intros.map((intro, index) => (
+            <article
+              key={index}
+              className='text-gray hover:text-white opacity-80 hover:opacity-100'
+            >
+              <LazyLoad
+                className='w-[50px] m-auto'
+                key={index}
+                {...lazyLoadOptions}
+              >
+                <img
+                  className='w-full h-full Up'
+                  src={intro.url}
+                  alt={intro.content}
+                />
+              </LazyLoad>
+              <h5 className='h-20 text-center'>{intro.content}</h5>
+            </article>
+          ))}
+        </div>
+      </div>
     </header>
   );
 }

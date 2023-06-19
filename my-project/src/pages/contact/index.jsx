@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
 export default function Contact() {
@@ -43,7 +43,9 @@ export default function Contact() {
       <div className='md:w-1/2'>
         <h1 className='text-2xl md:text-4xl xl:text-6xl font-bold'>
           {t('form.title1')}{' '}
-          <span className='text-yellow'>{t('form.title2')}</span>
+          <span className='text-2xl md:text-4xl xl:text-6xl text-yellow'>
+            {t('form.title2')}
+          </span>
         </h1>
         <h3 className='text-lg lg:text-xl text-darkGray py-4'>
           {t('form.idea')}
@@ -114,7 +116,6 @@ export default function Contact() {
           rows='10'
           value={contactForm.message}
           onChange={handleChangeContact}
-          checked
           placeholder='Your Message'
         ></textarea>
         <button
