@@ -18,17 +18,29 @@ h3 {
   color: #215a74;
   /* border: 1px solid #80ced7; */
 }
-.autoplay-carousel {
+.carousel {
   position: relative;
+  overflow: hidden;
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+}
+.autoplay-carousel {
   display: flex;
   width: max-content;
-  overflow: hidden;
   animation: runSlider 10s linear infinite;
 }
 .autoplay-carousel > article {
   width: 226px;
   height: 150px;
   margin-left: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.autoplay-carousel > article > a,
+.autoplay-carousel > article > h5 {
+  height: 50%;
 }
 @-webkit-keyframes runSlider {
   0% {

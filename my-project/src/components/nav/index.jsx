@@ -1,10 +1,10 @@
 import { useCallback, useEffect, useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import i18n from '../i18n';
+import i18n from '../../i18n';
 import { useTranslation } from 'react-i18next';
 import LazyLoad from 'react-lazyload';
-import earthImg from '../assets/images/nav/earth.png';
-import logo from '../assets/images/home/logo.png';
+import earthImg from '../../assets/images/nav/earth.png';
+import logo from '../../assets/images/home/logo.png';
 function Nav() {
   const { t } = useTranslation();
   const lazyLoadOptions = {
@@ -56,8 +56,8 @@ function Nav() {
     setTabLanguage((prevTab) => !prevTab);
   };
   return (
-    <nav className={`relative nav-item h-24 flex Scale`}>
-      <section className='h-full flex justify-between container m-auto'>
+    <section className={`relative nav-item h-24 flex Scale`}>
+      <div className='h-full flex justify-between container m-auto'>
         <Link
           className='mx-8 lg:mx-0 flex justify-between items-center cursor-pointer'
           to='.'
@@ -73,54 +73,56 @@ function Nav() {
             showNav ? 'show-nav' : 'hidden lg:flex'
           }`}
         >
-          <NavLink
-            className={({ isActive }) =>
-              isActive
-                ? 'mx-5 my-4 lg:my-2 nav-link hight-light'
-                : 'mx-5 my-4 lg:my-2 nav-link'
-            }
-            rel='nofollow'
-            to='/'
-            onClick={() => handleLinkClick('HOME')}
-          >
-            HOME
-          </NavLink>
-          <NavLink
-            className={({ isActive }) =>
-              isActive
-                ? 'mx-5 my-4 lg:my-2 nav-link hight-light'
-                : 'mx-5 my-4 lg:my-2 nav-link'
-            }
-            rel='nofollow'
-            to='solutions'
-            onClick={() => handleLinkClick('SOLUTIONS')}
-          >
-            {t('SOLUTIONS')}
-          </NavLink>
-          <NavLink
-            className={({ isActive }) =>
-              isActive
-                ? 'mx-5 my-4 lg:my-2 nav-link hight-light'
-                : 'mx-5 my-4 lg:my-2 nav-link'
-            }
-            rel='nofollow'
-            to='services'
-            onClick={() => handleLinkClick('SERVICES')}
-          >
-            {t('SERVICES')}
-          </NavLink>
-          <NavLink
-            className={({ isActive }) =>
-              isActive
-                ? 'mx-5 my-4 lg:my-2 nav-link hight-light'
-                : 'mx-5 my-4 lg:my-2 nav-link'
-            }
-            rel='nofollow'
-            to='contact'
-            onClick={() => handleLinkClick('CONTACT')}
-          >
-            {t('CONTACT')}
-          </NavLink>
+          <nav className='nav'>
+            <NavLink
+              className={({ isActive }) =>
+                isActive
+                  ? 'mx-5 my-4 lg:my-2 nav-link hight-light'
+                  : 'mx-5 my-4 lg:my-2 nav-link'
+              }
+              rel='nofollow'
+              to='/'
+              onClick={() => handleLinkClick('HOME')}
+            >
+              HOME
+            </NavLink>
+            <NavLink
+              className={({ isActive }) =>
+                isActive
+                  ? 'mx-5 my-4 lg:my-2 nav-link hight-light'
+                  : 'mx-5 my-4 lg:my-2 nav-link'
+              }
+              rel='nofollow'
+              to='solutions'
+              onClick={() => handleLinkClick('SOLUTIONS')}
+            >
+              {t('SOLUTIONS')}
+            </NavLink>
+            <NavLink
+              className={({ isActive }) =>
+                isActive
+                  ? 'mx-5 my-4 lg:my-2 nav-link hight-light'
+                  : 'mx-5 my-4 lg:my-2 nav-link'
+              }
+              rel='nofollow'
+              to='services'
+              onClick={() => handleLinkClick('SERVICES')}
+            >
+              {t('SERVICES')}
+            </NavLink>
+            <NavLink
+              className={({ isActive }) =>
+                isActive
+                  ? 'mx-5 my-4 lg:my-2 nav-link hight-light'
+                  : 'mx-5 my-4 lg:my-2 nav-link'
+              }
+              rel='nofollow'
+              to='contact'
+              onClick={() => handleLinkClick('CONTACT')}
+            >
+              {t('CONTACT')}
+            </NavLink>
+          </nav>
           <div className='custom-select-language ml-4'>
             <img className='w-[21px]' src={earthImg} alt='earth-logo' />
             <h4 className='ml-2'>{selectedLanguage === 'vi' ? 'VI' : 'EN'}</h4>
@@ -165,8 +167,8 @@ function Nav() {
           className='fa fa-bars mx-12 lg:hidden flex justify-center items-center text-xl cursor-pointer'
           onClick={handleShowNav}
         ></i>
-      </section>
-    </nav>
+      </div>
+    </section>
   );
 }
 

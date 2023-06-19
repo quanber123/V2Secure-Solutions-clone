@@ -116,7 +116,6 @@ export default function Contact() {
           rows='10'
           value={contactForm.message}
           onChange={handleChangeContact}
-          checked
           placeholder='Your Message'
         ></textarea>
         <button

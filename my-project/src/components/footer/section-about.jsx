@@ -64,9 +64,9 @@ function SectionAbout() {
       </div>
       <div>
         <div className='2/5'>
-          <h3 className='mb-4 text-[20px] font-bold'>
+          <h4 className='mb-4 text-[20px] font-bold'>
             Let&#39;s work together!
-          </h3>
+          </h4>
         </div>
         <form className='relative' onSubmit={handleForm}>
           <input
@@ -78,7 +78,7 @@ function SectionAbout() {
             checked
           />
           <button
-            className='absolute w-[103px] h-[40px] bg-darkBlue right-3 top-1 rounded-[25px]'
+            className='absolute w-[103px] h-[40px] bg-darkBlue right-1 top-1 rounded-[25px]'
             type='submit'
           >
             Submit

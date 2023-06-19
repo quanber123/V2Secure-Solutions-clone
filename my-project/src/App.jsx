@@ -4,18 +4,18 @@ import Layout from './components/layout';
 import Page404 from './pages/404/index';
 import { lazy, Suspense } from 'react';
 import Spinner from './components/spinner';
-const Home = lazy(() => import('./pages/Home/index'));
-const Solutions = lazy(() => import('./pages/Solutions/index'));
-const SIEM = lazy(() => import('./pages/Solutions/SIEM-section/SIEM'));
-const WAF = lazy(() => import('./pages/Solutions/WAF-section/WAF'));
-const NIPS = lazy(() => import('./pages/Solutions/NIPS-section/NIPS'));
-const EDR = lazy(() => import('./pages/Solutions/EDR-section/EDR'));
-const NAC = lazy(() => import('./pages/Solutions/NAC-section/NAC'));
-const NIDS = lazy(() => import('./pages/Solutions/NIDS-section/NIDS'));
-const DIP = lazy(() => import('./pages/Solutions/DIP-section/DIP'));
-const Services = lazy(() => import('./pages/Services/index'));
-const ServiceDetail = lazy(() => import('./pages/Services/service-detail'));
-const Contact = lazy(() => import('./pages/Contact/index'));
+const Home = lazy(() => import('./pages/home/index'));
+const Solutions = lazy(() => import('./pages/solutions/index'));
+const SIEM = lazy(() => import('./pages/solutions/SIEM-section/SIEM'));
+const WAF = lazy(() => import('./pages/solutions/WAF-section/WAF'));
+const NIPS = lazy(() => import('./pages/solutions/NIPS-section/NIPS'));
+const EDR = lazy(() => import('./pages/solutions/EDR-section/EDR'));
+const NAC = lazy(() => import('./pages/solutions/NAC-section/NAC'));
+const NIDS = lazy(() => import('./pages/solutions/NIDS-section/NIDS'));
+const DIP = lazy(() => import('./pages/solutions/DIP-section/DIP'));
+const Services = lazy(() => import('./pages/services/index'));
+const ServiceDetail = lazy(() => import('./pages/services/service-detail'));
+const Contact = lazy(() => import('./pages/contact/index'));
 function App() {
   return (
     <Suspense fallback={<Spinner />}>

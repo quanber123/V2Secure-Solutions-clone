@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import LazyLoad from 'react-lazyload';
-import { ServicesContext } from '../../../Services/hooks/services-context';
+import { ServicesContext } from '../../../services/hooks/services-context';
 function OurServices() {
   const { t } = useTranslation();
   const [hoverServices, setHoverServices] = useState(null);

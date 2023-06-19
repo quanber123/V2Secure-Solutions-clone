@@ -54,8 +54,12 @@ function OurSolutions() {
         <h3 className='text-[64px] text-blue tracking-[0.2em] font-bold'>
           {t('SOLUTIONS')}
         </h3>
+        <p className='w-2/3 mx-auto my-4 text-[24px] text-start font-bold'>
+          We provide cyber security solutions that meet the unique needs of our
+          customers and help them succeed in an increasingly digital world.
+        </p>
         <LazyLoad offset={100} once>
-          <img className='m-auto' src={earthImg} alt='earth-img' />
+          <img className='m-auto Scale' src={earthImg} alt='earth-img' />
         </LazyLoad>
       </div>
       <div className='home-solutions w-1/2 text-black flex justify-between items-center'>
