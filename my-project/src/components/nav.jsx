@@ -3,9 +3,8 @@ import { Link, NavLink } from 'react-router-dom';
 import i18n from '../i18n';
 import { useTranslation } from 'react-i18next';
 import LazyLoad from 'react-lazyload';
-import flagVn from '../flags/vn.png';
-import flagUs from '../flags/us.png';
-import logo from '../images/new-logo.png';
+import earthImg from '../assets/images/nav/earth.png';
+import logo from '../assets/images/home/logo.png';
 function Nav() {
   const { t } = useTranslation();
   const lazyLoadOptions = {
@@ -34,6 +33,7 @@ function Nav() {
       const lang = language === 'en' ? 'en' : 'vi';
       setSelectedLanguage(lang);
       setShowNav(false);
+      handleShowTabLanguage(false);
     },
     [selectedLanguage]
   );
@@ -63,12 +63,10 @@ function Nav() {
           to='.'
           onClick={() => setShowNav(false)}
         >
-          <LazyLoad className='w-1/2 py-2' {...lazyLoadOptions}>
-            <img className='w-20 h-20' src={logo} alt='logo' />
+          <LazyLoad className='w-1/4' {...lazyLoadOptions}>
+            <img className='my-auto mr-2' src={logo} alt='logo' />
           </LazyLoad>
-          <h1 className='w-1/2 mx-4 text-lg md:text-xl lg:text-2xl xl:text-4xl font-bold text-blue'>
-            FAGONET
-          </h1>
+          <h3 className='text-[26px] font-bold text-blue'>FAGONET</h3>
         </Link>
         <div
           className={`flex flex-col lg:flex-row font-bold justify-between lg:items-center ${
@@ -123,40 +121,41 @@ function Nav() {
           >
             {t('CONTACT')}
           </NavLink>
-          <div
-            className='custom-select-language'
-            onClick={handleShowTabLanguage}
-          >
-            <img
-              className='w-12 h-8 rounded mx-5 my-4 lg:my-2 cursor-pointer'
-              src={`${selectedLanguage === 'en' ? flagUs : flagVn}`}
-              alt={`${selectedLanguage === '' ? 'flagVn' : 'flagUs'}`}
-            />
+          <div className='custom-select-language ml-4'>
+            <img className='w-[21px]' src={earthImg} alt='earth-logo' />
+            <h4 className='ml-2'>{selectedLanguage === 'vi' ? 'VI' : 'EN'}</h4>
+            <button onClick={handleShowTabLanguage}>
+              <i className='fa fa-caret-down ml-2 mb-[4px]'></i>
+            </button>
             {tabLanguage && (
-              <ul className='w-52 options-language px-6 py-2'>
+              <ul className='options-language'>
                 <li
-                  className='flex items-center py-2 border-b border-gray cursor-pointer'
+                  className='relative flex justify-between items-center cursor-pointer'
                   onClick={() => handleSelectChangeLanguage('en')}
                 >
-                  <h3 className='w-2/3'>{t('en')}</h3>
-                  <img
-                    className='w-12 h-8 rounded ml-auto'
-                    src={flagUs}
-                    alt='flagUs'
-                  />
+                  <h5 className='w-1/4 mx-[12px]'>EN</h5>
+                  <h5 className='w-3/4 px-4 border-l border-l-white'>
+                    {t('en')}
+                  </h5>
+                  <i
+                    className={`fa fa-check absolute right-2 ${
+                      selectedLanguage === 'en' ? 'block' : 'hidden'
+                    }`}
+                  ></i>
                 </li>
                 <li
-                  className='flex items-center py-2 cursor-pointer'
+                  className='relative flex justify-between items-center cursor-pointer'
                   onClick={() => handleSelectChangeLanguage('vn')}
                 >
-                  <h3 className='w-2/3'>{t('vi')}</h3>
-                  <LazyLoad className='w-1/3' {...lazyLoadOptions}>
-                    <img
-                      className='w-12 h-8 rounded ml-auto'
-                      src={flagVn}
-                      alt='flagVn'
-                    />
-                  </LazyLoad>
+                  <h5 className='w-1/4 mx-[12px]'>VI</h5>
+                  <h5 className='w-3/4 px-4 border-l border-l-white'>
+                    {t('vi')}
+                  </h5>
+                  <i
+                    className={`fa fa-check absolute right-2 ${
+                      selectedLanguage === 'vi' ? 'block' : 'hidden'
+                    }`}
+                  ></i>
                 </li>
               </ul>
             )}

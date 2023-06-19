@@ -1,41 +1,99 @@
-import logo from '../../images/new-logo.png';
-import qr from '../../images/IMC.png';
+import { useState } from 'react';
 import LazyLoad from 'react-lazyload';
+import logo from '../../assets/images/home/logo.png';
+import fbLogo from '../../assets/images/home/facebook.png';
+import insLogo from '../../assets/images/home/ins.png';
+import twLogo from '../../assets/images/home/tw.png';
 import { useTranslation } from 'react-i18next';
 function SectionAbout() {
   const { t } = useTranslation();
+  const lazyLoadOptions = {
+    offset: 0,
+    once: true,
+  };
+  const [form, setForm] = useState([
+    {
+      email: '',
+    },
+  ]);
+  function handleForm(event) {
+    const { value } = event.target;
+    setForm((prevForm) => {
+      return { ...prevForm, email: value, id: new Date().getTime() };
+    });
+  }
   return (
-    <section className='w-full h-1/2 flex flex-col md:flex-row border-t border-t-boldBlue px-14 py-32 Scale'>
-      <div className='md:w-1/2'>
+    <section className='container m-auto py-[60px] flex justify-between items-stretch'>
+      <div className='w-1/4'>
         <div className='flex items-center'>
-          <LazyLoad className='h-1/2' offset={100} once>
-            <img className='h-16 Scale' src={logo} alt='logoV2' />
+          <LazyLoad className='mr-2' {...lazyLoadOptions}>
+            <img className='w-full' src={logo} alt='fagonet-logo' />
           </LazyLoad>
-          <h1 className='mx-4 text-blue'>FAGONET</h1>
+          <h4 className='text-[26px] text-blue font-bold'>FAGONET</h4>
         </div>
-        <div>
-          <p className='sm:w-1/2 xl:w-1/3 my-4 py-3 px-4 text-center text-base border border-boldBlue text-blue rounded-2xl'>
-            {t('about.contact-more')}
-          </p>
-          <p className='my-2'>0982720920 - Mr. Dũng</p>
-          <a
-            href='https://imc.org.vn/'
-            target='_blank'
-            className='my-2 hover:text-boldBlue'
-            rel='nofollow'
-          >
-            imc.org.vn
-          </a>
-          <p className='my-2'>{t('about.district')}</p>
-        </div>
+        <p className='my-2'>
+          Fagonet is a cybersecurity company that provides cyber risk management
+          and services on behalf of our valued technology and distribution
+          partners.
+        </p>
       </div>
-      <div className='w-1/2 m-auto lg:m-0 flex justify-center items-center'>
-        <LazyLoad className='w-1/2 md:w-1/4 m-auto' offset={100} once>
-          <img className='Scale' src={qr} alt='qr' />
-        </LazyLoad>
-        <div className='w-1/2 font-bold md:p-2 m-2'>
-          <h3 className='text-blue'>{t('about.qr')}</h3>
-          <h3>{t('about.details')}</h3>
+      <div className='w-1/5 flex flex-col justify-center items-center'>
+        <h5 className='h-1/4 text-[18px] font-bold'>Useful Links</h5>
+        <ul className='h-3/4'>
+          <li className='my-[4px]'>Home</li>
+          <li className='my-[4px]'>Services</li>
+          <li className='my-[4px]'>Solutions</li>
+          <li className='my-[4px]'>Contact us</li>
+        </ul>
+      </div>
+      <div className='w-1/4 flex flex-col justify-center home-contact-us'>
+        <h5 className='h-1/4 text-start text-[18px] font-bold'>Contact us</h5>
+        <ul className='h-3/4'>
+          <li>
+            <span className='font-bold'>Address: </span>
+            {t('about.district')}
+          </li>
+          <li>
+            <span className='font-bold'>Email: </span>
+            info@imc.org.vn
+          </li>
+          <li>
+            <span className='font-bold'>Phone: </span>(098) 272 0920
+          </li>
+        </ul>
+      </div>
+      <div>
+        <div className='2/5'>
+          <h3 className='mb-4 text-[20px] font-bold'>
+            Let&#39;s work together!
+          </h3>
+        </div>
+        <form className='relative' onSubmit={handleForm}>
+          <input
+            className='w-[307px] h-[48px] bg-white text-darkBlue px-[24px] py-[17px] rounded-[25px]'
+            type='email'
+            value={form.setForm}
+            onChange={handleForm}
+            placeholder='Email'
+            checked
+          />
+          <button
+            className='absolute w-[103px] h-[40px] bg-darkBlue right-3 top-1 rounded-[25px]'
+            type='submit'
+          >
+            Submit
+          </button>
+        </form>
+        <div className='flex mt-4'>
+          <LazyLoad className='' {...lazyLoadOptions}>
+            <img src={fbLogo} alt='fb-logo' />
+          </LazyLoad>
+          <LazyLoad className='mx-4 ' {...lazyLoadOptions}>
+            <img src={insLogo} alt='ins-logo' />
+          </LazyLoad>
+          <LazyLoad className='' {...lazyLoadOptions}>
+            <img src={twLogo} alt='tw-logo' />
+          </LazyLoad>
         </div>
       </div>
     </section>
