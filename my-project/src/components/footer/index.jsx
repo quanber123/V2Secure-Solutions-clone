@@ -1,6 +1,6 @@
 // import SectionContact from './section-contact';
 import SectionAbout from './section-about';
-import SectionCopyRight from './copyright';
+import SectionCopyRight from './section-copyright';
 import LazyLoad from 'react-lazyload';
 function Footer() {
   return (

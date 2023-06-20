@@ -9,10 +9,10 @@ import System from './7-system';
 import Minimum from './8-minimum';
 import { useTranslation } from 'react-i18next';
 import wafLogo from '../../../images/ecosystem/waf.png';
-import DownLoadDataSheet from '../../data-sheet/data-sheet';
 // import wafReport from '../../../images/gallery/header-2.15fda7c06337e76eaeb0.png';
-import filePath from '../../data-sheet/pdf/data-sheet/Document Cloud/Fortinet_Product_Matrix-part-2.pdf';
 import Gallery from '../gallery-section/index';
+import DownLoadDataSheet from '../data-sheet/data-sheet';
+import filePath from '../data-sheet/pdf/data-sheet/Document Cloud/Fortinet_Product_Matrix-part-2.pdf';
 function WAF() {
   const { t } = useTranslation();
   const fileName = 'Fortinet_Product_Matrix-part-2.pdf';

@@ -4,10 +4,10 @@ import System from './3-system';
 import LazyLoad from 'react-lazyload';
 import { useTranslation } from 'react-i18next';
 import nipsLogo from '../../../images/ecosystem/nips.png';
-import DownLoadDataSheet from '../../data-sheet/data-sheet';
 // import nipsReport from '../../../images/gallery/header-6.987988888e628d2df2fd.png';
 import Gallery from '../gallery-section/index';
-import filePath from '../../data-sheet/pdf/data-sheet/Document Cloud/Fortinet_Product_Matrix-part-3.pdf';
+import DownLoadDataSheet from '../data-sheet/data-sheet';
+import filePath from '../data-sheet/pdf/data-sheet/Document Cloud/Fortinet_Product_Matrix-part-3.pdf';
 function NIPS() {
   const { t } = useTranslation();
   const fileName = 'Fortinet_Product_Matrix-part-3.pdf';

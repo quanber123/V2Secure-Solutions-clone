@@ -69,7 +69,9 @@ function OurSolutions() {
               <article
                 key={solution.id}
                 className={`relative ${
-                  hoverSolutions === solution.id ? 'hoverSolutions' : ''
+                  hoverSolutions === solution.id
+                    ? 'hoverSolutions'
+                    : 'notHoverSolutions'
                 }`}
                 onMouseOver={() => setHoverSolutions(solution.id)}
                 onMouseOut={() => setHoverSolutions(null)}
@@ -107,7 +109,9 @@ function OurSolutions() {
               <article
                 key={solution.id}
                 className={`relative ${
-                  hoverSolutions === solution.id ? 'hoverSolutions' : ''
+                  hoverSolutions === solution.id
+                    ? 'hoverSolutions'
+                    : 'notHoverSolutions'
                 }`}
                 onMouseOver={() => setHoverSolutions(solution.id)}
                 onMouseOut={() => setHoverSolutions(null)}

@@ -25,7 +25,7 @@ function OurServices() {
             <article
               key={index}
               className={`bg-boldBlue ${
-                hoverServices === index ? 'hoverServices' : ''
+                hoverServices === index ? 'hoverServices' : 'notHoverServices'
               }`}
               onMouseOver={() => setHoverServices(index)}
               onMouseOut={() => setHoverServices(null)}

@@ -9,9 +9,9 @@ import Security from './6-security-automatically';
 import Incident from './7-incident';
 import System from './8-system';
 import siemLogo from '../../../images/ecosystem/siem.png';
-import DownLoadDataSheet from '../../data-sheet/data-sheet';
 import Gallery from '../gallery-section/index';
-import filePath from '../../data-sheet/pdf/data-sheet/Document Cloud/Fortinet_Product_Matrix-part-1.pdf';
+import DownLoadDataSheet from '../data-sheet/data-sheet';
+import filePath from '../data-sheet/pdf/data-sheet/Document Cloud/Fortinet_Product_Matrix-part-1.pdf';
 function SIEM() {
   const fileName = 'Fortinet_Product_Matrix-part-1.pdf';
   const lazyLoadOptions = {

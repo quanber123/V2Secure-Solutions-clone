@@ -1,15 +1,15 @@
 import { useTranslation } from 'react-i18next';
 import LazyLoad from 'react-lazyload';
 import edrLogo from '../../../images/ecosystem/edr.png';
-import DownLoadDataSheet from '../../data-sheet/data-sheet';
 import Gallery from '../gallery-section/index';
-import filePath from '../../data-sheet/pdf/data-sheet/Document Cloud/Fortinet_Product_Matrix-part-5.pdf';
 import IntrusionDetection from './intrusion-detection';
 import AlertsNotifications from './alerts-notifications';
 import DetailedLogging from './detailed-logging';
 import AutoMaticBlocking from './automatic-blocking';
 import FormatRules from './format-rules';
 import EnhancingNetWork from './enhancing-network';
+import DownLoadDataSheet from '../data-sheet/data-sheet';
+import filePath from '../data-sheet/pdf/data-sheet/Document Cloud/Fortinet_Product_Matrix-part-5.pdf';
 function NIDS() {
   const { t } = useTranslation();
   const fileName = 'Fortinet_Product_Matrix-part-5.pdf';

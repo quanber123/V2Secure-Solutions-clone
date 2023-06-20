@@ -1,14 +1,14 @@
 import { useTranslation } from 'react-i18next';
 import LazyLoad from 'react-lazyload';
 import edrLogo from '../../../images/ecosystem/edr.png';
-import DownLoadDataSheet from '../../data-sheet/data-sheet';
 import Gallery from '../gallery-section/index';
-import filePath from '../../data-sheet/pdf/data-sheet/Document Cloud/Fortinet_Product_Matrix-part-5.pdf';
 import ReceivingPackets from './receiving-packets';
 import InputAnalysis from './input-analysis';
 import DecodeAssemble from './decode-assemble';
 import ContentAnalysis from './content-analysis';
 import Response from './response';
+import DownLoadDataSheet from '../data-sheet/data-sheet';
+import filePath from '../data-sheet/pdf/data-sheet/Document Cloud/Fortinet_Product_Matrix-part-5.pdf';
 function DIP() {
   const { t } = useTranslation();
   const fileName = 'Fortinet_Product_Matrix-part-5.pdf';
