@@ -44,24 +44,24 @@ function SectionAbout() {
       <div className='w-1/5 flex flex-col justify-center items-center'>
         <h5 className='h-1/4 text-[18px] font-bold'>Useful Links</h5>
         <ul className='h-3/4'>
-          <li className='my-[4px]'>
+          <li className='my-[4px] hover:text-blue'>
             <Link to='/' onClick={handleScroll}>
               Home
             </Link>
           </li>
-          <li className='my-[4px]'>
+          <li className='my-[4px] hover:text-blue'>
             <Link to='/services' onClick={handleScroll}>
               Services
             </Link>
           </li>
-          <li className='my-[4px]'>
+          <li className='my-[4px] hover:text-blue'>
             <Link to='/solutions' onClick={handleScroll}>
               Solutions
             </Link>
           </li>
-          <li className='my-[4px]'>
+          <li className='my-[4px] hover:text-blue'>
             <Link to='/contact' onClick={handleScroll}>
-              Solutions
+              Contact
             </Link>
           </li>
         </ul>
@@ -98,7 +98,7 @@ function SectionAbout() {
             checked
           />
           <button
-            className='absolute w-[103px] h-[40px] bg-darkBlue right-1 top-1 rounded-[25px]'
+            className='absolute w-[103px] h-[40px] bg-darkBlue font-bold right-1 top-1 rounded-[25px] hover:bg-blue hover:text-darkBlue'
             type='submit'
           >
             Submit
