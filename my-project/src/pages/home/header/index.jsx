@@ -73,9 +73,7 @@ function Header() {
             {t('intro.title3')}
           </h3>
           <p className='my-8 w-4/5 text-gray leading-[19px]'>
-            Fagonet is a cybersecurity company that provides cyber risk
-            management and services on behalf of our valued technology and
-            distribution partners.
+            {t('fago-intro')}
           </p>
           <button
             className='get-start-btn mt-12 w-[241px] h-[61px] font-bold rounded-[30px]'

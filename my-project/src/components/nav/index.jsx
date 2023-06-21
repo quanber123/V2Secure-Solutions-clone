@@ -52,7 +52,7 @@ function Nav() {
   };
   return (
     <section className={`relative nav-item h-24 flex Scale`}>
-      <div className='h-full flex justify-between container m-auto'>
+      <div className='container m-auto w-4/5 h-full flex justify-between'>
         <Link
           className='mx-8 lg:mx-0 flex justify-between items-center cursor-pointer'
           to='.'

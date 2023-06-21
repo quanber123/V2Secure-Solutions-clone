@@ -11,6 +11,7 @@ export default function Data() {
   const { t } = useTranslation();
   const data = [
     {
+      id: 0,
       link: 'managed-security-service',
       intro: t('services-page.intro1'),
       introImg: introImg1,
@@ -36,6 +37,7 @@ export default function Data() {
       endWord: t('services-page.endWord'),
     },
     {
+      id: 1,
       link: 'threat-hunting',
       intro: t('services-page.intro2'),
       introImg: introImg2,
@@ -58,6 +60,7 @@ export default function Data() {
       endWord: t('services-page.endWord'),
     },
     {
+      id: 2,
       link: 'pentest-and-audit',
       intro: t('services-page.intro3'),
       introImg: introImg3,
@@ -82,6 +85,7 @@ export default function Data() {
       endWord: t('services-page.endWord'),
     },
     {
+      id: 3,
       link: 'application-security',
       intro: t('services-page.intro4'),
       introImg: introImg4,

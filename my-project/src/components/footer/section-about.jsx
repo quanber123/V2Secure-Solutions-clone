@@ -35,11 +35,7 @@ function SectionAbout() {
           </LazyLoad>
           <h3 className='text-[26px] text-blue font-bold'>FAGONET</h3>
         </div>
-        <p className='my-2'>
-          Fagonet is a cybersecurity company that provides cyber risk management
-          and services on behalf of our valued technology and distribution
-          partners.
-        </p>
+        <p className='my-2'>{t('fago-intro')}</p>
       </div>
       <div className='w-1/5 flex flex-col justify-center items-center'>
         <h5 className='h-1/4 text-[18px] font-bold'>Useful Links</h5>
@@ -51,17 +47,17 @@ function SectionAbout() {
           </li>
           <li className='my-[4px] hover:text-blue'>
             <Link to='/services' onClick={handleScroll}>
-              Services
+              {t('SERVICES')}
             </Link>
           </li>
           <li className='my-[4px] hover:text-blue'>
             <Link to='/solutions' onClick={handleScroll}>
-              Solutions
+              {t('SOLUTIONS')}
             </Link>
           </li>
           <li className='my-[4px] hover:text-blue'>
             <Link to='/contact' onClick={handleScroll}>
-              Contact
+              {t('CONTACT')}
             </Link>
           </li>
         </ul>

@@ -26,7 +26,7 @@ h3 {
 .autoplay-carousel {
   display: flex;
   width: max-content;
-  animation: runSlider 10s linear infinite;
+  animation: runSlider 20s linear infinite;
 }
 .autoplay-carousel > article {
   width: 226px;

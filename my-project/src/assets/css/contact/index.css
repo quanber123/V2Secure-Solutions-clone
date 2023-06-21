@@ -1,0 +1,60 @@
+.phone-contact,
+.phone-mail {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.3) 0%,
+    rgba(255, 255, 255, 0.1) 100%
+  );
+  height: 200px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 25px;
+}
+.contact {
+  position: relative;
+  width: 60px;
+  height: 60px;
+}
+.contact-phone-img,
+.contact-email-img {
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  z-index: 5;
+}
+label {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 600;
+  color: #215a74;
+  margin: 8px 0;
+}
+input,
+textarea {
+  background-color: #fff;
+  color: #215a74;
+  border-radius: 25px;
+  padding: 16px;
+}
+.contact-form {
+  background: rgba(128, 206, 215, 1);
+  width: 585px;
+  height: 837px;
+  margin: 64px 0 0 auto;
+  padding: 16px;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.map-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}

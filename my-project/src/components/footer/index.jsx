@@ -8,10 +8,10 @@ function Footer() {
       {/* <LazyLoad offset={0} once>
         <SectionContact />
       </LazyLoad> */}
-      <LazyLoad offset={0} once>
+      <LazyLoad className='w-4/5 m-auto' offset={0} once>
         <SectionAbout />
       </LazyLoad>
-      <LazyLoad offset={0} once>
+      <LazyLoad className='w-4/5 m-auto' offset={0} once>
         <SectionCopyRight />
       </LazyLoad>
     </footer>
