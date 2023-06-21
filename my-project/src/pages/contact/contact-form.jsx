@@ -35,9 +35,9 @@ function ContactForm() {
   return (
     <div className='relative my-16 py-32'>
       <LazyLoad className='map-img' offset={100} once>
-        <img src={mapImg} alt='map-img' />
+        <img className='Scale' src={mapImg} alt='map-img' />
       </LazyLoad>
-      <form className='contact-form' onSubmit={handleSubmitForm}>
+      <form className='contact-form Up' onSubmit={handleSubmitForm}>
         <h5 className='text-darkBlue text-[40px] font-bold'>{t('mess')}</h5>
         <p>{t('askQuestion')}</p>
         <label htmlFor='name'>Name</label>

@@ -7,19 +7,27 @@ function ContactInfo() {
   const { t } = useTranslation();
   return (
     <div className='my-8 flex justify-between items-center gap-[20px]'>
-      <h4 className='w-1/3 text-[56px]'>{t('touch')}</h4>
-      <div className='phone-contact w-1/3'>
+      <h4 className='w-1/3 text-[56px] Scale'>{t('touch')}</h4>
+      <div className='phone-contact w-1/3 Scale'>
         <LazyLoad className='contact' offset={100} once>
-          <img src={ellipseImg} alt='ellipse-img' />
-          <img className='contact-phone-img' src={phoneImg} alt='phone-img' />
+          <img className='Scale' src={ellipseImg} alt='ellipse-img' />
+          <img
+            className='contact-phone-img Scale'
+            src={phoneImg}
+            alt='phone-img'
+          />
         </LazyLoad>
         <h5>Phone</h5>
         <p className='text-[24px] font-bold'>098 2720 920</p>
       </div>
-      <div className='phone-mail w-1/3'>
+      <div className='phone-mail w-1/3 Scale'>
         <LazyLoad className='contact' offset={100} once>
-          <img src={ellipseImg} alt='ellipse-img' />
-          <img className='contact-email-img' src={emailImg} alt='email-img' />
+          <img className='Scale' src={ellipseImg} alt='ellipse-img' />
+          <img
+            className='contact-email-img Scale'
+            src={emailImg}
+            alt='email-img'
+          />
         </LazyLoad>
         <h5>Email</h5>
         <p className='text-[24px] font-bold'>info@imc.org.vn</p>

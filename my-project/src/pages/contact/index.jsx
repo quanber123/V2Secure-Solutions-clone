@@ -9,13 +9,13 @@ export default function Contact() {
   const { t } = useTranslation();
   return (
     <main className='container m-auto'>
-      <section className='my-8 flex'>
+      <section className='my-8 flex Right'>
         <Link to='..'>Home</Link>
         <span className='mx-2'>&gt;</span>
         <h5>{t('CONTACT')}</h5>
       </section>
       <section>
-        <h3 className='my-8 tracking-[18px] text-center text-[64px] font-bold uppercase'>
+        <h3 className='my-8 tracking-[18px] text-center text-[64px] font-bold uppercase Scale'>
           {t('CONTACT')}
         </h3>
         <LazyLoad>
