@@ -24,7 +24,7 @@ function ServicesList() {
     const items = itemsRef.current;
     let stt = 0;
 
-    items[active].style.transform = 'scale(1)';
+    items[active].style.transform = 'none';
     items[active].style.zIndex = 1;
     items[active].style.filter = 'none';
     items[active].style.opacity = 1;
@@ -118,6 +118,8 @@ function ServicesList() {
               onMouseOut={() => setHoverServices(null)}
               onTouchStart={() => setHoverServices(index)}
               onTouchEnd={() => setHoverServices(null)}
+              onWheel={handleScroll}
+              onTouchMove={handleScroll}
             >
               <LazyLoad className='w-[60px] h-[60px]' offset={100} once>
                 <img

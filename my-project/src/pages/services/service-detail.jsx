@@ -23,7 +23,10 @@ function ServiceDetail() {
   const { dataServices } = useContext(ServicesContext);
   const serviceDetailRef = useRef(null);
   const prevLinkRef = useRef(link);
-
+  const lazyLoadOptions = {
+    offset: 100,
+    once: true,
+  };
   useEffect(() => {
     const serviceDetailElement = serviceDetailRef.current;
 
@@ -104,7 +107,7 @@ function ServiceDetail() {
                   );
                 })}
               </ul>
-              <LazyLoad className='md:w-1/2' offset={100} once>
+              <LazyLoad className='md:w-1/2' {...lazyLoadOptions}>
                 <img
                   className='w-1/2 m-auto Scale'
                   src={secureImg}
@@ -123,60 +126,78 @@ function ServiceDetail() {
           </div>
           <div className='container m-auto w-4/5   py-8 text-black bg-lightGray'>
             <div className='flex justify-around p-8'>
-              <LazyLoad className='xl:w-16 xl:h-16 w-8 h-8'>
+              <LazyLoad
+                {...lazyLoadOptions}
+                className='xl:w-16 xl:h-16 w-8 h-8'
+              >
                 <img
                   className={`${
                     step === 1 ? 'active' : ''
-                  } process-ic bg-white`}
+                  } process-ic bg-white  Scale`}
                   onClick={() => setStep(1)}
                   src={step === 1 ? carriedColor : carriedImg}
                   alt='carried-img'
                 />
               </LazyLoad>
-              <LazyLoad className='xl:w-16 xl:h-16 w-8 h-8'>
+              <LazyLoad
+                {...lazyLoadOptions}
+                className='xl:w-16 xl:h-16 w-8 h-8'
+              >
                 <img
                   className={`${
                     step === 2 ? 'active' : ''
-                  }  process-ic bg-white `}
+                  }  process-ic bg-white Scale `}
                   onClick={() => setStep(2)}
                   src={step === 2 ? receivedColorImg : receivedImg}
                   alt='received-img'
                 />
               </LazyLoad>
-              <LazyLoad className='xl:w-16 xl:h-16 w-8 h-8'>
+              <LazyLoad
+                {...lazyLoadOptions}
+                className='xl:w-16 xl:h-16 w-8 h-8'
+              >
                 <img
                   className={`${
                     step === 3 ? 'active' : ''
-                  }  process-ic bg-white`}
+                  }  process-ic bg-white Scale`}
                   onClick={() => setStep(3)}
                   src={step === 3 ? processColorImg : processImg}
                   alt='process-img'
                 />
               </LazyLoad>
-              <LazyLoad className='xl:w-16 xl:h-16 w-8 h-8'>
+              <LazyLoad
+                {...lazyLoadOptions}
+                className='xl:w-16 xl:h-16 w-8 h-8'
+              >
                 <img
                   className={`${step === 4 ? 'active' : ''} process-ic   
-            bg-white`}
+            bg-white  Scale`}
                   onClick={() => setStep(4)}
                   src={step === 4 ? improveColorImg : improveImg}
                   alt=''
                 />
               </LazyLoad>
-              <LazyLoad className='xl:w-16 xl:h-16 w-8 h-8'>
+              <LazyLoad
+                {...lazyLoadOptions}
+                className='xl:w-16 xl:h-16 w-8 h-8'
+              >
                 <img
                   className={`${
                     step === 5 ? 'active' : ''
-                  } process-ic bg-white`}
+                  } process-ic bg-white  Scale`}
                   onClick={() => setStep(5)}
                   src={step === 5 ? reviewColorImg : reviewImg}
                   alt='threat-img'
                 />
               </LazyLoad>
-              <LazyLoad className='xl:w-16 xl:h-16 w-8 h-8'>
+              <LazyLoad
+                {...lazyLoadOptions}
+                className='xl:w-16 xl:h-16 w-8 h-8'
+              >
                 <img
                   className={`${
                     step === 6 ? 'active' : ''
-                  } process-ic bg-white`}
+                  } process-ic bg-white Scale`}
                   onClick={() => setStep(6)}
                   src={step === 6 ? managementColor : managementImg}
                   alt='management-img'

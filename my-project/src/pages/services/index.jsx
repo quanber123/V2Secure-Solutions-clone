@@ -1,6 +1,11 @@
 import { useTranslation } from 'react-i18next';
 import ServicesList from './services-list';
+<<<<<<< HEAD
 import ImplementationProcess from './implementation-process';
+=======
+// import ServicesList from './services-list-demo';
+import ImplementProcess from './implement-process';
+>>>>>>> e4a5935 (complete scroll animation)
 import LazyLoad from 'react-lazyload';
 import { Link } from 'react-router-dom';
 export default function Services() {
@@ -15,11 +20,16 @@ export default function Services() {
       <h3 className='text-center text-[64px] font-bold Scale'>
         {t('our-services')}
       </h3>
-      <LazyLoad offset={0} once>
+      <LazyLoad className='my-16' offset={0} once>
         <ServicesList />
       </LazyLoad>
+<<<<<<< HEAD
       <LazyLoad offset={0} once>
         <ImplementationProcess />
+=======
+      <LazyLoad className='my-16' offset={0} once>
+        <ImplementProcess />
+>>>>>>> e4a5935 (complete scroll animation)
       </LazyLoad>
     </main>
   );
