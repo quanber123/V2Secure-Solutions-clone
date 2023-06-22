@@ -33,10 +33,16 @@ function ContactForm() {
     });
   };
   return (
-    <div className='relative my-16 py-32'>
-      <LazyLoad className='map-img' offset={100} once>
-        <img className='Scale' src={mapImg} alt='map-img' />
-      </LazyLoad>
+    <div className='relative my-16 py-[40px]'>
+      <div>
+        <LazyLoad className='map-img' offset={100} once>
+          <img className='Scale' src={mapImg} alt='map-img' />
+        </LazyLoad>
+        <div className='map-info'>
+          <h3 className='text-[32px] font-bold'>FAGONET</h3>
+          <p className='text-[20px] text-darkBlue'>{t('about.district')}</p>
+        </div>
+      </div>
       <form className='contact-form Up' onSubmit={handleSubmitForm}>
         <h5 className='text-darkBlue text-[40px] font-bold'>{t('mess')}</h5>
         <p>{t('askQuestion')}</p>

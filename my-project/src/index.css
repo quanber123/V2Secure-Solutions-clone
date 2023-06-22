@@ -20,6 +20,20 @@ html {
 }
 body {
   background-color: #003249;
+  overflow-y: scroll; /* Tạo thanh cuộn dọc */
+  scroll-snap-type: mandatory; /* Kích hoạt chế độ cuộn snap */
+  scroll-snap-points-y: repeat(100%); /* Điểm snap mỗi 100% độ cao */
+  scroll-snap-type: y mandatory; /* Chỉ snap theo trục y */
+  scrollbar-width: none; /* Độ rộng của thanh cuộn */
+  scrollbar-color: transparent transparent;
+}
+body::-webkit-scrollbar {
+  width: 6px; /* Độ rộng của thanh cuộn */
+  background-color: transparent; /* Màu nền của thanh cuộn */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: transparent; /* Màu của thanh cuộn */
 }
 main {
   width: 80% !important;

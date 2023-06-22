@@ -31,7 +31,14 @@ function OurServices() {
               onMouseOut={() => setHoverServices(null)}
             >
               <LazyLoad className='w-[60px] h-[60px]' offset={100} once>
-                <img src={service.introImg} alt='secureImg' />
+                <img
+                  src={
+                    hoverServices === index
+                      ? service.introImg
+                      : service.hoverIntroImg
+                  }
+                  alt='secureImg'
+                />
               </LazyLoad>
               <h4 className='my-2 text-start text-[20px] font-bold'>
                 {service.intro}
