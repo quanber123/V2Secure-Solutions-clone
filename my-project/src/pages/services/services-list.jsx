@@ -1,5 +1,4 @@
-import { useEffect, useContext, useRef } from 'react';
-import { useState } from 'react';
+import React, { useEffect, useContext, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import LazyLoad from 'react-lazyload';
@@ -25,7 +24,7 @@ function ServicesList() {
     const items = itemsRef.current;
     let stt = 0;
 
-    items[active].style.transform = 'scale(1)';
+    items[active].style.transform = 'none';
     items[active].style.zIndex = 1;
     items[active].style.filter = 'none';
     items[active].style.opacity = 1;
@@ -53,30 +52,60 @@ function ServicesList() {
   };
 
   const handleScroll = (event) => {
-    const delta = Math.sign(event.deltaY); // Check the direction of scroll
+    event.stopPropagation();
+    let delta = 0;
+
+    // Xác định hướng cuộn dựa trên sự kiện cuộn cảm ứng hoặc sự kiện cuộn chuột
+    if (event.touches) {
+      const touch = event.touches[0];
+      const startY = touch.clientY;
+      const moveHandler = (e) => {
+        const deltaY = e.touches[0].clientY - startY;
+        if (deltaY > 10) {
+          delta = 1; // Cuộn xuống
+        } else if (deltaY < -10) {
+          delta = -1; // Cuộn lên
+        }
+      };
+      const endHandler = () => {
+        window.removeEventListener('touchmove', moveHandler);
+        window.removeEventListener('touchend', endHandler);
+        if (delta !== 0) {
+          handleScrollAction(delta);
+        }
+      };
+      window.addEventListener('touchmove', moveHandler);
+      window.addEventListener('touchend', endHandler);
+    } else {
+      delta = Math.sign(event.deltaY);
+      handleScrollAction(delta);
+    }
+  };
+
+  const handleScrollAction = (delta) => {
     if (delta > 0) {
-      // Scrolling down
       setActive((prevActive) =>
         prevActive + 1 < itemsRef.current.length ? prevActive + 1 : prevActive
       );
     } else if (delta < 0) {
-      // Scrolling up
       setActive((prevActive) =>
         prevActive - 1 >= 0 ? prevActive - 1 : prevActive
       );
     }
     handleScrollToTop();
+    window.requestAnimationFrame(loadShow);
   };
 
   return (
-    <section
-      className='flex justify-between items-center'
-      onWheel={handleScroll}
-    >
+    <section className='flex justify-between items-center'>
       <LazyLoad className='w-1/2' offset={100} once>
         <img src={introServicesImg} alt='intro-services-img' />
       </LazyLoad>
-      <div className='w-1/2 services-list'>
+      <div
+        className='w-1/2 services-list'
+        onWheel={handleScroll}
+        onTouchMove={handleScroll}
+      >
         {dataServices.map((service, index) => {
           return (
             <article
@@ -87,6 +116,10 @@ function ServicesList() {
               ref={(el) => (itemsRef.current[index] = el)}
               onMouseOver={() => setHoverServices(index)}
               onMouseOut={() => setHoverServices(null)}
+              onTouchStart={() => setHoverServices(index)}
+              onTouchEnd={() => setHoverServices(null)}
+              onWheel={handleScroll}
+              onTouchMove={handleScroll}
             >
               <LazyLoad className='w-[60px] h-[60px]' offset={100} once>
                 <img
