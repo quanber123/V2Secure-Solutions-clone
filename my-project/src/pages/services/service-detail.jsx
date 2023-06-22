@@ -9,6 +9,67 @@ function ServiceDetail() {
   const { t } = useTranslation();
   const { link } = useParams();
   const { dataServices } = useContext(ServicesContext);
+<<<<<<< HEAD
+=======
+  const serviceDetailRef = useRef(null);
+  const prevLinkRef = useRef(link);
+  const lazyLoadOptions = {
+    offset: 100,
+    once: true,
+  };
+  useEffect(() => {
+    const serviceDetailElement = serviceDetailRef.current;
+
+    if (serviceDetailElement && prevLinkRef.current !== link) {
+      serviceDetailElement.classList.add('animated');
+      setTimeout(() => {
+        serviceDetailElement.classList.remove('animated');
+        prevLinkRef.current = link;
+      }, 500);
+    }
+  }, [link]);
+  const [step, setStep] = useState(1);
+  const stepContent = [
+    {
+      title: t('services-page.step1'),
+      content: t('services-page.step-content1'),
+    },
+    {
+      title: t('services-page.step2'),
+      content: t('services-page.step-content2'),
+    },
+    {
+      title: t('services-page.step3'),
+      content: t('services-page.step-content3'),
+    },
+    {
+      title: t('services-page.step4'),
+      content: t('services-page.step-content4'),
+    },
+    {
+      title: t('services-page.step5'),
+      content: t('services-page.step-content5'),
+    },
+    {
+      title: t('services-page.step6'),
+      content: t('services-page.step-content6'),
+    },
+  ];
+  function handleNext() {
+    if (stepContent.length === step) {
+      return step.length;
+    } else {
+      setStep((prevStep) => prevStep + 1);
+    }
+  }
+  function handlePrev() {
+    if (step === 1) {
+      return 1;
+    } else {
+      setStep((prevStep) => prevStep - 1);
+    }
+  }
+>>>>>>> e4a5935 (complete scroll animation)
   const serviceDetail = dataServices.find((service) => service.link === link);
   return (
     <section className='w-4/5 mx-auto mt-8 mb-32'>
@@ -39,6 +100,7 @@ function ServiceDetail() {
             <p className='text-[20px]'>{serviceDetail.firstWord}</p>
             <h5 className='my-4 text-[24px] font-bold'>
               {serviceDetail.title}
+<<<<<<< HEAD
             </h5>
             <p className='text-[20px]'>{serviceDetail.desc}</p>
             <div className='my-4 service-detail-list'>
@@ -55,6 +117,142 @@ function ServiceDetail() {
         </div>
       </div>
     </section>
+=======
+            </h3>
+            <p className='w-4/5 mx-auto my-4 text-center'>
+              {serviceDetail.desc}
+            </p>
+            <div className='my-8 flex flex-col md:flex-row'>
+              <ul className='md:w-1/2'>
+                {serviceDetail.content.map((content, index) => {
+                  return (
+                    <li className='my-4 font-bold' key={index}>
+                      <i className='fa fa-check-circle text-green text-2xl mr-4'></i>
+                      {content.list}
+                    </li>
+                  );
+                })}
+              </ul>
+              <LazyLoad className='md:w-1/2' {...lazyLoadOptions}>
+                <img
+                  className='w-1/2 m-auto Scale'
+                  src={secureImg}
+                  alt='secure-img'
+                />
+              </LazyLoad>
+            </div>
+          </div>
+        </main>
+        <aside className='text-white'>
+          <div className='text-center py-8'>
+            <h3 className='font-bold text-blue'>{serviceDetail.endTitle}</h3>
+            <p className='w-4/5 mx-auto my-4 text-center'>
+              {serviceDetail.endWord}
+            </p>
+          </div>
+          <div className='container m-auto w-4/5   py-8 text-black bg-lightGray'>
+            <div className='flex justify-around p-8'>
+              <LazyLoad
+                {...lazyLoadOptions}
+                className='xl:w-16 xl:h-16 w-8 h-8'
+              >
+                <img
+                  className={`${
+                    step === 1 ? 'active' : ''
+                  } process-ic bg-white  Scale`}
+                  onClick={() => setStep(1)}
+                  src={step === 1 ? carriedColor : carriedImg}
+                  alt='carried-img'
+                />
+              </LazyLoad>
+              <LazyLoad
+                {...lazyLoadOptions}
+                className='xl:w-16 xl:h-16 w-8 h-8'
+              >
+                <img
+                  className={`${
+                    step === 2 ? 'active' : ''
+                  }  process-ic bg-white Scale `}
+                  onClick={() => setStep(2)}
+                  src={step === 2 ? receivedColorImg : receivedImg}
+                  alt='received-img'
+                />
+              </LazyLoad>
+              <LazyLoad
+                {...lazyLoadOptions}
+                className='xl:w-16 xl:h-16 w-8 h-8'
+              >
+                <img
+                  className={`${
+                    step === 3 ? 'active' : ''
+                  }  process-ic bg-white Scale`}
+                  onClick={() => setStep(3)}
+                  src={step === 3 ? processColorImg : processImg}
+                  alt='process-img'
+                />
+              </LazyLoad>
+              <LazyLoad
+                {...lazyLoadOptions}
+                className='xl:w-16 xl:h-16 w-8 h-8'
+              >
+                <img
+                  className={`${step === 4 ? 'active' : ''} process-ic   
+            bg-white  Scale`}
+                  onClick={() => setStep(4)}
+                  src={step === 4 ? improveColorImg : improveImg}
+                  alt=''
+                />
+              </LazyLoad>
+              <LazyLoad
+                {...lazyLoadOptions}
+                className='xl:w-16 xl:h-16 w-8 h-8'
+              >
+                <img
+                  className={`${
+                    step === 5 ? 'active' : ''
+                  } process-ic bg-white  Scale`}
+                  onClick={() => setStep(5)}
+                  src={step === 5 ? reviewColorImg : reviewImg}
+                  alt='threat-img'
+                />
+              </LazyLoad>
+              <LazyLoad
+                {...lazyLoadOptions}
+                className='xl:w-16 xl:h-16 w-8 h-8'
+              >
+                <img
+                  className={`${
+                    step === 6 ? 'active' : ''
+                  } process-ic bg-white Scale`}
+                  onClick={() => setStep(6)}
+                  src={step === 6 ? managementColor : managementImg}
+                  alt='management-img'
+                />
+              </LazyLoad>
+            </div>
+            {stepContent.map((content, index) => {
+              return (
+                <div key={index}>
+                  {step === index + 1 ? (
+                    <div className='text-center text-lg text-white Scale'>
+                      <h4 className='text-blue font-bold'>{content.title}</h4>
+                      <p>{content.content}</p>
+                    </div>
+                  ) : (
+                    ''
+                  )}
+                </div>
+              );
+            })}
+          </div>
+          <div className='flex justify-center my-8 text-2xl'>
+            <i className='fa fa-angle-left' onClick={handlePrev}></i>
+            <i className='fa fa-angle-right' onClick={handleNext}></i>
+          </div>
+        </aside>
+      </section>
+    </>
+>>>>>>> e4a5935 (complete scroll animation)
   );
 }
 export default ServiceDetail;

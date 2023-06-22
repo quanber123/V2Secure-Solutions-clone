@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 /* .services-list {
+=======
+.services-list {
+>>>>>>> e4a5935 (complete scroll animation)
   position: relative;
   height: 482px;
   display: grid;
@@ -95,11 +99,19 @@
 }
 .services-list > article > p {
   display: -webkit-box;
+<<<<<<< HEAD
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
 /* .services-icon.fa.fa-long-arrow-right {
+=======
+  -webkit-line-clamp: 3; /* Số dòng hiển thị tối đa */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.services-icon.fa.fa-long-arrow-right {
+>>>>>>> e4a5935 (complete scroll animation)
   position: absolute;
   top: 10%;
   right: 10%;
@@ -206,4 +218,13 @@
 .service-detail-list > div > div > p {
   line-height: 18.78px;
   letter-spacing: 2%;
+}
+
+.wire-frame-img {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  z-index: -1;
 }
