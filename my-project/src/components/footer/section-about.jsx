@@ -5,6 +5,7 @@ import fbLogo from '../../assets/images/home/facebook.png';
 import insLogo from '../../assets/images/home/ins.png';
 import twLogo from '../../assets/images/home/tw.png';
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 function SectionAbout() {
   const { t } = useTranslation();
   const lazyLoadOptions = {
@@ -22,6 +23,9 @@ function SectionAbout() {
       return { ...prevForm, email: value, id: new Date().getTime() };
     });
   }
+  function handleScroll() {
+    window.scrollTo(0, 0);
+  }
   return (
     <section className='container m-auto py-[60px] flex justify-between items-stretch'>
       <div className='w-1/4'>
@@ -29,21 +33,33 @@ function SectionAbout() {
           <LazyLoad className='mr-2' {...lazyLoadOptions}>
             <img className='w-full' src={logo} alt='fagonet-logo' />
           </LazyLoad>
-          <h4 className='text-[26px] text-blue font-bold'>FAGONET</h4>
+          <h3 className='text-[26px] text-blue font-bold'>FAGONET</h3>
         </div>
-        <p className='my-2'>
-          Fagonet is a cybersecurity company that provides cyber risk management
-          and services on behalf of our valued technology and distribution
-          partners.
-        </p>
+        <p className='my-2'>{t('fago-intro')}</p>
       </div>
       <div className='w-1/5 flex flex-col justify-center items-center'>
         <h5 className='h-1/4 text-[18px] font-bold'>Useful Links</h5>
         <ul className='h-3/4'>
-          <li className='my-[4px]'>Home</li>
-          <li className='my-[4px]'>Services</li>
-          <li className='my-[4px]'>Solutions</li>
-          <li className='my-[4px]'>Contact us</li>
+          <li className='my-[4px] hover:text-blue'>
+            <Link to='/' onClick={handleScroll}>
+              Home
+            </Link>
+          </li>
+          <li className='my-[4px] hover:text-blue'>
+            <Link to='/services' onClick={handleScroll}>
+              {t('SERVICES')}
+            </Link>
+          </li>
+          <li className='my-[4px] hover:text-blue'>
+            <Link to='/solutions' onClick={handleScroll}>
+              {t('SOLUTIONS')}
+            </Link>
+          </li>
+          <li className='my-[4px] hover:text-blue'>
+            <Link to='/contact' onClick={handleScroll}>
+              {t('CONTACT')}
+            </Link>
+          </li>
         </ul>
       </div>
       <div className='w-1/4 flex flex-col justify-center home-contact-us'>
@@ -78,7 +94,7 @@ function SectionAbout() {
             checked
           />
           <button
-            className='absolute w-[103px] h-[40px] bg-darkBlue right-1 top-1 rounded-[25px]'
+            className='absolute w-[103px] h-[40px] bg-darkBlue font-bold right-1 top-1 rounded-[25px] hover:bg-blue hover:text-darkBlue'
             type='submit'
           >
             Submit

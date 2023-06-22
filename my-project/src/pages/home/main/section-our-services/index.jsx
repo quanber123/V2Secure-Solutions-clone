@@ -16,8 +16,8 @@ function OurServices() {
       <h3 className='text-[64px] text-blue tracking-[0.2em] font-bold'>
         {t('SERVICES')}
       </h3>
-      <p className='my-4 text-[24px] text-white font-bold'>
-        With Quality services for you
+      <p className='my-4 text-[20px] text-white font-bold'>
+        {t('services-intro')}
       </p>
       <div className='home-services mt-12'>
         {dataServices.map((service, index) => {
@@ -25,13 +25,20 @@ function OurServices() {
             <article
               key={index}
               className={`bg-boldBlue ${
-                hoverServices === index ? 'hoverServices' : ''
+                hoverServices === index ? 'hoverServices' : 'notHoverServices'
               }`}
               onMouseOver={() => setHoverServices(index)}
               onMouseOut={() => setHoverServices(null)}
             >
               <LazyLoad className='w-[60px] h-[60px]' offset={100} once>
-                <img src={service.introImg} alt='secureImg' />
+                <img
+                  src={
+                    hoverServices === index
+                      ? service.introImg
+                      : service.hoverIntroImg
+                  }
+                  alt='secureImg'
+                />
               </LazyLoad>
               <h4 className='my-2 text-start text-[20px] font-bold'>
                 {service.intro}

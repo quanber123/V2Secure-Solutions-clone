@@ -63,19 +63,17 @@ function Header() {
     }
   };
   return (
-    <header className='container m-auto Scale'>
-      <div className='flex justify-between items-center'>
+    <header className='Scale'>
+      <section className='container m-auto flex justify-between items-center my-'>
         <div className='w-1/2'>
-          <h1 className='text-[80px] text-[#F5F5F5] font-bold leading-[93px]'>
+          <h1 className='text-[64px] text-[#F5F5F5] font-bold leading-[93px]'>
             {t('intro.title1')}
           </h1>
           <h3 className='my-4 text-[80px] text-[#F5F5F5] font-bold leading-[93px]'>
             {t('intro.title3')}
           </h3>
           <p className='my-8 w-4/5 text-gray leading-[19px]'>
-            Fagonet is a cybersecurity company that provides cyber risk
-            management and services on behalf of our valued technology and
-            distribution partners.
+            {t('fago-intro')}
           </p>
           <button
             className='get-start-btn mt-12 w-[241px] h-[61px] font-bold rounded-[30px]'
@@ -92,49 +90,51 @@ function Header() {
             alt='intro-img-home'
           />
         </div>
-      </div>
-      <div className='container mx-auto my-32 carousel'>
-        <div className='autoplay-carousel'>
-          {intros.map((intro, index) => (
-            <article
-              key={index}
-              className='text-gray hover:text-white opacity-80 hover:opacity-100'
-            >
-              <LazyLoad
-                className='w-[50px] m-auto'
+      </section>
+      <section className='my-32 py-8 border-t border-b border-boldBlue'>
+        <div className='container mx-auto carousel'>
+          <div className='autoplay-carousel'>
+            {intros.map((intro, index) => (
+              <article
                 key={index}
-                {...lazyLoadOptions}
+                className='text-gray hover:text-white opacity-80 hover:opacity-100'
               >
-                <img
-                  className='w-full h-full Up'
-                  src={intro.url}
-                  alt={intro.content}
-                />
-              </LazyLoad>
-              <h5 className='h-20 text-center'>{intro.content}</h5>
-            </article>
-          ))}
-          {intros.map((intro, index) => (
-            <article
-              key={index}
-              className='text-gray hover:text-white opacity-80 hover:opacity-100'
-            >
-              <LazyLoad
-                className='w-[50px] m-auto'
+                <LazyLoad
+                  className='w-[50px] m-auto'
+                  key={index}
+                  {...lazyLoadOptions}
+                >
+                  <img
+                    className='w-full h-full Up'
+                    src={intro.url}
+                    alt={intro.content}
+                  />
+                </LazyLoad>
+                <h5 className='h-20 text-center'>{intro.content}</h5>
+              </article>
+            ))}
+            {intros.map((intro, index) => (
+              <article
                 key={index}
-                {...lazyLoadOptions}
+                className='text-gray hover:text-white opacity-80 hover:opacity-100'
               >
-                <img
-                  className='w-full h-full Up'
-                  src={intro.url}
-                  alt={intro.content}
-                />
-              </LazyLoad>
-              <h5 className='h-20 text-center'>{intro.content}</h5>
-            </article>
-          ))}
+                <LazyLoad
+                  className='w-[50px] m-auto'
+                  key={index}
+                  {...lazyLoadOptions}
+                >
+                  <img
+                    className='w-full h-full Up'
+                    src={intro.url}
+                    alt={intro.content}
+                  />
+                </LazyLoad>
+                <h5 className='h-20 text-center'>{intro.content}</h5>
+              </article>
+            ))}
+          </div>
         </div>
-      </div>
+      </section>
     </header>
   );
 }

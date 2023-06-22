@@ -1,45 +1,23 @@
-import  { useContext } from 'react';
 import { useTranslation } from 'react-i18next';
+import ServicesList from './services-list';
+// import ServicesList from './services-list-demo';
+import LazyLoad from 'react-lazyload';
 import { Link } from 'react-router-dom';
-import { ServicesContext } from './hooks/services-context';
 export default function Services() {
   const { t } = useTranslation();
-  const { dataServices } = useContext(ServicesContext);
-  const handleClick = () => {
-    window.scroll(0, 0);
-  };
   return (
-    <section className='container m-auto px-8 xl:px-0 py-8 Up'>
-      <h1 className='text-center text-blue font-bold'>
+    <main className='container m-auto px-8 xl:px-0 py-8'>
+      <section className='flex'>
+        <Link to='..'>Home</Link>
+        <span className='mx-2'>&gt;</span>
+        <h5>{t('SERVICES')}</h5>
+      </section>
+      <h3 className='text-center text-[64px] font-bold Scale'>
         {t('our-services')}
-      </h1>
-      {dataServices.map((service, index) => {
-        return (
-          <article
-            className='prev-services my-8 py-8 border-b border-b-gray'
-            key={index}
-          >
-            <img
-              className='w-1/2 m-auto md:w-1/3 lg:w-1/4 Scale'
-              src={service.imgUrl}
-              alt={service.intro}
-            />
-            <div className='w-full md:w-2/3 lg:w-3/4 my-4 md:my-0 text-center md:text-start'>
-              <h2 className='text-blue font-bold'>
-                {service.intro}
-              </h2>
-              <p className='font-bold my-6'>{service.firstWord}</p>
-              <Link
-                className='px-2 py-2 md:px-4 rounded-3xl font-bold border text-black border-blue bg-boldBlue hover:bg-blue '
-                to={`${service.link}`}
-                onClick={handleClick}
-              >
-                {t('view-more')}
-              </Link>
-            </div>
-          </article>
-        );
-      })}
-    </section>
+      </h3>
+      <LazyLoad offset={0} once>
+        <ServicesList />
+      </LazyLoad>
+    </main>
   );
 }

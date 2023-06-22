@@ -11,7 +11,7 @@ function Nav() {
     offset: 0,
     once: true,
   };
-  const [selectedLink, setSelectedLink] = useState('HOME');
+  // const [selectedLink, setSelectedLink] = useState('HOME');
   const [showNav, setShowNav] = useState(false);
   const [selectedLanguage, setSelectedLanguage] = useState(
     localStorage.getItem('language') || 'en'
@@ -28,15 +28,12 @@ function Nav() {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
-  const handleSelectChangeLanguage = useCallback(
-    (language) => {
-      const lang = language === 'en' ? 'en' : 'vi';
-      setSelectedLanguage(lang);
-      setShowNav(false);
-      handleShowTabLanguage(false);
-    },
-    [selectedLanguage]
-  );
+  const handleSelectChangeLanguage = useCallback((language) => {
+    const lang = language === 'en' ? 'en' : 'vi';
+    setSelectedLanguage(lang);
+    setShowNav(false);
+    handleShowTabLanguage(false);
+  }, []);
   useEffect(() => {
     i18n.changeLanguage(selectedLanguage);
     localStorage.setItem('language', selectedLanguage);
@@ -45,19 +42,17 @@ function Nav() {
     setShowNav((prevShow) => !prevShow);
     setTabLanguage(false);
   };
-  const handleLinkClick = useCallback(
-    (link) => {
-      setSelectedLink(link);
-      setShowNav(false);
-    },
-    [selectedLink]
-  );
+  const handleLinkClick = useCallback(() => {
+    // setSelectedLink(link);
+    setShowNav(false);
+    setTabLanguage(false);
+  }, []);
   const handleShowTabLanguage = () => {
     setTabLanguage((prevTab) => !prevTab);
   };
   return (
     <section className={`relative nav-item h-24 flex Scale`}>
-      <div className='h-full flex justify-between container m-auto'>
+      <div className='container m-auto w-4/5 h-full flex justify-between'>
         <Link
           className='mx-8 lg:mx-0 flex justify-between items-center cursor-pointer'
           to='.'
@@ -84,19 +79,7 @@ function Nav() {
               to='/'
               onClick={() => handleLinkClick('HOME')}
             >
-              HOME
-            </NavLink>
-            <NavLink
-              className={({ isActive }) =>
-                isActive
-                  ? 'mx-5 my-4 lg:my-2 nav-link hight-light'
-                  : 'mx-5 my-4 lg:my-2 nav-link'
-              }
-              rel='nofollow'
-              to='solutions'
-              onClick={() => handleLinkClick('SOLUTIONS')}
-            >
-              {t('SOLUTIONS')}
+              Home
             </NavLink>
             <NavLink
               className={({ isActive }) =>
@@ -117,6 +100,18 @@ function Nav() {
                   : 'mx-5 my-4 lg:my-2 nav-link'
               }
               rel='nofollow'
+              to='solutions'
+              onClick={() => handleLinkClick('SOLUTIONS')}
+            >
+              {t('SOLUTIONS')}
+            </NavLink>
+            <NavLink
+              className={({ isActive }) =>
+                isActive
+                  ? 'mx-5 my-4 lg:my-2 nav-link hight-light'
+                  : 'mx-5 my-4 lg:my-2 nav-link'
+              }
+              rel='nofollow'
               to='contact'
               onClick={() => handleLinkClick('CONTACT')}
             >
@@ -129,38 +124,36 @@ function Nav() {
             <button onClick={handleShowTabLanguage}>
               <i className='fa fa-caret-down ml-2 mb-[4px]'></i>
             </button>
-            {tabLanguage && (
-              <ul className='options-language'>
-                <li
-                  className='relative flex justify-between items-center cursor-pointer'
-                  onClick={() => handleSelectChangeLanguage('en')}
-                >
-                  <h5 className='w-1/4 mx-[12px]'>EN</h5>
-                  <h5 className='w-3/4 px-4 border-l border-l-white'>
-                    {t('en')}
-                  </h5>
-                  <i
-                    className={`fa fa-check absolute right-2 ${
-                      selectedLanguage === 'en' ? 'block' : 'hidden'
-                    }`}
-                  ></i>
-                </li>
-                <li
-                  className='relative flex justify-between items-center cursor-pointer'
-                  onClick={() => handleSelectChangeLanguage('vn')}
-                >
-                  <h5 className='w-1/4 mx-[12px]'>VI</h5>
-                  <h5 className='w-3/4 px-4 border-l border-l-white'>
-                    {t('vi')}
-                  </h5>
-                  <i
-                    className={`fa fa-check absolute right-2 ${
-                      selectedLanguage === 'vi' ? 'block' : 'hidden'
-                    }`}
-                  ></i>
-                </li>
-              </ul>
-            )}
+            <ul className={`options-language ${tabLanguage ? 'active' : ''}`}>
+              <li
+                className='relative flex justify-between items-center cursor-pointer'
+                onClick={() => handleSelectChangeLanguage('en')}
+              >
+                <h5 className='w-1/4 mx-[12px]'>EN</h5>
+                <h5 className='w-3/4 px-4 border-l border-l-white'>
+                  {t('en')}
+                </h5>
+                <i
+                  className={`fa fa-check absolute right-2 ${
+                    selectedLanguage === 'en' ? 'block' : 'hidden'
+                  }`}
+                ></i>
+              </li>
+              <li
+                className='relative flex justify-between items-center cursor-pointer'
+                onClick={() => handleSelectChangeLanguage('vn')}
+              >
+                <h5 className='w-1/4 mx-[12px]'>VI</h5>
+                <h5 className='w-3/4 px-4 border-l border-l-white'>
+                  {t('vi')}
+                </h5>
+                <i
+                  className={`fa fa-check absolute right-2 ${
+                    selectedLanguage === 'vi' ? 'block' : 'hidden'
+                  }`}
+                ></i>
+              </li>
+            </ul>
           </div>
         </div>
         <i

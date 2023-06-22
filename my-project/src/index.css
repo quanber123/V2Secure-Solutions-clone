@@ -20,6 +20,24 @@ html {
 }
 body {
   background-color: #003249;
+  overflow-y: scroll; /* Tạo thanh cuộn dọc */
+  scroll-snap-type: mandatory; /* Kích hoạt chế độ cuộn snap */
+  scroll-snap-points-y: repeat(100%); /* Điểm snap mỗi 100% độ cao */
+  scroll-snap-type: y mandatory; /* Chỉ snap theo trục y */
+  scrollbar-width: none; /* Độ rộng của thanh cuộn */
+  scrollbar-color: transparent transparent;
+}
+body::-webkit-scrollbar {
+  width: 6px; /* Độ rộng của thanh cuộn */
+  background-color: transparent; /* Màu nền của thanh cuộn */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: transparent; /* Màu của thanh cuộn */
+}
+main {
+  width: 80% !important;
+  margin: auto;
 }
 /* footer {
   background-color: transparent;
@@ -82,21 +100,7 @@ h4 {
   animation: Scale 0.5s linear;
 }
 /* Animation */
-.Scale {
-  animation: Scale 0.5s linear;
-}
-@keyframes Scale {
-  0% {
-    scale: 0;
-  }
-  50% {
-    scale: 0.5;
-  }
-  100% {
-    scale: 1;
-  }
-}
-.Sticky {
+/* .Sticky {
   animation: Sticky 0.5s linear;
 }
 @keyframes Sticky {
@@ -109,7 +113,7 @@ h4 {
   100% {
     transform: translateY(0);
   }
-}
+} */
 
 @keyframes Show {
   0% {
@@ -128,90 +132,6 @@ h4 {
     height: 258px;
   }
 }
-.Right {
-  animation: Right 0.5s linear;
-}
-@keyframes Right {
-  0% {
-    transform: translateX(-50%);
-  }
-  50% {
-    transform: translateX(-25%);
-  }
-  100% {
-    transform: translateX(0%);
-  }
-}
-.Left {
-  animation: Left 0.5s linear;
-}
-@keyframes Left {
-  0% {
-    transform: translateX(50%);
-  }
-  50% {
-    transform: translateX(25%);
-  }
-  100% {
-    transform: translateX(0%);
-  }
-}
-.Up {
-  animation: Up 0.5s linear;
-}
-@keyframes Up {
-  0% {
-    transform: translateY(50%);
-  }
-  50% {
-    transform: translateY(25%);
-  }
-  100% {
-    transform: translateY(0%);
-  }
-}
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  border-radius: 16px;
-  /* box-shadow: 1px 1px 10px 10px #ddd; */
-  border: 1px solid #5a8488;
-  box-shadow: 1px 1px 20px -5px #00c4e7;
-}
-.thanks-form {
-  height: 86px;
-}
-.downAlter {
-  animation: downAlter 0.5s linear;
-}
-.hideAlter {
-  animation: hideAlter 0.5s linear;
-}
-@keyframes downAlter {
-  0% {
-    height: 0;
-  }
-  50% {
-    height: 43px;
-  }
-  100% {
-    height: 86px;
-  }
-}
-@keyframes hideAlter {
-  0% {
-    height: 86px;
-  }
-  50% {
-    height: 43px;
-  }
-  100% {
-    height: 0;
-  }
-}
-
 /* Gallery*/
 .solutions-report-gallery {
   width: 90%;
@@ -271,13 +191,11 @@ h4 {
 }
 .managed-security-service.animated,
 .pentest-and-audit.animated,
-.iot-system-assessment.animated {
-  animation: Right 0.5s linear;
-}
+.iot-system-assessment.animated,
 .threat-hunting.animated,
 .ddos-mitigation.animated,
 .application-security.animated {
-  animation: Left 0.5s linear;
+  animation: Scale 0.5s linear;
 }
 
 .prev-services {

@@ -3,10 +3,10 @@ import Function1 from './1-function-1';
 import Function2 from './2-function-2';
 import { useTranslation } from 'react-i18next';
 import nacLogo from '../../../images/ecosystem/nac.png';
-import DownLoadDataSheet from '../../data-sheet/data-sheet';
 // import nacReport from '../../../images/gallery/header-2.15fda7c06337e76eaeb0.png';
 import Gallery from '../gallery-section/index';
-import filePath from '../../data-sheet/pdf/data-sheet/Document Cloud/Fortinet_Product_Matrix-part-4.pdf';
+import DownLoadDataSheet from '../data-sheet/data-sheet';
+import filePath from '../data-sheet/pdf/data-sheet/Document Cloud/Fortinet_Product_Matrix-part-4.pdf';
 function NAC() {
   const { t } = useTranslation();
   const fileName = 'Fortinet_Product_Matrix-part-4.pdf';

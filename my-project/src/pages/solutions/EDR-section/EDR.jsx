@@ -5,10 +5,10 @@ import Deployment from './4-deployment';
 import { useTranslation } from 'react-i18next';
 import LazyLoad from 'react-lazyload';
 import edrLogo from '../../../images/ecosystem/edr.png';
-import DownLoadDataSheet from '../../data-sheet/data-sheet';
 // import edrReport from '../../../images/gallery/header-7.c4c8a78b8f66aa9524dd.png';
 import Gallery from '../gallery-section/index';
-import filePath from '../../data-sheet/pdf/data-sheet/Document Cloud/Fortinet_Product_Matrix-part-5.pdf';
+import DownLoadDataSheet from '../data-sheet/data-sheet';
+import filePath from '../data-sheet/pdf/data-sheet/Document Cloud/Fortinet_Product_Matrix-part-5.pdf';
 function EDR() {
   const { t } = useTranslation();
   const fileName = 'Fortinet_Product_Matrix-part-5.pdf';
