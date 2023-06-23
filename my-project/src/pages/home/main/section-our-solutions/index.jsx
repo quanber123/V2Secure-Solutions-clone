@@ -54,12 +54,12 @@ function OurSolutions() {
     window.scroll(0, 0);
   };
   return (
-    <section className='container m-auto text-center pb-32 flex flex-row-reverse justify-between items-center'>
+    <section className='container m-auto pb-32 flex flex-row-reverse justify-between items-center'>
       <div className='w-1/2'>
-        <h3 className='text-[64px] text-blue tracking-[18px] font-bold uppercase'>
+        <h3 className='w-[526px] h-[75px] m-auto leading-[75.14px] text-[64px]  tracking-[16px] font-bold uppercase'>
           {t('SOLUTIONS')}
         </h3>
-        <p className='w-2/3 mx-auto my-4 text-[20px] text-start'>
+        <p className='w-[510px] h-[69px] mx-auto my-4 text-[20px] leading-[23.48px] capitalize'>
           {t('solutions-intro')}
         </p>
         <LazyLoad offset={100} once>

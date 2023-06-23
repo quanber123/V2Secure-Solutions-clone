@@ -37,9 +37,9 @@ function SectionAbout() {
         </div>
         <p className='my-2'>{t('fago-intro')}</p>
       </div>
-      <div className='w-1/5 flex flex-col justify-center items-center'>
+      <div>
         <h5 className='h-1/4 text-[18px] font-bold'>Useful Links</h5>
-        <ul className='h-3/4'>
+        <ul className='text-start'>
           <li className='my-[4px] hover:text-blue'>
             <Link to='/' onClick={handleScroll}>
               Home
@@ -71,7 +71,7 @@ function SectionAbout() {
           </li>
           <li>
             <span className='font-bold'>Email: </span>
-            info@imc.org.vn
+            support@fagonet.com
           </li>
           <li>
             <span className='font-bold'>Phone: </span>(098) 272 0920
