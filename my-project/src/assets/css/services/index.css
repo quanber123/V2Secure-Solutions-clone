@@ -1,8 +1,12 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* .services-list {
 =======
 .services-list {
 >>>>>>> e4a5935 (complete scroll animation)
+=======
+/* .services-list {
+>>>>>>> 1aa5ac3 (fix font-size)
   position: relative;
   height: 482px;
   display: grid;
@@ -64,7 +68,11 @@
   display: grid;
   grid-template-columns: repeat(2, 2fr);
   align-items: center;
+<<<<<<< HEAD
   gap: 40px;
+=======
+  gap: 20px;
+>>>>>>> 1aa5ac3 (fix font-size)
 }
 .services-list > article {
   background: linear-gradient(
@@ -100,6 +108,7 @@
 .services-list > article > p {
   display: -webkit-box;
 <<<<<<< HEAD
+<<<<<<< HEAD
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
@@ -112,11 +121,19 @@
 }
 .services-icon.fa.fa-long-arrow-right {
 >>>>>>> e4a5935 (complete scroll animation)
+=======
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+/* .services-icon.fa.fa-long-arrow-right {
+>>>>>>> 1aa5ac3 (fix font-size)
   position: absolute;
   top: 10%;
   right: 10%;
   color: #003249;
 } */
+<<<<<<< HEAD
 
 .wire-frame-img-1 {
   position: absolute;
@@ -219,12 +236,42 @@
   line-height: 18.78px;
   letter-spacing: 2%;
 }
+=======
+>>>>>>> 1aa5ac3 (fix font-size)
 
-.wire-frame-img {
+.wire-frame-img-1 {
   position: absolute;
-  top: 100%;
+  top: 150%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
   z-index: -1;
+}
+.wire-frame-img-2 {
+  position: absolute;
+  top: 350%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  z-index: -1;
+}
+.img-process-list {
+  background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.3) 0%,
+      rgba(255, 255, 255, 0.1) 100%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.2) 0%,
+      rgba(255, 255, 255, 0) 100%
+    );
+  border-radius: 25px;
+}
+
+.services.fa.fa-long-arrow-right {
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  font-size: 24px;
 }

@@ -52,20 +52,28 @@ function ImplementProcess() {
         {t('services-page.endTitle')}
       </h3>
 <<<<<<< HEAD
+<<<<<<< HEAD
       <p className='w-[651px] mx-auto my-8 text-white text-[20px] text-center Scale'>
 =======
       <p className='w-[651px] mx-auto my-8 text-white text-[20px] text-center'>
 >>>>>>> e4a5935 (complete scroll animation)
+=======
+      <p className='w-[651px] mx-auto my-8 text-white text-[20px] text-center Scale'>
+>>>>>>> 1aa5ac3 (fix font-size)
         {t('services-page.end-title-desc')}
       </p>
       {stepContent.map((content, index) => {
         return (
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 1aa5ac3 (fix font-size)
           <div
             className='flex flex-col items-center text-center text-[20px]'
             key={index}
           >
             <LazyLoad className='my-8' {...lazyLoadOptions}>
+<<<<<<< HEAD
               <img
                 className='Scale line-98-img'
                 src={line98}
@@ -108,19 +116,35 @@ function ImplementProcess() {
               <img src={line98} alt='line-98-img' />
             </LazyLoad>
             <LazyLoad {...lazyLoadOptions} className='xl:w-16 xl:h-16 w-8 h-8'>
+=======
+>>>>>>> 1aa5ac3 (fix font-size)
               <img
-                className='Scale'
-                src={content.urlImg}
-                alt='management-img'
+                className='Scale line-98-img'
+                src={line98}
+                alt='line-98-img'
               />
             </LazyLoad>
-            <div></div>
-            <h4>0{index + 1}</h4>
-            <h5>{content.title}</h5>
-            <p>{content.content}</p>
+            <LazyLoad
+              {...lazyLoadOptions}
+              className='w-[120px] h-[120px] m-auto flex justify-center items-center img-process-list'
+            >
+              <img
+                className='w-[60px] h-[60px] m-auto Scale'
+                src={content.urlImg}
+                alt={content.title}
+              />
+            </LazyLoad>
+            <h4 className='my-8 text-[32px] font-bold'>0{index + 1}</h4>
+            <h5 className='w-[700px] m-auto leading-[56.35px] text-[48px] text-blue font-bold'>
+              {content.title}
+            </h5>
+            <p className='w-[400px] mx-auto my-8 leading-[30px] text-[20px]'>
+              {content.content}
+            </p>
           </div>
         );
       })}
+<<<<<<< HEAD
       <LazyLoad {...lazyLoadOptions}>
         <img
           className='Scale wire-frame-img'
@@ -129,6 +153,18 @@ function ImplementProcess() {
         />
       </LazyLoad>
 >>>>>>> e4a5935 (complete scroll animation)
+=======
+      <img
+        className='Scale wire-frame-img-1'
+        src={wireFrameImg}
+        alt='wire-frame-img'
+      />
+      <img
+        className='Scale wire-frame-img-2'
+        src={wireFrameImg}
+        alt='wire-frame-img'
+      />
+>>>>>>> 1aa5ac3 (fix font-size)
     </section>
   );
 }

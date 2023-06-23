@@ -1,15 +1,4 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-import { useContext, useState } from 'react';
-=======
-import React, { useEffect, useContext, useRef, useState } from 'react';
->>>>>>> e4a5935 (complete scroll animation)
-=======
-import React, { useEffect, useContext, useRef, useState } from 'react';
-=======
-import { useContext, useState } from 'react';
->>>>>>> 0260109 (fix font-size)
->>>>>>> 1aa5ac3 (fix font-size)
+import { useEffect, useContext, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import LazyLoad from 'react-lazyload';
@@ -17,24 +6,11 @@ import { ServicesContext } from './hooks/services-context';
 import introServicesImg from '../../assets/images/services/Icon04-2.png';
 function ServicesList() {
   const { t } = useTranslation();
-  const { dataServices } = useContext(ServicesContext);
   const [hoverServices, setHoverServices] = useState(null);
+  const { dataServices } = useContext(ServicesContext);
   const handleScrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
-<<<<<<< HEAD
-<<<<<<< HEAD
-  return (
-    <section className='relative'>
-      <LazyLoad className='intro-services-img' offset={100} once>
-        <img
-          className='Scale'
-          src={introServicesImg}
-          alt='intro-services-img'
-        />
-      </LazyLoad>
-      <div className='services-list'>
-=======
 
   const [active, setActive] = useState(2);
   const itemsRef = useRef([]);
@@ -77,17 +53,15 @@ function ServicesList() {
   const handleScroll = (event) => {
     event.stopPropagation();
     let delta = 0;
-
-    // Xác định hướng cuộn dựa trên sự kiện cuộn cảm ứng hoặc sự kiện cuộn chuột
     if (event.touches) {
       const touch = event.touches[0];
       const startY = touch.clientY;
       const moveHandler = (e) => {
         const deltaY = e.touches[0].clientY - startY;
         if (deltaY > 10) {
-          delta = 1; // Cuộn xuống
+          delta = 1;
         } else if (deltaY < -10) {
-          delta = -1; // Cuộn lên
+          delta = -1;
         }
       };
       const endHandler = () => {
@@ -119,46 +93,34 @@ function ServicesList() {
     window.requestAnimationFrame(loadShow);
   };
 
-=======
->>>>>>> 1aa5ac3 (fix font-size)
   return (
-    <section className='relative'>
-      <LazyLoad className='intro-services-img' offset={100} once>
+    <section className='flex justify-between items-center'>
+      <LazyLoad className='w-1/2' offset={100} once>
         <img
           className='Scale'
           src={introServicesImg}
           alt='intro-services-img'
         />
       </LazyLoad>
-<<<<<<< HEAD
       <div
         className='w-1/2 services-list'
         onWheel={handleScroll}
         onTouchMove={handleScroll}
       >
->>>>>>> e4a5935 (complete scroll animation)
-=======
-      <div className='services-list'>
->>>>>>> 1aa5ac3 (fix font-size)
         {dataServices.map((service, index) => {
           return (
             <article
               key={index}
-              className={`relative bg-boldBlue Scale ${
+              className={`relative bg-boldBlue ${
                 hoverServices === index ? 'hoverServices' : 'notHoverServices'
               }`}
+              ref={(el) => (itemsRef.current[index] = el)}
               onMouseOver={() => setHoverServices(index)}
               onMouseOut={() => setHoverServices(null)}
               onTouchStart={() => setHoverServices(index)}
               onTouchEnd={() => setHoverServices(null)}
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
               onWheel={handleScroll}
               onTouchMove={handleScroll}
->>>>>>> e4a5935 (complete scroll animation)
-=======
->>>>>>> 1aa5ac3 (fix font-size)
             >
               <LazyLoad className='w-[60px] h-[60px]' offset={100} once>
                 <img
@@ -170,22 +132,20 @@ function ServicesList() {
                   alt='secureImg'
                 />
               </LazyLoad>
-              <h4 className='my-2 text-start text-[20px] leading-[23.48px] font-bold'>
+              <h4 className='my-2 text-start text-[20px] font-bold'>
                 {service.intro}
               </h4>
-              <p className='text-start leading-[18.78px]'>
+              <p className='text-start'>
                 {t(`services-page.firstWord${index + 1}`)}
               </p>
-              {hoverServices === index ? (
+              {hoverServices === index && (
                 <Link
-                  className='w-[89px] font-bold'
+                  className='py-2 text-end font-bold'
                   to={`${service.link}`}
                   onClick={handleScrollToTop}
                 >
-                  <i className='services fa fa-long-arrow-right'></i>
+                  <i className='services-icon fa fa-long-arrow-right text-3xl Scale'></i>
                 </Link>
-              ) : (
-                ''
               )}
             </article>
           );
@@ -194,4 +154,5 @@ function ServicesList() {
     </section>
   );
 }
+
 export default ServicesList;

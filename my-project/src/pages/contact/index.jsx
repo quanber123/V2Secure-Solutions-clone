@@ -8,7 +8,11 @@ import { useTranslation } from 'react-i18next';
 export default function Contact() {
   const { t } = useTranslation();
   return (
+<<<<<<< HEAD
     <main className='container mx-auto my-8'>
+=======
+    <main className='container m-auto'>
+>>>>>>> 1aa5ac3 (fix font-size)
       <section className='my-8 flex'>
         <Link to='..'>Home</Link>
         <span className='mx-2'>&gt;</span>
