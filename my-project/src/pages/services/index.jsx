@@ -1,6 +1,5 @@
 import { useTranslation } from 'react-i18next';
 import ServicesList from './services-list';
-// import ServicesList from './services-list-demo';
 import ImplementProcess from './implement-process';
 import LazyLoad from 'react-lazyload';
 import { Link } from 'react-router-dom';
