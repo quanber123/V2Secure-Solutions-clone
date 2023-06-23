@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import ServicesList from './services-list';
-// import ServicesList from './services-list-demo';
+import ImplementationProcess from './implementation-process';
 import LazyLoad from 'react-lazyload';
 import { Link } from 'react-router-dom';
 export default function Services() {
@@ -17,6 +17,9 @@ export default function Services() {
       </h3>
       <LazyLoad offset={0} once>
         <ServicesList />
+      </LazyLoad>
+      <LazyLoad offset={0} once>
+        <ImplementationProcess />
       </LazyLoad>
     </main>
   );
