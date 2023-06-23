@@ -72,6 +72,7 @@ function ServiceDetail() {
 >>>>>>> e4a5935 (complete scroll animation)
   const serviceDetail = dataServices.find((service) => service.link === link);
   return (
+<<<<<<< HEAD
     <section className='w-4/5 mx-auto mt-8 mb-32'>
       <div className='flex my-8'>
         <Link to='../..'>Home</Link>
@@ -93,6 +94,17 @@ function ServiceDetail() {
             src={serviceDetailImg}
             alt='service-detail-img'
           />
+=======
+    <>
+      <div></div>
+      <NavServices />
+      <section className={`${link} px-8 xl:px-0`} ref={serviceDetailRef}>
+        <main className='container m-auto bg-lightGray p-8'>
+          <div className='text-center py-8'>
+            <h3 className='text-blue font-bold'>{serviceDetail.intro}</h3>
+            <p className='w-4/5 mx-auto my-8'>{serviceDetail.firstWord}</p>
+          </div>
+>>>>>>> 544bc47 (test)
           <div>
             <h4 className='my-4 text-[32px] font-bold'>
               {serviceDetail.intro}

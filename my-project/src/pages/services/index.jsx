@@ -1,9 +1,12 @@
 import { useTranslation } from 'react-i18next';
 import ServicesList from './services-list';
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 // import ServicesList from './services-list-demo';
 >>>>>>> e4a5935 (complete scroll animation)
+=======
+>>>>>>> 544bc47 (test)
 import ImplementProcess from './implement-process';
 import LazyLoad from 'react-lazyload';
 import { Link } from 'react-router-dom';
