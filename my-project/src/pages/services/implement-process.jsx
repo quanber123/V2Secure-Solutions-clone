@@ -67,6 +67,7 @@ function ImplementProcess() {
                 alt='management-img'
               />
             </LazyLoad>
+            <div></div>
             <h4>0{index + 1}</h4>
             <h5>{content.title}</h5>
             <p>{content.content}</p>
