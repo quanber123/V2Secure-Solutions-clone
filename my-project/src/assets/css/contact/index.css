@@ -60,7 +60,15 @@ textarea {
 }
 
 .map-img > img {
-  /* width: 1000px; */
+  width: 1000px;
+}
+@media only screen and (max-width: 1440px) {
+  .map-img > img {
+    width: 804px;
+  }
+  .map-info {
+    bottom: 50% !important;
+  }
 }
 .map-info {
   background: linear-gradient(
@@ -84,8 +92,8 @@ textarea {
   width: 513px;
   height: 161px;
   position: absolute;
-  bottom: 50%;
-  left: 5%;
+  bottom: 40%;
+  left: 2%;
   padding: 16px;
   display: flex;
   flex-direction: column;

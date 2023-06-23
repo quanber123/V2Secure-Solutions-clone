@@ -63,7 +63,7 @@ function Header() {
     }
   };
   return (
-    <header className='Scale'>
+    <header className='w-4/5 m-auto Scale'>
       <section className='container m-auto flex justify-between items-center my-'>
         <div className='w-1/2'>
           <h1 className='text-[64px] text-[#F5F5F5] font-bold leading-[93px]'>

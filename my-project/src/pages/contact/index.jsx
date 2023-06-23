@@ -9,7 +9,7 @@ export default function Contact() {
   const { t } = useTranslation();
   return (
     <main className='container m-auto'>
-      <section className='my-8 flex Right'>
+      <section className='my-8 flex'>
         <Link to='..'>Home</Link>
         <span className='mx-2'>&gt;</span>
         <h5>{t('CONTACT')}</h5>

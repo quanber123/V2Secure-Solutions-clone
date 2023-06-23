@@ -13,12 +13,10 @@ function OurServices() {
   };
   return (
     <section className='container m-auto text-center Up'>
-      <h3 className='text-[64px] text-blue tracking-[0.2em] font-bold'>
+      <h3 className='text-[64px] text-blue tracking-[18px] font-bold uppercase'>
         {t('SERVICES')}
       </h3>
-      <p className='my-4 text-[20px] text-white font-bold'>
-        {t('services-intro')}
-      </p>
+      <p className='my-4 text-[20px] text-white'>{t('services-intro')}</p>
       <div className='home-services mt-12'>
         {dataServices.map((service, index) => {
           return (

@@ -1,4 +1,4 @@
-.services-list {
+/* .services-list {
   position: relative;
   height: 482px;
   display: grid;
@@ -45,6 +45,49 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   box-sizing: border-box;
   overflow: hidden;
+} */
+.intro-services-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 340px;
+  height: 340px;
+  z-index: -1;
+}
+
+.services-list {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  align-items: center;
+  gap: 20px;
+}
+.services-list > article {
+  background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.2) 0%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.3) 0%,
+      rgba(255, 255, 255, 0.1) 100%
+    );
+
+  cursor: pointer;
+  width: 368.21px;
+  height: 212px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 25px;
+}
+.services-list > article:nth-child(even) {
+  margin-left: auto;
+}
+.services-list > article > a {
+  margin-left: auto;
+  text-decoration: underline;
 }
 .services-list > .hoverServices {
   background-color: #fff;
@@ -52,22 +95,50 @@
 }
 .services-list > article > p {
   display: -webkit-box;
-  -webkit-line-clamp: 3; /* Số dòng hiển thị tối đa */
+  -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
-.services-icon.fa.fa-long-arrow-right {
+/* .services-icon.fa.fa-long-arrow-right {
   position: absolute;
   top: 10%;
   right: 10%;
   color: #003249;
-}
+} */
 
-.wire-frame-img {
+.wire-frame-img-1 {
   position: absolute;
-  top: 100%;
+  top: 150%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
   z-index: -1;
+}
+.wire-frame-img-2 {
+  position: absolute;
+  top: 350%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  z-index: -1;
+}
+.img-process-list {
+  background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.3) 0%,
+      rgba(255, 255, 255, 0.1) 100%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.2) 0%,
+      rgba(255, 255, 255, 0) 100%
+    );
+  border-radius: 25px;
+}
+
+.services.fa.fa-long-arrow-right {
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  font-size: 24px;
 }

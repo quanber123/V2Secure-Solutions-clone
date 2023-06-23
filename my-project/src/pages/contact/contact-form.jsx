@@ -38,7 +38,7 @@ function ContactForm() {
         <LazyLoad className='map-img' offset={100} once>
           <img className='Scale' src={mapImg} alt='map-img' />
         </LazyLoad>
-        <div className='map-info'>
+        <div className='Scale map-info'>
           <h3 className='text-[32px] font-bold'>FAGONET</h3>
           <p className='text-[20px] text-darkBlue'>{t('about.district')}</p>
         </div>

@@ -51,36 +51,52 @@ function ImplementProcess() {
       <h3 className='w-[822px] m-auto text-[64px] text-center font-bold tracking-[18px] leading-[75.14px] uppercase Scale'>
         {t('services-page.endTitle')}
       </h3>
-      <p className='w-[651px] mx-auto my-8 text-white text-[20px] text-center'>
+      <p className='w-[651px] mx-auto my-8 text-white text-[20px] text-center Scale'>
         {t('services-page.end-title-desc')}
       </p>
       {stepContent.map((content, index) => {
         return (
-          <div key={index}>
-            <LazyLoad {...lazyLoadOptions}>
-              <img src={line98} alt='line-98-img' />
-            </LazyLoad>
-            <LazyLoad {...lazyLoadOptions} className='xl:w-16 xl:h-16 w-8 h-8'>
+          <div
+            className='flex flex-col items-center text-center text-[20px]'
+            key={index}
+          >
+            <LazyLoad className='my-8' {...lazyLoadOptions}>
               <img
-                className='Scale'
-                src={content.urlImg}
-                alt='management-img'
+                className='Scale line-98-img'
+                src={line98}
+                alt='line-98-img'
               />
             </LazyLoad>
-            <div></div>
-            <h4>0{index + 1}</h4>
-            <h5>{content.title}</h5>
-            <p>{content.content}</p>
+            <LazyLoad
+              {...lazyLoadOptions}
+              className='w-[120px] h-[120px] m-auto flex justify-center items-center img-process-list'
+            >
+              <img
+                className='w-[60px] h-[60px] m-auto Scale'
+                src={content.urlImg}
+                alt={content.title}
+              />
+            </LazyLoad>
+            <h4 className='my-8 text-[32px] font-bold'>0{index + 1}</h4>
+            <h5 className='w-[700px] m-auto leading-[56.35px] text-[48px] text-blue font-bold'>
+              {content.title}
+            </h5>
+            <p className='w-[400px] mx-auto my-8 leading-[30px] text-[20px]'>
+              {content.content}
+            </p>
           </div>
         );
       })}
-      <LazyLoad {...lazyLoadOptions}>
-        <img
-          className='Scale wire-frame-img'
-          src={wireFrameImg}
-          alt='wire-frame-img'
-        />
-      </LazyLoad>
+      <img
+        className='Scale wire-frame-img-1'
+        src={wireFrameImg}
+        alt='wire-frame-img'
+      />
+      <img
+        className='Scale wire-frame-img-2'
+        src={wireFrameImg}
+        alt='wire-frame-img'
+      />
     </section>
   );
 }

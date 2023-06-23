@@ -56,10 +56,10 @@ function OurSolutions() {
   return (
     <section className='container m-auto text-center pb-32 flex flex-row-reverse justify-between items-center'>
       <div className='w-1/2'>
-        <h3 className='text-[64px] text-blue tracking-[0.2em] font-bold'>
+        <h3 className='text-[64px] text-blue tracking-[18px] font-bold uppercase'>
           {t('SOLUTIONS')}
         </h3>
-        <p className='w-2/3 mx-auto my-4 text-[20px] text-start font-bold'>
+        <p className='w-2/3 mx-auto my-4 text-[20px] text-start'>
           {t('solutions-intro')}
         </p>
         <LazyLoad offset={100} once>
