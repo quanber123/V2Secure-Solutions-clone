@@ -42,7 +42,7 @@ function SectionAbout() {
         <ul className='text-start'>
           <li className='my-[4px] hover:text-blue'>
             <Link to='/' onClick={handleScroll}>
-              Home
+              {t('HOME')}
             </Link>
           </li>
           <li className='my-[4px] hover:text-blue'>

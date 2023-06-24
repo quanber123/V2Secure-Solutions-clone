@@ -79,7 +79,7 @@ function Nav() {
               to='/'
               onClick={() => handleLinkClick('HOME')}
             >
-              Home
+              {t('HOME')}
             </NavLink>
             <NavLink
               className={({ isActive }) =>
