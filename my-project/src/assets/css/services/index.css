@@ -1,59 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* .services-list {
-=======
-.services-list {
->>>>>>> e4a5935 (complete scroll animation)
-=======
-/* .services-list {
->>>>>>> 1aa5ac3 (fix font-size)
-  position: relative;
-  height: 482px;
-  display: grid;
-  align-items: center;
-  overflow-y: scroll;
-  scroll-behavior: smooth;
-  scroll-snap-type: mandatory;
-  scroll-snap-points-y: repeat(100%);
-  scroll-snap-type: y mandatory;
-  scrollbar-width: thin;
-  scrollbar-color: transparent transparent;
-}
-
-.services-list::-webkit-scrollbar {
-  width: 6px;
-  background-color: transparent;
-}
-
-.services-list::-webkit-scrollbar-thumb {
-  background-color: transparent;
-}
-.services-list {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  gap: 20px;
-}
-
-.services-list > article {
-  position: absolute;
-  cursor: pointer;
-  width: 588px;
-  height: 250px;
-  margin: auto;
-  padding: 24px;
-  border-radius: 25px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0.3) 0%,
-    rgba(255, 255, 255, 0.1) 100%
-  );
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  box-sizing: border-box;
-  overflow: hidden;
-} */
 .intro-services-img {
   position: absolute;
   top: 50%;
@@ -68,11 +12,10 @@
   display: grid;
   grid-template-columns: repeat(2, 2fr);
   align-items: center;
-<<<<<<< HEAD
+
   gap: 40px;
-=======
+
   gap: 20px;
->>>>>>> 1aa5ac3 (fix font-size)
 }
 .services-list > article {
   background: linear-gradient(
@@ -107,33 +50,21 @@
 }
 .services-list > article > p {
   display: -webkit-box;
-<<<<<<< HEAD
-<<<<<<< HEAD
+
   -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
-/* .services-icon.fa.fa-long-arrow-right {
-=======
-  -webkit-line-clamp: 3; /* Số dòng hiển thị tối đa */
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
 .services-icon.fa.fa-long-arrow-right {
->>>>>>> e4a5935 (complete scroll animation)
-=======
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
-/* .services-icon.fa.fa-long-arrow-right {
->>>>>>> 1aa5ac3 (fix font-size)
-  position: absolute;
-  top: 10%;
-  right: 10%;
-  color: #003249;
-} */
-<<<<<<< HEAD
+.services-icon.fa.fa-long-arrow-right {
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
 
 .wire-frame-img-1 {
   position: absolute;
@@ -236,8 +167,6 @@
   line-height: 18.78px;
   letter-spacing: 2%;
 }
-=======
->>>>>>> 1aa5ac3 (fix font-size)
 
 .wire-frame-img-1 {
   position: absolute;

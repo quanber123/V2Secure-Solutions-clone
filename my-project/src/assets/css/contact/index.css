@@ -52,8 +52,7 @@ textarea {
 }
 .contact-location {
   position: absolute;
-<<<<<<< HEAD
-=======
+
   top: 0;
   left: 0;
   z-index: -1;
@@ -71,7 +70,6 @@ textarea {
   }
 }
 .map-info {
->>>>>>> 1aa5ac3 (fix font-size)
   background: linear-gradient(
       180deg,
       rgba(255, 255, 255, 0.3) 0%,
@@ -88,13 +86,12 @@ textarea {
     rgba(255, 255, 255, 0.2) 0%,
     rgba(255, 255, 255, 0) 100%
   );
-<<<<<<< HEAD
+
   bottom: 20%;
   right: 0;
   width: 315px;
   height: 105px;
   padding: 0 16px;
-=======
 
   width: 513px;
   height: 161px;
@@ -104,6 +101,5 @@ textarea {
   padding: 16px;
   display: flex;
   flex-direction: column;
->>>>>>> 1aa5ac3 (fix font-size)
   border-radius: 25px;
 }
