@@ -1,36 +1,50 @@
 import LazyLoad from 'react-lazyload';
-import ellipseImg from '../../assets/images/contact/Ellipse16.png';
-import phoneImg from '../../assets/images/contact/ic_baseline-local-phone.png';
-import emailImg from '../../assets/images/contact/ic_baseline-email.png';
+import map from '../../assets/images/contact/map.png';
+import phoneImg from '../../assets/images/contact/phone.png';
+import mailImg from '../../assets/images/contact/mail.png';
+import fbImg from '../../assets/images/contact/facebook.png';
+import insImg from '../../assets/images/contact/ins.png';
+import twImg from '../../assets/images/contact/twitter.png';
 import { useTranslation } from 'react-i18next';
 function ContactInfo() {
   const { t } = useTranslation();
+  const lazyLoadOptions = {
+    offset: 100,
+    once: true,
+  };
   return (
-    <div className='my-8 flex justify-between items-center gap-[20px]'>
-      <h4 className='w-1/3 text-[56px] Scale'>{t('touch')}</h4>
-      <div className='phone-contact w-1/3 Scale'>
-        <LazyLoad className='contact' offset={100} once>
-          <img className='Scale' src={ellipseImg} alt='ellipse-img' />
-          <img
-            className='contact-phone-img Scale'
-            src={phoneImg}
-            alt='phone-img'
-          />
-        </LazyLoad>
-        <h5>Phone</h5>
-        <p className='text-[24px] font-bold'>098 2720 920</p>
+    <div className='relative'>
+      <LazyLoad className='w-[360px] h-[672px]' {...lazyLoadOptions}>
+        <img className='w-full Scale' src={map} alt='fagonet-map' />
+      </LazyLoad>
+      <div className='contact-location'>
+        <h3>FAGONET</h3>
+        <p className='text-darkBlue'>{t('about.district')}</p>
       </div>
-      <div className='phone-mail w-1/3 Scale'>
-        <LazyLoad className='contact' offset={100} once>
-          <img className='Scale' src={ellipseImg} alt='ellipse-img' />
-          <img
-            className='contact-email-img Scale'
-            src={emailImg}
-            alt='email-img'
-          />
-        </LazyLoad>
-        <h5>Email</h5>
-        <p className='text-[24px] font-bold'>info@imc.org.vn</p>
+      <div className='my-4'>
+        <div className='my-4 flex items-center'>
+          <LazyLoad {...lazyLoadOptions}>
+            <img className='Scale' src={phoneImg} alt='phone-img' />
+          </LazyLoad>
+          <p className='mx-4 text-[24px] font-bold'>098 2720 920</p>
+        </div>
+        <div className='my-4 flex items-center'>
+          <LazyLoad {...lazyLoadOptions}>
+            <img className='Scale' src={mailImg} alt='mail-img' />
+          </LazyLoad>
+          <p className='mx-4 text-[24px] font-bold'>support@fagonet.com</p>
+        </div>
+        <div className='my-4 flex items-center gap-[20px]'>
+          <LazyLoad {...lazyLoadOptions}>
+            <img src={fbImg} alt='fb-img' />
+          </LazyLoad>
+          <LazyLoad {...lazyLoadOptions}>
+            <img src={insImg} alt='ins-img' />
+          </LazyLoad>
+          <LazyLoad {...lazyLoadOptions}>
+            <img src={twImg} alt='twitter-img' />
+          </LazyLoad>
+        </div>
       </div>
     </div>
   );

@@ -54,7 +54,7 @@ function Nav() {
     <section className={`relative nav-item h-24 flex Scale`}>
       <div className='container m-auto w-4/5 h-full flex justify-between'>
         <Link
-          className='mx-8 lg:mx-0 flex justify-between items-center cursor-pointer'
+          className='flex justify-between items-center cursor-pointer'
           to='.'
           onClick={() => setShowNav(false)}
         >
@@ -79,7 +79,7 @@ function Nav() {
               to='/'
               onClick={() => handleLinkClick('HOME')}
             >
-              Home
+              {t('HOME')}
             </NavLink>
             <NavLink
               className={({ isActive }) =>

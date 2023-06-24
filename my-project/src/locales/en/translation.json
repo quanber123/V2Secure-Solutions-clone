@@ -1,6 +1,6 @@
 {
   "download": "DownLoad DataSheet",
-  "HOME": "HOME",
+  "HOME": "Home",
   "fago-intro": "Fagonet is a cybersecurity company that provides cyber risk management and services on behalf of our valued technology and distribution partners.",
   "SOLUTIONS": "Solutions",
   "SERVICES": "Services",
@@ -13,7 +13,7 @@
   "view-more": "view more",
   "services-intro": "With Quality services for you",
   "solutions-intro": "We provide cyber security solutions that meet the unique needs of our customers and help them succeed in an increasingly digital world.",
-  "our-services": "Services",
+  "our-services": "Our Services",
   "our-solutions": "Solutions",
   "services": {
     "test": "Penetration Testing",
@@ -375,6 +375,8 @@
     "title": "Competitive advantages",
     "endWord": "We are committed to providing services with a comprehensive implementation process, ensuring compliance with clients’ information security policies and procedures.",
     "endTitle": "Implementation process",
+    "end-title-desc": "We are committed to providing services with a comprehensive implementation process, ensuring compliance with clients’ information security policies and procedures",
+=======
     "end-title-descb": "We are committed to providing services with a comprehensive implementation process, ensuring compliance with clients’ information security policies and procedures",
     "intro1": "Managed Security Service",
     "firstWord1": "Support monitoring and responding to cyber security incidents 24/7 for organizations and enterprises",
