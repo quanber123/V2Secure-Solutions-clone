@@ -1,3 +1,4 @@
+
 .intro-services-img {
   position: absolute;
   top: 50%;
@@ -64,6 +65,18 @@
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
+.services-list {
+  position: relative;
+  height: 482px;
+  display: grid;
+  align-items: center;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: mandatory;
+  scroll-snap-points-y: repeat(100%);
+  scroll-snap-type: y mandatory;
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
 }
 
 .wire-frame-img-1 {
@@ -111,6 +124,7 @@
   color: #f5f5f5;
 }
 
+
 .nav-services > a {
   background: linear-gradient(
       180deg,
@@ -128,6 +142,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+.services-list > article {
+  position: absolute;
+  cursor: pointer;
+  width: 588px;
+  height: 250px;
+  margin: auto;
+  padding: 24px;
   border-radius: 25px;
 }
 
@@ -199,8 +221,24 @@
 }
 
 .services.fa.fa-long-arrow-right {
+.services-list > article > p {
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Số dòng hiển thị tối đa */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.services-icon.fa.fa-long-arrow-right {
   position: absolute;
   top: 10%;
   right: 10%;
   font-size: 24px;
+}
+
+.wire-frame-img {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  z-index: -1;
 }

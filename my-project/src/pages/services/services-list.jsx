@@ -1,15 +1,14 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 import { useContext, useState } from 'react';
-=======
+
 import React, { useEffect, useContext, useRef, useState } from 'react';
->>>>>>> e4a5935 (complete scroll animation)
-=======
+
 import React, { useEffect, useContext, useRef, useState } from 'react';
-=======
+
 import { useContext, useState } from 'react';
->>>>>>> 0260109 (fix font-size)
->>>>>>> 1aa5ac3 (fix font-size)
+
+import React, { useEffect, useContext, useRef, useState } from 'react';
+
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import LazyLoad from 'react-lazyload';
@@ -22,8 +21,6 @@ function ServicesList() {
   const handleScrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
-<<<<<<< HEAD
-<<<<<<< HEAD
   return (
     <section className='relative'>
       <LazyLoad className='intro-services-img' offset={100} once>
@@ -118,9 +115,6 @@ function ServicesList() {
     handleScrollToTop();
     window.requestAnimationFrame(loadShow);
   };
-
-=======
->>>>>>> 1aa5ac3 (fix font-size)
   return (
     <section className='relative'>
       <LazyLoad className='intro-services-img' offset={100} once>
@@ -130,16 +124,16 @@ function ServicesList() {
           alt='intro-services-img'
         />
       </LazyLoad>
-<<<<<<< HEAD
+    <section className='flex justify-between items-center'>
+      <LazyLoad className='w-1/2' offset={100} once>
+        <img src={introServicesImg} alt='intro-services-img' />
+      </LazyLoad>
       <div
         className='w-1/2 services-list'
         onWheel={handleScroll}
         onTouchMove={handleScroll}
       >
->>>>>>> e4a5935 (complete scroll animation)
-=======
       <div className='services-list'>
->>>>>>> 1aa5ac3 (fix font-size)
         {dataServices.map((service, index) => {
           return (
             <article
@@ -151,14 +145,10 @@ function ServicesList() {
               onMouseOut={() => setHoverServices(null)}
               onTouchStart={() => setHoverServices(index)}
               onTouchEnd={() => setHoverServices(null)}
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
               onWheel={handleScroll}
               onTouchMove={handleScroll}
->>>>>>> e4a5935 (complete scroll animation)
-=======
->>>>>>> 1aa5ac3 (fix font-size)
+              onWheel={handleScroll}
+              onTouchMove={handleScroll}
             >
               <LazyLoad className='w-[60px] h-[60px]' offset={100} once>
                 <img

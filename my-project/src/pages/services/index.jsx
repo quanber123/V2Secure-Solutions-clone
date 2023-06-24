@@ -1,12 +1,5 @@
 import { useTranslation } from 'react-i18next';
 import ServicesList from './services-list';
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-// import ServicesList from './services-list-demo';
->>>>>>> e4a5935 (complete scroll animation)
-=======
->>>>>>> 544bc47 (test)
 import ImplementProcess from './implement-process';
 import LazyLoad from 'react-lazyload';
 import { Link } from 'react-router-dom';
@@ -22,33 +15,25 @@ export default function Services() {
       <h3 className='text-center text-[64px] tracking-[18px] font-bold uppercase Scale'>
         {t('our-services')}
       </h3>
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 1aa5ac3 (fix font-size)
       <p className='my-4 text-[20px] text-white text-center'>
         {t('services-intro')}
       </p>
       <LazyLoad className='my-32' offset={0} once>
-<<<<<<< HEAD
+
         <ServicesList />
       </LazyLoad>
       <LazyLoad className='my-32' offset={0} once>
-=======
+
       <LazyLoad className='my-16' offset={0} once>
-=======
->>>>>>> 1aa5ac3 (fix font-size)
         <ServicesList />
       </LazyLoad>
-<<<<<<< HEAD
       <LazyLoad className='my-16' offset={0} once>
-<<<<<<< HEAD
->>>>>>> e4a5935 (complete scroll animation)
-=======
-=======
       <LazyLoad className='my-32' offset={0} once>
->>>>>>> 0260109 (fix font-size)
->>>>>>> 1aa5ac3 (fix font-size)
+
+      <LazyLoad className='my-16' offset={0} once>
+        <ServicesList />
+      </LazyLoad>
+      <LazyLoad className='my-16' offset={0} once>
         <ImplementProcess />
       </LazyLoad>
     </main>
