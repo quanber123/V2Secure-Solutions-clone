@@ -1,5 +1,3 @@
-// import { useState } from 'react';
-// import { useTranslation } from 'react-i18next';
 import LazyLoad from 'react-lazyload';
 import ContactInfo from './contact-info';
 import ContactForm from './contact-form';
@@ -8,11 +6,7 @@ import { useTranslation } from 'react-i18next';
 export default function Contact() {
   const { t } = useTranslation();
   return (
-<<<<<<< HEAD
-    <main className='container mx-auto my-8'>
-=======
     <main className='container m-auto'>
->>>>>>> 1aa5ac3 (fix font-size)
       <section className='my-8 flex'>
         <Link to='..'>Home</Link>
         <span className='mx-2'>&gt;</span>

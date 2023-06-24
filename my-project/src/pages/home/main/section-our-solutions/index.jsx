@@ -59,7 +59,7 @@ function OurSolutions() {
         <h3 className='w-[526px] h-[75px] m-auto leading-[75.14px] text-[64px]  tracking-[16px] font-bold uppercase'>
           {t('SOLUTIONS')}
         </h3>
-        <p className='w-[510px] h-[69px] mx-auto my-4 text-[20px] leading-[23.48px] capitalize'>
+        <p className='w-[510px] h-[69px] mx-auto my-4 text-[20px] leading-[23.48px] capitalize'></p>
         <h3 className='text-[64px] text-blue tracking-[18px] font-bold uppercase'>
           {t('SOLUTIONS')}
         </h3>
