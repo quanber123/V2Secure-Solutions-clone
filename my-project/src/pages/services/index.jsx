@@ -18,18 +18,6 @@ export default function Services() {
       <p className='my-4 text-[20px] text-white text-center'>
         {t('services-intro')}
       </p>
-      <LazyLoad className='my-32' offset={0} once>
-
-        <ServicesList />
-      </LazyLoad>
-      <LazyLoad className='my-32' offset={0} once>
-
-      <LazyLoad className='my-16' offset={0} once>
-        <ServicesList />
-      </LazyLoad>
-      <LazyLoad className='my-16' offset={0} once>
-      <LazyLoad className='my-32' offset={0} once>
-
       <LazyLoad className='my-16' offset={0} once>
         <ServicesList />
       </LazyLoad>
