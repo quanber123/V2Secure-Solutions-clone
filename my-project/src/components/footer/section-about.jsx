@@ -12,20 +12,28 @@ function SectionAbout() {
     offset: 0,
     once: true,
   };
-  const [form, setForm] = useState([
-    {
-      email: '',
-    },
-  ]);
-  function handleForm(event) {
-    const { value } = event.target;
-    setForm((prevForm) => {
-      return { ...prevForm, email: value, id: new Date().getTime() };
-    });
-  }
+  const [email, setEmail] = useState('');
   function handleScroll() {
     window.scrollTo(0, 0);
   }
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const requestOptions = {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ email }),
+    };
+    try {
+      const res = await fetch('https://api.github.com/users', requestOptions);
+      if (res.ok) {
+        console.log('Email đã được gửi thành công.');
+      } else {
+        console.error('Lỗi khi gửi email:', res.status);
+      }
+    } catch (error) {
+      console.error('Lỗi khi gửi email:', error);
+    }
+  };
   return (
     <section className='container m-auto py-[60px] flex justify-between items-stretch'>
       <div className='w-1/4'>
@@ -84,12 +92,12 @@ function SectionAbout() {
             Let&#39;s work together!
           </h4>
         </div>
-        <form className='relative' onSubmit={handleForm}>
+        <form className='relative' onSubmit={handleSubmit}>
           <input
             className='w-[307px] h-[48px] bg-white text-darkBlue px-[24px] py-[17px] rounded-[25px]'
             type='email'
-            value={form.setForm}
-            onChange={handleForm}
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
             placeholder='Email'
             checked
           />
