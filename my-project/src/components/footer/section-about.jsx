@@ -35,7 +35,7 @@ function SectionAbout() {
     }
   };
   return (
-    <section className='container m-auto py-[60px] flex justify-between items-stretch'>
+    <section className='container m-auto py-[60px] about-footer'>
       <div className='w-1/4'>
         <div className='flex items-center'>
           <LazyLoad className='mr-2' {...lazyLoadOptions}>
@@ -94,17 +94,14 @@ function SectionAbout() {
         </div>
         <form className='relative' onSubmit={handleSubmit}>
           <input
-            className='w-[307px] h-[48px] bg-white text-darkBlue px-[24px] py-[17px] rounded-[25px]'
+            className='w-[307px] h-[48px] bg-white text-darkBlue px-[24px] py-[17px] rounded-[25px] input-footer'
             type='email'
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             placeholder='Email'
             checked
           />
-          <button
-            className='absolute w-[103px] h-[40px] bg-darkBlue font-bold right-1 top-1 rounded-[25px] hover:bg-blue hover:text-darkBlue'
-            type='submit'
-          >
+          <button className='btn-submit-footer' type='submit'>
             Submit
           </button>
         </form>

@@ -6,6 +6,7 @@ import './assets/css/home/index.css';
 import './assets/css/nav/index.css';
 import './assets/css/services/index.css';
 import './assets/css/contact/index.css';
+import './assets/css/footer/index.css';
 import './assets/css/_animation.css';
 import { ServicesProvider } from './pages/services/hooks/services-context.jsx';
 ReactDOM.createRoot(document.getElementById('root')).render(
