@@ -51,55 +51,50 @@ textarea {
   flex-direction: column;
 }
 .contact-location {
-  position: absolute;
-
-  top: 0;
-  left: 0;
-  z-index: -1;
-}
-
-.map-img > img {
-  width: 1000px;
-}
-@media only screen and (max-width: 1440px) {
-  .map-img > img {
-    width: 804px;
-  }
-  .map-info {
-    bottom: 50% !important;
-  }
-}
-.map-info {
   background: linear-gradient(
-      180deg,
-      rgba(255, 255, 255, 0.3) 0%,
-      rgba(255, 255, 255, 0.1) 100%
-    ),
-    linear-gradient(
-      180deg,
-      rgba(255, 255, 255, 0.2) 0%,
-      rgba(255, 255, 255, 0) 100%
-    );
-  border: 1px solid;
-  border-image-source: linear-gradient(
     180deg,
-    rgba(255, 255, 255, 0.2) 0%,
-    rgba(255, 255, 255, 0) 100%
+    rgba(255, 255, 255, 0.3) 0%,
+    rgba(255, 255, 255, 0.1) 100%
   );
-
-  bottom: 20%;
-  right: 0;
-  width: 315px;
-  height: 105px;
-  padding: 0 16px;
-
-  width: 513px;
-  height: 161px;
   position: absolute;
-  bottom: 40%;
-  left: 2%;
-  padding: 16px;
-  display: flex;
-  flex-direction: column;
+  bottom: 20%;
+  left: 5%;
   border-radius: 25px;
+  z-index: 10;
+}
+@media only screen and (max-width: 976px) {
+  label {
+    font-size: 20px;
+  }
+  .contact-page {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-form {
+    width: 80%;
+    margin: auto;
+  }
+  .contact-page-info {
+    width: 80%;
+    margin: auto;
+  }
+  .map-img {
+    width: 100%;
+  }
+  .map-img > img {
+    height: 672px;
+    object-fit: cover;
+    border-radius: 25px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .contact-form {
+    width: 100%;
+    margin: auto;
+  }
+  .contact-page-info {
+    width: 100%;
+    margin: auto;
+  }
 }

@@ -32,7 +32,9 @@ function ContactForm() {
 
   return (
     <form className='contact-form Up' onSubmit={handleSubmitForm}>
-      <h5 className='text-white text-[40px] font-bold'>{t('mess')}</h5>
+      <h5 className='text-white xl:text-[40px] lg:text-[32px] md:text-[28px] font-bold'>
+        {t('mess')}
+      </h5>
       <p>{t('askQuestion')}</p>
       <label htmlFor='name'>Name</label>
       <input
