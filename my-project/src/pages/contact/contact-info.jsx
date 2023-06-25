@@ -13,8 +13,8 @@ function ContactInfo() {
     once: true,
   };
   return (
-    <div className='relative'>
-      <LazyLoad className='w-[360px] h-[672px]' {...lazyLoadOptions}>
+    <div className='contact-page-info relative'>
+      <LazyLoad className='map-img w-[360px] h-[672px]' {...lazyLoadOptions}>
         <img className='w-full Scale' src={map} alt='fagonet-map' />
       </LazyLoad>
       <div className='contact-location'>
@@ -23,16 +23,20 @@ function ContactInfo() {
       </div>
       <div className='my-4'>
         <div className='my-4 flex items-center'>
-          <LazyLoad {...lazyLoadOptions}>
+          <LazyLoad className='' {...lazyLoadOptions}>
             <img className='Scale' src={phoneImg} alt='phone-img' />
           </LazyLoad>
-          <p className='mx-4 text-[24px] font-bold'>098 2720 920</p>
+          <p className='mx-4 xl:text-[24px] lg:text-[20px] text-[18px] font-bold'>
+            098 2720 920
+          </p>
         </div>
         <div className='my-4 flex items-center'>
           <LazyLoad {...lazyLoadOptions}>
             <img className='Scale' src={mailImg} alt='mail-img' />
           </LazyLoad>
-          <p className='mx-4 text-[24px] font-bold'>support@fagonet.com</p>
+          <p className='mx-4 xl:text-[24px] lg:text-[20px] text-[18px] font-bold'>
+            support@fagonet.com
+          </p>
         </div>
         <div className='my-4 flex items-center gap-[20px]'>
           <LazyLoad {...lazyLoadOptions}>
