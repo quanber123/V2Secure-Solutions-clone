@@ -65,14 +65,11 @@ h3 {
 }
 .home-services {
   cursor: pointer;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: stretch;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
 }
 .home-services > article {
-  width: calc(100% / 2 - 20px);
-  margin: 10px;
   padding: 24px;
   border-radius: 25px;
   display: flex;
@@ -115,8 +112,6 @@ h3 {
   gap: 24px;
 }
 .home-solutions > article {
-  /* width: 282px; */
-
   height: 210px;
   cursor: pointer;
   background: linear-gradient(
@@ -124,7 +119,6 @@ h3 {
     rgba(255, 255, 255, 0.3) 0%,
     rgba(255, 255, 255, 0.1) 100%
   );
-  /* Background Blur */
   backdrop-filter: blur(5px);
   font-size: 20px;
   padding: 20px;
@@ -132,33 +126,68 @@ h3 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  /* background-color: #215a74; */
   color: #fff;
 }
-/* .home-solutions > div > article > h4 {
-} */
-/* .home-solutions > article > a {
-  text-decoration: underline;
-} */
-
 .home-solutions > .hoverSolutions {
   background-color: #fff;
   color: #003249;
 }
-
-/* .home-solutions:hover .notHoverSolutions {
-  filter: blur(5px);
-} */
-
-/* .earth-img {
-  animation: rotateY-anim 2s linear infinite;
-} */
-
-/* @keyframes rotateY-anim {
-  0% {
-    transform: rotateY(0deg);
+.header-home-page-intro {
+  position: unset;
+}
+.header-home-page-intro > div > img {
+  position: unset;
+}
+@media only screen and (max-width: 768px) {
+  .header-home-page-intro {
+    position: relative;
+    display: flex;
+    flex-direction: column;
   }
-  100% {
-    transform: rotateY(360deg);
+  .header-home-page-intro > div {
+    width: 100%;
+    /* text-align: center; */
   }
-} */
+  .header-home-page-intro > div > p {
+    width: 100%;
+  }
+  .header-home-page-intro > div > img {
+    position: absolute;
+    width: 50%;
+    top: 30%;
+    right: 0;
+    transform: translate(25%, -50%);
+  }
+  .get-start-btn {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .header-home-page-intro > div > h1 {
+    text-align: center;
+  }
+  .header-home-page-intro > div > h3 {
+    text-align: center;
+  }
+  .header-home-page-intro > div > p {
+    margin-bottom: 256px;
+  }
+  .header-home-page-intro > div > img {
+    top: 75%;
+    right: 50%;
+    transform: translate(50%, -50%);
+  }
+  .home-services {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .home-page-solutions > div > a > img {
+    width: 50%;
+  }
+  .home-solutions {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

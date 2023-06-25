@@ -25,20 +25,6 @@ html {
 }
 body {
   background-color: #003249;
-  overflow-y: scroll; /* Tạo thanh cuộn dọc */
-  scroll-snap-type: mandatory; /* Kích hoạt chế độ cuộn snap */
-  scroll-snap-points-y: repeat(100%); /* Điểm snap mỗi 100% độ cao */
-  scroll-snap-type: y mandatory; /* Chỉ snap theo trục y */
-  scrollbar-width: none; /* Độ rộng của thanh cuộn */
-  scrollbar-color: transparent transparent;
-}
-body::-webkit-scrollbar {
-  width: 6px; /* Độ rộng của thanh cuộn */
-  background-color: transparent; /* Màu nền của thanh cuộn */
-}
-
-body::-webkit-scrollbar-thumb {
-  background-color: transparent; /* Màu của thanh cuộn */
 }
 main {
   width: 80% !important;
@@ -104,40 +90,6 @@ h4 {
   z-index: 800;
   animation: Scale 0.5s linear;
 }
-/* Animation */
-/* .Sticky {
-  animation: Sticky 0.5s linear;
-}
-@keyframes Sticky {
-  0% {
-    transform: translateY(-50%);
-  }
-  50% {
-    transform: translateY(-25%);
-  }
-  100% {
-    transform: translateY(0);
-  }
-} */
-
-@keyframes Show {
-  0% {
-    height: 0;
-  }
-  25% {
-    height: 32.25px;
-  }
-  50% {
-    height: 64.5;
-  }
-  75% {
-    height: 129px;
-  }
-  100% {
-    height: 258px;
-  }
-}
-/* Gallery*/
 .solutions-report-gallery {
   width: 90%;
   height: 455px;

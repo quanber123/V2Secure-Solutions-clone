@@ -54,23 +54,19 @@ function OurSolutions() {
     window.scroll(0, 0);
   };
   return (
-    <section className='container m-auto pb-32 flex flex-row-reverse justify-between items-center'>
-      <div className='w-1/2'>
-        <h3 className='w-[526px] h-[75px] m-auto leading-[75.14px] text-[64px]  tracking-[16px] font-bold uppercase'>
+    <section className='home-page-solutions container m-auto pb-32 flex xl:flex-row-reverse flex-col justify-between items-center'>
+      <div className='xl:w-1/2'>
+        <h3 className='md:w-[526px] w-full h-[75px] m-auto xl:text-[80px] lg:text-[64px] md:text-[52px] text-[32px] text-center leading-[75.14px] md:tracking-[16px] tracking-[12px] font-bold uppercase'>
           {t('SOLUTIONS')}
         </h3>
-        <p className='w-[510px] h-[69px] mx-auto my-4 text-[20px] leading-[23.48px] capitalize'></p>
-        <h3 className='text-[64px] text-blue tracking-[18px] font-bold uppercase'>
-          {t('SOLUTIONS')}
-        </h3>
-        <p className='w-2/3 mx-auto my-4 text-[20px] text-start'>
+        <p className='md:w-[510px] w-4/5 sm:h-[69px] mx-auto my-4 md:text-[20px] text-[18px] leading-[23.48px] capitalize'>
           {t('solutions-intro')}
         </p>
         <LazyLoad offset={100} once>
           <img className='m-auto Scale' src={earthImg} alt='earth-img' />
         </LazyLoad>
       </div>
-      <div className='home-solutions w-1/2 text-black'>
+      <div className='home-solutions xl:w-1/2 text-black'>
         {introSolutions.map((solution) => {
           return (
             <article
