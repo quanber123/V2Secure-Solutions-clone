@@ -12,10 +12,10 @@ export default function Services() {
         <span className='mx-2'>&gt;</span>
         <h5>{t('SERVICES')}</h5>
       </section>
-      <h3 className='text-center text-[64px] tracking-[18px] font-bold uppercase Scale'>
+      <h3 className='xl:text-[80px] lg:text-[64px] md:text-[52px] text-[32px] text-center md:tracking-[16px] tracking-[12px] font-bold uppercase Scale'>
         {t('our-services')}
       </h3>
-      <p className='my-4 text-[20px] text-white text-center'>
+      <p className='my-4 lg:text-[20px] text-[18px] text-white text-center'>
         {t('services-intro')}
       </p>
       <LazyLoad className='my-16' offset={0} once>
