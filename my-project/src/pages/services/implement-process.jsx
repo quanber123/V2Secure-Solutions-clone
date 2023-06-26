@@ -49,10 +49,10 @@ function ImplementProcess() {
 
   return (
     <section>
-      <h3 className='w-[822px] m-auto text-[64px] text-center font-bold tracking-[18px] leading-[75.14px] uppercase Scale'>
+      <h3 className='xl:w-[822px] m-auto xl:text-[80px] lg:text-[64px] md:text-[52px] text-[32px] text-center md:tracking-[16px] tracking-[12px] font-bold leading-[75.14px] uppercase Scale'>
         {t('services-page.endTitle')}
       </h3>
-      <p className='w-[651px] mx-auto my-8 text-white text-[20px] text-center Scale'>
+      <p className='xl:w-[651px] mx-auto my-8 text-white text-[20px] text-center Scale'>
         {t('services-page.end-title-desc')}
       </p>
       {stepContent.map((content, index) => {
@@ -78,11 +78,13 @@ function ImplementProcess() {
                 alt={content.title}
               />
             </LazyLoad>
-            <h4 className='my-8 text-[32px] font-bold'>0{index + 1}</h4>
-            <h5 className='w-[700px] m-auto leading-[56.35px] text-[48px] text-blue font-bold'>
+            <h4 className='my-8 xl:text-[32px] lg:text-[24px] md:text-[20px] font-bold'>
+              0{index + 1}
+            </h4>
+            <h5 className='xl:w-[700px] m-auto leading-[56.35px] xl:text-[48px] lg:text-[36px] md:text-[32px] text-[24px] text-blue font-bold'>
               {content.title}
             </h5>
-            <p className='w-[400px] mx-auto my-8 leading-[30px] text-[20px]'>
+            <p className='xl:w-[400px] mx-auto my-8 leading-[30px] md:text-[20px] text-[18px]'>
               {content.content}
             </p>
           </div>

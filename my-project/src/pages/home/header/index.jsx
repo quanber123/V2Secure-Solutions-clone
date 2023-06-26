@@ -66,7 +66,7 @@ function Header() {
     <header className='header-home-page w-4/5 m-auto Scale'>
       <section className='header-home-page-intro container m-auto flex justify-between items-center'>
         <div className='w-1/2'>
-          <h1 className='sm:w-1/2 xl:text-[64px] lg:text-[52px] md:text-[48px] text-[32px] text-[#F5F5F5] font-bold leading-[93px]'>
+          <h1 className='sm:w-1/2 md:w-full xl:text-[64px] lg:text-[52px] md:text-[48px] text-[32px] text-[#F5F5F5] font-bold leading-[93px]'>
             {t('intro.title1')}
           </h1>
           <h3 className='my-4 xl:text-[80px] lg:text-[64px] md:text-[52px] text-[48px] text-[#F5F5F5] font-bold leading-[93px]'>

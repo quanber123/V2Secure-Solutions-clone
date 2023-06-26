@@ -7,14 +7,16 @@ function NavServices() {
   const { dataServices } = useContext(ServicesContext);
   return (
     <nav>
-      <h2 className='text-[32px] font-bold Scale'>{t('our-services')}</h2>
+      <h2 className='xl:text-[32px] md:text-[28px] text-[24px] font-bold Scale'>
+        {t('our-services')}
+      </h2>
       <div className='nav-services my-8'>
         {dataServices.map((service, index) => {
           return (
             <NavLink
               className={({ isActive }) =>
                 isActive
-                  ? 'nav-services-active text-[20px] leading-[23.48px]'
+                  ? 'nav-services-active lg:text-[20px] text-[18px] leading-[23.48px]'
                   : 'text-[20px] leading-[23.48px]'
               }
               key={index}

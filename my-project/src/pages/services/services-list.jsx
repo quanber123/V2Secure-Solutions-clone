@@ -12,7 +12,7 @@ function ServicesList() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
   return (
-    <section className='relative'>
+    <section className='relative flex flex-col'>
       <LazyLoad className='intro-services-img' offset={100} once>
         <img
           className='Scale'
