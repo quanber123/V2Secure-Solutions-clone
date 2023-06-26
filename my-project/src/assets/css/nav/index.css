@@ -94,6 +94,9 @@
     right: 0;
     width: 0;
     height: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
     transition: all 0.3s linear;
     overflow: hidden;
     z-index: 100;
@@ -141,8 +144,16 @@
   .show {
     width: calc(100% / 4 - 32px);
   }
+  .fa.fa-bars {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 @media only screen and (max-width: 480px) {
+  .show-nav.active {
+    width: 100%;
+  }
   .show {
     width: calc(100% / 2 - 32px);
   }

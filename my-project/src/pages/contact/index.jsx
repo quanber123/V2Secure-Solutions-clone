@@ -1,17 +1,17 @@
 import LazyLoad from 'react-lazyload';
 import ContactInfo from './contact-info';
 import ContactForm from './contact-form';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 export default function Contact() {
   const { t } = useTranslation();
   return (
     <main className='container m-auto'>
-      <section className='my-8 flex'>
+      {/* <section className='my-8 flex'>
         <Link to='..'>Home</Link>
         <span className='mx-2'>&gt;</span>
         <h5>{t('CONTACT')}</h5>
-      </section>
+      </section> */}
       <section>
         <h3 className='my-8 xl:text-[80px] lg:text-[64px] md:text-[52px] text-[32px] text-center md:tracking-[16px] tracking-[12px] font-bold uppercase Scale'>
           {t('CONTACT')}

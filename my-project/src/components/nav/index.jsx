@@ -62,7 +62,7 @@ function Nav() {
           <h3 className='text-[26px] font-bold text-blue'>FAGONET</h3>
         </Link>
         <div
-          className={`show-nav lg:flex flex-col lg:flex-row font-bold justify-between lg:items-center ${
+          className={`show-nav flex flex-row items-center font-bold justify-between ${
             showNav ? 'active' : ''
           }`}
         >
@@ -159,7 +159,7 @@ function Nav() {
           </div>
         </div>
         <i
-          className='fa fa-bars lg:hidden flex justify-center items-center text-xl cursor-pointer'
+          className='fa fa-bars hidden text-xl cursor-pointer'
           onClick={handleShowNav}
         ></i>
       </div>
