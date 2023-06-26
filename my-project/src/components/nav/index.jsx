@@ -11,7 +11,6 @@ function Nav() {
     offset: 0,
     once: true,
   };
-  // const [selectedLink, setSelectedLink] = useState('HOME');
   const [showNav, setShowNav] = useState(false);
   const [selectedLanguage, setSelectedLanguage] = useState(
     localStorage.getItem('language') || 'en'
@@ -43,7 +42,6 @@ function Nav() {
     setTabLanguage(false);
   };
   const handleLinkClick = useCallback(() => {
-    // setSelectedLink(link);
     setShowNav(false);
     setTabLanguage(false);
   }, []);
@@ -64,8 +62,8 @@ function Nav() {
           <h3 className='text-[26px] font-bold text-blue'>FAGONET</h3>
         </Link>
         <div
-          className={`flex flex-col lg:flex-row font-bold justify-between lg:items-center ${
-            showNav ? 'show-nav' : 'hidden lg:flex'
+          className={`show-nav lg:flex flex-col lg:flex-row font-bold justify-between lg:items-center ${
+            showNav ? 'active' : ''
           }`}
         >
           <nav className='nav'>
@@ -119,11 +117,15 @@ function Nav() {
             </NavLink>
           </nav>
           <div className='custom-select-language ml-4'>
-            <img className='w-[21px]' src={earthImg} alt='earth-logo' />
-            <h4 className='ml-2'>{selectedLanguage === 'vi' ? 'VI' : 'EN'}</h4>
-            <button onClick={handleShowTabLanguage}>
-              <i className='fa fa-caret-down ml-2 mb-[4px]'></i>
-            </button>
+            <div>
+              <img className='w-[21px]' src={earthImg} alt='earth-logo' />
+              <h4 className='ml-2'>
+                {selectedLanguage === 'vi' ? 'VI' : 'EN'}
+              </h4>
+              <button onClick={handleShowTabLanguage}>
+                <i className='fa fa-caret-down ml-2 mb-[4px]'></i>
+              </button>
+            </div>
             <ul className={`options-language ${tabLanguage ? 'active' : ''}`}>
               <li
                 className='relative flex justify-between items-center cursor-pointer'
@@ -157,7 +159,7 @@ function Nav() {
           </div>
         </div>
         <i
-          className='fa fa-bars mx-12 lg:hidden flex justify-center items-center text-xl cursor-pointer'
+          className='fa fa-bars lg:hidden flex justify-center items-center text-xl cursor-pointer'
           onClick={handleShowNav}
         ></i>
       </div>
