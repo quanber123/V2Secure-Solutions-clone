@@ -34,6 +34,9 @@
   flex-direction: column;
   border-radius: 25px;
 }
+.services-list > article:nth-child(odd) {
+  margin-right: auto;
+}
 .services-list > article:nth-child(even) {
   margin-left: auto;
 }
@@ -152,4 +155,29 @@
 .service-detail-list > div > div > p {
   line-height: 18.78px;
   letter-spacing: 2%;
+}
+
+@media only screen and (max-width: 768px) {
+  .intro-services-img {
+    position: unset;
+    top: unset;
+    left: unset;
+    transform: translate(unset);
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+  }
+  .intro-services-img > img {
+    width: 50%;
+    margin: auto;
+  }
+  .services-list {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    gap: 40px;
+  }
 }
