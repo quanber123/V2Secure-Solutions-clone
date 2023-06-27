@@ -138,6 +138,12 @@ h3 {
 .header-home-page-intro > div > img {
   position: unset;
 }
+.home-page-solutions {
+  box-sizing: border-box;
+}
+.home-page-solutions > div > h3 {
+  overflow: hidden;
+}
 @media only screen and (max-width: 768px) {
   .header-home-page-intro {
     position: relative;

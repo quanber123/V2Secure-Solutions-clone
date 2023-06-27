@@ -4,7 +4,7 @@ import carriedColor from '../../images/desktopColor.png';
 import receivedColorImg from '../../images/receivedColor.png';
 import processColorImg from '../../images/processColor.png';
 import improveColorImg from '../../images/improvementColor.png';
-import reviewColorImg from '../../images/reviewColor.png';
+// import reviewColorImg from '../../images/reviewColor.png';
 import managementColor from '../../images/managementColor.png';
 import wireFrameImg from '../../assets/images/services/WireframeVector.png';
 import line98 from '../../assets/images/services/Line98.png';
@@ -37,22 +37,17 @@ function ImplementProcess() {
     },
     {
       title: t('services-page.step5'),
-      urlImg: reviewColorImg,
-      content: t('services-page.step-content5'),
-    },
-    {
-      title: t('services-page.step6'),
       urlImg: managementColor,
-      content: t('services-page.step-content6'),
+      content: t('services-page.step-content5'),
     },
   ];
 
   return (
     <section>
-      <h3 className='xl:w-[822px] m-auto xl:text-[80px] lg:text-[64px] md:text-[52px] text-[32px] text-center md:tracking-[16px] tracking-[12px] font-bold leading-[75.14px] uppercase Scale'>
+      <h3 className='my-8 lg:my-0 xl:text-[80px] lg:text-[64px] md:text-[52px] text-[24px] text-center md:tracking-[16px] sm:tracking-[12px] tracking-[8px] font-bold uppercase Scale'>
         {t('services-page.endTitle')}
       </h3>
-      <p className='xl:w-[651px] mx-auto my-8 text-white text-[20px] text-center Scale'>
+      <p className='xl:w-[651px] mx-auto my-8 text-white lg:text-[20px] text-[18px] text-center Scale'>
         {t('services-page.end-title-desc')}
       </p>
       {stepContent.map((content, index) => {

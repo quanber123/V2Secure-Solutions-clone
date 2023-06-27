@@ -13,7 +13,7 @@ function OurServices() {
   };
   return (
     <section className='container m-auto text-center Up'>
-      <h3 className='xl:text-[80px] lg:text-[64px] md:text-[52px] text-[32px] text-center leading-[75.14px] md:tracking-[16px] tracking-[12px] font-bold uppercase'>
+      <h3 className='xl:text-[72px] lg:text-[64px] md:text-[52px] text-[32px] text-center leading-[75.14px] md:tracking-[16px] tracking-[12px] font-bold uppercase'>
         {t('SERVICES')}
       </h3>
       <p className='my-4 md:text-[20px] text-[18px] text-white'>
