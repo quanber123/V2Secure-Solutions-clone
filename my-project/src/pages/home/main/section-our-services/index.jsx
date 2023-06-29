@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import LazyLoad from 'react-lazyload';
 import { ServicesContext } from '../../../services/hooks/services-context';
+import Spinner from '../../../../components/spinner';
 function OurServices() {
   const { t } = useTranslation();
   const [hoverServices, setHoverServices] = useState(null);
@@ -30,7 +31,12 @@ function OurServices() {
               onMouseOver={() => setHoverServices(index)}
               onMouseOut={() => setHoverServices(null)}
             >
-              <LazyLoad className='w-[60px] h-[60px]' offset={100} once>
+              <LazyLoad
+                className='w-[60px] h-[60px]'
+                offset={100}
+                once
+                placeholder={<Spinner />}
+              >
                 <img
                   src={
                     hoverServices === index

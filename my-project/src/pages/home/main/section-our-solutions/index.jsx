@@ -5,6 +5,7 @@ import vectorImg from '../../../../assets/images/home/Vector.png';
 import vectorHoverImg from '../../../../assets/images/home/VectorHover.png';
 import earthImg from '../../../../assets/images/home/Thumbsup1.png';
 import LazyLoad from 'react-lazyload';
+import Spinner from '../../../../components/spinner';
 function OurSolutions() {
   const { t } = useTranslation();
   const [hoverSolutions, setHoverSolutions] = useState(null);
@@ -62,7 +63,7 @@ function OurSolutions() {
         <p className='md:w-[510px] w-4/5 sm:h-[69px] mx-auto my-4 md:text-[20px] text-[18px] leading-[23.48px] capitalize'>
           {t('solutions-intro')}
         </p>
-        <LazyLoad offset={100} once>
+        <LazyLoad offset={100} once placeholder={<Spinner />}>
           <img className='m-auto Scale' src={earthImg} alt='earth-img' />
         </LazyLoad>
       </div>

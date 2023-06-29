@@ -2,16 +2,21 @@ import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import LazyLoad from 'react-lazyload';
 import thumbsupImg from '../../../assets/images/home/Thumbsup.png';
-import siem from '../../../images/ecosystem/siem.png';
-import waf from '../../../images/ecosystem/waf.png';
-import nips from '../../../images/ecosystem/nips.png';
-import edr from '../../../images/ecosystem/edr.png';
-import nac from '../../../images/ecosystem/nac.png';
+import siem from '../../../assets/images/solutions/folder.png';
+import waf from '../../../assets/images/solutions/wall.png';
+import nips from '../../../assets/images/solutions/prevention.png';
+import edr from '../../../assets/images/solutions/search.png';
+import nac from '../../../assets/images/solutions/control.png';
+import nids from '../../../assets/images/solutions/guard.png';
+import dip from '../../../assets/images/solutions/data.png';
+import swl3 from '../../../assets/images/solutions/guard.png';
+import Spinner from '../../../components/spinner';
 function Header() {
   const { t } = useTranslation();
   const lazyLoadOptions = {
     offset: 100,
     once: true,
+    placeholder: <Spinner />,
   };
   const dataIntro = [
     {
@@ -35,12 +40,16 @@ function Header() {
       content: 'intro.nac',
     },
     {
-      url: nac,
+      url: nids,
       content: 'intro.nids',
     },
     {
-      url: nac,
+      url: dip,
       content: 'intro.dip',
+    },
+    {
+      url: swl3,
+      content: 'intro.swl3',
     },
   ];
 
@@ -92,7 +101,7 @@ function Header() {
         </div>
       </section>
       <section className='my-32 py-8 border-t border-b border-boldBlue'>
-        <div className='container mx-auto carousel'>
+        <div className='carousel'>
           <div className='autoplay-carousel'>
             {intros.map((intro, index) => (
               <article

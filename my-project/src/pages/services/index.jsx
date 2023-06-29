@@ -1,8 +1,9 @@
 import { useTranslation } from 'react-i18next';
 import ServicesList from './services-list';
-import ImplementProcess from './implement-process';
+// import ImplementProcess from './implement-process';
 import LazyLoad from 'react-lazyload';
 // import { Link } from 'react-router-dom';
+import Spinner from '../../components/spinner/index';
 export default function Services() {
   const { t } = useTranslation();
   return (
@@ -15,15 +16,15 @@ export default function Services() {
       <h3 className='my-8 lg:my-0 xl:text-[80px] lg:text-[64px] md:text-[52px] text-[32px] text-center md:tracking-[16px] tracking-[12px] font-bold uppercase Scale'>
         {t('our-services')}
       </h3>
-      <p className='my-4 lg:text-[20px] text-[18px] text-white text-center'>
+      <p className='my-4 lg:text-[20px] text-[18px] text-white text-center Scale'>
         {t('services-intro')}
       </p>
-      <LazyLoad className='my-16' offset={0} once>
+      <LazyLoad className='my-16' offset={0} once placeholder={<Spinner />}>
         <ServicesList />
       </LazyLoad>
-      <LazyLoad className='my-16' offset={0} once>
+      {/* <LazyLoad className='my-16' offset={0} once>
         <ImplementProcess />
-      </LazyLoad>
+      </LazyLoad> */}
     </main>
   );
 }

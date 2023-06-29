@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 import LazyLoad from 'react-lazyload';
 import { ServicesContext } from './hooks/services-context';
 import introServicesImg from '../../assets/images/services/Icon04-2.png';
+import Spinner from '../../components/spinner';
 function ServicesList() {
   const { t } = useTranslation();
   const { dataServices } = useContext(ServicesContext);
@@ -11,29 +12,34 @@ function ServicesList() {
   const handleScrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
+  const lazyLoadOptions = {
+    offset: 100,
+    once: true,
+    placeholder: <Spinner />,
+  };
   return (
-    <section className='relative flex flex-col'>
-      <LazyLoad className='intro-services-img' offset={100} once>
+    <section className='flex flex-col items-center justify-between lg:flex-row'>
+      <LazyLoad className='lg:w-1/3' {...lazyLoadOptions}>
         <img
           className='Scale'
           src={introServicesImg}
           alt='intro-services-img'
         />
       </LazyLoad>
-      <div className='services-list'>
+      <div className='lg:w-2/3 services-list'>
         {dataServices.map((service, index) => {
           return (
             <article
               key={index}
               className={`relative bg-boldBlue Scale ${
-                hoverServices === index ? 'hoverServices' : 'notHoverServices'
+                hoverServices === index ? 'hoverServices' : ''
               }`}
               onMouseOver={() => setHoverServices(index)}
               onMouseOut={() => setHoverServices(null)}
               onTouchStart={() => setHoverServices(index)}
               onTouchEnd={() => setHoverServices(null)}
             >
-              <LazyLoad className='w-[60px] h-[60px]' offset={100} once>
+              <LazyLoad className='w-[60px] h-[60px]' {...lazyLoadOptions}>
                 <img
                   src={
                     hoverServices === index

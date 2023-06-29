@@ -11,7 +11,7 @@ import hoverIntroImg2 from './images/mdi-shield-bug-checked.png';
 import hoverIntroImg3 from './images/ion-bag-checked.png';
 import hoverIntroImg4 from './images/material-symbols-security-update-good-checked.png';
 import { useTranslation } from 'react-i18next';
-export default function Data() {
+export default function DataServices() {
   const { t } = useTranslation();
   const data = [
     {

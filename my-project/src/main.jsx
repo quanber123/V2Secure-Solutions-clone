@@ -5,6 +5,7 @@ import './index.css';
 import './assets/css/home/index.css';
 import './assets/css/nav/index.css';
 import './assets/css/services/index.css';
+import './assets/css/solutions/index.css';
 import './assets/css/contact/index.css';
 import './assets/css/footer/index.css';
 import './assets/css/_animation.css';

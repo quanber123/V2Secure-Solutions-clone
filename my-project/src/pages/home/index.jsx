@@ -1,14 +1,19 @@
 import LazyLoad from 'react-lazyload';
 import Header from './header/index';
 import Main from './main/index';
-
+import Spinner from '../../components/spinner';
 export default function Home() {
+  const lazyLoadOptions = {
+    offset: 0,
+    once: true,
+    placeholder: <Spinner />,
+  };
   return (
     <div>
-      <LazyLoad offset={0} once>
+      <LazyLoad {...lazyLoadOptions}>
         <Header />
       </LazyLoad>
-      <LazyLoad offset={0} once>
+      <LazyLoad {...lazyLoadOptions}>
         <Main />
       </LazyLoad>
     </div>
