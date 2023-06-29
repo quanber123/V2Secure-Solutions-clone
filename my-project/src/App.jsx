@@ -5,17 +5,10 @@ import Page404 from './pages/404/index';
 import { lazy, Suspense } from 'react';
 import Spinner from './components/spinner';
 const Home = lazy(() => import('./pages/home/index'));
-// const Solutions = lazy(() => import('./pages/solutions/index'));
-const SolutionsList = lazy(() => import('./pages/solutions/solutions-list'));
-// const SIEM = lazy(() => import('./pages/solutions/SIEM-section/SIEM'));
-// const WAF = lazy(() => import('./pages/solutions/WAF-section/WAF'));
-// const NIPS = lazy(() => import('./pages/solutions/NIPS-section/NIPS'));
-// const EDR = lazy(() => import('./pages/solutions/EDR-section/EDR'));
-// const NAC = lazy(() => import('./pages/solutions/NAC-section/NAC'));
-// const NIDS = lazy(() => import('./pages/solutions/NIDS-section/NIDS'));
-// const DIP = lazy(() => import('./pages/solutions/DIP-section/DIP'));
 const Services = lazy(() => import('./pages/services/index'));
 const ServiceDetail = lazy(() => import('./pages/services/service-detail'));
+const SolutionsList = lazy(() => import('./pages/solutions/solutions-list'));
+const SolutionDetail = lazy(() => import('./pages/solutions/solution-detail'));
 const Contact = lazy(() => import('./pages/contact/index'));
 function App() {
   return (
@@ -26,14 +19,8 @@ function App() {
             <Route index element={<Home />} />
             <Route path='solutions'>
               <Route index element={<SolutionsList />} />
+              <Route path=':link' element={<SolutionDetail />} />
             </Route>
-            {/* <Route path='siem' element={<SIEM />} />
-            <Route path='waf' element={<WAF />} />
-            <Route path='nips' element={<NIPS />} />
-            <Route path='edr' element={<EDR />} />
-            <Route path='nac' element={<NAC />} />
-            <Route path='nids' element={<NIDS />} />
-            <Route path='dip' element={<DIP />} /> */}
             <Route path='services'>
               <Route index element={<Services />} />
               <Route path=':link' element={<ServiceDetail />} />

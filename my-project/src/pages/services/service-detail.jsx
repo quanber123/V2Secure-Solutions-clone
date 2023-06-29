@@ -1,24 +1,14 @@
 import { useParams } from 'react-router-dom';
 import { useContext } from 'react';
 import { ServicesContext } from './hooks/services-context';
-import { Link } from 'react-router-dom';
 import NavServices from './nav-services';
 import serviceDetailImg from '../../assets/images/services/service-detail-img.png';
-import { useTranslation } from 'react-i18next';
 function ServiceDetail() {
-  const { t } = useTranslation();
   const { link } = useParams();
   const { dataServices } = useContext(ServicesContext);
   const serviceDetail = dataServices.find((service) => service.link === link);
   return (
     <section className='w-4/5 mx-auto mt-8 mb-32'>
-      <div className='flex my-8'>
-        <Link to='../..'>Home</Link>
-        <span className='mx-2'>&gt;</span>
-        <Link to='..'>{t('SERVICES')}</Link>
-        <span className='mx-2'>&gt;</span>
-        <h5>{serviceDetail.intro}</h5>
-      </div>
       <h3 className='mx-auto my-8 xl:text-[40px] md:text-[36px] text-[32px] text-center font-bold tracking-[18px] leading-[46.96px] uppercase Scale'>
         {serviceDetail.intro}
       </h3>

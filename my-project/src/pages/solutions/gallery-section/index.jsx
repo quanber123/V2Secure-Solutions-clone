@@ -12,9 +12,9 @@ function Gallery() {
   };
   return (
     <section className='container m-auto rounded-2xl Up'>
-      <h1 className='text-center text-blue font-bold my-12'>
+      <h3 className='mx-auto my-8 xl:text-[40px] md:text-[36px] text-[32px] text-center font-bold tracking-[18px] leading-[46.96px] uppercase Scale'>
         {t('gallery')}
-      </h1>
+      </h3>
       <div className='flex-col lg:flex-row flex flex-wrap items-center p-8'>
         <LazyLoad
           className='gallery w-4/5 m-auto lg:w-1/2 lg:m-0 px-4 py-8 lg:p-8'

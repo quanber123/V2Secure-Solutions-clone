@@ -10,10 +10,13 @@ import './assets/css/contact/index.css';
 import './assets/css/footer/index.css';
 import './assets/css/_animation.css';
 import { ServicesProvider } from './pages/services/hooks/services-context.jsx';
+import { SolutionsProvider } from './pages/solutions/hooks/solutions-context.jsx';
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <ServicesProvider>
-      <App />
+      <SolutionsProvider>
+        <App />
+      </SolutionsProvider>
     </ServicesProvider>
   </React.StrictMode>
 );
