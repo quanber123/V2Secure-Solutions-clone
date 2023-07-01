@@ -39,6 +39,7 @@ function ContactForm() {
       <label htmlFor='name'>Name</label>
       <input
         type='text'
+        id='name'
         name='name'
         value={contactForm.name}
         onChange={handleChangeContact}
@@ -48,6 +49,7 @@ function ContactForm() {
       <label htmlFor='email'>Email</label>
       <input
         type='email'
+        id='email'
         name='email'
         value={contactForm.email}
         onChange={handleChangeContact}
@@ -68,6 +70,7 @@ function ContactForm() {
         <div className='flex items-center'>
           <input
             type='checkbox'
+            id='terms'
             name='terms'
             checked={contactForm.terms}
             onChange={handleChangeContact}
