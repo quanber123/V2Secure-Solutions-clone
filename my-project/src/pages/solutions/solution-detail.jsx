@@ -29,13 +29,13 @@ function SolutionDetail() {
         {solutionDetail.intro}
       </p>
       <DownLoadDataSheet filePath={filePath} fileName={fileName} />
-      <section className='my-16'>
+      <section className='my-16 Up'>
         {solutionDetail.details.map((content, index) => {
           return (
             <div className='solutions-page-item-detail' key={index}>
               <LazyLoad className='w-1/3 flex justify-center items-center'>
                 <img
-                  className='m-auto'
+                  className='m-auto Scale'
                   src={content?.imgUrl || defaultImg}
                   alt=''
                 />

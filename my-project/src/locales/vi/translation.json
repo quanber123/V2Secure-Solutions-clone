@@ -30,13 +30,13 @@
     "title1": "Giải pháp và dịch vụ an toàn thông tin",
     "title2": "Công ty cổ phần an toàn thông tin Việt Nam ",
     "title3": "FAGONET",
-    "siem": "Hệ thống quản lý giám sát an toàn thông tin tập trung",
-    "waf": "Hệ thống tường lửa ứng dụng web",
-    "nips": "Hệ thống phòng - chống tấn công mạng thế hệ mới",
-    "edr": "Giải pháp phát hiện và phản ứng sự cố an toàn thông tin trên thiết bị đầu cuối",
-    "nac": "Hệ thống kiểm soát truy cập mạng",
-    "nids": "Hệ thống phát hiện xâm nhập mạng",
-    "dip": "Phân tích chi tiết các gói tin dữ liệu đi qua mạng"
+    "siem": "SIEM - Hệ thống quản lý giám sát an toàn thông tin tập trung",
+    "waf": "WAF - Hệ thống tường lửa ứng dụng web",
+    "nips": "NIPS - Hệ thống phòng chống tấn công mạng thế hệ mới",
+    "edr": "EDR - Giải pháp phát hiện và phản ứng sự cố an toàn thông tin trên thiết bị đầu cuối",
+    "nac": "NAC - Hệ thống kiểm soát truy cập mạng",
+    "nids": "NIDS - Hệ thống phát hiện xâm nhập mạng",
+    "dip": "DIP - Phân tích chi tiết các gói tin dữ liệu đi qua mạng"
   },
   "SIEM": {
     "title": "HỆ THỐNG QUẢN LÝ GIÁM SÁT AN TOÀN THÔNG TIN TẬP TRUNG",

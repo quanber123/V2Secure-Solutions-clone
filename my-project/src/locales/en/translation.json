@@ -30,13 +30,13 @@
     "title1": "Cybersecurity Ecosystem",
     "title2": "FAGONET",
     "title3": "FAGONET",
-    "siem": "Security Information and Event Management",
-    "waf": "Web Application Firewall",
-    "nips": "Network Intrusion Prevention System",
-    "edr": "Endpoint Detection and Response",
-    "nac": "Network Access Control",
-    "nids": "Network Intrusion Detection System",
-    "dip": "Detailed Analysis Of Data Packets Passing Through The Network"
+    "siem": "SIEM - Security Information and Event Management",
+    "waf": "WAF - Web Application Firewall",
+    "nips": "NIPS - Network Intrusion Prevention System",
+    "edr": "EDR - Endpoint Detection and Response",
+    "nac": "NAC - Network Access Control",
+    "nids": "NIDS - Network Intrusion Detection System",
+    "dip": "DIP - Detailed Analysis Of Data Packets Passing Through The Network"
   },
   "SIEM": {
     "title": "CENTRALIZED INFORMATION SECURITY MONITORING MANAGEMENT SYSTEM",
