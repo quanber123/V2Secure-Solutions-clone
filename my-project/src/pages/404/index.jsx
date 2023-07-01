@@ -6,9 +6,9 @@ function Page404() {
   const { t } = useTranslation();
   return (
     <>
-      <section className='w-full flex flex-col justify-center items-center my-32'>
+      <main className='w-4/5 m-auto flex flex-col justify-center items-center my-32'>
         <h1 className='text-3xl font-bold'>ERROR PAGE</h1>
-        <LazyLoad className='my-8'>
+        <LazyLoad className='my-8' offset={100} once>
           <img src={img404} alt='404' />
         </LazyLoad>
         <p className='text-4xl font-bold'>Oops, Page Not Found</p>
@@ -16,12 +16,12 @@ function Page404() {
           Sorry, But the page you are looking for doesn't exist!
         </p>
         <Link
-          className='px-14 py-4 rounded-3xl font-bold bg-boldBlue text-black hover:bg-yellow'
+          className='px-14 py-4 rounded-3xl font-bold bg-boldBlue text-white hover:bg-yellow'
           to='/'
         >
           Back to home
         </Link>
-      </section>
+      </main>
     </>
   );
 }
