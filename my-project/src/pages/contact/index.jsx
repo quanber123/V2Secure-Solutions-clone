@@ -11,7 +11,7 @@ export default function Contact() {
     placeholder: <Spinner />,
   };
   return (
-    <main className='container m-auto'>
+    <main className='container w-4/5 m-auto'>
       <section>
         <h3 className='my-8 xl:text-[80px] lg:text-[64px] md:text-[52px] text-[32px] text-center md:tracking-[16px] tracking-[12px] font-bold uppercase Scale'>
           {t('CONTACT')}

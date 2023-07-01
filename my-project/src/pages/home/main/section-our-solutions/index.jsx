@@ -55,7 +55,7 @@ function OurSolutions() {
     window.scroll(0, 0);
   };
   return (
-    <section className='home-page-solutions container m-auto pb-32 flex xl:flex-row-reverse flex-col justify-between items-center'>
+    <section className='home-page-solutions container w-4/5 m-auto pb-32 flex xl:flex-row-reverse flex-col justify-between items-center'>
       <div className='xl:w-1/2'>
         <h3 className='h-[100px] m-auto xl:text-[72px] lg:text-[64px] md:text-[52px] text-[32px] text-center md:tracking-[16px] tracking-[12px] font-bold uppercase'>
           {t('SOLUTIONS')}
@@ -79,6 +79,8 @@ function OurSolutions() {
               }`}
               onMouseOver={() => setHoverSolutions(solution.id)}
               onMouseOut={() => setHoverSolutions(null)}
+              onTouchStart={() => setHoverSolutions(solution.id)}
+              onTouchEnd={() => setHoverSolutions(null)}
             >
               <LazyLoad className='h-1/2' offset={100} once>
                 <img

@@ -168,6 +168,12 @@
 }
 
 @media only screen and (max-width: 480px) {
+  .services-list > a > p {
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Số dòng hiển thị tối đa */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
   .nav-services > a {
     width: 100%;
   }

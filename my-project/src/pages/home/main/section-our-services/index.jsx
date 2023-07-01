@@ -13,7 +13,7 @@ function OurServices() {
     window.scroll(0, 0);
   };
   return (
-    <section className='container m-auto text-center Up'>
+    <section className='container w-4/5 m-auto text-center Up'>
       <h3 className='xl:text-[72px] lg:text-[64px] md:text-[52px] text-[32px] text-center leading-[75.14px] md:tracking-[16px] tracking-[12px] font-bold uppercase'>
         {t('SERVICES')}
       </h3>
@@ -30,6 +30,8 @@ function OurServices() {
               }`}
               onMouseOver={() => setHoverServices(index)}
               onMouseOut={() => setHoverServices(null)}
+              onTouchStart={() => setHoverServices(index)}
+              onTouchEnd={() => setHoverServices(null)}
             >
               <LazyLoad
                 className='w-[60px] h-[60px]'
