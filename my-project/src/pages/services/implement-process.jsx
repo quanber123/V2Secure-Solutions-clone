@@ -1,11 +1,5 @@
 import { useTranslation } from 'react-i18next';
 import LazyLoad from 'react-lazyload';
-import carriedColor from '../../images/desktopColor.png';
-import receivedColorImg from '../../images/receivedColor.png';
-import processColorImg from '../../images/processColor.png';
-import improveColorImg from '../../images/improvementColor.png';
-// import reviewColorImg from '../../images/reviewColor.png';
-import managementColor from '../../images/managementColor.png';
 import wireFrameImg from '../../assets/images/services/WireframeVector.png';
 import line98 from '../../assets/images/services/Line98.png';
 function ImplementProcess() {

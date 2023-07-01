@@ -21,16 +21,8 @@ function DownLoadDataSheet({ filePath, fileName }) {
   };
 
   return (
-    <section className='flex justify-center items-center my-16 Scale'>
-      <button
-        className='px-2 py-2 md:px-4 rounded-3xl text-lg font-bold border-2 border-darkBlue bg-boldBlue hover:bg-darkGreen hover:text-blue'
-        style={{
-          backgroundImage: `url(
-                'https://cyberciti.1onestrong.com/wp-content/uploads/2023/05/asset-06.png'
-              )`,
-        }}
-        onClick={handleDownload}
-      >
+    <section className='w-4/5 m-auto flex justify-center items-center my-16 Scale'>
+      <button className='btn-data-sheet font-bold' onClick={handleDownload}>
         {t('download')}
       </button>
     </section>

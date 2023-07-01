@@ -7,7 +7,7 @@ export default function DataSolutions() {
       id: 0,
       link: 'siem',
       title: 'SIEM',
-      intro: t('SIEM.title'),
+      intro: t('intro.siem'),
       details: [
         {
           imgUrl: '',
@@ -190,7 +190,7 @@ export default function DataSolutions() {
       id: 1,
       link: 'waf',
       title: 'WAF',
-      intro: t('WAF.title'),
+      intro: t('intro.waf'),
       details: [
         {
           imgUrl: '',
@@ -199,6 +199,12 @@ export default function DataSolutions() {
             {
               list: t('WAF.content1'),
             },
+          ],
+        },
+        {
+          imgUrl: '',
+          step: t('WAF.title2'),
+          content: [
             {
               list: t('WAF.content2'),
             },
@@ -208,24 +214,15 @@ export default function DataSolutions() {
             {
               list: t('WAF.content4'),
             },
+            {
+              list: t('WAF.content5'),
+            },
           ],
         },
         {
           imgUrl: '',
-          step: t('WAF.title2'),
+          step: t('WAF.title3'),
           content: [
-            {
-              list: t('WAF.content5'),
-            },
-            {
-              list: t('WAF.content6'),
-            },
-            {
-              list: t('WAF.content7'),
-            },
-            {
-              list: t('WAF.content8'),
-            },
             {
               list: t('WAF.content9'),
             },
@@ -259,12 +256,6 @@ export default function DataSolutions() {
             {
               list: t('WAF.content19'),
             },
-          ],
-        },
-        {
-          imgUrl: '',
-          step: t('WAF.title3'),
-          content: [
             {
               list: t('WAF.content20'),
             },
@@ -274,6 +265,9 @@ export default function DataSolutions() {
             {
               list: t('WAF.content22'),
             },
+            {
+              list: t('WAF.content23'),
+            },
           ],
         },
         {
@@ -281,13 +275,13 @@ export default function DataSolutions() {
           step: t('WAF.title4'),
           content: [
             {
-              list: t('WAF.content23'),
+              list: t('WAF.content6'),
             },
             {
-              list: t('WAF.content24'),
+              list: t('WAF.content7'),
             },
             {
-              list: t('WAF.content25'),
+              list: t('WAF.content8'),
             },
           ],
         },
@@ -296,10 +290,13 @@ export default function DataSolutions() {
           step: t('WAF.title5'),
           content: [
             {
-              list: t('WAF.content26'),
+              list: t('WAF.content24'),
             },
             {
-              list: t('WAF.content27'),
+              list: t('WAF.content25'),
+            },
+            {
+              list: t('WAF.content26'),
             },
           ],
         },
@@ -308,13 +305,13 @@ export default function DataSolutions() {
           step: t('WAF.title6'),
           content: [
             {
+              list: t('WAF.content27'),
+            },
+            {
               list: t('WAF.content28'),
             },
             {
               list: t('WAF.content29'),
-            },
-            {
-              list: t('WAF.content30'),
             },
           ],
         },
@@ -323,13 +320,16 @@ export default function DataSolutions() {
           step: t('WAF.title7'),
           content: [
             {
+              list: t('WAF.content30'),
+            },
+            {
               list: t('WAF.content31'),
             },
             {
               list: t('WAF.content32'),
             },
             {
-              list: t('WAF.content 33'),
+              list: t('WAF.content33'),
             },
             {
               list: t('WAF.content34'),
@@ -367,9 +367,6 @@ export default function DataSolutions() {
             {
               list: t('WAF.content43'),
             },
-            {
-              list: t('WAF.content44'),
-            },
           ],
         },
       ],
@@ -379,7 +376,7 @@ export default function DataSolutions() {
       id: 2,
       link: 'nips',
       title: 'NIPS',
-      intro: t('NIPS.title'),
+      intro: t('intro.nips'),
       details: [
         {
           imgUrl: '',
@@ -397,12 +394,6 @@ export default function DataSolutions() {
             {
               list: t('NIPS.content4'),
             },
-          ],
-        },
-        {
-          imgUrl: '',
-          step: t('NIPS.title2'),
-          content: [
             {
               list: t('NIPS.content5'),
             },
@@ -433,6 +424,12 @@ export default function DataSolutions() {
             {
               list: t('NIPS.content14'),
             },
+          ],
+        },
+        {
+          imgUrl: '',
+          step: t('NIPS.title2'),
+          content: [
             {
               list: t('NIPS.content15'),
             },
@@ -441,12 +438,6 @@ export default function DataSolutions() {
             },
             {
               list: t('NIPS.content17'),
-            },
-            {
-              list: t('NIPS.content18'),
-            },
-            {
-              list: t('NIPS.content19'),
             },
           ],
         },
@@ -460,15 +451,15 @@ export default function DataSolutions() {
             {
               list: t('NIPS.content21'),
             },
-            {
-              list: t('NIPS.content22'),
-            },
           ],
         },
         {
           imgUrl: '',
           step: t('NIPS.title4'),
           content: [
+            {
+              list: t('NIPS.content22'),
+            },
             {
               list: t('NIPS.content23'),
             },
@@ -478,86 +469,500 @@ export default function DataSolutions() {
             {
               list: t('NIPS.content25'),
             },
-          ],
-        },
-        {
-          imgUrl: '',
-          step: t('NIPS.title5'),
-          content: [
             {
               list: t('NIPS.content26'),
             },
             {
               list: t('NIPS.content27'),
             },
-          ],
-        },
-        {
-          imgUrl: '',
-          step: t('NIPS.title6'),
-          content: [
             {
               list: t('NIPS.content28'),
             },
+          ],
+        },
+      ],
+    },
+    //EDR
+    {
+      id: 3,
+      link: 'edr',
+      title: 'EDR',
+      intro: t('intro.edr'),
+      details: [
+        {
+          imgUrl: '',
+          step: t('EDR.title1'),
+          content: [
             {
-              list: t('NIPS.content29'),
+              list: t('EDR.content1'),
             },
             {
-              list: t('NIPS.content30'),
+              list: t('EDR.content2'),
+            },
+            {
+              list: t('EDR.content3'),
+            },
+            {
+              list: t('EDR.content4'),
             },
           ],
         },
         {
           imgUrl: '',
-          step: t('NIPS.title7'),
+          step: t('EDR.title2'),
           content: [
             {
-              list: t('NIPS.content31'),
+              list: t('EDR.content5'),
             },
             {
-              list: t('NIPS.content32'),
+              list: t('EDR.content6'),
             },
             {
-              list: t('NIPS.content 33'),
-            },
-            {
-              list: t('NIPS.content34'),
-            },
-            {
-              list: t('NIPS.content35'),
-            },
-            {
-              list: t('NIPS.content36'),
-            },
-            {
-              list: t('NIPS.content37'),
-            },
-            {
-              list: t('NIPS.content38'),
+              list: t('EDR.content7'),
             },
           ],
         },
         {
           imgUrl: '',
-          step: t('NIPS.title8'),
+          step: t('EDR.title3'),
           content: [
             {
-              list: t('NIPS.content39'),
+              list: t('EDR.content8'),
             },
             {
-              list: t('NIPS.content40'),
+              list: t('EDR.content9'),
             },
             {
-              list: t('NIPS.content41'),
+              list: t('EDR.content10'),
             },
             {
-              list: t('NIPS.content42'),
+              list: t('EDR.content11'),
             },
             {
-              list: t('NIPS.content43'),
+              list: t('EDR.content12'),
+            },
+          ],
+        },
+        {
+          imgUrl: '',
+          step: t('EDR.title4'),
+          content: [
+            {
+              list: t('EDR.content13'),
             },
             {
-              list: t('NIPS.content44'),
+              list: t('EDR.content14'),
+            },
+            {
+              list: t('EDR.content15'),
+            },
+            {
+              list: t('EDR.content16'),
+            },
+            {
+              list: t('EDR.content17'),
+            },
+            {
+              list: t('EDR.content18'),
+            },
+            {
+              list: t('EDR.content19'),
+            },
+            {
+              list: t('EDR.content20'),
+            },
+          ],
+        },
+        {
+          imgUrl: '',
+          step: t('EDR.title5'),
+          content: [
+            {
+              list: t('EDR.content21'),
+            },
+            {
+              list: t('EDR.content22'),
+            },
+            {
+              list: t('EDR.content23'),
+            },
+          ],
+        },
+        {
+          imgUrl: '',
+          step: t('EDR.title6'),
+          content: [
+            {
+              list: t('EDR.content24'),
+            },
+            {
+              list: t('EDR.content25'),
+            },
+            {
+              list: t('EDR.content26'),
+            },
+            {
+              list: t('EDR.content27'),
+            },
+            {
+              list: t('EDR.content28'),
+            },
+            {
+              list: t('EDR.content29'),
+            },
+            {
+              list: t('EDR.content30'),
+            },
+            {
+              list: t('EDR.content31'),
+            },
+            {
+              list: t('EDR.content32'),
+            },
+          ],
+        },
+        {
+          imgUrl: '',
+          step: t('EDR.title7'),
+          content: [
+            {
+              list: t('EDR.content33'),
+            },
+            {
+              list: t('EDR.content34'),
+            },
+            {
+              list: t('EDR.content35'),
+            },
+            {
+              list: t('EDR.content36'),
+            },
+            {
+              list: t('EDR.content37'),
+            },
+            {
+              list: t('EDR.content38'),
+            },
+            {
+              list: t('EDR.content39'),
+            },
+          ],
+        },
+      ],
+    },
+    //Nac
+    {
+      id: 4,
+      link: 'nac',
+      title: 'NAC',
+      intro: t('intro.nac'),
+      details: [
+        {
+          imgUrl: '',
+          step: t('NAC.title1'),
+          content: [
+            {
+              list: t('NAC.content1'),
+            },
+            {
+              list: t('NAC.content2'),
+            },
+            {
+              list: t('NAC.content3'),
+            },
+            {
+              list: t('NAC.content4'),
+            },
+          ],
+        },
+        {
+          imgUrl: '',
+          step: t('NAC.title2'),
+          content: [
+            {
+              list: t('NAC.content5'),
+            },
+            {
+              list: t('NAC.content6'),
+            },
+            {
+              list: t('NAC.content7'),
+            },
+            {
+              list: t('NAC.content8'),
+            },
+            {
+              list: t('NAC.content9'),
+            },
+          ],
+        },
+        {
+          imgUrl: '',
+          step: t('NAC.title3'),
+          content: [
+            {
+              list: t('NAC.content10'),
+            },
+            {
+              list: t('NAC.content11'),
+            },
+            {
+              list: t('NAC.content12'),
+            },
+            {
+              list: t('NAC.content13'),
+            },
+            {
+              list: t('NAC.content14'),
+            },
+            {
+              list: t('NAC.content15'),
+            },
+            {
+              list: t('NAC.content16'),
+            },
+            {
+              list: t('NAC.content17'),
+            },
+            {
+              list: t('NAC.content18'),
+            },
+            {
+              list: t('NAC.content19'),
+            },
+            {
+              list: t('NAC.content20'),
+            },
+            {
+              list: t('NAC.content21'),
+            },
+            {
+              list: t('NAC.content22'),
+            },
+            {
+              list: t('NAC.content23'),
+            },
+          ],
+        },
+      ],
+    },
+    //NIDS
+    {
+      id: 5,
+      link: 'nids',
+      title: 'NIDS',
+      intro: t('intro.nids'),
+      details: [
+        {
+          imgUrl: '',
+          step: t('NIDS.title1'),
+          content: [
+            {
+              list: t('NIDS.content1'),
+            },
+            {
+              list: t('NIDS.content2'),
+            },
+            {
+              list: t('NIDS.content3'),
+            },
+            {
+              list: t('NIDS.content4'),
+            },
+            {
+              list: t('NIDS.content5'),
+            },
+          ],
+        },
+        {
+          imgUrl: '',
+          step: t('NIDS.title2'),
+          content: [
+            {
+              list: t('NIDS.content6'),
+            },
+            {
+              list: t('NIDS.content7'),
+            },
+            {
+              list: t('NIDS.content8'),
+            },
+            {
+              list: t('NIDS.content9'),
+            },
+          ],
+        },
+        {
+          imgUrl: '',
+          step: t('NIDS.title3'),
+          content: [
+            {
+              list: t('NIDS.content10'),
+            },
+            {
+              list: t('NIDS.content11'),
+            },
+            {
+              list: t('NIDS.content12'),
+            },
+            {
+              list: t('NIDS.content13'),
+            },
+            {
+              list: t('NIDS.content14'),
+            },
+          ],
+        },
+        {
+          imgUrl: '',
+          step: t('NIDS.title4'),
+          content: [
+            {
+              list: t('NIDS.content15'),
+            },
+            {
+              list: t('NIDS.content16'),
+            },
+            {
+              list: t('NIDS.content17'),
+            },
+            {
+              list: t('NIDS.content18'),
+            },
+            {
+              list: t('NIDS.content19'),
+            },
+          ],
+        },
+        {
+          imgUrl: '',
+          step: t('NIDS.title5'),
+          content: [
+            {
+              list: t('NIDS.content20'),
+            },
+            {
+              list: t('NIDS.content21'),
+            },
+            {
+              list: t('NIDS.content22'),
+            },
+            {
+              list: t('NIDS.content23'),
+            },
+          ],
+        },
+        {
+          imgUrl: '',
+          step: t('NIDS.title6'),
+          content: [
+            {
+              list: t('NIDS.content24'),
+            },
+            {
+              list: t('NIDS.content25'),
+            },
+            {
+              list: t('NIDS.content26'),
+            },
+            {
+              list: t('NIDS.content27'),
+            },
+          ],
+        },
+      ],
+    },
+    //DIP
+    {
+      id: 6,
+      link: 'dip',
+      title: 'DIP',
+      intro: t('intro.dip'),
+      details: [
+        {
+          imgUrl: '',
+          step: t('DIP.title1'),
+          content: [
+            {
+              list: t('DIP.content1'),
+            },
+            {
+              list: t('DIP.content2'),
+            },
+            {
+              list: t('DIP.content3'),
+            },
+            {
+              list: t('DIP.content4'),
+            },
+            {
+              list: t('DIP.content5'),
+            },
+          ],
+        },
+        {
+          imgUrl: '',
+          step: t('DIP.title2'),
+          content: [
+            {
+              list: t('DIP.content6'),
+            },
+            {
+              list: t('DIP.content7'),
+            },
+            {
+              list: t('DIP.content8'),
+            },
+          ],
+        },
+        {
+          imgUrl: '',
+          step: t('DIP.title3'),
+          content: [
+            {
+              list: t('DIP.content9'),
+            },
+            {
+              list: t('DIP.content10'),
+            },
+            {
+              list: t('DIP.content11'),
+            },
+          ],
+        },
+        {
+          imgUrl: '',
+          step: t('DIP.title4'),
+          content: [
+            {
+              list: t('DIP.content12'),
+            },
+            {
+              list: t('DIP.content13'),
+            },
+            {
+              list: t('DIP.content14'),
+            },
+            {
+              list: t('DIP.content15'),
+            },
+          ],
+        },
+        {
+          imgUrl: '',
+          step: t('DIP.title5'),
+          content: [
+            {
+              list: t('DIP.content16'),
+            },
+            {
+              list: t('DIP.content17'),
+            },
+            {
+              list: t('DIP.content18'),
+            },
+            {
+              list: t('DIP.content19'),
             },
           ],
         },

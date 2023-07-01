@@ -9,27 +9,28 @@ function ServicesList() {
   const { t } = useTranslation();
   const { dataServices } = useContext(ServicesContext);
   const [hoverServices, setHoverServices] = useState(null);
-  const handleScrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
+  // const handleScrollToTop = () => {
+  //   window.scrollTo({ top: 0, behavior: 'smooth' });
+  // };
   const lazyLoadOptions = {
     offset: 100,
     once: true,
     placeholder: <Spinner />,
   };
   return (
-    <section className='flex flex-col items-center justify-between lg:flex-row'>
-      <LazyLoad className='lg:w-1/3' {...lazyLoadOptions}>
+    <main className='w-4/5 mx-auto my-16 flex flex-col items-center justify-between lg:flex-row'>
+      <LazyLoad className='lg:w-1/2' {...lazyLoadOptions}>
         <img
-          className='Scale'
+          className='m-auto Scale'
           src={introServicesImg}
           alt='intro-services-img'
         />
       </LazyLoad>
-      <div className='lg:w-2/3 services-list'>
+      <div className='lg:w-1/2 services-list'>
         {dataServices.map((service, index) => {
           return (
-            <article
+            <Link
+              to={`${service.link}`}
               key={index}
               className={`relative bg-boldBlue Scale ${
                 hoverServices === index ? 'hoverServices' : ''
@@ -55,22 +56,11 @@ function ServicesList() {
               <p className='text-start leading-[18.78px]'>
                 {t(`services-page.firstWord${index + 1}`)}
               </p>
-              {hoverServices === index ? (
-                <Link
-                  className='w-[89px] font-bold'
-                  to={`${service.link}`}
-                  onClick={handleScrollToTop}
-                >
-                  <i className='services fa fa-long-arrow-right'></i>
-                </Link>
-              ) : (
-                ''
-              )}
-            </article>
+            </Link>
           );
         })}
       </div>
-    </section>
+    </main>
   );
 }
 export default ServicesList;

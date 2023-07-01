@@ -54,7 +54,27 @@ h4 {
   font-weight: 700;
 }
 /* Main */
-
+.btn-data-sheet {
+  background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.2) 0%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.3) 0%,
+      rgba(255, 255, 255, 0.1) 100%
+    );
+  width: 283px;
+  height: 56px;
+  margin-left: auto;
+  padding: 16px;
+  border-radius: 25px;
+}
+.btn-data-sheet:hover {
+  background-color: #fff;
+  color: #003249;
+}
 .gallery {
   cursor: pointer;
   transition: all 0.3s linear;

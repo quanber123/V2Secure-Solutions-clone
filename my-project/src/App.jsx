@@ -5,7 +5,7 @@ import Page404 from './pages/404/index';
 import { lazy, Suspense } from 'react';
 import Spinner from './components/spinner';
 const Home = lazy(() => import('./pages/home/index'));
-const Services = lazy(() => import('./pages/services/index'));
+const ServicesList = lazy(() => import('./pages/services/services-list'));
 const ServiceDetail = lazy(() => import('./pages/services/service-detail'));
 const SolutionsList = lazy(() => import('./pages/solutions/solutions-list'));
 const SolutionDetail = lazy(() => import('./pages/solutions/solution-detail'));
@@ -22,7 +22,7 @@ function App() {
               <Route path=':link' element={<SolutionDetail />} />
             </Route>
             <Route path='services'>
-              <Route index element={<Services />} />
+              <Route index element={<ServicesList />} />
               <Route path=':link' element={<ServiceDetail />} />
             </Route>
             <Route path='contact' element={<Contact />} />

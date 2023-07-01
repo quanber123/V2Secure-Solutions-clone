@@ -30,11 +30,11 @@
     "title1": "Giải pháp và dịch vụ an toàn thông tin",
     "title2": "Công ty cổ phần an toàn thông tin Việt Nam ",
     "title3": "FAGONET",
-    "siem": "Hệ thống quản lý giám sát an toàn thông tin tập trung FAGONET-SIEM",
-    "waf": "Hệ thống tường lửa ứng dụng web FAGONET-WAF",
-    "nips": "Hệ thống phòng - chống tấn công mạng thế hệ mới FAGONET-NIPS",
-    "edr": "Giải pháp phát hiện và phản ứng sự cố an toàn thông tin trên thiết bị đầu cuối FAGONET-EDR",
-    "nac": "Hệ thống kiểm soát truy cập mạng FAGONET-NAC",
+    "siem": "Hệ thống quản lý giám sát an toàn thông tin tập trung",
+    "waf": "Hệ thống tường lửa ứng dụng web",
+    "nips": "Hệ thống phòng - chống tấn công mạng thế hệ mới",
+    "edr": "Giải pháp phát hiện và phản ứng sự cố an toàn thông tin trên thiết bị đầu cuối",
+    "nac": "Hệ thống kiểm soát truy cập mạng",
     "nids": "Hệ thống phát hiện xâm nhập mạng",
     "dip": "Phân tích chi tiết các gói tin dữ liệu đi qua mạng"
   },
@@ -122,39 +122,37 @@
     "content17": "PHÁT HIỆN MALWARE.",
     "content18": "VIRTUAL PATCHING.",
     "content19": "PHÒNG CHỐNG TẤN CÔNG BRUTEFORCE.",
-    "content21": "PHÁT HIỆN TẤN CÔNG SQLI.",
-    "content22": "TÍCH HỢP TƯỜNG LỬA STATEFUL Ở TẦNG 4.",
-    "content23": "PHÒNG CHỐNG TẤN CÔNG DOS.",
-    "content24": "PHÒNG CHỐNG TẤN CÔNG DEFACE.",
-    "content25": "Tự động cảnh báo tấn công qua SMS, Email,...",
-    "content26": "Hệ thống cung cấp khả năng tương tác với thiết bị mạng (Router Cisco - Juniper, Firewall Cisco PIX - ASA, Firewall Check-Point, Firewall Fortigate,..), Thiết bị bảo mật (Firewall, NAC, IDS, IPS) và hệ điều hành (Windows Server, Linux Centos, Fedora, Ubuntu, Debian, Linux Transparent Firewall,...) để thực hiện ngăn chặn tấn công mạng..",
-    "content27": "Ngăn chặn tấn công mạng mà không làm ảnh hưởng tới hoạt đông và hiệu năng của hệ thống, không yêu cầu cài đặt Agent trên các thiết bị hay máy chủ.",
-    "content28": "Cho phép phân tính log mức sâu theo từng trường thông tin",
-    "content29": "Cho phép viết luật tương quan cho phép phát hiện và điều tra tấn công, sự cố.",
-    "content30": "Cho phép phân tích và điều tra sự cố thông qua giao diện trực quan.",
-    "content31": "CHỨC NĂNG DASHBOARD CHO PHÉP NGƯỜI QUẢN TRỊ CÓ THÔNG TIN TỔNG QUAN VỀ HỆ THỐNG.",
-    "content32": "CHỨC NĂNG BEHAVIOR BLOCKING QUẢN LÝ CÁC CẢNH BÁO VỀ PHÁT HIỆN VÀ NGĂN TẤN CÔNG THEO HÀNH VI.",
-    "content33": "CHỨC NĂNG TẠO BÁO CÁO CHO PHÉP NGƯỜI QUẢN TRỊ TẠO RA CÁC BÁO CÁO TÙY BIẾN THEO TỪNG ĐIỀU KIỆN CỤ THỂ THEO CÁC ĐỊNH DẠNG KHÁC NHAU.",
-    "content34": "QUẢN LÝ CÁC TÀI KHOẢN QUẢN TRỊ HỆ THỐNG.",
-    "content35": "QUẢN LÝ CẬP NHẬT PHẦN MỀM HỆ THỐNG TỪ CLOUD.",
-    "content36": "THÔNG TIN TRẠNG THÁI HỆ THỐNG.",
-    "content37": "QUẢN LÝ LOGS HOẠT ĐỘNG TRÊN HỆ THỐNG.",
-    "content38": "QUẢN TRỊ HỆ THỐNG THÔNG QUA GIAO DIỆN CONSOLE VÀ SSH.",
-    "content39": "Băng thông: 200 Mbps",
-    "content40": "Số lượng máy chủ: 10-25",
-    "content41": "Số lượng giao tiếp HTTP: 30,000 / giây",
-    "content42": "Số lượng kết nối HTTP: 10,000 / giây",
-    "content43": "Số lượng giao tiếp HTTPS: 12,000 / giây",
-    "content44": "Giới hạn kết nối đồng thời: 500,000"
+    "content20": "PHÁT HIỆN TẤN CÔNG SQLI.",
+    "content21": "TÍCH HỢP TƯỜNG LỬA STATEFUL Ở TẦNG 4.",
+    "content22": "PHÒNG CHỐNG TẤN CÔNG DOS.",
+    "content23": "PHÒNG CHỐNG TẤN CÔNG DEFACE.",
+    "content24": "Tự động cảnh báo tấn công qua SMS, Email,...",
+    "content25": "Hệ thống cung cấp khả năng tương tác với thiết bị mạng (Router Cisco - Juniper, Firewall Cisco PIX - ASA, Firewall Check-Point, Firewall Fortigate,..), Thiết bị bảo mật (Firewall, NAC, IDS, IPS) và hệ điều hành (Windows Server, Linux Centos, Fedora, Ubuntu, Debian, Linux Transparent Firewall,...) để thực hiện ngăn chặn tấn công mạng..",
+    "content26": "Ngăn chặn tấn công mạng mà không làm ảnh hưởng tới hoạt đông và hiệu năng của hệ thống, không yêu cầu cài đặt Agent trên các thiết bị hay máy chủ.",
+    "content27": "Cho phép phân tính log mức sâu theo từng trường thông tin",
+    "content28": "Cho phép viết luật tương quan cho phép phát hiện và điều tra tấn công, sự cố.",
+    "content29": "Cho phép phân tích và điều tra sự cố thông qua giao diện trực quan.",
+    "content30": "CHỨC NĂNG DASHBOARD CHO PHÉP NGƯỜI QUẢN TRỊ CÓ THÔNG TIN TỔNG QUAN VỀ HỆ THỐNG.",
+    "content31": "CHỨC NĂNG BEHAVIOR BLOCKING QUẢN LÝ CÁC CẢNH BÁO VỀ PHÁT HIỆN VÀ NGĂN TẤN CÔNG THEO HÀNH VI.",
+    "content32": "CHỨC NĂNG TẠO BÁO CÁO CHO PHÉP NGƯỜI QUẢN TRỊ TẠO RA CÁC BÁO CÁO TÙY BIẾN THEO TỪNG ĐIỀU KIỆN CỤ THỂ THEO CÁC ĐỊNH DẠNG KHÁC NHAU.",
+    "content33": "QUẢN LÝ CÁC TÀI KHOẢN QUẢN TRỊ HỆ THỐNG.",
+    "content34": "QUẢN LÝ CẬP NHẬT PHẦN MỀM HỆ THỐNG TỪ CLOUD.",
+    "content35": "THÔNG TIN TRẠNG THÁI HỆ THỐNG.",
+    "content36": "QUẢN LÝ LOGS HOẠT ĐỘNG TRÊN HỆ THỐNG.",
+    "content37": "QUẢN TRỊ HỆ THỐNG THÔNG QUA GIAO DIỆN CONSOLE VÀ SSH.",
+    "content38": "Băng thông: 200 Mbps",
+    "content39": "Số lượng máy chủ: 10-25",
+    "content40": "Số lượng giao tiếp HTTP: 30,000 / giây",
+    "content41": "Số lượng kết nối HTTP: 10,000 / giây",
+    "content42": "Số lượng giao tiếp HTTPS: 12,000 / giây",
+    "content43": "Giới hạn kết nối đồng thời: 500,000"
   },
   "NIPS": {
     "title": "HỆ THỐNG PHÒNG - CHỐNG TẤN CÔNG MẠNG THẾ HỆ MỚI",
-    "title1": "Phát hiện tấn công mạng",
-    "title2": "Xử lý tấn công mạng",
-    "title3": "CHỨC NĂNG QUẢN TRỊ HỆ THỐNG",
-    "idea1": "Phát hiện tấn công mạng dựa theo tập các dấu hiệu phát hiện tấn công (Signature)",
-    "idea2": "Phát hiện tấn công mạng dựa vào hoạt động dị thường trên hệ thống",
-    "idea3": "Phát hiện các hành vi mã độc dựa vào kết nối mạng dị thường hệ thống",
+    "title1": "Phát hiện tấn công mạng dựa theo tập các dấu hiệu phát hiện tấn công (Signature)",
+    "title2": "Phát hiện tấn công mạng dựa vào hoạt động dị thường trên hệ thống",
+    "title3": "Phát hiện các hành vi mã độc dựa vào kết nối mạng dị thường hệ thống",
+    "title4": "CHỨC NĂNG QUẢN TRỊ HỆ THỐNG",
     "content1": "Hệ thống có khả năng phân tích kết nối mạng để phát hiện tấn công mạng mà không làm ảnh hưởng tới hoạt động của hệ thống được bảo vệ.",
     "content2": "Phát hiện các hoạt động không bình thường trên hệ thống dựa vào tập dấu hiệu của hệ thống.",
     "content3": "Dạng tấn công mạng đối tượng là người dùng bên trong hệ thống.",
@@ -171,33 +169,28 @@
     "content14": "Dạng tấn công vào ứng dụng Web (SQL/XSS/Command Line Injection, HTTP detour attack, Inclusion Vulnerabili-ties, Brute Force,...)",
     "content15": "Chức năng Behavior Detection cho phép phát hiện các hành vi dị thường để phát hiện chính xác đối tượng tấn công và bị tấn công dựa vào khả năng tự động phân tích các cảnh báo nhận được từ hệ thống.",
     "content16": "Chức năng Behavior Detection cho phép người quản trị thiết lập tập luật để phát hiện các hành vi dị thường của người dùng, kết nối mạng không bình thường trên hệ thống.",
-    "content17": "Chức năng Behavior Detection được thiết lập các tập luật sẵn có để phát hiện những hành vi sau:",
-    "content18": "Hành vi dò quét mạng của tin tặc.",
-    "content19": "Hành vi tấn công từ một địa chỉ nguồn khi thực hiện các dạng tấn công mạng khác nhau tới hệ thống được bảo vệ.",
-    "content20": "Hành vi tấn công ứng dụng Web.",
-    "content21": "Hành vi tấn công mã độc, phần mềm độc hại.",
-    "content23": "Hệ thống cung cấp khả năng tương tác với thiết bị mạng (Router, Switch), thiết bị bảo mật (Firewall) và hệ điều hành (Windows, Linux,...) để thực hiện ngăn chặn tấn công mạng.",
-    "content24": "CHỨC NĂNG DASHBOARD CHO PHÉP NGƯỜI QUẢN TRỊ CÓ THÔNG TIN TỔNG QUAN VỀ HỆ THỐNG.",
-    "content25": "CHỨC NĂNG BEHAVIOR BLOCKING QUẢN LÝ CÁC CẢNH BÁO VỀ PHÁT HIỆN VÀ NGĂN CHẶN TẤN CÔNG THEO HÀNH VI.",
-    "content26": "CHỨC NĂNG TẠO BÁO CÁO CHO PHÉP NGƯỜI QUẢN TRỊ TẠO RA CÁC BÁO CÁO TÙY BIẾN THEO TỪNG ĐIỀU KIỆN CỤ THỂ THEO CÁC ĐỊNH DẠNG KHÁC NHAU.",
-    "content27": "QUẢN LÝ CẤU HÌNH HỆ THỐNG",
-    "content28": "THỐNG KÊ VÀ BÁO CÁO",
-    "content29": "QUẢN LÝ CÁC TÀI KHOẢN QUẢN TRỊ HỆ THỐNG",
-    "content30": "QUẢN LÝ CẬP NHẬT PHẦN MỀM HỆ THỐNG TỪ CLOUD",
-    "content31": "THÔNG TIN TRẠNG THÁI HỆ THỐNG",
-    "content32": "QUẢN LÝ LOGS HOẠT ĐỘNG TRÊN HỆ THỐNG",
-    "content33": "QUẢN TRỊ HỆ THỐNG THÔNG QUA GIAO DIỆN CONSOLE VÀ SSH"
+    "content17": "Chức năng Behavior Detection được thiết lập các tập luật sẵn có để phát hiện những hành vi sau: Hành vi dò quét mạng của tin tặc, Hành vi tấn công từ một địa chỉ nguồn khi thực hiện các dạng tấn công mạng khác nhau tới hệ thống được bảo vệ, Hành vi tấn công ứng dụng Web, Hành vi tấn công mã độc, phần mềm độc hại. ",
+    "content18": "Hệ thống cung cấp khả năng tương tác với thiết bị mạng (Router, Switch), thiết bị bảo mật (Firewall) và hệ điều hành (Windows, Linux,...) để thực hiện ngăn chặn tấn công mạng.",
+    "content19": "CHỨC NĂNG DASHBOARD CHO PHÉP NGƯỜI QUẢN TRỊ CÓ THÔNG TIN TỔNG QUAN VỀ HỆ THỐNG.",
+    "content20": "CHỨC NĂNG BEHAVIOR BLOCKING QUẢN LÝ CÁC CẢNH BÁO VỀ PHÁT HIỆN VÀ NGĂN CHẶN TẤN CÔNG THEO HÀNH VI.",
+    "content21": "CHỨC NĂNG TẠO BÁO CÁO CHO PHÉP NGƯỜI QUẢN TRỊ TẠO RA CÁC BÁO CÁO TÙY BIẾN THEO TỪNG ĐIỀU KIỆN CỤ THỂ THEO CÁC ĐỊNH DẠNG KHÁC NHAU.",
+    "content22": "QUẢN LÝ CẤU HÌNH HỆ THỐNG",
+    "content23": "THỐNG KÊ VÀ BÁO CÁO",
+    "content24": "QUẢN LÝ CÁC TÀI KHOẢN QUẢN TRỊ HỆ THỐNG",
+    "content25": "QUẢN LÝ CẬP NHẬT PHẦN MỀM HỆ THỐNG TỪ CLOUD",
+    "content26": "THÔNG TIN TRẠNG THÁI HỆ THỐNG",
+    "content27": "QUẢN LÝ LOGS HOẠT ĐỘNG TRÊN HỆ THỐNG",
+    "content28": "QUẢN TRỊ HỆ THỐNG THÔNG QUA GIAO DIỆN CONSOLE VÀ SSH"
   },
   "EDR": {
     "title": "GIẢI PHÁP PHÁT HIỆN VÀ PHẢN ỨNG SỰ CỐ AN TOÀN THÔNG TIN TRÊN THIẾT BỊ ĐẦU CUỐI",
-    "title1": "CÁC CHỨC NĂNG QUẢN LÝ ĐA NHIỆM",
-    "title2": "ĐIỀU TRA VÀ PHÂN TÍCH SỰ CỐ",
-    "title3": "CHỨC NĂNG QUẢN TRỊ HỆ THỐNG",
-    "title4": "HỖ TRỢ TRIỂN KHAI",
-    "idea1": "CHỨC NĂNG QUẢN LÝ THIẾT BỊ ĐẦU CUỐI",
-    "idea2": "CHỨC NĂNG PHÁT HIỆN TẤN CÔNG MẠNG QUA HÀNH VI",
-    "idea3": "CHỨC NĂNG PHÁT HIỆN MÃ ĐỘC THEO DẤU HIỆU NHẬN DIỆN",
-    "idea4": "CHỨC NĂNG PHẢN ỨNG VỚI SỰ CỐ AN TOÀN THÔNG TIN",
+    "title1": "CHỨC NĂNG QUẢN LÝ THIẾT BỊ ĐẦU CUỐI",
+    "title2": "CHỨC NĂNG PHÁT HIỆN TẤN CÔNG MẠNG QUA HÀNH VI",
+    "title3": "CHỨC NĂNG PHÁT HIỆN MÃ ĐỘC THEO DẤU HIỆU NHẬN DIỆN",
+    "title4": "CHỨC NĂNG PHẢN ỨNG VỚI SỰ CỐ AN TOÀN THÔNG TIN",
+    "title5": "ĐIỀU TRA VÀ PHÂN TÍCH SỰ CỐ",
+    "title6": "CHỨC NĂNG QUẢN TRỊ HỆ THỐNG",
+    "title7": "HỖ TRỢ TRIỂN KHAI",
     "content1": "Quản lý thông tin hệ thống (Hostname, IP, MAC, Hostfix,...) tập trung.",
     "content2": "Quản lý thông tin hệ thống (Hostname, IP, MAC, Hostfix,...) tập trung.",
     "content3": "Quản lý sự kiện an toàn thông tin trên endpoint đa nền tảng tập trung.",
@@ -218,55 +211,54 @@
     "content18": "Quản lý thông tin đăng nhập hệ thống trên endpoint.",
     "content19": "Quản lý thông tin truy cập, tải dữ liệu trên endpoint.",
     "content20": "Tải tệp tin về máy chủ EDR, phân tích, quét mã độc, gửi thông tin lên Sandbox.",
-    "content21": "Giải phát phát hiện và phản ứng sự cố an toàn thông tin trên thiết bị đầu cuối FAGONET-EDR cho phép quản lý, giám sát, phát hiện tấn công, mã độc và đưa ra các cơ chế phản ứng để bảo vệ máy chủ, máy trạm và các thiết bị đầu cuối. Việc phát hiện tấn công mạng, mã độc và các chức năng xử lý, phản ứng được thực hiện tập trung thông qua các Agent được cài trên máy chủ, máy trạm.",
-    "content22": "Cho phép phân tích log mức sâu theo từng trường thông tin.",
-    "content23": "Cho phép viết luật tương quan cho phép phát hiện và điều tra tấn công, sự cố.",
-    "content24": "Cho phép phân tích và điều tra sự cố thông qua giao diện trực quan.",
-    "content25": "CHỨC NĂNG DASHBOARD CHO PHÉP NGƯỜI QUẢN TRỊ CÓ THÔNG TIN TỔNG QUAN VỀ HỆ THỐNG.",
-    "content26": "CHỨC NĂNG BEHAVIOR BLOCKING QUẢN LÝ CÁC CẢNH BÁO VỀ PHÁT HIỆN VÀ NGĂN CHẶN TẤN CÔNG THEO HÀNH VI.",
-    "content27": "CHÚC NĂNG TẠO BÁO CÁO CHO PHÉP NGƯỜI QUẢN TRỊ TẠO RA CÁC BÁO CÁO TÙY BIẾN THEO TỪNG ĐIỀU KIỆN CỤ THỂ THEO CÁC ĐỊNH DẠNG KHÁC NHAU.",
-    "content28": "QUẢN LÝ CẤU HÌNH HỆ THỐNG.",
-    "content29": "QUẢN LÝ CÁC TÀI KHOẢN QUẢN TRỊ HỆ THỐNG.",
-    "content30": "QUẢN LÝ CẬP NHẬT PHẦN MỀM HỆ THỐNG TỪ CLOUD",
-    "content31": "THÔNG TIN TRẠNG THÁI HỆ THỐNG.",
-    "content32": "QUẢN LÝ LOGS HOẠT ĐỘNG TRÊN HỆ THỐNG.",
-    "content33": "QUẢN TRỊ HỆ THỐNG THÔNG QUA GIAO DIỆN CONSOLE VÀ SSH",
-    "content34": "Windows 11; Windows 10",
-    "content35": "Windows Server 2008 R2",
-    "content36": "Windows Server 2012 R2",
-    "content37": "Windows Server 2016",
-    "content38": "Windows Server 2019",
-    "content39": "CentOS 7.x; CentOS 8.x",
-    "content40": "Debian 10; Debian 11"
+    "content21": "Cho phép phân tích log mức sâu theo từng trường thông tin.",
+    "content22": "Cho phép viết luật tương quan cho phép phát hiện và điều tra tấn công, sự cố.",
+    "content23": "Cho phép phân tích và điều tra sự cố thông qua giao diện trực quan.",
+    "content24": "CHỨC NĂNG DASHBOARD CHO PHÉP NGƯỜI QUẢN TRỊ CÓ THÔNG TIN TỔNG QUAN VỀ HỆ THỐNG.",
+    "content25": "CHỨC NĂNG BEHAVIOR BLOCKING QUẢN LÝ CÁC CẢNH BÁO VỀ PHÁT HIỆN VÀ NGĂN CHẶN TẤN CÔNG THEO HÀNH VI.",
+    "content26": "CHÚC NĂNG TẠO BÁO CÁO CHO PHÉP NGƯỜI QUẢN TRỊ TẠO RA CÁC BÁO CÁO TÙY BIẾN THEO TỪNG ĐIỀU KIỆN CỤ THỂ THEO CÁC ĐỊNH DẠNG KHÁC NHAU.",
+    "content27": "QUẢN LÝ CẤU HÌNH HỆ THỐNG.",
+    "content28": "QUẢN LÝ CÁC TÀI KHOẢN QUẢN TRỊ HỆ THỐNG.",
+    "content29": "QUẢN LÝ CẬP NHẬT PHẦN MỀM HỆ THỐNG TỪ CLOUD",
+    "content30": "THÔNG TIN TRẠNG THÁI HỆ THỐNG.",
+    "content31": "QUẢN LÝ LOGS HOẠT ĐỘNG TRÊN HỆ THỐNG.",
+    "content32": "QUẢN TRỊ HỆ THỐNG THÔNG QUA GIAO DIỆN CONSOLE VÀ SSH",
+    "content33": "Windows 11; Windows 10",
+    "content34": "Windows Server 2008 R2",
+    "content35": "Windows Server 2012 R2",
+    "content36": "Windows Server 2016",
+    "content37": "Windows Server 2019",
+    "content38": "CentOS 7.x; CentOS 8.x",
+    "content39": "Debian 10; Debian 11"
   },
   "NAC": {
     "title": "HỆ THỐNG KIỂM SOÁT TRUY CẬP MẠNG",
     "title1": "CHỨC NĂNG HỆ THỐNG",
-    "title2": "CHỨC NĂNG HỆ THỐNG",
+    "title2": "QUẢN TRỊ HỆ THỐNG",
+    "title3": "CHỨC NĂNG HỆ THỐNG",
     "content1": "Chức năng dashboard cho phép người quản trị có thông tin tổng quan về hệ thống.",
     "content2": "Chức năng quản lý các cảnh báo về phát hiện và ngăn chặn tấn công theo hành vi.",
     "content3": "Chức năng tạo báo cáo cho phép người quản trị tạo ra các báo cáo tùy biết theo từng điều kiện cụ thể.",
     "content4": "Quản lý cấu hình hệ thống.",
-    "content5": "QUẢN TRỊ HỆ THỐNG",
-    "content6": "Quản lý các tài khoản quản trị hệ thống.",
-    "content7": "Quản lý cập nhật phần mềm hệ thống từ cloud.",
-    "content8": "Thông tin trạng thái hệ thống.",
-    "content9": "Quản lý logs hoạt động trên hệ thống.",
-    "content10": "Quản trị hệ thống thông quan giao diện Console và SSH.",
-    "content11": "THEO CHÍNH SÁCH HỆ THỐNG THÔNG QUA CƠ CHẾ TƯƠNG TÁC VỚI THIẾT BỊ MẠNG (ROUTER, SWITCH), THIẾT BỊ BẢO MẬT (FIREWALL) VÀ HỆ ĐIỀU HÀNH (WINDOWS, LINUX,...) ĐỂ QUẢN LÝ TRUY CẬP.",
-    "content12": "CHỨC NĂNG TỰ ĐỘNG HỌC THÀNH PHẦN THIẾT BỊ MẠNG TRONG HỆ THỐNG.",
-    "content13": "CHỨC NĂNG TỰ ĐỘNG CUNG CẤP THÔNG TIN KẾT NỐI MẠNG DỰA VÀO CHÍNH SÁCH CỦA HỆ THỐNG.",
-    "content14": "CHỨC NĂNG XÁC THỰC KHI TRUY CẬP MẠNG AUTHENTICATION PROXY.",
-    "content15": "KIỂM SOÁT TRUY CẬP THÔNG QUA ACCESS CONTROL LIST (ACLS), VLAN VÀ TCP RESET.",
-    "content16": "GHI LOG TRUY CẬP MẠNG PHỤC VỤ ĐIỀU TRA.",
-    "content17": "THEO DÕI HÀNH VI, VIỆC THỰC THI CHÍNH SÁCH ATTT CỦA THIẾT BỊ.",
-    "content18": "PHÁT HIỆN VÀ QUẢN LÝ CÁC THIẾT BỊ TRONG MẠNG.",
-    "content19": "HIỂN THỊ THÔNG BÁO CHẶN MẠNG CHO NGƯỜI DÙNG.",
-    "content20": "PHÂN NHÓM THIẾT BỊ THEO DẢI IP HOẶC THEO SWITCH, PHÂN QUYỀN QUẢN TRỊ THEO NHÓM THIẾT BỊ.",
-    "content21": "TỰ ĐỘNG WHITELIST CHO THIẾT BỊ THEO ĐỊA CHỈ MAC, LOẠI THIẾT BỊ.",
-    "content22": "XUẤT BÁO CÁO TÌNH HÌNH VI PHẠM CHÍNH SÁCH.",
-    "content23": "HỖ TRỢ CẤU HÌNH SWITCH TẬP TRUNG: ĐIỀU KHIỂN PORT, THAY ĐỔI VLAN,...",
-    "content24": "TÍCH HỢP VỚI HỆ THỐNG GIÁM SÁT TẬP TRUNG SIEM."
+    "content5": "Quản lý các tài khoản quản trị hệ thống.",
+    "content6": "Quản lý cập nhật phần mềm hệ thống từ cloud.",
+    "content7": "Thông tin trạng thái hệ thống.",
+    "content8": "Quản lý logs hoạt động trên hệ thống.",
+    "content9": "Quản trị hệ thống thông quan giao diện Console và SSH.",
+    "content10": "THEO CHÍNH SÁCH HỆ THỐNG THÔNG QUA CƠ CHẾ TƯƠNG TÁC VỚI THIẾT BỊ MẠNG (ROUTER, SWITCH), THIẾT BỊ BẢO MẬT (FIREWALL) VÀ HỆ ĐIỀU HÀNH (WINDOWS, LINUX,...) ĐỂ QUẢN LÝ TRUY CẬP.",
+    "content11": "CHỨC NĂNG TỰ ĐỘNG HỌC THÀNH PHẦN THIẾT BỊ MẠNG TRONG HỆ THỐNG.",
+    "content12": "CHỨC NĂNG TỰ ĐỘNG CUNG CẤP THÔNG TIN KẾT NỐI MẠNG DỰA VÀO CHÍNH SÁCH CỦA HỆ THỐNG.",
+    "content13": "CHỨC NĂNG XÁC THỰC KHI TRUY CẬP MẠNG AUTHENTICATION PROXY.",
+    "content14": "KIỂM SOÁT TRUY CẬP THÔNG QUA ACCESS CONTROL LIST (ACLS), VLAN VÀ TCP RESET.",
+    "content15": "GHI LOG TRUY CẬP MẠNG PHỤC VỤ ĐIỀU TRA.",
+    "content16": "THEO DÕI HÀNH VI, VIỆC THỰC THI CHÍNH SÁCH ATTT CỦA THIẾT BỊ.",
+    "content17": "PHÁT HIỆN VÀ QUẢN LÝ CÁC THIẾT BỊ TRONG MẠNG.",
+    "content18": "HIỂN THỊ THÔNG BÁO CHẶN MẠNG CHO NGƯỜI DÙNG.",
+    "content19": "PHÂN NHÓM THIẾT BỊ THEO DẢI IP HOẶC THEO SWITCH, PHÂN QUYỀN QUẢN TRỊ THEO NHÓM THIẾT BỊ.",
+    "content20": "TỰ ĐỘNG WHITELIST CHO THIẾT BỊ THEO ĐỊA CHỈ MAC, LOẠI THIẾT BỊ.",
+    "content21": "XUẤT BÁO CÁO TÌNH HÌNH VI PHẠM CHÍNH SÁCH.",
+    "content22": "HỖ TRỢ CẤU HÌNH SWITCH TẬP TRUNG: ĐIỀU KHIỂN PORT, THAY ĐỔI VLAN,...",
+    "content23": "TÍCH HỢP VỚI HỆ THỐNG GIÁM SÁT TẬP TRUNG SIEM."
   },
   "NIDS": {
     "title": "PHÂN TÍCH CHI TIẾT CÁC GÓI DỮ LIỆU ĐƯỢC TRUYỀN QUA MẠNG",
@@ -358,18 +350,108 @@
   "progress2": "SẼ SỚM RA MẮT",
   "progress-content": "Nó gần như đã sẵn sàng...chân thật",
   "services-page": {
-    "step1": "Tier 1 (FGN)",
-    "step2": "Tier 2 ( Customer )",
-    "step3": "Tier 3 (FGN)",
-    "step4": "Content Analysis (FGN)",
-    "step5": "SOC Manager (FGN & Customer)",
-    "step-content1": "Thực hiện giám sát 24/7 và chịu trách nhiệm xử lý các cảnh báo theo hướng dẫn",
-    "step-content2": "Tiếp nhận các sự cố từ Tier 1 và xử lý các sự cố thông thường và leo thang sự cố đến Tier 3",
-    "step-content3": "Tiếp nhận các sự cố leo thang từ Tier 2 để xử lý chuyên sâu hơn, đồng thời viết lại hướng dẫn xử lý",
-    "step-content4": "Cải thiện, nâng cao, tối ưu hóa khả năng xử lý của hệ thống",
-    "step-content5": "Quản lý điều hành hệ thống và kiểm tra, đánh giá hiệu suất làm việc của hệ thống",
+    "process": {
+      "service1": {
+        "step1": {
+          "title": "Phân tích yêu cầu và tầm nhìn",
+          "content": "Phân tích yêu cầu của khách hàng và xác định tầm nhìn dự án, bao gồm hiểu về môi trường mạng và hệ thống hiện tại, các mối đe dọa tiềm tàng, mục tiêu bảo mật, yêu cầu quy định và yêu cầu từ khách hàng khác."
+        },
+        "step2": {
+          "title": "Thiết kế giải pháp bảo mật",
+          "content": "Lựa chọn công nghệ, công cụ và quy trình phù hợp với mục tiêu bảo mật và yêu cầu của bạn."
+        },
+        "step3": {
+          "title": "Lập kế hoạch triển khai",
+          "content": "Phát triển kế hoạch triển khai chi tiết dựa trên thiết kế giải pháp. Kế hoạch này bao gồm các bước cụ thể, lịch triển khai, phân bổ tài nguyên và tài liệu triển khai."
+        },
+        "step4": {
+          "title": "Triển khai và giải pháp",
+          "content": "Cài đặt và cấu hình các giải pháp bảo mật trong môi trường mạng của khách hàng."
+        },
+        "step5": {
+          "title": "Kiểm tra và xác nhận",
+          "content": "Sau khi triển khai, thực hiện kiểm tra và xác nhận hoạt động chính xác và hiệu quả của giải pháp bảo mật."
+        },
+        "step6": {
+          "title": "Hướng dẫn và đào tạo",
+          "content": "Cung cấp hướng dẫn và đào tạo cho nhân viên khách hàng về việc sử dụng và quản lý giải pháp bảo mật."
+        },
+        "step7": {
+          "title": "Báo cáo và đánh giá",
+          "content": "Cung cấp báo cáo định kỳ cho khách hàng về hiệu suất và tình trạng bảo mật, bao gồm thông tin về sự cố bảo mật, theo dõi, biện pháp đã thực hiện và gợi ý cải thiện."
+        },
+        "step8": {
+          "title": "Quản lý và duy trì",
+          "content": "Tiếp tục quản lý và duy trì giải pháp bảo mật sau khi triển khai, bao gồm cập nhật phần mềm, kiểm tra tích hợp, theo dõi mạng, phát hiện và phản ứng với sự cố bảo mật và cung cấp hỗ trợ liên quan đến bảo mật khách hàng."
+        }
+      },
+      "service2": {
+        "step1": {
+          "title": "Xác định Mục tiêu và Phạm vi",
+          "content": "Xác định các hệ thống, mạng và tài nguyên cần được kiểm tra."
+        },
+        "step2": {
+          "title": "Xác định các mối đe dọa tiềm tàng",
+          "content": "Phân tích thông tin liên quan để xác định các mối đe dọa tiềm tàng có thể có trong môi trường của bạn, bao gồm xem lại báo cáo bảo mật, công cụ phân tích mối đe dọa hoặc thông tin sử dụng từ các nguồn công khai về thông tin nhạy cảm."
+        },
+        "step3": {
+          "title": "Thu thập dữ liệu",
+          "content": "Thu thập dữ liệu liên quan từ môi trường của bạn. Điều này có thể bao gồm dữ liệu từ hệ thống và thiết bị như nhật ký, hệ thống giám sát, tường lửa, IDS/IPS và các nguồn dữ liệu khác."
+        },
+        "step4": {
+          "title": "Phân tích dữ liệu",
+          "content": "Sử dụng công cụ và kỹ thuật phân tích dữ liệu để tìm hiểu hành vi đáng ngờ hoặc các chỉ báo về mối đe dọa tiềm tàng."
+        },
+        "step5": {
+          "title": "Hiểu về bản chất của mối đe dọa",
+          "content": "Nếu phát hiện mối đe dọa, tiến hành nghiên cứu và tìm hiểu thêm về bản chất của chúng."
+        },
+        "step6": {
+          "title": "Phản ứng và xử lý sự cố",
+          "content": "Nếu phát hiện một mối đe dọa thực sự, phản ứng và khắc phục bằng cách triển khai biện pháp bảo mật."
+        },
+        "step7": {
+          "title": "Đánh giá và cải thiện",
+          "content": "Xem xét những bài học và kinh nghiệm từ quá trình trên và đề xuất cải thiện."
+        }
+      },
+      "service3": {
+        "step1": {
+          "title": "Xác định Yêu cầu và Phạm vi",
+          "content": "Xác định yêu cầu và phạm vi của Pentest hoặc Kiểm toán, bao gồm xác định hệ thống, ứng dụng hoặc quy trình cần được kiểm tra và xác định mục tiêu cụ thể cần đạt được."
+        },
+        "step2": {
+          "title": "Thu thập thông tin",
+          "content": "Thu thập thông tin chi tiết về môi trường và hệ thống mục tiêu, bao gồm việc hiểu thông tin chung về mục tiêu, thu thập thông tin công khai và liên lạc với các bên liên quan để lấy thông tin cần thiết."
+        },
+        "step3": {
+          "title": "Phân tích rủi ro",
+          "content": "Đánh giá các rủi ro tiềm ẩn và lỗ hổng bảo mật có thể tồn tại trong hệ thống. Phân tích này dựa trên thông tin đã thu thập và các quy định, tiêu chuẩn và hướng dẫn về quyền riêng tư liên quan."
+        },
+        "step4": {
+          "title": "Lập kế hoạch kiểm thử",
+          "content": "Phát triển kế hoạch chi tiết cho Pentest hoặc Kiểm toán, bao gồm xác định các phương pháp, công cụ và kỹ thuật kiểm thử sẽ được sử dụng, thiết lập lịch trình và phân bổ tài nguyên."
+        },
+        "step5": {
+          "title": "Tiến hành kiểm thử",
+          "content": "Tiến hành các hoạt động kiểm thử thực tế dựa trên kế hoạch đã lập trước đó, bao gồm kiểm thử hệ thống bằng các công cụ tự động, kiểm thử mã nguồn, kiểm thử xâm nhập mạng hoặc kiểm tra xã hội."
+        },
+        "step6": {
+          "title": "Phân tích và đánh giá",
+          "content": "Phân tích kết quả kiểm thử và đánh giá mức độ rủi ro và trạng thái bảo mật của hệ thống, bao gồm xem xét các lỗ hổng và rủi ro đã phát hiện, đánh giá tính quan trọng và tác động của chúng, và đề xuất biện pháp cải thiện."
+        },
+        "step7": {
+          "title": "Báo cáo và đề xuất",
+          "content": "Tạo báo cáo chi tiết về kết quả kiểm thử và đề xuất cải thiện. Báo cáo này cung cấp thông tin về lỗ hổng, rủi ro và đề xuất để nâng cao bảo mật hệ thống."
+        },
+        "step8": {
+          "title": "Giám sát và kiểm tra lại",
+          "content": "Tiếp tục giám sát và kiểm tra lại bảo mật hệ thống sau khi triển khai các biện pháp cải thiện. Điều này đảm bảo rằng hệ thống duy trì một mức độ bảo mật cao và tiếp tục tuân thủ các quy định và tiêu chuẩn liên quan."
+        }
+      }
+    },
     "title": "Lợi thế cạnh tranh",
-    "endWord": "Chúng tôi cam kết cung cấp dịch vụ với quy trình triển khai toàn diện, đảm bảo tuân thủ các chính sách và quy trình bảo mật thông tin của khách hàng.",
+    "endWord": "Chúng tôi cam kết cung cấp dịch vụ với quy trình triển khai toàn diện, đảm bảo tuân thủ các chính sách và quy trình bảo mật thôngn  ticủa khách hàng.",
     "endTitle": "Quy trình triển khai",
     "end-title-desc": "Chúng tôi cam kết cung cấp dịch vụ với quy trình thực hiện toàn diện, đảm bảo tuân thủ các chính sách và quy trình bảo mật thông tin của khách hàng",
     "intro1": "Dịch vụ Quản lý Bảo mật",

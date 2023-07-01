@@ -17,75 +17,73 @@ function SolutionsList() {
     {
       url: 'siem',
       imgUrl: folderImg,
-      title: t('SIEM.title'),
+      title: t('intro.siem'),
     },
     {
       url: 'waf',
       imgUrl: wallImg,
-      title: t('WAF.title'),
+      title: t('intro.waf'),
     },
     {
       url: 'nips',
       imgUrl: preventionImg,
-      title: t('NIPS.title'),
+      title: t('intro.nips'),
     },
     {
       url: 'edr',
       imgUrl: searchImg,
-      title: t('EDR.title'),
+      title: t('intro.edr'),
     },
     {
       url: 'nac',
       imgUrl: controlImg,
-      title: t('NAC.title'),
+      title: t('intro.nac'),
     },
     {
       url: 'nids',
       imgUrl: guardImg,
-      title: t('NIDS.title'),
+      title: t('intro.nids'),
     },
     {
       url: 'dip',
       imgUrl: dataImg,
-      title: t('DIP.title'),
+      title: t('intro.dip'),
     },
     {
       url: 'swl3',
       imgUrl: guardImg,
-      title: t('SWL3.title'),
+      title: t('intro.swl3'),
     },
   ];
   const solution = solutions.map((solution, index) => {
     return (
-      <div
-        key={index}
-        className={`relative Scale ${
-          hoverSolutions === index ? 'hoverSolutions' : ''
-        }`}
-        onMouseOver={() => setHoverSolutions(index)}
-        onMouseOut={() => setHoverSolutions(null)}
-        onTouchStart={() => setHoverSolutions(index)}
-        onTouchEnd={() => setHoverSolutions(null)}
-      >
-        <LazyLoad
-          className='solutions-img-intro'
-          offset={100}
-          once
-          placeholder={<Spinner />}
+      <Link key={index} to={`${solution.url}`}>
+        <div
+          className={`relative Scale ${
+            hoverSolutions === index ? 'hoverSolutions' : ''
+          }`}
+          onMouseOver={() => setHoverSolutions(index)}
+          onMouseOut={() => setHoverSolutions(null)}
+          onTouchStart={() => setHoverSolutions(index)}
+          onTouchEnd={() => setHoverSolutions(null)}
         >
-          <img
-            className='Scale'
-            src={solution.imgUrl}
-            alt={`${solution.url}-img`}
-          />
-        </LazyLoad>
-        <Link to={`${solution.url}`}>
-          <i className='solutions fa fa-long-arrow-right'></i>
-        </Link>
-        <h4 className='text-center text-[20px] leading-[23.48px] font-bold'>
-          {solution.title}
-        </h4>
-      </div>
+          <LazyLoad
+            className='solutions-img-intro'
+            offset={100}
+            once
+            placeholder={<Spinner />}
+          >
+            <img
+              className='w-[36px] h-[36px] Scale'
+              src={solution.imgUrl}
+              alt={`${solution.url}-img`}
+            />
+          </LazyLoad>
+          <h4 className='text-center text-[20px] leading-[23.48px] font-bold'>
+            {solution.title}
+          </h4>
+        </div>
+      </Link>
     );
   });
   return (

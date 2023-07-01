@@ -1,7 +1,6 @@
-import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
-import img404 from '../../images/404.png';
+import img404 from '../../assets/images/404.png';
 import LazyLoad from 'react-lazyload';
 function Page404() {
   const { t } = useTranslation();

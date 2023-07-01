@@ -1,8 +1,8 @@
 import LazyLoad from 'react-lazyload';
-import img1 from '../../../images/gallery/header-1.e29951c6bf7cdf15c303.png';
-import img2 from '../../../images/gallery/header-2.15fda7c06337e76eaeb0.png';
-import img3 from '../../../images/gallery/header-6.987988888e628d2df2fd.png';
-import img4 from '../../../images/gallery/header-7.c4c8a78b8f66aa9524dd.png';
+import img1 from '../../../assets/images/gallery/header-1.e29951c6bf7cdf15c303.png';
+import img2 from '../../../assets/images/gallery/header-2.15fda7c06337e76eaeb0.png';
+import img3 from '../../../assets/images/gallery/header-6.987988888e628d2df2fd.png';
+import img4 from '../../../assets/images/gallery/header-7.c4c8a78b8f66aa9524dd.png';
 import { useTranslation } from 'react-i18next';
 function Gallery() {
   const { t } = useTranslation();

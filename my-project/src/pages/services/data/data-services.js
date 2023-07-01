@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import img7 from './images/img7.png';
 import img2 from './images/img2.png';
 import img3 from './images/img3.png';
@@ -10,7 +11,12 @@ import hoverIntroImg1 from './images/material-symbols-security-checked.png';
 import hoverIntroImg2 from './images/mdi-shield-bug-checked.png';
 import hoverIntroImg3 from './images/ion-bag-checked.png';
 import hoverIntroImg4 from './images/material-symbols-security-update-good-checked.png';
-import { useTranslation } from 'react-i18next';
+import carriedColor from './../../../assets/images/services/desktopColor.png';
+import receivedColorImg from '../../../assets/images/services/receivedColor.png';
+import processColorImg from '../../../assets/images/services/processColor.png';
+import improveColorImg from '../../../assets/images/services/improvementColor.png';
+import reviewColorImg from '../../../assets/images/services/reviewColor.png';
+import managementColor from '../../../assets/images/services/managementColor.png';
 export default function DataServices() {
   const { t } = useTranslation();
   const data = [
@@ -40,6 +46,48 @@ export default function DataServices() {
       ],
       endTitle: t('services-page.endTitle'),
       endWord: t('services-page.endWord'),
+      step: [
+        {
+          imgUrl: carriedColor,
+          title: t('services-page.process.service1.step1.title'),
+          content: t('services-page.process.service1.step1.content'),
+        },
+        {
+          imgUrl: receivedColorImg,
+          title: t('services-page.process.service1.step2.title'),
+          content: t('services-page.process.service1.step2.content'),
+        },
+        {
+          imgUrl: processColorImg,
+          title: t('services-page.process.service1.step3.title'),
+          content: t('services-page.process.service1.step3.content'),
+        },
+        {
+          imgUrl: improveColorImg,
+          title: t('services-page.process.service1.step4.title'),
+          content: t('services-page.process.service1.step4.content'),
+        },
+        {
+          imgUrl: reviewColorImg,
+          title: t('services-page.process.service1.step5.title'),
+          content: t('services-page.process.service1.step5.content'),
+        },
+        {
+          imgUrl: managementColor,
+          title: t('services-page.process.service1.step6.title'),
+          content: t('services-page.process.service1.step6.content'),
+        },
+        {
+          imgUrl: improveColorImg,
+          title: t('services-page.process.service1.step7.title'),
+          content: t('services-page.process.service1.step7.content'),
+        },
+        {
+          imgUrl: managementColor,
+          title: t('services-page.process.service1.step8.title'),
+          content: t('services-page.process.service1.step8.content'),
+        },
+      ],
     },
     {
       id: 1,
@@ -64,6 +112,43 @@ export default function DataServices() {
       ],
       endTitle: t('services-page.endTitle'),
       endWord: t('services-page.endWord'),
+      step: [
+        {
+          imgUrl: carriedColor,
+          title: t('services-page.process.service2.step1.title'),
+          content: t('services-page.process.service2.step1.content'),
+        },
+        {
+          imgUrl: receivedColorImg,
+          title: t('services-page.process.service2.step2.title'),
+          content: t('services-page.process.service2.step2.content'),
+        },
+        {
+          imgUrl: processColorImg,
+          title: t('services-page.process.service2.step3.title'),
+          content: t('services-page.process.service2.step3.content'),
+        },
+        {
+          imgUrl: improveColorImg,
+          title: t('services-page.process.service2.step4.title'),
+          content: t('services-page.process.service2.step4.content'),
+        },
+        {
+          imgUrl: reviewColorImg,
+          title: t('services-page.process.service2.step5.title'),
+          content: t('services-page.process.service2.step5.content'),
+        },
+        {
+          imgUrl: managementColor,
+          title: t('services-page.process.service2.step6.title'),
+          content: t('services-page.process.service2.step6.content'),
+        },
+        {
+          imgUrl: improveColorImg,
+          title: t('services-page.process.service2.step7.title'),
+          content: t('services-page.process.service2.step7.content'),
+        },
+      ],
     },
     {
       id: 2,
@@ -90,6 +175,48 @@ export default function DataServices() {
       ],
       endTitle: t('services-page.endTitle'),
       endWord: t('services-page.endWord'),
+      step: [
+        {
+          imgUrl: carriedColor,
+          title: t('services-page.process.service3.step1.title'),
+          content: t('services-page.process.service3.step1.content'),
+        },
+        {
+          imgUrl: receivedColorImg,
+          title: t('services-page.process.service3.step2.title'),
+          content: t('services-page.process.service3.step2.content'),
+        },
+        {
+          imgUrl: processColorImg,
+          title: t('services-page.process.service3.step3.title'),
+          content: t('services-page.process.service3.step3.content'),
+        },
+        {
+          imgUrl: improveColorImg,
+          title: t('services-page.process.service3.step4.title'),
+          content: t('services-page.process.service3.step4.content'),
+        },
+        {
+          imgUrl: reviewColorImg,
+          title: t('services-page.process.service3.step5.title'),
+          content: t('services-page.process.service3.step5.content'),
+        },
+        {
+          imgUrl: managementColor,
+          title: t('services-page.process.service3.step6.title'),
+          content: t('services-page.process.service3.step6.content'),
+        },
+        {
+          imgUrl: improveColorImg,
+          title: t('services-page.process.service3.step7.title'),
+          content: t('services-page.process.service3.step7.content'),
+        },
+        {
+          imgUrl: managementColor,
+          title: t('services-page.process.service3.step8.title'),
+          content: t('services-page.process.service3.step8.content'),
+        },
+      ],
     },
     {
       id: 3,
@@ -117,6 +244,43 @@ export default function DataServices() {
       ],
       endTitle: t('services-page.endTitle'),
       endWord: t('services-page.endWord'),
+      step: [
+        {
+          imgUrl: carriedColor,
+          title: t('services-page.process.service4.step1.title'),
+          content: t('services-page.process.service4.step1.content'),
+        },
+        {
+          imgUrl: receivedColorImg,
+          title: t('services-page.process.service4.step2.title'),
+          content: t('services-page.process.service4.step2.content'),
+        },
+        {
+          imgUrl: processColorImg,
+          title: t('services-page.process.service4.step3.title'),
+          content: t('services-page.process.service4.step3.content'),
+        },
+        {
+          imgUrl: improveColorImg,
+          title: t('services-page.process.service4.step4.title'),
+          content: t('services-page.process.service4.step4.content'),
+        },
+        {
+          imgUrl: reviewColorImg,
+          title: t('services-page.process.service4.step5.title'),
+          content: t('services-page.process.service4.step5.content'),
+        },
+        {
+          imgUrl: managementColor,
+          title: t('services-page.process.service4.step6.title'),
+          content: t('services-page.process.service4.step6.content'),
+        },
+        {
+          imgUrl: improveColorImg,
+          title: t('services-page.process.service4.step7.title'),
+          content: t('services-page.process.service4.step7.content'),
+        },
+      ],
     },
   ];
   return { data };
